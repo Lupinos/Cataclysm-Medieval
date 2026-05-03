@@ -1,0 +1,13 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "medieval",
+    "name": "Medieval",
+    "authors": [ "Qoder" ],
+    "maintainers": [ "Qoder" ],
+    "description": "A total conversion mod transforming Cataclysm into a medieval fantasy world.  Strips away all modern technology, firearms, electronics, and urban infrastructure, replacing them with medieval-era equivalents.",
+    "category": "total_conversion",
+    "dependencies": [ "dda" ],
+    "obsolete": false
+  }
+]

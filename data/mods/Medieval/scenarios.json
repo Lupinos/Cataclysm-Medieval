@@ -1,0 +1,20 @@
+[
+  {
+    "type": "SCENARIO_BLACKLIST",
+    "subtype": "whitelist",
+    "scenarios": [ "wilderness", "medieval" ]
+  },
+  {
+    "type": "scenario",
+    "id": "wilderness",
+    "copy-from": "wilderness",
+    "allowed_locs": [ "sloc_forest", "sloc_field", "sloc_river", "sloc_desert_island" ]
+  },
+  {
+    "type": "scenario",
+    "id": "medieval",
+    "copy-from": "medieval",
+    "allowed_locs": [ "sloc_forest", "sloc_field" ],
+    "professions": [ "churl", "unemployed", "survivalist", "naturalist", "backpacker", "bow_hunter", "crossbow_hunter", "fisher", "trapper", "lumberjack", "farmer" ]
+  }
+]
