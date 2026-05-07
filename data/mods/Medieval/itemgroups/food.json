@@ -1,0 +1,206 @@
+[
+  {
+    "type": "item_group",
+    "id": "candy_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy_bracelet_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy_chocolate",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy_coated_peanuts_box_snack_2",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy_shop",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy2_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy2_wrapper_1",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy3_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candy4_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "candycigarette_box_cigarette_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "canned_liver_can_food_4",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "cannedfood",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "cannedfood_commercial",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "chips_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "chips2_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "chips3_bag_plastic_3",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "fast_food",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "food_mexican_truck",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "food_vendor_cart_fridge",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "food_vendor_cart_kitchen",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "frozen_dinner_box_small_2",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "MRE",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_accessory_pack",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_contents",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_dessert_pack",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_entrees",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_full_pack",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_used_contents",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_used_dessert_pack",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "mre_used_pack",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "preserved_food",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "snacks",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "snacks_fancy",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "toasterpastryfrozen_box_snack_2",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  }
+]

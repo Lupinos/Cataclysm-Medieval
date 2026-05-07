@@ -1,0 +1,74 @@
+[
+  {
+    "type": "item_group",
+    "id": "book_gunmags",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_gunref",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_hotel_tower_bible",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_mag_combat",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_mag_gen",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_mag_interests",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_mag_surv",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_mag_tech",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_martial",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_military",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_school",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "book_survival",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  }
+]

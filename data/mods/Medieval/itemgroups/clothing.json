@@ -1,0 +1,134 @@
+[
+  {
+    "type": "item_group",
+    "id": "clothing_biker",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "clothing_glasses",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "clothing_hunting",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "clothing_watch",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "coats_unisex",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "common_gloves",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "female_underwear_bottom",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "female_underwear_top",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "hatstore_hats",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "jackets",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "large_bags",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "male_underwear_bottom",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "male_underwear_top",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pants",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pants_female",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pants_male",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "scarfs_unisex",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "shirts",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "shirts_unisex",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "shirts_womens",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "shoes_unisex",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "small_bags",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  }
+]

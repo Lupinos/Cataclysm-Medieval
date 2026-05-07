@@ -2,19 +2,17 @@
   {
     "type": "SCENARIO_BLACKLIST",
     "subtype": "whitelist",
-    "scenarios": [ "wilderness", "medieval" ]
+    "scenarios": [ "medieval_peasant" ]
   },
   {
     "type": "scenario",
-    "id": "wilderness",
-    "copy-from": "wilderness",
-    "allowed_locs": [ "sloc_forest", "sloc_field", "sloc_river", "sloc_desert_island" ]
-  },
-  {
-    "type": "scenario",
-    "id": "medieval",
-    "copy-from": "medieval",
-    "allowed_locs": [ "sloc_forest", "sloc_field" ],
-    "professions": [ "churl", "unemployed", "survivalist", "naturalist", "backpacker", "bow_hunter", "crossbow_hunter", "fisher", "trapper", "lumberjack", "farmer" ]
+    "id": "medieval_peasant",
+    "name": "Medieval Awakening",
+    "description": "You awaken in an unfamiliar wilderness, with nothing but the clothes on your back.  The world around you is unfamiliar — medieval, untamed, and full of danger.  Every tool, every scrap of food, every weapon must be found or made by your own hands.",
+    "points": 0,
+    "start_name": "Wilderness",
+    "allowed_locs": [ "sloc_forest", "sloc_field", "sloc_river" ],
+    "professions": [ "naked_peasant" ],
+    "flags": [ "LONE_START" ]
   }
 ]

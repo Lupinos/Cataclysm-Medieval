@@ -1,0 +1,56 @@
+[
+  {
+    "type": "item_group",
+    "id": "allclothes",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "allclothes_damaged",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_corpse",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_corpse_child",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_corpse_female",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_corpse_generic",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_corpse_male",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "everyday_gear",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "grave",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  }
+]

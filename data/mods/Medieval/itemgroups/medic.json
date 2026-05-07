@@ -1,0 +1,128 @@
+[
+  {
+    "type": "item_group",
+    "id": "antibiotics_bottle_plastic_pill_prescription_1_15",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "antibiotics_bottle_plastic_pill_prescription_15",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "antibiotics_dr_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "aspirin_ad_group",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "aspirin_bottle_full",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "bandages_box",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugdealer",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_analgesic",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_emergency",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_heal_simple",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_misc",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_pharmacy",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_rare",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "drugs_soldier",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "medical_sample_huge",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "medical_sample_large",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "medical_sample_single",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "medical_sample_small",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pills_sleep_bottle_full",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pills_sleep_bottle_plastic_pill_prescription_1_10",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  },
+  {
+    "type": "item_group",
+    "id": "pills_sleep_bottle_plastic_pill_prescription_10",
+    "subtype": "distribution",
+    "entries": [ { "item": "null", "prob": 1 } ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "type": "profession",
+    "id": "boating_license",
+    "copy-from": "boating_license",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "driving_license",
+    "copy-from": "driving_license",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "hobby_heli_pilot",
+    "copy-from": "hobby_heli_pilot",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "car_fan",
+    "copy-from": "car_fan",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "racing",
+    "copy-from": "racing",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "car_rebuilding",
+    "copy-from": "car_rebuilding",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "computer_literate",
+    "copy-from": "computer_literate",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "high_school_graduate",
+    "copy-from": "high_school_graduate",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "mundane_survival",
+    "copy-from": "mundane_survival",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "vid_games",
+    "copy-from": "vid_games",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "amateur_electronics",
+    "copy-from": "amateur_electronics",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "ham_radio_operator",
+    "copy-from": "ham_radio_operator",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "paintball",
+    "copy-from": "paintball",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "plinking",
+    "copy-from": "plinking",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "skeet_shooting",
+    "copy-from": "skeet_shooting",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "shooter_beginner",
+    "copy-from": "shooter_beginner",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "shooter",
+    "copy-from": "shooter",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "trap_shooting",
+    "copy-from": "trap_shooting",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "handloading",
+    "copy-from": "handloading",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "gunsmithing",
+    "copy-from": "gunsmithing",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "baseball_beginner",
+    "copy-from": "baseball_beginner",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "baseball",
+    "copy-from": "baseball",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "baseball_pitcher",
+    "copy-from": "baseball_pitcher",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "baseball_expert",
+    "copy-from": "baseball_expert",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "basketball_beginner",
+    "copy-from": "basketball_beginner",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "basketball",
+    "copy-from": "basketball",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "basketball_expert",
+    "copy-from": "basketball_expert",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "football_beginner",
+    "copy-from": "football_beginner",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "football",
+    "copy-from": "football",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "football_expert",
+    "copy-from": "football_expert",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "golfing",
+    "copy-from": "golfing",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "skating",
+    "copy-from": "skating",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "roller_derby",
+    "copy-from": "roller_derby",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "hockey",
+    "copy-from": "hockey",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "cyclist_beginner",
+    "copy-from": "cyclist_beginner",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "cyclist_intermediate",
+    "copy-from": "cyclist_intermediate",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "cyclist_expert",
+    "copy-from": "cyclist_expert",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "home_improvement",
+    "copy-from": "home_improvement",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "diy_crafts",
+    "copy-from": "diy_crafts",
+    "subtype": "none"
+  },
+  {
+    "type": "profession",
+    "id": "diy_crafts_expert",
+    "copy-from": "diy_crafts_expert",
+    "subtype": "none"
+  }
+]

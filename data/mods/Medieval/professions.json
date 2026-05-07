@@ -1,0 +1,14 @@
+[
+  {
+    "type": "profession",
+    "id": "naked_peasant",
+    "name": "Naked Wanderer",
+    "description": "You have nothing.  No skills, no tools, no weapons — not even the faintest memory of how you got here.  In this harsh medieval wilderness, your bare hands and wits are all you possess.",
+    "points": 0,
+    "items": {
+      "both": { "entries": [ { "item": "loincloth" } ] },
+      "male": { "entries": [  ] },
+      "female": { "entries": [ { "item": "chestwrap" } ] }
+    }
+  }
+]
