@@ -1,0 +1,31 @@
+[
+  {
+    "id": "med_hauberk",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ mail hauberk" },
+    "description": "A knee-length coat of riveted chainmail rings, reaching from the shoulders to the thighs with long sleeves and a split skirt for riding.  The quintessential armor of the professional medieval soldier — nearly impervious to slashing cuts.  However, a bodkin arrow or spear thrust can burst individual rings, and blunt force transmits through the links with ease.  Always worn over a gambeson.",
+    "weight": "12000 g",
+    "volume": "7 L",
+    "price": 35000,
+    "price_postapoc": 4500,
+    "material": [ "lc_steel_chain", "leather" ],
+    "symbol": "[",
+    "looks_like": "chainmail_vest",
+    "color": "light_gray",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 18
+      }
+    ]
+  }
+]

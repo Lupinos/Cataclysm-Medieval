@@ -1,0 +1,54 @@
+[
+  {
+    "id": "med_armor_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather armor" },
+    "description": "A vest-like armor made from thick, oil-cured leather panels stitched together at the sides.  Offers decent protection against cuts and minor impacts.  Commonly worn by militia and light infantry who cannot afford metal armor.",
+    "weight": "3500 g",
+    "volume": "3 L",
+    "price": 8000,
+    "price_postapoc": 1000,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "vest_leather",
+    "color": "brown",
+    "warmth": 15,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 95,
+        "encumbrance": 7
+      }
+    ]
+  },
+  {
+    "id": "med_armor_cuir_bouilli",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ cuir bouilli" },
+    "description": "A shaped torso armor made from hardened leather boiled in wax or oil, then molded to the body while still warm.  Significantly tougher than untreated leather — it can turn a sword cut and soften a blunt blow.  Worn by light cavalry and professional infantry as a lighter alternative to metal armor.",
+    "weight": "2800 g",
+    "volume": "2750 ml",
+    "price": 12000,
+    "price_postapoc": 1500,
+    "material": [ "hardened_leather" ],
+    "symbol": "[",
+    "looks_like": "vest_leather",
+    "color": "brown",
+    "warmth": 12,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "hardened_leather", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 95,
+        "encumbrance": 6
+      }
+    ]
+  }
+]

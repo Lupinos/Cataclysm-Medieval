@@ -1,0 +1,117 @@
+[
+  {
+    "id": "med_mail_chausses",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ mail chausses" },
+    "description": "A pair of riveted chainmail leggings that cover both legs from thigh to ankle.  Worn by knights and heavy cavalry over padded chausses, mail chausses provide excellent protection against slashing cuts but are vulnerable to piercing weapons.",
+    "weight": "3500 g",
+    "volume": "3000 ml",
+    "price": 32000,
+    "price_postapoc": 4000,
+    "material": [ "lc_steel_chain", "leather" ],
+    "symbol": "[",
+    "looks_like": "chainmail_leg",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "coverage": 90,
+        "encumbrance": 14
+      }
+    ]
+  },
+  {
+    "id": "med_cuisse",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ cuisse" },
+    "description": "A pair of shaped steel plates that protect the thighs.  Cuisses are the upper part of a full plate leg harness, strapped over mail chausses for layered protection.",
+    "weight": "1500 g",
+    "volume": "1200 ml",
+    "price": 26000,
+    "price_postapoc": 3200,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "legguard_metal",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "coverage": 90,
+        "encumbrance": 8
+      }
+    ]
+  },
+  {
+    "id": "med_poleyn",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ poleyn" },
+    "description": "A pair of articulated steel plates that protect the knees.  The poleyn connects the cuisse above with the greave below, with a fan-shaped side wing that shields the back of the knee joint.",
+    "weight": "500 g",
+    "volume": "400 ml",
+    "price": 12000,
+    "price_postapoc": 1500,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "knee_pads",
+    "color": "light_gray",
+    "warmth": 6,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_knee_l", "leg_knee_r" ],
+        "coverage": 95,
+        "encumbrance": 4
+      }
+    ]
+  },
+  {
+    "id": "med_greave",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ greave" },
+    "description": "A pair of steel plates shaped to protect the lower legs from knee to ankle.  Greaves shield the shins—a common target in foot combat—and are among the most frequently worn pieces of plate armor on the battlefield.",
+    "weight": "1000 g",
+    "volume": "850 ml",
+    "price": 20000,
+    "price_postapoc": 2500,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "legguard_metal",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_lower_l", "leg_lower_r" ],
+        "coverage": 90,
+        "encumbrance": 6
+      }
+    ]
+  }
+]

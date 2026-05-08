@@ -1,0 +1,28 @@
+[
+  {
+    "type": "material",
+    "id": "linen",
+    "name": "Linen",
+    "copy-from": "cotton",
+    "resist": { "bash": 1, "cut": 1, "stab": 1, "acid": 3, "heat": 0, "bullet": 1 },
+    "density": 1.5,
+    "breathability": "GOOD"
+  },
+  {
+    "type": "material",
+    "id": "linen_quilted",
+    "name": "Quilted Linen",
+    "copy-from": "cotton",
+    "resist": { "bash": 2.5, "cut": 2, "stab": 1.5, "acid": 3, "heat": 0, "bullet": 1.5 },
+    "density": 1.5,
+    "breathability": "AVERAGE"
+  },
+  {
+    "type": "material",
+    "id": "hardened_leather",
+    "name": "Cuir Bouilli",
+    "copy-from": "leather",
+    "resist": { "bash": 3, "cut": 5, "stab": 3, "acid": 4, "heat": 2, "bullet": 2 },
+    "density": 1.2
+  }
+]

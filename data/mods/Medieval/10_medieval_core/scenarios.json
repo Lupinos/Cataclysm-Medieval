@@ -1,10 +1,5 @@
 [
   {
-    "type": "SCENARIO_BLACKLIST",
-    "subtype": "whitelist",
-    "scenarios": [ "medieval_peasant" ]
-  },
-  {
     "type": "scenario",
     "id": "medieval_peasant",
     "name": "Medieval Awakening",

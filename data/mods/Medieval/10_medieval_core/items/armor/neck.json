@@ -1,0 +1,127 @@
+[
+  {
+    "id": "med_aventail",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ mail aventail" },
+    "description": "A curtain of riveted chainmail rings that hangs from the bottom edge of a bascinet, protecting the neck and upper shoulders.  Worn by knights and men-at-arms to defend the vulnerable gap between helmet and body armor.",
+    "weight": "600 g",
+    "volume": "500 ml",
+    "price": 12000,
+    "price_postapoc": 1500,
+    "material": [ "lc_steel_chain", "leather" ],
+    "symbol": "[",
+    "looks_like": "chainmail_aventail",
+    "color": "light_gray",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_nape", "head_throat" ],
+        "coverage": 90,
+        "encumbrance": 4
+      }
+    ]
+  },
+  {
+    "id": "med_standard_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather standard" },
+    "description": "A thick collar of hardened leather worn around the neck to protect against slashing cuts.  A cheap alternative to metal gorgets, popular among militia and common soldiers who cannot afford full plate harness.",
+    "weight": "350 g",
+    "volume": "400 ml",
+    "price": 4000,
+    "price_postapoc": 500,
+    "material": [ "hardened_leather" ],
+    "symbol": "[",
+    "looks_like": "leather_collar",
+    "color": "brown",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "hardened_leather", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat" ],
+        "coverage": 85,
+        "encumbrance": 3
+      }
+    ]
+  },
+  {
+    "id": "med_gorget",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ plate gorget" },
+    "description": "A shaped steel plate that wraps around the throat and rests on the collarbones, closing the vulnerable gap between helmet and breastplate.  A vital piece of a knight's full harness that protects the most exposed junction in the armor.",
+    "weight": "700 g",
+    "volume": "750 ml",
+    "price": 25000,
+    "price_postapoc": 3000,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "plate_gorget",
+    "color": "light_gray",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_nape", "head_throat" ],
+        "coverage": 95,
+        "encumbrance": 5
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "med_bevor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ plate bevor" },
+    "description": "A shaped steel plate that covers the chin, lower cheeks, and throat.  Worn together with a sallet helmet, this combination provides full head and face protection that rivals a great helm while offering far better vision and ventilation.  The defining knightly gear of the mid-15th century.",
+    "weight": "800 g",
+    "volume": "600 ml",
+    "price": 22000,
+    "price_postapoc": 2800,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "plate_gorget",
+    "color": "light_gray",
+    "warmth": 6,
+    "flags": [ "VARSIZE", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat" ],
+        "coverage": 95,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "mouth" ],
+        "specifically_covers": [ "mouth_chin", "mouth_cheeks", "mouth_lips" ],
+        "coverage": 95,
+        "encumbrance": 10,
+        "rigid_layer_only": true
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  }
+]

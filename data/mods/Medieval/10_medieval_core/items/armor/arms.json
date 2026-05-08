@@ -1,0 +1,118 @@
+[
+  {
+    "id": "med_spaulder",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ spaulder" },
+    "description": "A pair of small overlapping steel plates that cover the shoulders.  Worn over a gambeson or mail hauberk, these are the most basic plate armor pieces for the arms.",
+    "weight": "800 g",
+    "volume": "750 ml",
+    "price": 16000,
+    "price_postapoc": 2000,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "armguard_metal",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
+        "coverage": 90,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "med_rerebrace",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ rerebrace" },
+    "description": "A pair of shaped steel plates that protect the upper arms from shoulder to elbow.  Worn together with a couter and vambrace for full arm protection.",
+    "weight": "700 g",
+    "volume": "650 ml",
+    "price": 14000,
+    "price_postapoc": 1800,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "armguard_metal",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_upper_l", "arm_upper_r" ],
+        "coverage": 95,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "med_couter",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ couter" },
+    "description": "A pair of articulated steel plates that protect the elbows.  The couter bridges the gap between the rerebrace and vambrace, allowing the arm to bend while keeping the joint covered.",
+    "weight": "400 g",
+    "volume": "350 ml",
+    "price": 10000,
+    "price_postapoc": 1200,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "elbow_pads",
+    "color": "light_gray",
+    "warmth": 6,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_elbow_l", "arm_elbow_r" ],
+        "coverage": 95,
+        "encumbrance": 3
+      }
+    ]
+  },
+  {
+    "id": "med_vambrace",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ vambrace" },
+    "description": "A pair of formed steel plates that protect the forearms from elbow to wrist.  Vambraces are among the earliest plate armor pieces adopted by medieval warriors, offering vital protection to the sword arm.",
+    "weight": "900 g",
+    "volume": "800 ml",
+    "price": 18000,
+    "price_postapoc": 2200,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "armguard_metal",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_lower_l", "arm_lower_r" ],
+        "coverage": 95,
+        "encumbrance": 5
+      }
+    ]
+  }
+]

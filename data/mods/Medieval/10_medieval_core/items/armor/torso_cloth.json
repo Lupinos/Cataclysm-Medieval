@@ -1,0 +1,54 @@
+[
+  {
+    "id": "med_linen_shirt",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen shirt" },
+    "description": "A simple long-sleeved shirt made from undyed linen, reaching to the hips.  Worn directly against the skin by all classes of medieval society — the universal first layer beneath any armor.",
+    "weight": "250 g",
+    "volume": "500 ml",
+    "price": 600,
+    "price_postapoc": 80,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "undershirt",
+    "color": "brown",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 0.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 1
+      }
+    ]
+  },
+  {
+    "id": "med_linen_braies",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen braies" },
+    "description": "A pair of loose-fitting linen undergarments that sit at the waist and reach to mid-thigh, secured with a simple drawstring.  The standard medieval undergarment worn by all classes.",
+    "weight": "180 g",
+    "volume": "400 ml",
+    "price": 400,
+    "price_postapoc": 60,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "boxer_briefs",
+    "color": "brown",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 0.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 75,
+        "encumbrance": 1
+      }
+    ]
+  }
+]

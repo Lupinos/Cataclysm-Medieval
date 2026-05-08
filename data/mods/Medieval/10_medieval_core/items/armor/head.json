@@ -1,0 +1,278 @@
+[
+  {
+    "id": "med_hood_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen hood" },
+    "description": "A simple hood made from undyed linen, long enough to drape over the neck and shoulders.  The most basic head covering worn by peasants across medieval Europe.",
+    "weight": "300 g",
+    "volume": "750 ml",
+    "price": 800,
+    "price_postapoc": 100,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "hood_rain",
+    "color": "brown",
+    "warmth": 12,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 1.0 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_nape", "head_throat" ],
+        "coverage": 95,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_cap_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ thick leather cap" },
+    "description": "A sturdy cap of hardened leather, covering the top of the head.  Worn by militia and light infantry who cannot afford metal helmets.",
+    "weight": "500 g",
+    "volume": "1 L",
+    "price": 3000,
+    "price_postapoc": 400,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "hat_cotton",
+    "color": "brown",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_helm_kettle",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ kettle hat" },
+    "description": "A simple iron helmet with a wide brim, resembling a metal hat.  Popular among infantry and archers for its cheap construction and decent protection from downward blows.",
+    "weight": "2200 g",
+    "volume": "2 L",
+    "price": 20000,
+    "price_postapoc": 3000,
+    "to_hit": -1,
+    "material": [ "lc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "helmet_kettle",
+    "color": "light_gray",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 80, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead" ],
+        "coverage": 100,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "med_helm_bascinet",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ bascinet" },
+    "description": "A pointed steel helmet with a conical crown, offering good protection to the top and sides of the head while leaving the face open.  The quintessential soldier's helm of the late 14th century.",
+    "weight": "2000 g",
+    "volume": "2 L",
+    "price": 35000,
+    "price_postapoc": 4000,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "helmet_plate",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead" ],
+        "coverage": 100,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_l", "head_ear_r" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_nape" ],
+        "coverage": 80,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_helm_bascinet_visor",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ bascinet with hounskull visor" },
+    "description": "A pointed steel bascinet fitted with a protruding 'pig-faced' visor that covers the entire face.  The snout-like shape deflects blows and allows breathing through small holes.  The iconic helmet of knights and men-at-arms in the late 14th century.",
+    "weight": "2800 g",
+    "volume": "2500 ml",
+    "price": 50000,
+    "price_postapoc": 6000,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "helmet_plate",
+    "color": "light_gray",
+    "warmth": 12,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead" ],
+        "coverage": 100,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_ear_l", "head_ear_r", "head_nape" ],
+        "coverage": 95,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_throat" ],
+        "coverage": 85,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "eyes" ],
+        "coverage": 95,
+        "encumbrance": 20,
+        "rigid_layer_only": true
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "mouth" ],
+        "specifically_covers": [ "mouth_cheeks", "mouth_lips", "mouth_nose", "mouth_chin" ],
+        "coverage": 95,
+        "encumbrance": 15,
+        "rigid_layer_only": true
+      }
+    ],
+    "melee_damage": { "bash": 3 }
+  },
+  {
+    "id": "med_helm_great",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ great helm" },
+    "description": "A massive cylindrical steel helmet that encloses the entire head, with narrow eye slits and breathing holes punched through the lower face.  Though its heyday has passed, some knights still wear this imposing helm over a smaller bascinet for maximum protection.",
+    "weight": "2500 g",
+    "volume": "2750 ml",
+    "price": 40000,
+    "price_postapoc": 5000,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "helmet_plate",
+    "color": "light_gray",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "coverage": 100,
+        "encumbrance_modifiers": [ "RESTRICTS_NECK", "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "eyes" ],
+        "coverage": 95,
+        "encumbrance": 20,
+        "rigid_layer_only": true
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "mouth" ],
+        "coverage": 100,
+        "encumbrance": 30,
+        "rigid_layer_only": true
+      }
+    ],
+    "melee_damage": { "bash": 3 }
+  },
+  {
+    "id": "med_helm_sallet",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ sallet" },
+    "description": "A smooth steel helmet that covers the top and back of the head, extending downward to shield the neck.  Lighter and more streamlined than the older great helm, the sallet is gaining favor among knights as the 15th century approaches.",
+    "weight": "1800 g",
+    "volume": "1750 ml",
+    "price": 30000,
+    "price_postapoc": 3500,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "helmet_plate",
+    "color": "light_gray",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_ear_l", "head_ear_r" ],
+        "coverage": 95,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      },
+      {
+        "material": [ { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_nape" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "WELL_SUPPORTED" ]
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  }
+]

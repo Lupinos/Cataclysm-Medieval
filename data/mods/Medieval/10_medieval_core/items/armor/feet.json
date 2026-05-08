@@ -1,0 +1,123 @@
+[
+  {
+    "id": "med_boots_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather boots" },
+    "description": "A sturdy pair of knee-length leather boots with thick soles, worn by all classes of medieval society.  While not military-grade foot armor, they keep the mud out and offer decent protection against the rough ground.",
+    "weight": "800 g",
+    "volume": "2 L",
+    "price": 3000,
+    "price_postapoc": 400,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "boots",
+    "color": "brown",
+    "warmth": 20,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_ankle_l",
+          "foot_ankle_r",
+          "foot_arch_l",
+          "foot_arch_r",
+          "foot_heel_l",
+          "foot_heel_r",
+          "foot_toes_l",
+          "foot_toes_r"
+        ],
+        "coverage": 100,
+        "encumbrance": 12
+      },
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 4.0 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_sole_l", "foot_sole_r" ],
+        "coverage": 100,
+        "encumbrance": 0
+      }
+    ]
+  },
+  {
+    "id": "med_sabatons_mail",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ mail sabatons" },
+    "description": "A pair of chainmail foot coverings worn over boots, protecting the top of the foot from slashing cuts.  The mail drapes from ankle to toe, laced underneath to keep it in place.  Worn by knights and men-at-arms who want foot protection without the crushing weight of plate sabatons.",
+    "weight": "650 g",
+    "volume": "750 ml",
+    "price": 13000,
+    "price_postapoc": 1800,
+    "material": [ "lc_steel_chain", "leather" ],
+    "symbol": "[",
+    "looks_like": "boots_metal",
+    "color": "light_gray",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_arch_l",
+          "foot_arch_r",
+          "foot_toes_l",
+          "foot_toes_r",
+          "foot_ankle_l",
+          "foot_ankle_r",
+          "foot_heel_l",
+          "foot_heel_r"
+        ],
+        "coverage": 90,
+        "encumbrance": 8
+      }
+    ]
+  },
+  {
+    "id": "med_sabatons_plate",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ plate sabatons" },
+    "description": "A pair of articulated steel foot plates worn over armored boots.  Overlapping lames cover the top of the foot from ankle to toe, while the heel is enclosed in a solid steel cup.  Part of a knight's full harness — you will not be kicking or flexing these, but nothing is getting through them either.",
+    "weight": "1300 g",
+    "volume": "1250 ml",
+    "price": 32000,
+    "price_postapoc": 4500,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "boots_metal",
+    "color": "light_gray",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 95, "thickness": 0.5 }
+        ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_arch_l", "foot_arch_r", "foot_toes_l", "foot_toes_r", "foot_heel_l", "foot_heel_r" ],
+        "coverage": 100,
+        "encumbrance": 14
+      },
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.5 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 0.5 }
+        ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_ankle_l", "foot_ankle_r" ],
+        "coverage": 90,
+        "encumbrance": 4
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  }
+]
