@@ -1,0 +1,42 @@
+[
+  {
+    "type": "city_building",
+    "id": "medieval_farmhouse",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "medieval_farmstead_t5_north" }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "medieval_manor",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "medieval_manor_house_t3_north" }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "medieval_church",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "medieval_parish_church_t3_north" }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "medieval_smithy",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "medieval_smithy_t3_north" }
+    ]
+  },
+  {
+    "type": "city_building",
+    "id": "medieval_mill",
+    "locations": [ "land" ],
+    "overmaps": [
+      { "point": [ 0, 0, 0 ], "overmap": "medieval_mill_t3_north" }
+    ]
+  }
+]

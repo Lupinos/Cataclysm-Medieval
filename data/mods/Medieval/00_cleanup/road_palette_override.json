@@ -1,0 +1,110 @@
+[
+  {
+    "//": "Override road_palette: replace modern pavement/concrete with dirt, remove modern street furniture.",
+    "type": "palette",
+    "id": "road_palette",
+    "terrain": {
+      ".": "t_dirt",
+      "_": "t_dirt",
+      "*": "t_dirt",
+      "│": "t_dirt",
+      "─": "t_dirt",
+      "c": "t_dirt",
+      "b": "t_dirt",
+      "x": "t_dirt",
+      "n": "t_dirt",
+      "O": "t_dirt",
+      "Y": "t_dirt",
+      "T": "t_dirt",
+      "t": "t_dirt",
+      "X": "t_dirt",
+      "g": "t_region_grass",
+      "f": "t_region_grass",
+      "#": "t_sconc_wall_halfway",
+      "~": "t_water_sh",
+      "s": "t_region_shrub_decorative",
+      "6": "t_region_tree",
+      "9": "t_region_groundcover_urban"
+    },
+    "furniture": { "f": [ [ "f_region_flower_decorative", 2 ], [ "f_null", 1 ] ] },
+    "signs": { "@": { "signage": "<statue_plaque>", "furniture": "f_statue" } }
+  },
+  {
+    "//": "Override bridge_ground_palette: dirt instead of pavement/sidewalk.",
+    "type": "palette",
+    "id": "bridge_ground_palette",
+    "terrain": {
+      ".": "t_dirt",
+      ":": "t_dirt",
+      "_": "t_dirt",
+      "=": "t_guardrail",
+      "u": "t_ramp_up_low",
+      "U": "t_ramp_up_high",
+      "d": "t_ramp_down_high",
+      "D": "t_ramp_down_low",
+      "W": "t_sidewalk_ramp_down_high",
+      ">": "t_sidewalk_ramp_down_low",
+      "<": "t_sidewalk_ramp_up_high",
+      "w": "t_sidewalk_ramp_up_low",
+      "#": "t_concrete_wall"
+    }
+  },
+  {
+    "//": "Override bridge_road_palette: dirt instead of pavement/sidewalk on elevated bridge sections.",
+    "type": "palette",
+    "id": "bridge_road_palette",
+    "terrain": {
+      " ": "t_open_air",
+      ".": "t_dirt",
+      ":": "t_dirt",
+      "_": "t_dirt",
+      "=": "t_guardrail_hw_air",
+      "U": "t_ramp_up_high",
+      "d": "t_ramp_down_high",
+      "D": "t_ramp_down_low",
+      "W": "t_sidewalk_ramp_down_high",
+      ">": "t_sidewalk_ramp_down_low",
+      "<": "t_sidewalk_ramp_up_high",
+      "w": "t_sidewalk_ramp_up_low",
+      "#": "t_concrete_wall"
+    }
+  },
+  {
+    "//": "Override road_curved_layby: remove modern local terrain/furniture/item overrides (fast_food tables, trash cans, sidewalk).",
+    "type": "mapgen",
+    "method": "json",
+    "nested_mapgen_id": "24x24_road_curved_layby",
+    "object": {
+      "mapgensize": [ 24, 24 ],
+      "rotation": [ 0, 3 ],
+      "rows": [
+        "    gggggggg   _________",
+        "   ggbbgggg_____________",
+        "  gggttggg________Y_____",
+        " ggxgbbgg_______________",
+        "gggggggg_______.*.*.....",
+        "gbtbggg____*.....*......",
+        "gbtbgg____..*...*.......",
+        "ggggg____....*.*........",
+        "gggg____*.....*.........",
+        "g6g____..*...*..........",
+        "gg____....*.*...........",
+        "g____*.....*........*...",
+        " ____.*...*........*.*__",
+        " ____..*.*........*.*___",
+        " ____...*........*.*___Y",
+        "____...*........*.*_____",
+        "____*.*........*.*______",
+        "____.*........*.*_______",
+        "__Y_*........*.*________",
+        "____........*.*_________",
+        "____.......*.*___X______",
+        "____........*___________",
+        "____........____________",
+        "____........__Y_________"
+      ],
+      "palettes": [ "road_palette" ],
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ]
+    }
+  }
+]

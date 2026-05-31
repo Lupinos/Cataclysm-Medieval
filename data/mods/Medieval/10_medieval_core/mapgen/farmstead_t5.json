@@ -1,0 +1,54 @@
+[
+  {
+    "type": "palette",
+    "id": "farmstead_t5_palette",
+    "terrain": {
+      "_": "t_grass",
+      "f": "t_splitrail_fence",
+      "g": "t_splitrail_fencegate_c",
+      ",": "t_dirt",
+      "#": "t_wall_wattle",
+      "o": "t_window_empty",
+      "+": "t_door_c",
+      ".": "t_dirtfloor"
+    },
+    "furniture": { "b": "f_straw_bed", "t": "f_table", "c": "f_chair", "F": "f_fireplace", "h": "f_hay" }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "medieval_farmstead_t5" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_grass",
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "rows": [
+        "________________________",
+        "________________________",
+        "_____fffffffffffff______",
+        "_____f,,,,,,,,,,,f______",
+        "_____f,,,###o###,f______",
+        "_____f,,,#b,..,#,f______",
+        "_____f,,,#,tc,.#,f______",
+        "_____f,,,#,,F,.+,f______",
+        "_____f,,,###+###,f______",
+        "_____f,,,,,,,,,,,f______",
+        "_____f,,,,#####,,f______",
+        "_____f,,,,#hh,#,,f______",
+        "_____f,,,,#hh,+,,f______",
+        "_____f,,,,#####,,f______",
+        "_____f,,,,,,,,,,,f______",
+        "_____f,,,,,g,,,,,f______",
+        "_____fffffffffffff______",
+        "________________________",
+        "________________________",
+        "________________________",
+        "________________________",
+        "________________________",
+        "________________________",
+        "________________________"
+      ],
+      "palettes": [ "farmstead_t5_palette" ]
+    }
+  }
+]

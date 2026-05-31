@@ -703,6 +703,17 @@ void apply_region_overlay( const JsonObject &jo, regional_settings &region )
             dest.add( overmap_special_id( member.name() ), member.get_int() );
         }
     };
+
+    if( cityjo.get_bool( "clear_houses", false ) ) {
+        region.city_spec.houses.clear();
+    }
+    if( cityjo.get_bool( "clear_shops", false ) ) {
+        region.city_spec.shops.clear();
+    }
+    if( cityjo.get_bool( "clear_parks", false ) ) {
+        region.city_spec.parks.clear();
+    }
+
     load_building_types( "houses", region.city_spec.houses );
     load_building_types( "shops", region.city_spec.shops );
     load_building_types( "parks", region.city_spec.parks );

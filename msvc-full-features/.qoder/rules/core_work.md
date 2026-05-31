@@ -27,6 +27,8 @@ alwaysApply: true
 - [x] 怪物刷新系统 → [code_monster_spawn_system.md](../docs/vanilla/code_monster_spawn_system.md)
 - [x] NPC 装备系统 → [code_npc_equipment_system.md](../docs/vanilla/code_npc_equipment_system.md)
 
+- [x] 护甲穿透系统 → [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md)
+
 ## 实现已完成
 
 - [x] Mod 骨架（modinfo.json + 目录结构）
@@ -64,8 +66,9 @@ alwaysApply: true
 - 纯 JSON 定义不同生物的 `anatomy`（龙/蛇/人类各有不同部位配置）
 - NPC faction/AI 控制行为，原生护甲按部位、部位伤残影响战斗
 
-### 战斗系统深度重构 — [code_bodypart_hp_system.md](../docs/vanilla/code_bodypart_hp_system.md) + [code_combat_system.md](../docs/vanilla/code_combat_system.md)
+### 战斗系统深度重构 — [code_bodypart_hp_system.md](../docs/vanilla/code_bodypart_hp_system.md) + [code_combat_system.md](../docs/vanilla/code_combat_system.md) + [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md)
 
+- [x] **STR × 武器重量破甲** — `roll_melee_damage_internal` (melee.cpp:1350-1362)：`arpen += weapon_mass_kg × arm_str/10`，bash 全额，stab/cut 折半
 - 部位瞄准：玩家可主动选择攻击目标部位
 - 骨折/流血/包扎/夹板：Character 原生机制直接复用于所有敌对生物
 - 不同生物不同致死判定：砍断龙头致命，砍断龙尾不致命

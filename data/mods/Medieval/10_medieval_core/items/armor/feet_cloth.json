@@ -1,0 +1,141 @@
+[
+  {
+    "id": "med_footwraps_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ linen footwraps" },
+    "description": "A pair of long linen strips wound tightly around the feet, worn inside turnshoes or even alone.  The desperate man's sock — footwraps cost almost nothing and can be washed and re-used, but offer little protection from the cold, the wet, or the sharp stone underfoot.  When you have nothing else, these are what you have.",
+    "weight": "100 g",
+    "volume": "200 ml",
+    "price": 100,
+    "price_postapoc": 15,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "bandages",
+    "color": "brown",
+    "warmth": 5,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_arch_l",
+          "foot_arch_r",
+          "foot_toes_l",
+          "foot_toes_r",
+          "foot_heel_l",
+          "foot_heel_r",
+          "foot_sole_l",
+          "foot_sole_r"
+        ],
+        "coverage": 100,
+        "encumbrance": 2
+      }
+    ]
+  },
+  {
+    "id": "med_turnshoes",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ turnshoes" },
+    "description": "A pair of simple leather shoes made by stitching the upper to a thin leather sole, then turning the whole thing inside-out so the seams sit on the inside.  The standard footwear of medieval peasants — soft enough to feel the ground beneath your feet, which is both a blessing for stealth and a curse when you step on a sharp rock.",
+    "weight": "350 g",
+    "volume": "500 ml",
+    "price": 1500,
+    "price_postapoc": 200,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "shoes",
+    "color": "brown",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_arch_l", "foot_arch_r", "foot_toes_l", "foot_toes_r", "foot_heel_l", "foot_heel_r" ],
+        "coverage": 95,
+        "encumbrance": 6
+      },
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_sole_l", "foot_sole_r" ],
+        "coverage": 100,
+        "encumbrance": 0
+      }
+    ]
+  },
+  {
+    "id": "med_boots_ankle",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ ankle boots" },
+    "description": "A pair of sturdy leather boots that rise above the ankle, with thick doubled soles and reinforced stitching.  The step up from turnshoes — ankle boots provide better support for long walks and some protection against the wet and the mud.  The go-to footwear of craftsmen, hunters, and any commoner who can afford better than the bare minimum.",
+    "weight": "600 g",
+    "volume": "900 ml",
+    "price": 2200,
+    "price_postapoc": 280,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "boots",
+    "color": "brown",
+    "warmth": 15,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [
+          "foot_arch_l",
+          "foot_arch_r",
+          "foot_toes_l",
+          "foot_toes_r",
+          "foot_heel_l",
+          "foot_heel_r",
+          "foot_ankle_l",
+          "foot_ankle_r"
+        ],
+        "coverage": 100,
+        "encumbrance": 10
+      },
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 3.0 } ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_sole_l", "foot_sole_r" ],
+        "coverage": 100,
+        "encumbrance": 0
+      }
+    ]
+  },
+  {
+    "id": "med_pattens",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ pattens" },
+    "description": "A pair of wooden overshoes worn over regular footwear, secured by leather straps across the instep.  Pattens lift your feet an inch above the mud, snow, and filth of medieval streets — the difference between wet feet and dry feet in foul weather.  They clack loudly on stone and make you walk with a slightly awkward gait, but that is a small price to pay.",
+    "weight": "600 g",
+    "volume": "1 L",
+    "price": 800,
+    "price_postapoc": 100,
+    "material": [ "wood", "leather" ],
+    "symbol": "[",
+    "looks_like": "clogs",
+    "color": "brown",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "wood", "covered_by_mat": 100, "thickness": 8.0 },
+          { "type": "leather", "covered_by_mat": 60, "thickness": 1.0 }
+        ],
+        "covers": [ "foot_l", "foot_r" ],
+        "specifically_covers": [ "foot_sole_l", "foot_sole_r" ],
+        "coverage": 100,
+        "encumbrance": 3
+      }
+    ]
+  }
+]

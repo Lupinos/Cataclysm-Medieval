@@ -114,5 +114,34 @@
         "encumbrance": 5
       }
     ]
+  },
+  {
+    "id": "med_brigandine_arms",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ brigandine arms" },
+    "description": "A pair of flexible arm protectors consisting of small overlapping steel plates riveted to the inside of protective leather or velvet sleeves.  Offers excellent flexibility and good defense against cuts and bites, keeping your weapon arm active.",
+    "weight": "3200 g",
+    "volume": "2500 ml",
+    "price": 20000,
+    "price_postapoc": 2500,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "armguard_metal",
+    "color": "red",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.6 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_upper_l", "arm_upper_r", "arm_lower_l", "arm_lower_r", "arm_shoulder_l", "arm_shoulder_r" ],
+        "coverage": 90,
+        "encumbrance": 10
+      }
+    ]
   }
 ]

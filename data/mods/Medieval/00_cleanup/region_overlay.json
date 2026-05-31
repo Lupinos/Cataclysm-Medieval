@@ -7,6 +7,18 @@
       "blacklist": [ "LAB", "MAN_MADE", "MILITARY", "URBAN", "FARM", "EXODII" ],
       "clear_whitelist": false,
       "whitelist": [  ]
+    },
+    "city": {
+      "clear_houses": true,
+      "clear_shops": true,
+      "clear_parks": true,
+      "shop_radius": 30,
+      "shop_sigma": 20,
+      "park_radius": 20,
+      "park_sigma": 50,
+      "houses": { "medieval_farmhouse": 500 },
+      "shops": { "medieval_smithy": 300, "medieval_mill": 300 },
+      "parks": { "medieval_manor": 200, "medieval_church": 200 }
     }
   }
 ]

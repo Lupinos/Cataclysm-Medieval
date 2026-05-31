@@ -1,0 +1,63 @@
+[
+  {
+    "id": "med_mittens_wool",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ wool mittens" },
+    "description": "A pair of thick, fuzzy mittens knitted from unrefined wool.  Mittens keep the fingers together so they can share warmth, making them far more effective against the cold than fingered gloves — though you will struggle to do anything requiring individual finger dexterity while wearing them.",
+    "weight": "120 g",
+    "volume": "200 ml",
+    "price": 600,
+    "price_postapoc": 80,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "mittens",
+    "color": "brown",
+    "warmth": 15,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [
+          "hand_palm_l",
+          "hand_palm_r",
+          "hand_back_l",
+          "hand_back_r",
+          "hand_wrist_l",
+          "hand_wrist_r",
+          "hand_fingers_l",
+          "hand_fingers_r"
+        ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "med_wristwraps_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ linen wristwraps" },
+    "description": "Simple linen bands wound around the wrists, secured by tucking the loose end under the last wrap.  Worn by craftsmen to keep sweat from dripping onto their work, and by archers to protect the bow-arm wrist from the string snap.  Almost no protective value, but better than nothing when the forge is hot.",
+    "weight": "60 g",
+    "volume": "100 ml",
+    "price": 100,
+    "price_postapoc": 15,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "bandages",
+    "color": "brown",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 0.5 } ],
+        "covers": [ "hand_l", "hand_r" ],
+        "specifically_covers": [ "hand_wrist_l", "hand_wrist_r" ],
+        "coverage": 60,
+        "encumbrance": 1
+      }
+    ]
+  }
+]

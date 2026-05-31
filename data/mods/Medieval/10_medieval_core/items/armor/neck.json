@@ -5,8 +5,8 @@
     "category": "armor",
     "name": { "str": "med_ mail aventail" },
     "description": "A curtain of riveted chainmail rings that hangs from the bottom edge of a bascinet, protecting the neck and upper shoulders.  Worn by knights and men-at-arms to defend the vulnerable gap between helmet and body armor.",
-    "weight": "600 g",
-    "volume": "500 ml",
+    "weight": "2000 g",
+    "volume": "1250 ml",
     "price": 12000,
     "price_postapoc": 1500,
     "material": [ "lc_steel_chain", "leather" ],
@@ -14,7 +14,7 @@
     "looks_like": "chainmail_aventail",
     "color": "light_gray",
     "warmth": 5,
-    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
     "armor": [
       {
         "material": [

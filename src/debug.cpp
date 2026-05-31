@@ -13,6 +13,7 @@
 #include <cstring>
 #include <ctime>
 #include <iomanip>
+#include <iostream>
 #include <iterator>
 #include <map>
 #include <memory>
@@ -520,6 +521,7 @@ void realDebugmsg( const char *filename, const char *line, const char *funcname,
     }
 
     if( test_mode ) {
+        std::cerr << filename << ":" << line << " [" << funcname << "] " << text << std::endl;
         return;
     }
 

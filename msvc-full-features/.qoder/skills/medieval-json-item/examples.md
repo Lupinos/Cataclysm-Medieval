@@ -10,13 +10,13 @@
 **Skill 行为**：
 1. 读取 design02-盔甲.md，定位"2.2 颈部"表格
 2. 运行 `keys.py --human type=ARMOR` 发现 ARMOR 的完整字段列表
-3. 提取表格中 3 件物品，映射到 CDDA 字段
-4. 生成 JSON（略，见上一版 examples.md）
-5. 写入文件 → L0/L1/L2 校验 → 通知用户
+3. 提取表格中物品，映射到 CDDA 字段
+4. 生成 JSON
+5. 写入文件 → L0/L1/L2/L3 校验 → 通知用户
 
 ---
 
-## 示例 2：无设计文档 — 互联网调研 → 生成
+## 示例 2：无设计文档 — 互联网调研 → 生成武器
 
 **用户输入**：
 > 生成中世纪的农具（flail, pitchfork, scythe）作为武器
@@ -54,27 +54,7 @@ python "E:\Cataclysm-Medieval\tools\json_tools\pluck.py" type=GENERIC --all 2>&1
 
 ---
 
-## 示例 3：用户指定了 CDDA 类型但无设计文档
-
-**用户输入**：
-> 写一个中世纪铁匠的职业 profession JSON
-
-**Skill 行为**：
-1. **互联网调研**：`search_web: "medieval blacksmith profession guild 14th century"`
-   - 铁匠有三级：Apprentice → Journeyman → Master Smith
-   - 起始装备：leather apron, hammer, tongs
-   - 技能：fabrication, mechanics
-
-2. **CDDA 格式调研**：
-```powershell
-python "E:\Cataclysm-Medieval\tools\json_tools\keys.py" --human type=profession
-```
-
-3. 生成 profession JSON
-
----
-
-## 示例 4：多部位盔甲（ARMOR 特有）
+## 示例 3：多部位盔甲（ARMOR 特有）
 
 **用户输入**：
 > 生成 gambeson（覆盖躯干+手臂）
@@ -101,22 +81,3 @@ python "E:\Cataclysm-Medieval\tools\json_tools\keys.py" --human type=profession
   }
 ]
 ```
-
----
-
-## 示例 5：非 ARMOR 类型 — 动态发现字段
-
-**用户输入**：
-> 生成一个中世纪怪物 cockatrice（鸡蛇）
-
-**Skill 行为**：
-1. **互联网调研**：`search_web: "cockatrice medieval bestiary 14th century"`
-2. **CDDA 格式动态发现**：
-```powershell
-python "E:\Cataclysm-Medieval\tools\json_tools\keys.py" --human type=MONSTER
-```
-输出 monster 的所有可用字段（hp, speed, aggression, armor, attacks, etc.）
-3. 按字段映射生成 JSON
-4. 校验 → 通知
-
-**重要**：Skill 不硬编码 MONSTER 的字段 — 每次都动态查询。

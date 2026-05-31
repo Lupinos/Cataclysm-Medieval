@@ -1,0 +1,161 @@
+[
+  {
+    "id": "med_tunic_wool",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ wool tunic" },
+    "description": "A knee-length tunic made from thick, felted wool with long sleeves.  The universal outermost garment of the medieval commoner — worn over a linen undershirt by every peasant, craftsman, and soldier in Europe.  This is the garment you picture when you think 'medieval clothing'.",
+    "weight": "900 g",
+    "volume": "1750 ml",
+    "price": 2000,
+    "price_postapoc": 250,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "tunic",
+    "color": "brown",
+    "warmth": 25,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 6
+      }
+    ]
+  },
+  {
+    "id": "med_tunic_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen tunic" },
+    "description": "A knee-length tunic made from undyed linen — the summer alternative to the wool tunic.  Worn by peasants working the fields under a blazing sun, where the wool tunic would be unbearable.  Lighter, cooler, and utterly useless against a cold night.",
+    "weight": "550 g",
+    "volume": "1500 ml",
+    "price": 1200,
+    "price_postapoc": 150,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "tunic",
+    "color": "brown",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 3
+      }
+    ]
+  },
+  {
+    "id": "med_doublet",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ doublet" },
+    "description": "A close-fitting, padded garment that covers the torso and upper arms, with a linen lining and a wool outer shell.  The doublet is worn by townsfolk and skilled craftsmen who can afford tailored clothing — it buttons down the front and has points on the lower edge to tie the hose to, keeping everything in place.",
+    "weight": "750 g",
+    "volume": "1400 ml",
+    "price": 3500,
+    "price_postapoc": 450,
+    "material": [ "wool", "linen" ],
+    "symbol": "[",
+    "looks_like": "vest",
+    "color": "dark_gray",
+    "warmth": 20,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "wool", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "linen", "covered_by_mat": 100, "thickness": 0.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "med_kirtle",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ kirtle" },
+    "description": "A long woolen garment that falls from the shoulders to the calves, fitted at the bodice and flaring into a full skirt.  The standard everyday dress for medieval women of all stations — a kirtle is worn over a linen chemise and can be laced up the front or sides.",
+    "weight": "1000 g",
+    "volume": "2000 ml",
+    "price": 2500,
+    "price_postapoc": 300,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "tunic",
+    "color": "brown",
+    "warmth": 28,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
+        "encumbrance": 7
+      }
+    ]
+  },
+  {
+    "id": "med_apron_work",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ work apron" },
+    "description": "A simple apron of coarse linen that covers the front of the body from chest to knee, tied at the waist with a pair of strings.  Worn by farmers, millers, and craftsmen to keep the worst of the daily grime off their clothing — it will not stop a blade, but it will stop the flour and mud.",
+    "weight": "250 g",
+    "volume": "500 ml",
+    "price": 300,
+    "price_postapoc": 40,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "apron_leather",
+    "color": "brown",
+    "warmth": 2,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 1.0 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 55,
+        "encumbrance": 1
+      }
+    ]
+  },
+  {
+    "id": "med_apron_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather apron" },
+    "description": "A heavy apron of thick leather that covers the front of the body from chest to knee, secured by sturdy leather straps crossed behind the neck and back.  The defining garment of the blacksmith and the butcher — thick enough to deflect sparks, glancing blows, and the occasional splash of molten metal or hot blood.",
+    "weight": "1500 g",
+    "volume": "1750 ml",
+    "price": 3000,
+    "price_postapoc": 400,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "apron_leather",
+    "color": "brown",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 3.0 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 65,
+        "encumbrance": 6
+      }
+    ]
+  }
+]

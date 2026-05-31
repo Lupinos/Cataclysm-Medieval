@@ -1,0 +1,106 @@
+[
+  {
+    "id": "med_hose_wool",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ wool hose" },
+    "description": "A pair of snug-fitting woolen stockings that cover both legs from the waist down to the toes, worn as a matched pair tied to the doublet or braies above.  These are the universal leg coverings of the medieval world — every peasant and lord alike wears hose, differing only in the quality of the wool and the cut.",
+    "weight": "600 g",
+    "volume": "1250 ml",
+    "price": 1600,
+    "price_postapoc": 200,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "leggings",
+    "color": "brown",
+    "warmth": 18,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r", "leg_lower_l", "leg_lower_r" ],
+        "coverage": 100,
+        "encumbrance": 4
+      }
+    ]
+  },
+  {
+    "id": "med_split_hose",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ split hose" },
+    "description": "A pair of separate woolen stockings, each covering one leg from thigh to toe, individually laced to the braies above.  This is the earlier and simpler form of hose — the legs are not joined at the crotch, leaving the braies exposed between them.  Practical for a peasant, but lacking the modesty of the joined hose.",
+    "weight": "500 g",
+    "volume": "1100 ml",
+    "price": 1000,
+    "price_postapoc": 150,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "leggings",
+    "color": "brown",
+    "warmth": 15,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r", "leg_lower_l", "leg_lower_r" ],
+        "coverage": 90,
+        "encumbrance": 3
+      }
+    ]
+  },
+  {
+    "id": "med_joined_hose",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ joined hose" },
+    "description": "A pair of woolen hose joined together at the waist, forming a single garment that covers both legs fully from waist to toe.  The mark of a man who can afford a tailor — the joined hose offers better coverage and a trimmer silhouette than the separate split hose, though it takes longer to put on and costs more.",
+    "weight": "700 g",
+    "volume": "1400 ml",
+    "price": 2500,
+    "price_postapoc": 350,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "leggings",
+    "color": "brown",
+    "warmth": 20,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r", "leg_lower_l", "leg_lower_r" ],
+        "coverage": 100,
+        "encumbrance": 5
+      }
+    ]
+  },
+  {
+    "id": "med_leg_wraps",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ leg wraps" },
+    "description": "Strips of woolen cloth wound tightly around the lower legs from ankle to knee, held in place by their own tension and the occasional pin or strap.  Wearing leg wraps — or 'winingas' in the old tongue — adds welcome warmth and keeps brambles and brush from snagging the hose underneath.  A common sight on hunters and peasants working rough ground.",
+    "weight": "300 g",
+    "volume": "500 ml",
+    "price": 600,
+    "price_postapoc": 80,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "bandages",
+    "color": "brown",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_lower_l", "leg_lower_r" ],
+        "coverage": 85,
+        "encumbrance": 2
+      }
+    ]
+  }
+]

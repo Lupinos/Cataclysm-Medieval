@@ -1,3 +1,7 @@
+---
+trigger: always_on
+alwaysApply: true
+---
 # 项目文档索引
 
 > 本文件由自动文档归纳机制维护，记录 `.qoder/docs/` 和 `.qoder/repowiki/` 下所有文档文件的索引。
@@ -16,9 +20,11 @@
 | [json_data_system.md](../docs/vanilla/json_data_system.md) | JSON数据体系：data/目录结构、加载机制、80+种JSON类型、核心Schema、Mod系统 |
 | [json_general.md](../docs/vanilla/json_general.md) | JSON依赖关系图：80+种JSON类型之间的引用/依赖关系全景 |
 | [json_itemgroup_monstergroup.md](../docs/vanilla/json_itemgroup_monstergroup.md) | item_group与monstergroup分组粒度分析 |
+| [json_itemgroup_organization.md](../docs/vanilla/json_itemgroup_organization.md) | item_group组织概念与目录分布：9维概念体系、概念→目录映射、对Medieval的启示 |
 | [json_map.md](../docs/vanilla/json_map.md) | 地图体系：从世界生成到可见地块的完整管线 |
 | [json_npc.md](../docs/vanilla/json_npc.md) | NPC配置体系调研：npc_class、对话、任务、faction等JSON配置 |
 | [json_martial.md](../docs/vanilla/json_martial.md) | 战斗系统JSON配置：techniques/martialarts/body_parts/anatomy/limb_scores |
+| [json_technique_deep.md](../docs/vanilla/json_technique_deep.md) | Technique 字段深度字典：39 个 JSON key 的 C++ 加载默认值、运行时行为、关键 gotcha |
 | [json_mission.md](../docs/vanilla/json_mission.md) | 任务与剧情系统：missiondef/effects_on_condition/talk_topic |
 
 ### C++ 机制调研
@@ -37,10 +43,12 @@
 | [code_city_generation_system.md](../docs/vanilla/code_city_generation_system.md) | 城市/城镇生成系统：place_cities()入口、build_city_street()递归、建筑池 |
 | [code_weapon_to_hit_system.md](../docs/vanilla/code_weapon_to_hit_system.md) | 武器命中与双手系统：grip/surface/length/balance四属性计算m_to_hit、ALWAYS_TWOHAND判定 |
 | [code_material_system.md](../docs/vanilla/code_material_system.md) | 材料系统：material_type加载/验证流程、damage_type注册机制、stab抗性引擎支持、钢材7级分级与chain变体 |
+| [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md) | 护甲穿透系统：damage_unit→res_pen/res_mult全程链路、Character/Monster护甲吸收、Medieval STR×重量破甲改造 |
+| [code_localization_system.md](../docs/vanilla/code_localization_system.md) | 本地化与国际化系统：延迟翻译容器translation、自制MO解析器与哈希查找、自动化JSON文本提取工作流与Mod本地化策略 |
 
 ## 中世纪策划案 (docs/design/)
 
-> Medieval Mod 的未来规划与方案设计。编号体系：00 为总纲，01-06 为系统策划，08 为敌人体系。
+> Medieval Mod 的未来规划与方案设计。编号体系：00 为总纲，01-07 为系统策划，08 为敌人体系。
 > 现状调研 → [vanilla/](../docs/vanilla/)，实现进度 → [process/](../docs/process/)。
 
 ### 总纲
@@ -55,11 +63,13 @@
 |------|------|------|
 | 01 | [design01-世界观.md](../docs/design/design01-世界观.md) | 世界观与威胁体系：中世纪背景设定、危险来源、文明等级 |
 | 02 | [design02-盔甲.md](../docs/design/design02-盔甲.md) | 盔甲体系：14世纪末~15世纪初过渡期，布料→锁子甲→板甲的完整防护链 |
+| 02_1 | [design02_1-布里根丁与板甲衣细分.md](../docs/design/design02_1-布里根丁与板甲衣细分.md) | 布里根丁与板甲衣细分及抽象化重构：退化抽象基类模板，细化10件过渡期防具及配套肢体防具 |
 | 03 | [design03-日常衣物.md](../docs/design/design03-日常衣物.md) | 低端衣物与日常装备（平民层）：麻、羊毛、基础皮革，覆盖全阶层日常着装 |
 | 04 | [design04-武器.md](../docs/design/design04-武器.md) | 武器体系：Oakeshott XV-XVIII型、60+种武器分类、伤害类型×反甲逻辑矩阵 |
 | 04_1 | [design04_1-quality体系.md](../docs/design/design04_1-quality体系.md) | 装备 Quality 体系（设计冻结/非初版）：材料变体走JSON copy-from，Quality作为纯运行时属性，区分武器/盔甲影响 |
 | 05 | [design05-职业.md](../docs/design/design05-职业.md) | 开局职业与技能映射：中世纪社会阶层→CDDA profession/skill体系 |
 | 06 | [design06-建筑.md](../docs/design/design06-建筑.md) | 中世纪聚落与建筑体系：村庄布局、建筑类型、材料与建造逻辑 |
+| 07 | [design07-冒险者工会.md](../docs/design/design07-冒险者工会.md) | 冒险者工会体系：单一工会/多分会架构、声望等级、三层任务池、NPC/服务设计 |
 
 ### 敌人体系
 
@@ -67,6 +77,12 @@
 |------|------|------|
 | 08 | [design08-敌人.md](../docs/design/design08-敌人.md) | 中世纪部位分血改造方案：Monster路线技术细节 + 最终决策走NPC系统 |
 | 08_1 | [design08_1-野怪_强盗.md](../docs/design/design08_1-野怪_强盗.md) | 野怪 NPC 体系（一）—— 强盗：刷新配置、装备池、AI行为 |
+
+### 战斗体系
+
+| 编号 | 文档 | 说明 |
+|------|------|------|
+| 09 | [design09-战斗系统重置.md](../docs/design/design09-战斗系统重置.md) | 战斗系统深度重置：手动技艺选择 + 部位瞄准，双轮UI、n/k技能线性缩放 |
 
 
 ## 实现进度 (docs/process/)
@@ -77,6 +93,22 @@
 |------|------|
 | [modern_content_removal.md](../docs/process/modern_content_removal.md) | 现代内容清除进度：5层拦截架构执行状态、1156条Recipe/40个Background移除详情 |
 | [medieval_armor.md](../docs/process/medieval_armor.md) | 盔甲体系实现进度：13个占位符JSON按部位/层分隔，head→neck→torso×6→arms→hands→legs→feet→cloaks |
+| [medieval_clothing.md](../docs/process/medieval_clothing.md) | 日常衣物实现进度：29件平民服装+2种新材料，head/torso/legs/feet/cloaks/hands/accessories 共9文件 |
+| [medieval_weapons.md](../docs/process/medieval_weapons.md) | 武器体系实现进度：剑系6+斧系4+锤系5，共15件近战武器，steel单材质等级 |
+| [medieval_settlement.md](../docs/process/medieval_settlement.md) | 聚落与地图实现进度：T5农舍测试mapgen、palette体系、overmap_terrain定义 |
+| [medieval_combat_rebalance.md](../docs/process/medieval_combat_rebalance.md) | 战斗重平衡进度：STR×武器重量破甲（C++ melee.cpp）、待考虑的后续改造项 |
+
+## 项目 Skills (.qoder/skills/)
+
+> Medieval Mod 专用技能的快速索引。
+
+| Skill | 说明 |
+|-------|------|
+| medieval-design | 交互式需求分析与策划案撰写，引导用户澄清需求后写入 docs/design/ |
+| medieval-json-item | CDDA JSON 物品数据生成（ARMOR, GENERIC, TOOL 等），含自动校验 |
+| medieval-json-check | C++ 级 JSON 语义验证（--check-mods），捕获语法/引用/一致性错误 |
+| medieval-json-mapgen | Mapgen 数据生成（overmap_terrain + palette + 24x24 ASCII mapgen），含地形家具参考表 |
+| medieval-json-itemgroup | item_group JSON 生成与增补：9维分类体系、需求驱动创建、item→group归属查询、跨skill公共服务 |
 
 ## 项目工程文档 (repowiki/)
 

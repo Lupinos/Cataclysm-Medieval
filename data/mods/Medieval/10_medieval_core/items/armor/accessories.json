@@ -1,0 +1,54 @@
+[
+  {
+    "id": "med_belt_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather belt" },
+    "description": "A sturdy leather belt with a simple iron buckle, worn at the waist.  The belt is the medieval commoner's load-bearing system — tools, pouches, knives, and anything else you carry all hang from it.  A belt in good condition is as essential as a good pair of boots.",
+    "weight": "250 g",
+    "volume": "250 ml",
+    "price": 1200,
+    "price_postapoc": 150,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "brown",
+    "warmth": 2,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 10,
+        "encumbrance": 1
+      }
+    ]
+  },
+  {
+    "id": "med_belt_rope",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ rope belt" },
+    "description": "A simple length of hempen rope tied around the waist — the belt of someone who cannot afford leather.  It holds your braies up and gives you something to tuck small items behind, though it is nowhere near as secure or comfortable as a proper leather belt.",
+    "weight": "120 g",
+    "volume": "200 ml",
+    "price": 200,
+    "price_postapoc": 25,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "leather_belt",
+    "color": "brown",
+    "warmth": 1,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 3.0 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_lower" ],
+        "coverage": 8,
+        "encumbrance": 0
+      }
+    ]
+  }
+]

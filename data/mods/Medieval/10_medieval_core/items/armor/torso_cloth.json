@@ -29,7 +29,7 @@
     "id": "med_linen_braies",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "med_ linen braies" },
+    "name": { "str_sp": "med_ linen braies" },
     "description": "A pair of loose-fitting linen undergarments that sit at the waist and reach to mid-thigh, secured with a simple drawstring.  The standard medieval undergarment worn by all classes.",
     "weight": "180 g",
     "volume": "400 ml",
@@ -47,6 +47,32 @@
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_lower" ],
         "coverage": 75,
+        "encumbrance": 1
+      }
+    ]
+  },
+  {
+    "id": "med_chemise_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen chemise" },
+    "description": "A long, loose-fitting linen undergarment that falls from the shoulders to the thighs — the standard first layer for medieval women and the longer counterpart to the linen shirt.  Worn against the skin to absorb sweat and prevent outer garments from chafing.",
+    "weight": "320 g",
+    "volume": "600 ml",
+    "price": 700,
+    "price_postapoc": 90,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "undershirt",
+    "color": "brown",
+    "warmth": 6,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 0.5 } ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 100,
         "encumbrance": 1
       }
     ]

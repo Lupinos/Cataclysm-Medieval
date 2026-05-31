@@ -1,0 +1,30 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": "road",
+    "copy-from": "road",
+    "name": "dirt road",
+    "color": "brown",
+    "travel_cost_type": "dirt_road"
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "road_nesw_manhole",
+    "copy-from": "road_nesw_manhole",
+    "name": "dirt road",
+    "sym": "+",
+    "color": "brown",
+    "travel_cost_type": "dirt_road",
+    "flags": [ "REQUIRES_PREDECESSOR", "NO_ROTATE" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": "city_center",
+    "copy-from": "city_center",
+    "name": "village crossroad",
+    "sym": "+",
+    "color": "brown",
+    "travel_cost_type": "dirt_road",
+    "flags": [ "REQUIRES_PREDECESSOR", "NO_ROTATE" ]
+  }
+]

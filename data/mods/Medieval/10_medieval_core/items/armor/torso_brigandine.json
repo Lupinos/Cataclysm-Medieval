@@ -1,21 +1,66 @@
 [
   {
-    "id": "med_coat_of_plates",
+    "abstract": "med_coat_of_plates_base",
     "type": "ARMOR",
+    "name": { "str": "abstract_coat_of_plates_base" },
+    "description": "Abstract base class for coats of plates.",
     "category": "armor",
-    "name": { "str": "med_ coat of plates" },
-    "description": "A heavy torso defense constructed by riveting large overlapping iron plates inside a sturdy leather shell.  The precursor to the brigandine, common in the mid-to-late 14th century.  The exterior appears deceptively simple, but the hidden plates provide substantial protection against both cuts and thrusts.",
+    "material": [ "lc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "platemail",
+    "color": "brown",
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ]
+  },
+  {
+    "abstract": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "abstract_brigandine_base" },
+    "description": "Abstract base class for brigandines.",
+    "category": "armor",
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "platemail",
+    "color": "red",
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ]
+  },
+  {
+    "id": "med_cuir_bouilli_coat_of_plates",
+    "copy-from": "med_coat_of_plates_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ cuir-bouilli coat of plates", "str_pl": "med_ cuir-bouilli coats of plates" },
+    "description": "A transitional coat of plates utilizing large curved scales of hardened leather instead of metal, riveted inside a heavy leather jacket.  Affords decent protection against cuts and thrusts, though it offers poor defense against heavy impacts and is highly vulnerable to fire.",
+    "weight": "4500 g",
+    "volume": "4 L",
+    "price": 12000,
+    "price_postapoc": 1600,
+    "material": [ "hardened_leather", "leather" ],
+    "warmth": 15,
+    "armor": [
+      {
+        "material": [
+          { "type": "hardened_leather", "covered_by_mat": 100, "thickness": 4.0 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 90,
+        "encumbrance": 15
+      }
+    ]
+  },
+  {
+    "id": "med_visby_coat_of_plates",
+    "copy-from": "med_coat_of_plates_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ Visby coat of plates", "str_pl": "med_ Visby coats of plates" },
+    "description": "A heavy, classic 14th-century torso protection reconstructed from the Wisby battlefield mass graves.  Consists of large overlapping iron plates riveted vertically and horizontally inside a strong leather vest.  Imparts solid protection against cuts and arrows, but its rigid plates restrict movement significantly.",
     "weight": "9000 g",
     "volume": "5 L",
     "price": 25000,
     "price_postapoc": 3200,
     "to_hit": -1,
     "material": [ "lc_steel", "leather" ],
-    "symbol": "[",
-    "looks_like": "platemail",
-    "color": "brown",
     "warmth": 12,
-    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
     "armor": [
       {
         "material": [
@@ -25,40 +70,207 @@
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper", "torso_lower" ],
         "coverage": 95,
-        "encumbrance": 14
+        "encumbrance": 16
       }
     ],
     "melee_damage": { "bash": 1 }
   },
   {
-    "id": "med_brigandine",
+    "id": "med_heavy_coat_of_plates",
+    "copy-from": "med_coat_of_plates_base",
     "type": "ARMOR",
-    "category": "armor",
-    "name": { "str": "med_ brigandine" },
-    "description": "A refined torso armor made from hundreds of small, overlapping steel plates riveted to the inside of a velvet or leather outer shell.  The evolution of the coat of plates — lighter, more flexible, and far more elegant.  The polished rivet heads form decorative patterns on the exterior, announcing the wearer's wealth and status.  A favorite of knights and wealthy men-at-arms in the late 14th to early 15th century.",
-    "weight": "7500 g",
+    "name": { "str": "med_ heavy coat of plates", "str_pl": "med_ heavy coats of plates" },
+    "description": "An exceptionally heavy defensive garment designed for knightly shock combat.  It houses thick, massive steel plates over the chest, including an integrated lance rest on the right side to steady a lance on horseback.  Offers peerless protection against front impacts, though it is incredibly fatiguing to wear.",
+    "weight": "11500 g",
+    "volume": "6 L",
+    "price": 38000,
+    "price_postapoc": 4800,
+    "to_hit": -2,
+    "material": [ "mc_steel", "leather" ],
+    "warmth": 15,
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 1.2 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 95,
+        "encumbrance": 19
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_commoners_brigandine",
+    "copy-from": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ commoner's brigandine" },
+    "description": "A basic, rugged torso defense worn by city guards and seasoned mercenary foot soldiers.  Features rough budget steel scales riveted inside a heavy canvas or cowhide shell, leaving the rivet heads exposed on the exterior.  Provides durable protection without the expensive decorative finish of knightly harnesses.",
+    "weight": "8000 g",
     "volume": "4 L",
-    "price": 40000,
-    "price_postapoc": 5000,
+    "price": 18000,
+    "price_postapoc": 2400,
+    "to_hit": -1,
+    "material": [ "budget_steel", "leather" ],
+    "warmth": 12,
+    "color": "brown",
+    "armor": [
+      {
+        "material": [
+          { "type": "budget_steel", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 0.8 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 92,
+        "encumbrance": 13
+      }
+    ],
+    "melee_damage": { "bash": 1 }
+  },
+  {
+    "id": "med_archers_brigandine",
+    "copy-from": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ archer's brigandine" },
+    "description": "A lightened torso defense designed for archers and skirmishers.  Features medium carbon steel scales protecting the vitals of the chest, while the shoulders and sides are left open or backed only by light leather straps.  This grants superior breathability and maximum range of motion for drawing a warbow.",
+    "weight": "5000 g",
+    "volume": "3 L",
+    "price": 28000,
+    "price_postapoc": 3600,
+    "material": [ "mc_steel", "leather" ],
+    "warmth": 8,
+    "color": "green",
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 0.6 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "coverage": 80,
+        "encumbrance": 8
+      }
+    ]
+  },
+  {
+    "id": "med_corrazina",
+    "copy-from": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ corrazina", "str_pl": "med_ corrazinas" },
+    "description": "A highly protective, Italian-style transitional armor popular in the late 14th century.  Employs a combination of small, flexible steel plates along the waist and flanks, and larger, thick breastplate plates over the torso.  Superb front thrust protection while retaining moderate waist flexibility.",
+    "weight": "8500 g",
+    "volume": "4 L",
+    "price": 35000,
+    "price_postapoc": 4500,
     "to_hit": -1,
     "material": [ "mc_steel", "leather" ],
-    "symbol": "[",
-    "looks_like": "platemail",
-    "color": "red",
+    "warmth": 12,
+    "color": "blue",
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 0.8 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 93,
+        "encumbrance": 14
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_knights_brigandine",
+    "copy-from": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ velvet brigandine" },
+    "description": "A lavish, high-status armor worn by wealthy knights.  Consists of hundreds of meticulously overlapping steel scales, tin-plated to resist rust, and riveted securely to the inside of a rich velvet outer shell.  The gilded rivet heads form beautiful patterns on the outside.  Combines stunning protection, high flexibility, and peerless prestige.",
+    "weight": "7500 g",
+    "volume": "4 L",
+    "price": 50000,
+    "price_postapoc": 6500,
+    "to_hit": -1,
+    "material": [ "mc_steel", "cotton", "leather" ],
     "warmth": 15,
-    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
+    "color": "red",
     "armor": [
       {
         "material": [
           { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.8 },
+          { "type": "leather", "covered_by_mat": 100, "thickness": 0.8 },
+          { "type": "cotton", "covered_by_mat": 100, "thickness": 0.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 95,
+        "encumbrance": 11
+      }
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_chalcis_brigandine",
+    "copy-from": "med_brigandine_base",
+    "type": "ARMOR",
+    "name": { "str": "med_ Chalcis brigandine" },
+    "description": "An advanced hybrid torso protection based on archaeological finds from Chalcis.  Integrates a solid steel breastplate split into two large plates over the upper chest for rigid defense, while the waist, lower abdomen and flanks are shielded by flexible overlapping scales.  The peak of transitional torso safety.",
+    "weight": "8200 g",
+    "volume": "4 L",
+    "price": 45000,
+    "price_postapoc": 5800,
+    "to_hit": -1,
+    "material": [ "mc_steel", "leather" ],
+    "warmth": 12,
+    "color": "dark_gray",
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 2.0 },
           { "type": "leather", "covered_by_mat": 100, "thickness": 0.8 }
         ],
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper", "torso_lower" ],
         "coverage": 95,
-        "encumbrance": 12
+        "encumbrance": 13
       }
     ],
     "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_jack_of_plates",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ jack of plates", "str_pl": "med_ jacks of plates" },
+    "description": "A commoner's defense constructed by securing small, overlapping metal plates with cord or twine stitched directly through pre-drilled holes between layers of heavy linen canvas.  While bulky and somewhat rigid, the thick linen-and-steel sandwich absorbs blunt trauma remarkably well.",
+    "weight": "9000 g",
+    "volume": "6 L",
+    "price": 8000,
+    "price_postapoc": 1200,
+    "to_hit": -1,
+    "material": [ "budget_steel", "linen_quilted", "linen" ],
+    "symbol": "[",
+    "looks_like": "platemail",
+    "color": "brown",
+    "warmth": 18,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "budget_steel", "covered_by_mat": 100, "thickness": 1.0 },
+          { "type": "linen_quilted", "covered_by_mat": 100, "thickness": 2.5 },
+          { "type": "linen", "covered_by_mat": 100, "thickness": 1.0 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 92,
+        "encumbrance": 15
+      }
+    ],
+    "melee_damage": { "bash": 1 }
   }
 ]

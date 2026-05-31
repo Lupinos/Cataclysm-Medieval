@@ -1,0 +1,158 @@
+[
+  {
+    "id": "med_coif_linen",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ linen coif" },
+    "description": "A close-fitting cap made from undyed linen, covering the top of the head and ears.  The most basic medieval head covering, worn by all classes to keep hair clean and provide a modest layer of warmth.",
+    "weight": "140 g",
+    "volume": "300 ml",
+    "price": 300,
+    "price_postapoc": 40,
+    "material": [ "linen" ],
+    "symbol": "[",
+    "looks_like": "hood_rain",
+    "color": "brown",
+    "warmth": 6,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "linen", "covered_by_mat": 100, "thickness": 1.0 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_ear_l", "head_ear_r" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_straw_hat",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ straw hat" },
+    "description": "A wide-brimmed hat woven from dried straw, offering shade from the sun and a little shelter from light rain.  The universal headwear of peasants working the fields during the summer months.",
+    "weight": "250 g",
+    "volume": "750 ml",
+    "price": 150,
+    "price_postapoc": 20,
+    "material": [ "straw" ],
+    "symbol": "[",
+    "looks_like": "straw_hat",
+    "color": "yellow",
+    "warmth": 3,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "straw", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown" ],
+        "coverage": 80,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_cap_wool",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ felt cap" },
+    "description": "A simple cap made from thick, felted wool that covers the crown of the head.  Worn by common folk of all stations to ward off the chill — the humble wool cap is as medieval as the sword.",
+    "weight": "200 g",
+    "volume": "400 ml",
+    "price": 500,
+    "price_postapoc": 60,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "hat_cotton",
+    "color": "brown",
+    "warmth": 12,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.0 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_hood_wool",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ wool hood" },
+    "description": "A deep woolen hood that drapes over the head, neck, and shoulders, shielding the wearer from wind, cold, and rain.  The single most important cold-weather garment a medieval commoner owns — worn by peasants and soldiers alike beneath helmets or on its own.",
+    "weight": "500 g",
+    "volume": "1250 ml",
+    "price": 1200,
+    "price_postapoc": 150,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "hood_rain",
+    "color": "brown",
+    "warmth": 20,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_ear_l", "head_ear_r", "head_nape", "head_throat" ],
+        "coverage": 100,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_chaperon",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ chaperon" },
+    "description": "A fashionable woolen hood with an extended tail that can be draped over one shoulder or wrapped around the neck like a scarf.  Popular among townsfolk and the merchant class — warmer and more stylish than the common wool hood, though still thoroughly practical.",
+    "weight": "550 g",
+    "volume": "1400 ml",
+    "price": 2000,
+    "price_postapoc": 250,
+    "material": [ "wool" ],
+    "symbol": "[",
+    "looks_like": "hood_rain",
+    "color": "brown",
+    "warmth": 22,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "wool", "covered_by_mat": 100, "thickness": 2.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_ear_l", "head_ear_r", "head_nape" ],
+        "coverage": 95,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  },
+  {
+    "id": "med_coif_leather",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ leather coif" },
+    "description": "A fitted cap of thin, supple leather that covers the top of the head and ears.  Offers a modicum of protection against scratches and light blows — favored by hunters, scouts, and anyone who expects to push through thick brush.",
+    "weight": "250 g",
+    "volume": "400 ml",
+    "price": 900,
+    "price_postapoc": 110,
+    "material": [ "leather" ],
+    "symbol": "[",
+    "looks_like": "hood_rain",
+    "color": "brown",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "FIT" ],
+    "armor": [
+      {
+        "material": [ { "type": "leather", "covered_by_mat": 100, "thickness": 1.5 } ],
+        "covers": [ "head" ],
+        "specifically_covers": [ "head_crown", "head_forehead", "head_ear_l", "head_ear_r" ],
+        "coverage": 90,
+        "encumbrance_modifiers": [ "NONE" ]
+      }
+    ]
+  }
+]

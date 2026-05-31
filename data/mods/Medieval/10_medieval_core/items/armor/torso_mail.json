@@ -1,19 +1,48 @@
 [
   {
+    "id": "med_mail_shirt",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ mail shirt", "str_pl": "med_ mail shirts" },
+    "description": "A short-sleeved, hip-length shirt of riveted chainmail rings.  Lighter and less cumbersome than a full hauberk, it protects the vital areas of the torso while allowing maximum mobility.  Highly favored by archers, light cavalry, and skirmishers.",
+    "weight": "6500 g",
+    "volume": "4 L",
+    "price": 22000,
+    "price_postapoc": 2800,
+    "material": [ "lc_steel_chain" ],
+    "symbol": "[",
+    "looks_like": "chainmail_vest",
+    "color": "light_gray",
+    "warmth": 8,
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper" ],
+        "coverage": 95,
+        "encumbrance": 10
+      }
+    ]
+  },
+  {
     "id": "med_hauberk",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "med_ mail hauberk" },
+    "name": { "str": "med_ mail hauberk", "str_pl": "med_ mail hauberks" },
     "description": "A knee-length coat of riveted chainmail rings, reaching from the shoulders to the thighs with long sleeves and a split skirt for riding.  The quintessential armor of the professional medieval soldier — nearly impervious to slashing cuts.  However, a bodkin arrow or spear thrust can burst individual rings, and blunt force transmits through the links with ease.  Always worn over a gambeson.",
-    "weight": "12000 g",
-    "volume": "7 L",
+    "weight": "13500 g",
+    "volume": "8 L",
     "price": 35000,
     "price_postapoc": 4500,
+    "to_hit": -2,
     "material": [ "lc_steel_chain", "leather" ],
     "symbol": "[",
     "looks_like": "chainmail_vest",
     "color": "light_gray",
-    "warmth": 10,
+    "warmth": 12,
     "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
     "armor": [
       {
@@ -23,9 +52,111 @@
         ],
         "covers": [ "torso" ],
         "specifically_covers": [ "torso_upper", "torso_lower" ],
-        "coverage": 100,
+        "coverage": 98,
         "encumbrance": 18
+      },
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 80, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_upper_l", "arm_upper_r", "arm_lower_l", "arm_lower_r" ],
+        "coverage": 95,
+        "encumbrance": 12
+      },
+      {
+        "material": [
+          { "type": "lc_steel_chain", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 80, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "coverage": 90,
+        "encumbrance": 14
       }
-    ]
+    ],
+    "melee_damage": { "bash": 2 }
+  },
+  {
+    "id": "med_heavy_hauberk",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ heavy mail hauberk", "str_pl": "med_ heavy mail hauberks" },
+    "description": "A massive, exceptionally robust knee-length chainmail coat forged from tempered medium carbon steel links.  Features double-layered ring weaving (double mail) over the chest and underarms to maximize defense against bodkin arrows and thrusts.  Offers peerless protection but drains the wearer's stamina quickly.",
+    "weight": "18000 g",
+    "volume": "9 L",
+    "price": 55000,
+    "price_postapoc": 7200,
+    "to_hit": -3,
+    "material": [ "mc_steel_chain", "leather" ],
+    "symbol": "[",
+    "looks_like": "chainmail_vest",
+    "color": "light_gray",
+    "warmth": 15,
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel_chain", "covered_by_mat": 100, "thickness": 2.4 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.5 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 98,
+        "encumbrance": 22
+      },
+      {
+        "material": [
+          { "type": "mc_steel_chain", "covered_by_mat": 100, "thickness": 2.4 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "arm_l", "arm_r" ],
+        "specifically_covers": [ "arm_upper_l", "arm_upper_r", "arm_lower_l", "arm_lower_r" ],
+        "coverage": 98,
+        "encumbrance": 15
+      },
+      {
+        "material": [
+          { "type": "mc_steel_chain", "covered_by_mat": 100, "thickness": 2.4 },
+          { "type": "leather", "covered_by_mat": 85, "thickness": 0.5 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r" ],
+        "coverage": 95,
+        "encumbrance": 16
+      }
+    ],
+    "melee_damage": { "bash": 3 }
+  },
+  {
+    "id": "med_rust_mail",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str": "med_ rusty mail hauberk", "str_pl": "med_ rusty mail hauberks" },
+    "description": "A crude, poorly maintained chainmail hauberk scavenged from a battlefield.  Many of its cheap carbon steel rings are rusted or coming loose, making it heavy, stiff, and prone to breaking.  Offers mediocre protection but is highly affordable for desperate outlaws.",
+    "weight": "8000 g",
+    "volume": "5 L",
+    "price": 9000,
+    "price_postapoc": 1200,
+    "to_hit": -1,
+    "material": [ "budget_steel_chain" ],
+    "symbol": "[",
+    "looks_like": "chainmail_vest",
+    "color": "light_gray",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "budget_steel_chain", "covered_by_mat": 100, "thickness": 1.2 }
+        ],
+        "covers": [ "torso" ],
+        "specifically_covers": [ "torso_upper", "torso_lower" ],
+        "coverage": 90,
+        "encumbrance": 12
+      }
+    ],
+    "melee_damage": { "bash": 1 }
   }
 ]

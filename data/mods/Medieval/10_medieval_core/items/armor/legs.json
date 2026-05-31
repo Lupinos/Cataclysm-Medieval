@@ -3,10 +3,10 @@
     "id": "med_mail_chausses",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "med_ mail chausses" },
+    "name": { "str_sp": "med_ mail chausses" },
     "description": "A pair of riveted chainmail leggings that cover both legs from thigh to ankle.  Worn by knights and heavy cavalry over padded chausses, mail chausses provide excellent protection against slashing cuts but are vulnerable to piercing weapons.",
-    "weight": "3500 g",
-    "volume": "3000 ml",
+    "weight": "6000 g",
+    "volume": "4500 ml",
     "price": 32000,
     "price_postapoc": 4000,
     "material": [ "lc_steel_chain", "leather" ],
@@ -14,7 +14,7 @@
     "looks_like": "chainmail_leg",
     "color": "light_gray",
     "warmth": 8,
-    "flags": [ "VARSIZE", "OUTER", "FIT" ],
+    "flags": [ "VARSIZE", "OUTER", "STURDY", "FIT" ],
     "armor": [
       {
         "material": [
@@ -111,6 +111,35 @@
         "specifically_covers": [ "leg_lower_l", "leg_lower_r" ],
         "coverage": 90,
         "encumbrance": 6
+      }
+    ]
+  },
+  {
+    "id": "med_brigandine_legs",
+    "type": "ARMOR",
+    "category": "armor",
+    "name": { "str_sp": "med_ brigandine legs" },
+    "description": "A pair of flexible leg protectors consisting of small steel plates riveted inside strong leather trousers.  Designed to defend both the thighs and shins while retaining the natural dexterity needed for running and climbing.",
+    "weight": "4500 g",
+    "volume": "3500 ml",
+    "price": 26000,
+    "price_postapoc": 3200,
+    "material": [ "mc_steel", "leather" ],
+    "symbol": "[",
+    "looks_like": "legguard_metal",
+    "color": "red",
+    "warmth": 10,
+    "flags": [ "VARSIZE", "STURDY", "OUTER", "FIT" ],
+    "armor": [
+      {
+        "material": [
+          { "type": "mc_steel", "covered_by_mat": 100, "thickness": 1.2 },
+          { "type": "leather", "covered_by_mat": 90, "thickness": 0.8 }
+        ],
+        "covers": [ "leg_l", "leg_r" ],
+        "specifically_covers": [ "leg_upper_l", "leg_upper_r", "leg_lower_l", "leg_lower_r", "leg_knee_l", "leg_knee_r" ],
+        "coverage": 90,
+        "encumbrance": 12
       }
     ]
   }

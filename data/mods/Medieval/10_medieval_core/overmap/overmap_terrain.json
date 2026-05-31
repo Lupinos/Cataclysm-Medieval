@@ -1,0 +1,47 @@
+[
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_farmstead_t5" ],
+    "name": "abandoned farmstead",
+    "sym": "+",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_manor_house_t3" ],
+    "name": "manor house",
+    "sym": "+",
+    "color": "light_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_parish_church_t3" ],
+    "name": "parish church",
+    "sym": "+",
+    "color": "light_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_smithy_t3" ],
+    "name": "village smithy",
+    "sym": "+",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FABRICATION" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_mill_t3" ],
+    "name": "mill",
+    "sym": "+",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ]
+  }
+]

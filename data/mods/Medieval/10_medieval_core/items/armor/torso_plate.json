@@ -3,7 +3,7 @@
     "id": "med_cuirass",
     "type": "ARMOR",
     "category": "armor",
-    "name": { "str": "med_ cuirass" },
+    "name": { "str": "med_ cuirass", "str_pl": "med_ cuirasses" },
     "description": "A solid steel breastplate paired with a matching backplate, forged to fit the wearer's body and secured with leather straps at the shoulders and sides.  The culmination of medieval torso protection — a direct hit from a lance or sword will glance off the smooth, curved surface.  Worn only by knights and lords who can afford the work of a skilled armorer, the cuirass represents the pinnacle of personal protection in the late 14th century.",
     "weight": "7000 g",
     "volume": "4 L",

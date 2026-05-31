@@ -56,6 +56,7 @@ docs/
 - 文件名应简洁有意义，如 `json_data_system.md`、`medieval_city_design.md`、`modern_content_removal.md` 等。
 - 每个文档文件内部应有清晰的结构：模块概述、关键类、核心机制、依赖关系等。
 - 修改每个文档时，可以修改错误的、已过时的信息
+- Medieval本体在data\mods\Medieval
 
 ## 索引维护
 
@@ -66,12 +67,12 @@ docs/
 
 ## 回合结束自检清单
 
-每轮对话结束前，必须自检以下三项，未完成的立即补做：
+每轮对话结束前，必须自检以下几项，未完成的立即补做：
 
 - [ ] **vanilla/**：本轮是否调研了 CDDA 源码/JSON？如有新发现，是否已写入 `docs/vanilla/`？
 - [ ] **process/**：本轮是否完成/推进了中世纪改造任务？是否已更新 `docs/process/` 对应文档的进度？
 - [ ] **doc_index**：本轮是否新建/修改了 `docs/` 下任何文件？是否已同步 `.qoder/rules/doc_index.md`？
-- [ ] **design/**：确保本轮没有在用户未要求的情况下自行创建策划案。
+- [ ] **skill/**：本轮是否发现了skill相关的问题，可以改进的部分写进去。
 
 ---
 

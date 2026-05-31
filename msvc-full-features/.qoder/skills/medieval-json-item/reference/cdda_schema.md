@@ -1,6 +1,6 @@
-# CDDA JSON 类型速查
+# CDDA Item JSON 类型速查
 
-> 供 medieval-json Skill 在生成时参考。记录各类型的关键字段和常见陷阱。
+> 供 medieval-json-item Skill 在生成时参考。记录各 item 类型的关键字段和常见陷阱。
 
 ---
 
@@ -109,48 +109,6 @@ brown, dark_gray, light_gray, white, red, green, blue, yellow
   "use_action": { "type": "repair_item" }
 }
 ```
-
----
-
-## recipe
-
-```json
-{
-  "type": "recipe",
-  "activity_level": "LIGHT_EXERCISE",
-  "result": "medieval_gambeson",
-  "category": "CC_ARMOR",
-  "subcategory": "CSC_ARMOR_SUIT",
-  "skill_used": "tailor",
-  "difficulty": 4,
-  "time": "8 h",
-  "autolearn": true,
-  "qualities": [{"id": "CUT", "level": 1}, {"id": "SEW", "level": 1}],
-  "tools": [[["needle_curved", -1]]],
-  "components": [[["rag", 40], ["sheet_cotton", 20]]]
-}
-```
-
----
-
-## item_group (刷新组)
-
-```json
-{
-  "type": "item_group",
-  "id": "medieval_armor_light",
-  "subtype": "distribution",
-  "entries": [
-    { "item": "medieval_gambeson", "prob": 60 },
-    { "item": "medieval_leather_armor", "prob": 40 }
-  ]
-}
-```
-
-### 常见 subtype
-
-- `distribution` — 每次只选一个（A 或 B 或 C）
-- `collection` — 可能全给
 
 ---
 

@@ -1347,6 +1347,20 @@ static void roll_melee_damage_internal( const Character &u, const damage_type_id
 
     }
 
+    // Medieval: weapon weight combined with strength contributes to armor penetration.
+    // Heavier weapons swung by stronger users generate more force to crush or pierce armor.
+    if( !unarmed && !weap.is_null() ) {
+        const float weapon_mass_kg = weap.weight() / 1_kilogram;
+        const float str_factor = u.get_arm_str() / 10.0f;
+        if( dt == damage_bash ) {
+            // Blunt weapons benefit most from weight: a heavy mace + strong arm = crush armor
+            arpen += static_cast<int>( weapon_mass_kg * str_factor );
+        } else if( dt == damage_stab || dt == damage_cut ) {
+            // Edged weapons benefit less from weight alone; blade geometry matters more
+            arpen += static_cast<int>( weapon_mass_kg * str_factor * 0.5f );
+        }
+    }
+
     /** @ARM_STR increases bashing damage */
     float stat_bonus = u.bonus_damage( !average );
     stat_bonus += u.mabuff_damage_bonus( dt );
