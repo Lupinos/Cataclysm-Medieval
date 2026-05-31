@@ -97,6 +97,7 @@ alwaysApply: true
 | [medieval_weapons.md](../docs/process/medieval_weapons.md) | 武器体系实现进度：剑系6+斧系4+锤系5，共15件近战武器，steel单材质等级 |
 | [medieval_settlement.md](../docs/process/medieval_settlement.md) | 聚落与地图实现进度：T5农舍测试mapgen、palette体系、overmap_terrain定义 |
 | [medieval_combat_rebalance.md](../docs/process/medieval_combat_rebalance.md) | 战斗重平衡进度：STR×武器重量破甲（C++ melee.cpp）、待考虑的后续改造项 |
+| [medieval_i18n_workflow.md](../docs/process/medieval_i18n_workflow.md) | 独立本地化工作流：基于规范 PO 的 0 硬编码编译与 AI 翻译增补流程 |
 
 ## 项目 Skills (.qoder/skills/)
 
@@ -109,6 +110,7 @@ alwaysApply: true
 | medieval-json-check | C++ 级 JSON 语义验证（--check-mods），捕获语法/引用/一致性错误 |
 | medieval-json-mapgen | Mapgen 数据生成（overmap_terrain + palette + 24x24 ASCII mapgen），含地形家具参考表 |
 | medieval-json-itemgroup | item_group JSON 生成与增补：9维分类体系、需求驱动创建、item→group归属查询、跨skill公共服务 |
+| medieval-i18n | 独立的本地化自动编译工作流：支持 0 硬编码动态汉化与 PO 唯一源合并编译流程 |
 
 ## 项目工程文档 (repowiki/)
 

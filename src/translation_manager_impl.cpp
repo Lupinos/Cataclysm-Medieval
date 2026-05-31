@@ -3,6 +3,7 @@
 #include <cstring>
 
 #include "cached_options.h"
+#include "cata_path.h"
 #include "debug.h"
 #include "filesystem.h"
 #include "path_info.h"
@@ -59,6 +60,13 @@ void TranslationManager::Impl::ScanTranslationDocuments()
         DebugLog( D_INFO, DC_ALL ) << "[i18n] Scanning mod translations from " << PATH_INFO::user_moddir();
         for( const std::string & dir
              : get_files_from_path( "LC_MESSAGES", PATH_INFO::user_moddir(), true ) ) {
+            mo_dirs.emplace_back( dir, ".mo" );
+        }
+    }
+    if( dir_exist( PATH_INFO::moddir().generic_u8string() ) ) {
+        DebugLog( D_INFO, DC_ALL ) << "[i18n] Scanning data mod translations from " << PATH_INFO::moddir().generic_u8string();
+        for( const std::string & dir
+             : get_files_from_path( "LC_MESSAGES", PATH_INFO::moddir().generic_u8string(), true ) ) {
             mo_dirs.emplace_back( dir, ".mo" );
         }
     }

@@ -1,0 +1,2216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Medieval Mod 1.0\n"
+"POT-Creation-Date: 2026-05-31 21:23+0800\n"
+"PO-Revision-Date: 2026-05-31 21:23+0800\n"
+"Last-Translator: None\n"
+"Language-Team: None\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. ~ MOD name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\modinfo.json
+msgid "Medieval"
+msgstr ""
+
+#. ~ Description of MOD "Medieval"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\modinfo.json
+msgid "A total conversion mod transforming Cataclysm into a medieval fantasy world.  Strips away all modern technology, firearms, electronics, and urban infrastructure, replacing them with medieval-era equivalents."
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "boating_license"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "boating_license"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "driving_license"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "driving_license"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "hobby_heli_pilot"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "hobby_heli_pilot"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "car_fan"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "car_fan"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "racing"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "racing"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "car_rebuilding"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "car_rebuilding"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "computer_literate"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "computer_literate"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "high_school_graduate"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "high_school_graduate"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "mundane_survival"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "mundane_survival"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "vid_games"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "vid_games"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "amateur_electronics"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "amateur_electronics"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "ham_radio_operator"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "ham_radio_operator"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "paintball"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "paintball"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "plinking"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "plinking"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "skeet_shooting"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "skeet_shooting"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "shooter_beginner"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "shooter_beginner"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "shooter"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "shooter"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "trap_shooting"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "trap_shooting"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "handloading"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "handloading"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "gunsmithing"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "gunsmithing"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "baseball_beginner"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "baseball_beginner"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "baseball"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "baseball"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "baseball_pitcher"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "baseball_pitcher"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "baseball_expert"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "baseball_expert"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "basketball_beginner"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "basketball_beginner"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "basketball"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "basketball"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "basketball_expert"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "basketball_expert"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "football_beginner"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "football_beginner"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "football"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "football"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "football_expert"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "football_expert"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "golfing"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "golfing"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "skating"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "skating"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "roller_derby"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "roller_derby"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "hockey"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "hockey"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "cyclist_beginner"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "cyclist_beginner"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "cyclist_intermediate"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "cyclist_intermediate"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "cyclist_expert"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "cyclist_expert"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "home_improvement"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "home_improvement"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "diy_crafts"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "diy_crafts"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_male"
+msgid "diy_crafts_expert"
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\hobbies.json
+msgctxt "profession_female"
+msgid "diy_crafts_expert"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\road_override.json
+msgid "dirt road"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\road_override.json
+msgid "village crossroad"
+msgstr ""
+
+#. ~ Signage in mapgen palette
+#: e:\Cataclysm-Medieval\data\mods\Medieval\00_cleanup\road_palette_override.json
+msgid "<statue_plaque>"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Linen"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Quilted Linen"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Cuir Bouilli"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Straw"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Oilcloth"
+msgstr ""
+
+#. ~ Name of material
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\materials.json
+msgid "Test Localization Material"
+msgstr ""
+
+#. ~ Profession name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\professions.json
+msgctxt "profession_male"
+msgid "Naked Wanderer"
+msgstr ""
+
+#. ~ Description of profession "Naked Wanderer" for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\professions.json
+msgctxt "prof_desc_male"
+msgid "You have nothing.  No skills, no tools, no weapons — not even the faintest memory of how you got here.  In this harsh medieval wilderness, your bare hands and wits are all you possess."
+msgstr ""
+
+#. ~ Profession name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\professions.json
+msgctxt "profession_female"
+msgid "Naked Wanderer"
+msgstr ""
+
+#. ~ Description of profession "Naked Wanderer" for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\professions.json
+msgctxt "prof_desc_female"
+msgid "You have nothing.  No skills, no tools, no weapons — not even the faintest memory of how you got here.  In this harsh medieval wilderness, your bare hands and wits are all you possess."
+msgstr ""
+
+#. ~ Scenario name for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\scenarios.json
+msgctxt "scenario_male"
+msgid "Medieval Awakening"
+msgstr ""
+
+#. ~ Scenario name for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\scenarios.json
+msgctxt "scenario_female"
+msgid "Medieval Awakening"
+msgstr ""
+
+#. ~ Description of scenario "Medieval Awakening" for male
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\scenarios.json
+msgctxt "scen_desc_male"
+msgid "You awaken in an unfamiliar wilderness, with nothing but the clothes on your back.  The world around you is unfamiliar — medieval, untamed, and full of danger.  Every tool, every scrap of food, every weapon must be found or made by your own hands."
+msgstr ""
+
+#. ~ Description of scenario "Medieval Awakening" for female
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\scenarios.json
+msgctxt "scen_desc_female"
+msgid "You awaken in an unfamiliar wilderness, with nothing but the clothes on your back.  The world around you is unfamiliar — medieval, untamed, and full of danger.  Every tool, every scrap of food, every weapon must be found or made by your own hands."
+msgstr ""
+
+#. ~ Starting location of scenario "Medieval Awakening"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\scenarios.json
+msgctxt "start_name"
+msgid "Wilderness"
+msgstr ""
+
+#. ~ Name of starting location "sloc_field"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\start_locations.json
+msgid "Field"
+msgstr ""
+
+#. ~ Name of starting location "sloc_forest"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\start_locations.json
+msgid "Middle of Nowhere"
+msgstr ""
+
+#. ~ Name of starting location "sloc_river"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\start_locations.json
+msgid "River"
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\accessories.json
+msgid "med_ leather belt"
+msgid_plural "med_ leather belts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather belt"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\accessories.json
+msgid "A sturdy leather belt with a simple iron buckle, worn at the waist.  The belt is the medieval commoner's load-bearing system — tools, pouches, knives, and anything else you carry all hang from it.  A belt in good condition is as essential as a good pair of boots."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\accessories.json
+msgid "med_ rope belt"
+msgid_plural "med_ rope belts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ rope belt"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\accessories.json
+msgid "A simple length of hempen rope tied around the waist — the belt of someone who cannot afford leather.  It holds your braies up and gives you something to tuck small items behind, though it is nowhere near as secure or comfortable as a proper leather belt."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "med_ spaulder"
+msgid_plural "med_ spaulders"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ spaulder"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "A pair of small overlapping steel plates that cover the shoulders.  Worn over a gambeson or mail hauberk, these are the most basic plate armor pieces for the arms."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "med_ rerebrace"
+msgid_plural "med_ rerebraces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ rerebrace"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "A pair of shaped steel plates that protect the upper arms from shoulder to elbow.  Worn together with a couter and vambrace for full arm protection."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "med_ couter"
+msgid_plural "med_ couters"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ couter"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "A pair of articulated steel plates that protect the elbows.  The couter bridges the gap between the rerebrace and vambrace, allowing the arm to bend while keeping the joint covered."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "med_ vambrace"
+msgid_plural "med_ vambraces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ vambrace"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "A pair of formed steel plates that protect the forearms from elbow to wrist.  Vambraces are among the earliest plate armor pieces adopted by medieval warriors, offering vital protection to the sword arm."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "med_ brigandine arms"
+msgid_plural "med_ brigandine arms"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ brigandine arms"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\arms.json
+msgid "A pair of flexible arm protectors consisting of small overlapping steel plates riveted to the inside of protective leather or velvet sleeves.  Offers excellent flexibility and good defense against cuts and bites, keeping your weapon arm active."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "med_ wool cloak"
+msgid_plural "med_ wool cloaks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool cloak"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "A heavy, knee-length cloak made from thick felted wool, fastened at the throat with a simple brooch or toggle.  The universal outer garment for travel, work, and battle — a wool cloak traps body heat in winter, sheds light rain, and can double as a blanket when you bed down for the night.  Every medieval traveler owns one or freezes without it."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "med_ oilcloth cloak"
+msgid_plural "med_ oilcloth cloaks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ oilcloth cloak"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "A cloak made from stout linen impregnated with boiled linseed oil until it takes on a dark, semi-glossy sheen.  Oilcloth is the secret weapon of the medieval traveler caught in foul weather — it sheds rain like a duck's back and blocks the wind, though it is stiff, heavy, and smells faintly of linseed.  Hunters, sailors, and anyone who must travel through the wet swear by it."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "med_ wool shawl"
+msgid_plural "med_ wool shawls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool shawl"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "A rectangular length of soft wool cloth draped over the shoulders — the portable warmth solution of people who cannot afford a full cloak.  Lighter and easier to wear while working than a cloak, though it leaves the arms and lower body exposed."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "med_ fur cloak"
+msgid_plural "med_ fur cloaks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ fur cloak"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\cloaks.json
+msgid "A heavy cloak made from the pelt of a large animal, worn with the fur turned inward for maximum warmth.  Fur cloaks are the ultimate cold-weather gear for those who live on the northern fringes of the medieval world — a hunter alone in the winter woods or a lord traveling through snowbound passes.  Incredibly warm, but heavy and prone to shedding when wet."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "med_ leather boots"
+msgid_plural "med_ leather boots"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather boots"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "A sturdy pair of knee-length leather boots with thick soles, worn by all classes of medieval society.  While not military-grade foot armor, they keep the mud out and offer decent protection against the rough ground."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "med_ mail sabatons"
+msgid_plural "med_ mail sabatons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail sabatons"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "A pair of chainmail foot coverings worn over boots, protecting the top of the foot from slashing cuts.  The mail drapes from ankle to toe, laced underneath to keep it in place.  Worn by knights and men-at-arms who want foot protection without the crushing weight of plate sabatons."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "med_ plate sabatons"
+msgid_plural "med_ plate sabatons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ plate sabatons"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet.json
+msgid "A pair of articulated steel foot plates worn over armored boots.  Overlapping lames cover the top of the foot from ankle to toe, while the heel is enclosed in a solid steel cup.  Part of a knight's full harness — you will not be kicking or flexing these, but nothing is getting through them either."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "med_ linen footwraps"
+msgid_plural "med_ linen footwraps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen footwraps"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "A pair of long linen strips wound tightly around the feet, worn inside turnshoes or even alone.  The desperate man's sock — footwraps cost almost nothing and can be washed and re-used, but offer little protection from the cold, the wet, or the sharp stone underfoot.  When you have nothing else, these are what you have."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "med_ turnshoes"
+msgid_plural "med_ turnshoes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ turnshoes"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "A pair of simple leather shoes made by stitching the upper to a thin leather sole, then turning the whole thing inside-out so the seams sit on the inside.  The standard footwear of medieval peasants — soft enough to feel the ground beneath your feet, which is both a blessing for stealth and a curse when you step on a sharp rock."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "med_ ankle boots"
+msgid_plural "med_ ankle boots"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ ankle boots"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "A pair of sturdy leather boots that rise above the ankle, with thick doubled soles and reinforced stitching.  The step up from turnshoes — ankle boots provide better support for long walks and some protection against the wet and the mud.  The go-to footwear of craftsmen, hunters, and any commoner who can afford better than the bare minimum."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "med_ pattens"
+msgid_plural "med_ pattens"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ pattens"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\feet_cloth.json
+msgid "A pair of wooden overshoes worn over regular footwear, secured by leather straps across the instep.  Pattens lift your feet an inch above the mud, snow, and filth of medieval streets — the difference between wet feet and dry feet in foul weather.  They clack loudly on stone and make you walk with a slightly awkward gait, but that is a small price to pay."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "med_ leather gloves"
+msgid_plural "med_ leather gloves"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather gloves"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "A pair of simple stitched leather gloves.  Worn by peasants and soldiers alike to keep their hands warm and protected from minor scrapes."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "med_ mail mittens"
+msgid_plural "med_ mail mittens"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail mittens"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "A pair of mittens woven from riveted chainmail rings, lined with thin leather on the inside.  They protect the hands from slashing cuts while leaving enough flexibility to grip a weapon, though a well-aimed thrust will find the gaps between rings."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "med_ hourglass gauntlets"
+msgid_plural "med_ hourglass gauntlets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ hourglass gauntlets"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "A pair of gauntlets with an hourglass-shaped cuff, the signature hand armor of the late 14th century.  Articulated steel plates cover the back of the hand and wrist, while the palm and fingers are protected by overlapping steel scales stitched to a leather glove.  They offer excellent protection without completely sacrificing dexterity."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "med_ plate gauntlets"
+msgid_plural "med_ plate gauntlets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ plate gauntlets"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands.json
+msgid "A pair of full plate steel gauntlets with articulated lames covering every finger joint from knuckle to tip.  The cuff extends well past the wrist, and the palm is protected by a solid steel plate.  Worn only by the wealthiest knights and lords, these represent the pinnacle of hand armor for the late 14th to early 15th century."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands_cloth.json
+msgid "med_ wool mittens"
+msgid_plural "med_ wool mittens"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool mittens"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands_cloth.json
+msgid "A pair of thick, fuzzy mittens knitted from unrefined wool.  Mittens keep the fingers together so they can share warmth, making them far more effective against the cold than fingered gloves — though you will struggle to do anything requiring individual finger dexterity while wearing them."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands_cloth.json
+msgid "med_ linen wristwraps"
+msgid_plural "med_ linen wristwraps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen wristwraps"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\hands_cloth.json
+msgid "Simple linen bands wound around the wrists, secured by tucking the loose end under the last wrap.  Worn by craftsmen to keep sweat from dripping onto their work, and by archers to protect the bow-arm wrist from the string snap.  Almost no protective value, but better than nothing when the forge is hot."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ linen hood"
+msgid_plural "med_ linen hoods"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen hood"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A simple hood made from undyed linen, long enough to drape over the neck and shoulders.  The most basic head covering worn by peasants across medieval Europe."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ thick leather cap"
+msgid_plural "med_ thick leather caps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ thick leather cap"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A sturdy cap of hardened leather, covering the top of the head.  Worn by militia and light infantry who cannot afford metal helmets."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ kettle hat"
+msgid_plural "med_ kettle hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ kettle hat"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A simple iron helmet with a wide brim, resembling a metal hat.  Popular among infantry and archers for its cheap construction and decent protection from downward blows."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ bascinet"
+msgid_plural "med_ bascinets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bascinet"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A pointed steel helmet with a conical crown, offering good protection to the top and sides of the head while leaving the face open.  The quintessential soldier's helm of the late 14th century."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ bascinet with hounskull visor"
+msgid_plural "med_ bascinets with hounskull visors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bascinet with hounskull visor"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A pointed steel bascinet fitted with a protruding 'pig-faced' visor that covers the entire face.  The snout-like shape deflects blows and allows breathing through small holes.  The iconic helmet of knights and men-at-arms in the late 14th century."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ great helm"
+msgid_plural "med_ great helms"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ great helm"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A massive cylindrical steel helmet that encloses the entire head, with narrow eye slits and breathing holes punched through the lower face.  Though its heyday has passed, some knights still wear this imposing helm over a smaller bascinet for maximum protection."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "med_ sallet"
+msgid_plural "med_ sallets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ sallet"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head.json
+msgid "A smooth steel helmet that covers the top and back of the head, extending downward to shield the neck.  Lighter and more streamlined than the older great helm, the sallet is gaining favor among knights as the 15th century approaches."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ linen coif"
+msgid_plural "med_ linen coifs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen coif"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A close-fitting cap made from undyed linen, covering the top of the head and ears.  The most basic medieval head covering, worn by all classes to keep hair clean and provide a modest layer of warmth."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ straw hat"
+msgid_plural "med_ straw hats"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ straw hat"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A wide-brimmed hat woven from dried straw, offering shade from the sun and a little shelter from light rain.  The universal headwear of peasants working the fields during the summer months."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ felt cap"
+msgid_plural "med_ felt caps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ felt cap"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A simple cap made from thick, felted wool that covers the crown of the head.  Worn by common folk of all stations to ward off the chill — the humble wool cap is as medieval as the sword."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ wool hood"
+msgid_plural "med_ wool hoods"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool hood"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A deep woolen hood that drapes over the head, neck, and shoulders, shielding the wearer from wind, cold, and rain.  The single most important cold-weather garment a medieval commoner owns — worn by peasants and soldiers alike beneath helmets or on its own."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ chaperon"
+msgid_plural "med_ chaperons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ chaperon"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A fashionable woolen hood with an extended tail that can be draped over one shoulder or wrapped around the neck like a scarf.  Popular among townsfolk and the merchant class — warmer and more stylish than the common wool hood, though still thoroughly practical."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "med_ leather coif"
+msgid_plural "med_ leather coifs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather coif"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\head_cloth.json
+msgid "A fitted cap of thin, supple leather that covers the top of the head and ears.  Offers a modicum of protection against scratches and light blows — favored by hunters, scouts, and anyone who expects to push through thick brush."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "med_ mail chausses"
+msgid_plural "med_ mail chausses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail chausses"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "A pair of riveted chainmail leggings that cover both legs from thigh to ankle.  Worn by knights and heavy cavalry over padded chausses, mail chausses provide excellent protection against slashing cuts but are vulnerable to piercing weapons."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "med_ cuisse"
+msgid_plural "med_ cuisses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ cuisse"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "A pair of shaped steel plates that protect the thighs.  Cuisses are the upper part of a full plate leg harness, strapped over mail chausses for layered protection."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "med_ poleyn"
+msgid_plural "med_ poleyns"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ poleyn"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "A pair of articulated steel plates that protect the knees.  The poleyn connects the cuisse above with the greave below, with a fan-shaped side wing that shields the back of the knee joint."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "med_ greave"
+msgid_plural "med_ greaves"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ greave"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "A pair of steel plates shaped to protect the lower legs from knee to ankle.  Greaves shield the shins—a common target in foot combat—and are among the most frequently worn pieces of plate armor on the battlefield."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "med_ brigandine legs"
+msgid_plural "med_ brigandine legs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ brigandine legs"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs.json
+msgid "A pair of flexible leg protectors consisting of small steel plates riveted inside strong leather trousers.  Designed to defend both the thighs and shins while retaining the natural dexterity needed for running and climbing."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "med_ wool hose"
+msgid_plural "med_ wool hose"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool hose"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "A pair of snug-fitting woolen stockings that cover both legs from the waist down to the toes, worn as a matched pair tied to the doublet or braies above.  These are the universal leg coverings of the medieval world — every peasant and lord alike wears hose, differing only in the quality of the wool and the cut."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "med_ split hose"
+msgid_plural "med_ split hose"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ split hose"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "A pair of separate woolen stockings, each covering one leg from thigh to toe, individually laced to the braies above.  This is the earlier and simpler form of hose — the legs are not joined at the crotch, leaving the braies exposed between them.  Practical for a peasant, but lacking the modesty of the joined hose."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "med_ joined hose"
+msgid_plural "med_ joined hose"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ joined hose"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "A pair of woolen hose joined together at the waist, forming a single garment that covers both legs fully from waist to toe.  The mark of a man who can afford a tailor — the joined hose offers better coverage and a trimmer silhouette than the separate split hose, though it takes longer to put on and costs more."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "med_ leg wraps"
+msgid_plural "med_ leg wraps"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leg wraps"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\legs_cloth.json
+msgid "Strips of woolen cloth wound tightly around the lower legs from ankle to knee, held in place by their own tension and the occasional pin or strap.  Wearing leg wraps — or 'winingas' in the old tongue — adds welcome warmth and keeps brambles and brush from snagging the hose underneath.  A common sight on hunters and peasants working rough ground."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "med_ mail aventail"
+msgid_plural "med_ mail aventails"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail aventail"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "A curtain of riveted chainmail rings that hangs from the bottom edge of a bascinet, protecting the neck and upper shoulders.  Worn by knights and men-at-arms to defend the vulnerable gap between helmet and body armor."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "med_ leather standard"
+msgid_plural "med_ leather standards"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather standard"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "A thick collar of hardened leather worn around the neck to protect against slashing cuts.  A cheap alternative to metal gorgets, popular among militia and common soldiers who cannot afford full plate harness."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "med_ plate gorget"
+msgid_plural "med_ plate gorgets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ plate gorget"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "A shaped steel plate that wraps around the throat and rests on the collarbones, closing the vulnerable gap between helmet and breastplate.  A vital piece of a knight's full harness that protects the most exposed junction in the armor."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "med_ plate bevor"
+msgid_plural "med_ plate bevors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ plate bevor"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\neck.json
+msgid "A shaped steel plate that covers the chin, lower cheeks, and throat.  Worn together with a sallet helmet, this combination provides full head and face protection that rivals a great helm while offering far better vision and ventilation.  The defining knightly gear of the mid-15th century."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "abstract_coat_of_plates_base"
+msgid_plural "abstract_coat_of_plates_bases"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "abstract_coat_of_plates_base"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "Abstract base class for coats of plates."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "abstract_brigandine_base"
+msgid_plural "abstract_brigandine_bases"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "abstract_brigandine_base"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "Abstract base class for brigandines."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ cuir-bouilli coat of plates"
+msgid_plural "med_ cuir-bouilli coats of plates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ cuir-bouilli coat of plates"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A transitional coat of plates utilizing large curved scales of hardened leather instead of metal, riveted inside a heavy leather jacket.  Affords decent protection against cuts and thrusts, though it offers poor defense against heavy impacts and is highly vulnerable to fire."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ Visby coat of plates"
+msgid_plural "med_ Visby coats of plates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ Visby coat of plates"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A heavy, classic 14th-century torso protection reconstructed from the Wisby battlefield mass graves.  Consists of large overlapping iron plates riveted vertically and horizontally inside a strong leather vest.  Imparts solid protection against cuts and arrows, but its rigid plates restrict movement significantly."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ heavy coat of plates"
+msgid_plural "med_ heavy coats of plates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ heavy coat of plates"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "An exceptionally heavy defensive garment designed for knightly shock combat.  It houses thick, massive steel plates over the chest, including an integrated lance rest on the right side to steady a lance on horseback.  Offers peerless protection against front impacts, though it is incredibly fatiguing to wear."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ commoner's brigandine"
+msgid_plural "med_ commoner's brigandines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ commoner's brigandine"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A basic, rugged torso defense worn by city guards and seasoned mercenary foot soldiers.  Features rough budget steel scales riveted inside a heavy canvas or cowhide shell, leaving the rivet heads exposed on the exterior.  Provides durable protection without the expensive decorative finish of knightly harnesses."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ archer's brigandine"
+msgid_plural "med_ archer's brigandines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ archer's brigandine"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A lightened torso defense designed for archers and skirmishers.  Features medium carbon steel scales protecting the vitals of the chest, while the shoulders and sides are left open or backed only by light leather straps.  This grants superior breathability and maximum range of motion for drawing a warbow."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ corrazina"
+msgid_plural "med_ corrazinas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ corrazina"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A highly protective, Italian-style transitional armor popular in the late 14th century.  Employs a combination of small, flexible steel plates along the waist and flanks, and larger, thick breastplate plates over the torso.  Superb front thrust protection while retaining moderate waist flexibility."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ velvet brigandine"
+msgid_plural "med_ velvet brigandines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ velvet brigandine"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A lavish, high-status armor worn by wealthy knights.  Consists of hundreds of meticulously overlapping steel scales, tin-plated to resist rust, and riveted securely to the inside of a rich velvet outer shell.  The gilded rivet heads form beautiful patterns on the outside.  Combines stunning protection, high flexibility, and peerless prestige."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ Chalcis brigandine"
+msgid_plural "med_ Chalcis brigandines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ Chalcis brigandine"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "An advanced hybrid torso protection based on archaeological finds from Chalcis.  Integrates a solid steel breastplate split into two large plates over the upper chest for rigid defense, while the waist, lower abdomen and flanks are shielded by flexible overlapping scales.  The peak of transitional torso safety."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "med_ jack of plates"
+msgid_plural "med_ jacks of plates"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ jack of plates"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_brigandine.json
+msgid "A commoner's defense constructed by securing small, overlapping metal plates with cord or twine stitched directly through pre-drilled holes between layers of heavy linen canvas.  While bulky and somewhat rigid, the thick linen-and-steel sandwich absorbs blunt trauma remarkably well."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "med_ linen shirt"
+msgid_plural "med_ linen shirts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen shirt"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "A simple long-sleeved shirt made from undyed linen, reaching to the hips.  Worn directly against the skin by all classes of medieval society — the universal first layer beneath any armor."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "med_ linen braies"
+msgid_plural "med_ linen braies"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen braies"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "A pair of loose-fitting linen undergarments that sit at the waist and reach to mid-thigh, secured with a simple drawstring.  The standard medieval undergarment worn by all classes."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "med_ linen chemise"
+msgid_plural "med_ linen chemises"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen chemise"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_cloth.json
+msgid "A long, loose-fitting linen undergarment that falls from the shoulders to the thighs — the standard first layer for medieval women and the longer counterpart to the linen shirt.  Worn against the skin to absorb sweat and prevent outer garments from chafing."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_gambeson.json
+msgid "med_ gambeson"
+msgid_plural "med_ gambesons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ gambeson"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_gambeson.json
+msgid "A thick padded jacket made from over a dozen layers of quilted linen, stuffed with raw fiber and stitched in vertical channels.  The most fundamental independent armor of the medieval age — worn by everyone from peasant levies to knights as a foundation layer beneath mail.  The dense padding absorbs blunt impacts remarkably well, though a powerful arrow will punch through."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_leather.json
+msgid "med_ leather armor"
+msgid_plural "med_ leather armors"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather armor"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_leather.json
+msgid "A vest-like armor made from thick, oil-cured leather panels stitched together at the sides.  Offers decent protection against cuts and minor impacts.  Commonly worn by militia and light infantry who cannot afford metal armor."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_leather.json
+msgid "med_ cuir bouilli"
+msgid_plural "med_ cuir bouillis"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ cuir bouilli"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_leather.json
+msgid "A shaped torso armor made from hardened leather boiled in wax or oil, then molded to the body while still warm.  Significantly tougher than untreated leather — it can turn a sword cut and soften a blunt blow.  Worn by light cavalry and professional infantry as a lighter alternative to metal armor."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "med_ mail shirt"
+msgid_plural "med_ mail shirts"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail shirt"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "A short-sleeved, hip-length shirt of riveted chainmail rings.  Lighter and less cumbersome than a full hauberk, it protects the vital areas of the torso while allowing maximum mobility.  Highly favored by archers, light cavalry, and skirmishers."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "med_ mail hauberk"
+msgid_plural "med_ mail hauberks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mail hauberk"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "A knee-length coat of riveted chainmail rings, reaching from the shoulders to the thighs with long sleeves and a split skirt for riding.  The quintessential armor of the professional medieval soldier — nearly impervious to slashing cuts.  However, a bodkin arrow or spear thrust can burst individual rings, and blunt force transmits through the links with ease.  Always worn over a gambeson."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "med_ heavy mail hauberk"
+msgid_plural "med_ heavy mail hauberks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ heavy mail hauberk"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "A massive, exceptionally robust knee-length chainmail coat forged from tempered medium carbon steel links.  Features double-layered ring weaving (double mail) over the chest and underarms to maximize defense against bodkin arrows and thrusts.  Offers peerless protection but drains the wearer's stamina quickly."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "med_ rusty mail hauberk"
+msgid_plural "med_ rusty mail hauberks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ rusty mail hauberk"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_mail.json
+msgid "A crude, poorly maintained chainmail hauberk scavenged from a battlefield.  Many of its cheap carbon steel rings are rusted or coming loose, making it heavy, stiff, and prone to breaking.  Offers mediocre protection but is highly affordable for desperate outlaws."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ wool tunic"
+msgid_plural "med_ wool tunics"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wool tunic"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A knee-length tunic made from thick, felted wool with long sleeves.  The universal outermost garment of the medieval commoner — worn over a linen undershirt by every peasant, craftsman, and soldier in Europe.  This is the garment you picture when you think 'medieval clothing'."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ linen tunic"
+msgid_plural "med_ linen tunics"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ linen tunic"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A knee-length tunic made from undyed linen — the summer alternative to the wool tunic.  Worn by peasants working the fields under a blazing sun, where the wool tunic would be unbearable.  Lighter, cooler, and utterly useless against a cold night."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ doublet"
+msgid_plural "med_ doublets"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ doublet"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A close-fitting, padded garment that covers the torso and upper arms, with a linen lining and a wool outer shell.  The doublet is worn by townsfolk and skilled craftsmen who can afford tailored clothing — it buttons down the front and has points on the lower edge to tie the hose to, keeping everything in place."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ kirtle"
+msgid_plural "med_ kirtles"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ kirtle"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A long woolen garment that falls from the shoulders to the calves, fitted at the bodice and flaring into a full skirt.  The standard everyday dress for medieval women of all stations — a kirtle is worn over a linen chemise and can be laced up the front or sides."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ work apron"
+msgid_plural "med_ work aprons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ work apron"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A simple apron of coarse linen that covers the front of the body from chest to knee, tied at the waist with a pair of strings.  Worn by farmers, millers, and craftsmen to keep the worst of the daily grime off their clothing — it will not stop a blade, but it will stop the flour and mud."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "med_ leather apron"
+msgid_plural "med_ leather aprons"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ leather apron"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_outerwear.json
+msgid "A heavy apron of thick leather that covers the front of the body from chest to knee, secured by sturdy leather straps crossed behind the neck and back.  The defining garment of the blacksmith and the butcher — thick enough to deflect sparks, glancing blows, and the occasional splash of molten metal or hot blood."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_plate.json
+msgid "med_ cuirass"
+msgid_plural "med_ cuirasses"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ cuirass"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\armor\torso_plate.json
+msgid "A solid steel breastplate paired with a matching backplate, forged to fit the wearer's body and secured with leather straps at the shoulders and sides.  The culmination of medieval torso protection — a direct hit from a lance or sword will glance off the smooth, curved surface.  Worn only by knights and lords who can afford the work of a skilled armorer, the cuirass represents the pinnacle of personal protection in the late 14th century."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "med_ hand axe"
+msgid_plural "med_ hand axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ hand axe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "A short-handled axe with a steel head, useful as both a tool and a weapon.  Common among woodsmen and peasants pressed into militia service.  Chops well but lacks reach."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "med_ bearded axe"
+msgid_plural "med_ bearded axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bearded axe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "A single-handed axe with a distinctive elongated blade that extends downward into a hook-like 'beard'.  The beard can catch shield edges, weapon hafts, or limbs, making it a versatile tool for both cutting and controlling an opponent."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "med_ battle axe"
+msgid_plural "med_ battle axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ battle axe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "A heavy two-handed axe built for war.  The broad steel head delivers crushing blows that combine weight and edge, capable of staggering armored opponents even when the blade cannot penetrate.  Requires both hands and considerable strength to wield effectively."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "med_ dane axe"
+msgid_plural "med_ dane axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ dane axe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\axes.json
+msgid "A fearsome two-handed axe with a long haft and a large, thin, gracefully curved blade.  A weapon of elite warriors, it sacrifices some of the battle axe's concentrated impact for faster, wider, more devastating cuts.  Excels at cleaving through lightly armored foes and sweeping multiple enemies."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ eating knife"
+msgid_plural "med_ eating knifes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ eating knife"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A small single-edged knife with a blunt tip, carried by virtually everyone in the medieval world.  Designed for cutting food at the table, not for fighting — but when there is nothing else, it will do.  Better than your fingernails."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ seax"
+msgid_plural "med_ seax"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ seax"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A single-edged thick-backed knife of Germanic origin, worn horizontally at the belt.  Serves as an everyday utility blade for commoners and hunters — cutting rope, skinning game, and defending oneself when needed.  The heavy spine gives it more chopping power than a typical knife."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ rondel dagger"
+msgid_plural "med_ rondel daggers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ rondel dagger"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A specialized anti-armor dagger with a long, stiff, triangular or diamond-section blade and a disc-shaped guard and pommel.  Designed to be driven with two hands through mail rings and into the gaps of plate armor — the armpit, the groin, the visor slit.  In armored combat, this is the finishing tool."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ baselard"
+msgid_plural "med_ baselards"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ baselard"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A short sword or long dagger with a distinctive I-shaped or H-shaped hilt, popular among merchants, artisans, and townsfolk for self-defense.  Compact enough to wear daily, substantial enough to settle disputes.  The urban equivalent of a handgun."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ bollock dagger"
+msgid_plural "med_ bollock daggers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bollock dagger"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A widely popular medieval dagger with a distinctive guard formed by two oval lobes — giving it its earthy name.  Carried by all social classes, from peasants to knights, as an everyday sidearm.  Balanced for both cutting and thrusting, reliable and unpretentious."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ stiletto"
+msgid_plural "med_ stilettos"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ stiletto"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "A slender, needle-pointed dagger with no cutting edge — designed solely for penetrating mail armor rings and sliding between the links.  Quick, quiet, and deadly at close range.  Favored by assassins and as a backup weapon for knights who need to finish armored opponents."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "med_ misericorde"
+msgid_plural "med_ misericordes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ misericorde"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\daggers.json
+msgid "The 'mercy blade' — a long, thin dagger carried by knights specifically to deliver the killing blow to a downed armored opponent.  Its narrow blade can be guided precisely through visor slits, armpit gaps, and other weak points in plate armor.  The grim final word in armored combat."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "med_ mace"
+msgid_plural "med_ maces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ mace"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "A medieval bludgeon with a wood handle and a heavy steel head, often fluted or knobbed.  Heavy and slow to swing, but its crushing force transmits through armor — it does not need to penetrate plate to shatter the bones beneath."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "med_ flanged mace"
+msgid_plural "med_ flanged maces"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ flanged mace"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "An advanced mace with raised blade-like flanges radiating from the steel head.  The flanges concentrate the impact force into narrow ridges that tear into armor rather than just denting it, making this one of the most effective one-handed anti-armor weapons of the period."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "med_ morning star"
+msgid_plural "med_ morning stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ morning star"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "A brutal one-handed weapon consisting of a spiked steel ball mounted on a wooden haft.  The spikes puncture mail and concentrate crushing force behind each blow.  A favorite of infantry and mercenaries who favor intimidation as much as effectiveness."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "med_ war hammer"
+msgid_plural "med_ war hammers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ war hammer"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "A dedicated anti-armor weapon with a hammer head on one side and a curved spike on the other, mounted on a long haft.  The hammer face delivers crushing concussion through plate, while the spike — essentially a short bec de corbin — can punch through helmet tops and shoulder plates.  The preferred sidearm of knights fighting on foot against other armored opponents."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "med_ maul"
+msgid_plural "med_ mauls"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ maul"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\hammers.json
+msgid "A massive two-handed sledgehammer of war — a heavy steel head on a thick wooden haft.  Slow and exhausting to swing, but when it connects, armor is irrelevant.  Plate crumples, bones shatter, and even the stoutest shield cannot absorb the full force.  The weapon of choice for breaking shield walls and armored lines."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ club"
+msgid_plural "med_ clubs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ club"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A crude but effective weapon — nothing more than a sturdy tree branch, perhaps with the thicker end as the striking head.  Simple enough to be found or made anywhere, and a solid blow will crack bones regardless of what armor the target wears."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ wood axe"
+msgid_plural "med_ wood axes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ wood axe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A heavy felling axe designed for chopping trees, not men — but it will do in a pinch.  Heavier and slower than a fighting hand axe, but the weight behind the swing is terrifying.  Peasants pressed into service often carry whatever tools they have."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ pickaxe"
+msgid_plural "med_ pickaxes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ pickaxe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A mining tool with a pointed steel head on one side and a flat hammer face on the other, mounted on a sturdy wooden handle.  In desperate times, its concentrated piercing force makes it a poor man's bec de corbin — slow but devastating against armored targets."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ pitchfork"
+msgid_plural "med_ pitchforks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ pitchfork"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A farming tool with a long wooden handle and two or three steel tines.  In battle, it provides excellent reach and spacing — the tines keep enemies at a distance while the wielder remains safely behind.  A classic weapon of peasant revolts."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ scythe"
+msgid_plural "med_ scythes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ scythe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A long-handled farming scythe with a curved blade designed for cutting grain at ground level.  Usable as a weapon in its original form, but the blade angle is awkward for combat.  A scythe blade rotated 90 degrees — a 'war scythe' — is a different animal entirely."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ blacksmith hammer"
+msgid_plural "med_ blacksmith hammers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ blacksmith hammer"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A short-handled hammer used at the forge — too small to be a proper war hammer, but a well-aimed blow to the head or hand will still ruin someone's day.  Better than bare fists."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ flail"
+msgid_plural "med_ flails"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ flail"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "Originally a grain-threshing tool — two stout wooden rods connected by a short chain or leather hinge.  When swung, the striking rod whips around with tremendous force and can wrap over the top of a shield to strike the defender behind it.  The signature weapon of peasant revolts across medieval Europe."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "med_ rock"
+msgid_plural "med_ rocks"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ rock"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\peasant.json
+msgid "A fist-sized stone from the ground.  The weapon of last resort — throw it, smash it, drop it and run.  Even a knight in full plate respects a well-aimed rock to the visor, if only for a moment."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ spear"
+msgid_plural "med_ spears"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ spear"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A simple but effective weapon — a steel spearhead mounted on a sturdy wooden shaft.  The reach keeps enemies at bay, and it can be thrown in desperation.  The most common weapon in history for good reason."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ pike"
+msgid_plural "med_ pikes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ pike"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "An extremely long thrusting spear designed for massed infantry formations.  Devastating against cavalry charges and at range, but nearly useless if an enemy gets inside its reach.  The defining weapon of late medieval infantry tactics."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ halberd"
+msgid_plural "med_ halberds"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ halberd"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "The iconic Swiss polearm — an axe blade for cleaving, a top spike for thrusting, and a back hook for dragging cavalry off their mounts.  A single weapon with an answer for every situation.  The backbone of disciplined infantry across Europe."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ bill"
+msgid_plural "med_ bills"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bill"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "An English infantry polearm with a broad curved hook-blade and a top spike.  The bill's hook is legendary — it can drag a mounted knight out of the saddle, pull shields aside, and trip fleeing enemies.  Less elegant than a halberd, but brutally effective."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ glaive"
+msgid_plural "med_ glaives"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ glaive"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A long wooden haft topped with a single-edged curved blade resembling a large knife or sword.  Designed for wide sweeping cuts that can clear a space around the wielder.  Less versatile than a halberd but unmatched in cutting arcs."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ pollaxe"
+msgid_plural "med_ pollaxes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ pollaxe"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "The knight's polearm of choice for foot combat — an axe head on one side, a hammer on the other, and a top spike.  Designed to defeat plate armor with brutal efficiency: hammer to concuss, spike to pierce, axe to hook and control.  The complete anti-armor package."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ bec de corbin"
+msgid_plural "med_ bec de corbins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ bec de corbin"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A knightly polearm featuring a hammer head opposite a long, curved beak-like spike — the 'crow's beak' that gives it its name.  The beak is designed to punch clean through helmet tops and shoulder plates, while the hammer delivers crushing force.  A precision anti-armor instrument."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ lucerne hammer"
+msgid_plural "med_ lucerne hammers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ lucerne hammer"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A Swiss polearm with a distinctive three-pronged hammer head and a long top spike.  The prongs concentrate force into narrow points for maximum armor penetration, while the spike can be driven into plate gaps.  A formidable weapon in disciplined hands."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ guisarme"
+msgid_plural "med_ guisarmes"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ guisarme"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A simpler predecessor to the bill, featuring a sickle-like curved blade with a back spike on a long pole.  Though gradually falling out of fashion, its hook is deadly for dragging horsemen down and pulling shields out of position."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ voulge"
+msgid_plural "med_ voulges"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ voulge"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A French and Burgundian polearm — essentially an early halberd with a broad cleaver-like blade and a thrusting point.  Less refined than the Swiss halberd it evolved into, but still a devastating combination of cutting and stabbing on a long pole."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ fauchard"
+msgid_plural "med_ fauchards"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ fauchard"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "An early form of polearm with a curved single-edged blade mounted on a long shaft.  The crescent-like blade delivers arcing cuts from a safe distance.  An older design being phased out in favor of more versatile halberds and bills, but still lethal in the right hands."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ partisan"
+msgid_plural "med_ partisans"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ partisan"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "An elegant polearm with a broad central spear blade flanked by smaller wing-blades at its base.  The wings can catch and deflect enemy weapons while the spear point does the work.  A weapon of guards, officers, and ceremonial use as much as the battlefield."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "med_ quarterstaff"
+msgid_plural "med_ quarterstaffs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ quarterstaff"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\polearms.json
+msgid "A simple stout wooden staff, about six feet long.  Deceptively effective — fast enough to strike and parry simultaneously, long enough to keep enemies at distance, and solid enough to break bones.  A skilled staff fighter can hold off multiple armed opponents."
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ sling"
+msgid_plural "med_ slings"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ sling"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A simple leather pouch with two cords — one looped around the wrist, the other held and released to launch a stone at high speed.  Costs nothing to make, takes years to master.  In skilled hands, a sling stone can match an arrow in range and surpass it in bone-breaking impact.  The weapon of shepherds and ancient peoples."
+msgstr ""
+
+#. ~ Skill associated with gun "med_ sling"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgctxt "gun_type_type"
+msgid "throw"
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ shortbow"
+msgid_plural "med_ shortbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ shortbow"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A compact hunting bow, short enough to use from horseback or in dense woodland.  Quick to draw and loose, but lacks the range and penetration of a proper war bow.  The standard weapon of hunters and light skirmishers."
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ longbow"
+msgid_plural "med_ longbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ longbow"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A full-sized English-style war bow — six feet of yew demanding immense strength to draw.  In trained hands, it can send a bodkin arrow through mail and into flesh at two hundred yards.  The weapon that won Crecy and Agincourt, but archers train from childhood for the strength required."
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ composite bow"
+msgid_plural "med_ composite bows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ composite bow"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A recurve bow crafted from laminated layers of wood, horn, and sinew — a technique perfected by eastern peoples.  Shorter than a longbow but storing more energy for its size, it can deliver powerful shots from horseback or on foot.  Requires skilled craftsmanship to make and skilled hands to use."
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ light crossbow"
+msgid_plural "med_ light crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ light crossbow"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A compact crossbow that can be spanned by hand without mechanical assistance.  Easy to aim and fire with minimal training — the great equalizer that lets a peasant drop a knight.  Moderate power, but the simplicity and accessibility of the crossbow transformed medieval warfare."
+msgstr ""
+
+#. ~ Skill associated with gun "med_ light crossbow"
+#. ~ Skill associated with gun "med_ heavy crossbow"
+#. ~ Skill associated with gun "med_ arbalest"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgctxt "gun_type_type"
+msgid "rifle"
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ heavy crossbow"
+msgid_plural "med_ heavy crossbows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ heavy crossbow"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A powerful military crossbow requiring a belt-hook or lever to span.  Each bolt hits with the force of a charging lance, punching through mail and most armors at medium range.  Slow to reload — each shot must count, but each shot will hurt.  The standard weapon of mercenary crossbow companies."
+msgstr ""
+
+#. ~ Name of a gun
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ arbalest"
+msgid_plural "med_ arbalests"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of gun "med_ arbalest"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "The pinnacle of crossbow technology — a steel-limbed monster requiring a mechanical windlass to span.  Each shot delivers staggering penetrating power, capable of punching through plate armor at considerable range.  Fires perhaps twice a minute, but against this weapon, even the finest Milanese plate becomes a gamble."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ javelin"
+msgid_plural "med_ javelins"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ javelin"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A light throwing spear with a narrow steel head, designed to be launched at short range before closing to melee.  The impact of a thrown javelin is concentrated into a single sharp point — it can pierce shields and mail with terrifying efficiency.  Carry several."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "med_ francisca"
+msgid_plural "med_ franciscas"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ francisca"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\ranged.json
+msgid "A small throwing axe with a distinctive curved head, a relic of the migration era still occasionally seen.  Designed to be thrown in a high arc that drops onto shields and helmeted heads, its weight and rotation make it surprisingly effective against armor.  Works as a hand axe in a pinch."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ arming sword"
+msgid_plural "med_ arming swords"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ arming sword"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A classic medieval one-handed sword, balanced for both cutting and thrusting.  The double-edged blade tapers to a sharp point, capable of piercing mail when aimed precisely."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ longsword"
+msgid_plural "med_ longswords"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ longsword"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A versatile two-handed sword with a long double-edged blade optimized for both cutting and thrusting.  The extended grip allows powerful two-handed swings, and the sharp point can find gaps in plate armor through half-swording technique."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ estoc"
+msgid_plural "med_ estocs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ estoc"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A specialized two-handed thrusting sword with a rigid, narrow blade designed purely to penetrate mail rings and slip through plate armor gaps.  Nearly useless for cutting, but devastating when half-sworded into an armored opponent's weak points."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ falchion"
+msgid_plural "med_ falchions"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ falchion"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A single-edged, cleaver-like sword with a broad curved blade.  Cheap to produce and easy to use, it delivers devastating chopping blows against unarmored or lightly armored targets, but glances uselessly off plate."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ messer"
+msgid_plural "med_ messers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ messer"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A single-edged German-style 'knife-sword' with a curved blade and a simple crossguard.  Constructed like a large knife, the messer was legally classified as a knife rather than a sword, allowing commoners to carry it.  Effective at chopping, passable at thrusting."
+msgstr ""
+
+#. ~ Item name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "med_ shortsword"
+msgid_plural "med_ shortswords"
+msgstr[0] ""
+msgstr[1] ""
+
+#. ~ Description of "med_ shortsword"
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\items\weapons\swords.json
+msgid "A compact sidearm with a short, double-edged blade designed primarily for thrusting in close quarters.  Light enough to be worn comfortably by townsfolk and travelers, it serves better as a defensive weapon than an offensive one."
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\overmap\overmap_terrain.json
+msgid "abandoned farmstead"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\overmap\overmap_terrain.json
+msgid "manor house"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\overmap\overmap_terrain.json
+msgid "parish church"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\overmap\overmap_terrain.json
+msgid "village smithy"
+msgstr ""
+
+#. ~ Overmap terrain name
+#: e:\Cataclysm-Medieval\data\mods\Medieval\10_medieval_core\overmap\overmap_terrain.json
+msgid "mill"
+msgstr ""
+

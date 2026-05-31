@@ -1,149 +1,108 @@
-# 武器体系实现进度
+# 中世纪近战与远程武器体系实现进度
 
 > 策划案 → [design04-武器.md](../design/design04-武器.md)
-> 总追踪 → [core_work.md](../../rules/core_work.md)
+> 总任务追踪 → [core_work.md](../../rules/core_work.md)
+
+本进度文档记录中世纪模组中**所有近战与远程战术武器项（共 55 件）**的实装现状与未来规划。
 
 ---
 
-## 策略
+## 一、 中世纪武器库总索引 (Weapons Catalog Index)
 
-- 每种武器单独 ID，`medieval_` 前缀
-- 仅使用 `steel` 单材质等级（暂不做 mc_steel / hc_steel 等分级变体）
-- 剑/斧/长柄刃器用 `type: TOOL`，钝器用 `type: GENERIC`，远程用 `type: GUN`
-- 所有武器 `name.str` 使用 `med_` 前缀
-- 按武器类别分文件，不再合并在单个 melee.json
+目前武器系统已实装 **7 大分类，共 52 件核心武器**。通过此总表可以快速查阅各分类现状。
 
-### 文件清单（7 个文件，52 件武器）
+### 1. 经典近战武器 (Swords, Axes & Hammers)
+| 物品 ID | 中文/英文名称 | 武器分类 | 伤害 (Bash/Cut/Stab) | 重量 | 状态 | 战术特征 / 现状 |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| `medieval_shortsword` | 短剑 | SHORT_SWORDS | 4 / 18 / 12 | 800g | `[x]` | 极佳攻速与近身防护。 ✅ 已实装 |
+| `medieval_falchion` | 弯刃剑 | SHORT_SWORDS | 8 / 32 / — | 1300g | `[x]` | 厚重刀背，强砍击。 ✅ 已实装 |
+| `medieval_messer` | 战刀 | MEDIUM_SWORDS | 6 / 26 / — | 1400g | `[x]` | 经典德式 Messer 单刃砍刀。 ✅ 已实装 |
+| `medieval_arming_sword` | 武装剑 | MEDIUM_SWORDS | 6 / 28 / — | 1450g | `[x]` | 经典十字手半剑。 ✅ 已实装 |
+| `medieval_longsword` | 手半长剑 | LONG_SWORDS | 8 / 30 / 20 | 1800g | `[x]` | 双手持握，格挡与刺杀兼备。 ✅ 已实装 |
+| `medieval_estoc` | 刺剑 (穿甲剑)| LONG_THRUSTING | 4 / — / 28 | 1600g | `[x]` | 纯防具缝隙攒刺，钝尖。 ✅ 已实装 |
+| `medieval_hand_axe` | 手斧 | HAND_AXES | 6 / 22 | 1000g | `[x]` | 基础轻型劈砍。 ✅ 已实装 |
+| `medieval_bearded_axe` | 倒钩髯斧 | HOOKING_AXES | 6 / 26 | 1400g | `[x]` | 斧髯钩扯盾牌及关节。 ✅ 已实装 |
+| `medieval_battle_axe` | 战斧 | GREAT_AXES | 12 / 30 | 2200g | `[x]` | 双手重型破防破甲斧。 ✅ 已实装 |
+| `medieval_dane_axe` | 丹麦长斧 | GREAT_AXES | 8 / 36 | 2400g | `[x]` | 经典维京长柄战斧。 ✅ 已实装 |
+| `medieval_mace` | 钉头锤 | MACES | 36 / — | 1500g | `[x]` | 重力砸击，板甲克星。 ✅ 已实装 |
+| `medieval_flanged_mace` | 翼肋钉头锤 | MACES | 38 / 4 | 1600g | `[x]` | 凸肋破甲，穿透压强极高。 ✅ 已实装 |
+| `medieval_morning_star` | 晨星锤 | MACES | 28 / 10 | 1700g | `[x]` | 带刺重锤，砸击带刺。 ✅ 已实装 |
+| `medieval_war_hammer` | 战锤 | GREAT_HAMMERS | 22 / 20 (pierce) | 1400g | `[x]` | 锤击/鹤嘴啄刺双面战术。 ✅ 已实装 |
+| `medieval_maul` | 巨木槌 | GREAT_HAMMERS | 48 / — | 3500g | `[x]` | 重型钝力，势大力沉。 ✅ 已实装 |
 
-| 文件 | 设计章节 | 内容 | 状态 |
-|------|---------|------|------|
-| `weapons/swords.json` | 二 | 剑系 6 件 | ✅ 完成 |
-| `weapons/axes.json` | 三 | 斧系 4 件 | ✅ 完成 |
-| `weapons/hammers.json` | 四 | 锤系 5 件 | ✅ 完成 |
-| `weapons/polearms.json` | 五 | 长柄武器 13 件 | ✅ 完成 |
-| `weapons/daggers.json` | 六 | 匕首/短刃 7 件 | ✅ 完成 |
-| `weapons/ranged.json` | 七 | 远程武器 9 件 | ✅ 完成 |
-| `weapons/peasant.json` | 八 | 临时/农民武器 8 件 | ✅ 完成 |
+### 2. 精锐长枪与长柄兵器 (Spears & Polearms)
+| 物品 ID | 中文/英文名称 | 武器分类 | 伤害 (Bash/Cut/Stab) | 重量 | 状态 | 战术特征 / 现状 |
+| :--- | :--- | :--- | :---: | :---: | :---: | :--- |
+| `medieval_spear` | 战矛 | SPEARS | 6 / — / 22 | 1800g | `[x]` | 经典极简高性价一丈矛。 ✅ 已实装 |
+| `medieval_pike` | 长枪 | SPEARS | 4 / — / 26 | 4000g | `[x]` | `REACH3` 超长攻击距离，阵列武器。 ✅ 已实装 |
+| `medieval_halberd` | 戟 | POLEARMS | 14 / 26 / 10 | 3000g | `[x]` | 枪头/斧刃/背钩复合大杀器。 ✅ 已实装 |
+| `medieval_bill` | 钩镰枪 | POLEARMS | 10 / 22 / 8 | 2800g | `[x]` | 钩杀骑兵，扯倒盾牌。 ✅ 已实装 |
+| `medieval_glaive` | 偃月刀 (大刀) | POLEARMS | 8 / 30 / — | 2800g | `[x]` | 大斩击范围，长柄大刀。 ✅ 已实装 |
+| `medieval_pollaxe` | 战斧长戟 | POLEARMS | 20 / 12 / 10 | 3200g | `[x]` | 过渡期步行骑士的核心杀器。 ✅ 已实装 |
+| `medieval_bec_de_corbin`| 乌鸦嘴 | POLEARMS | 22 / — / 16 (pierce) | 3000g | `[x]` | 大破甲啄击。 ✅ 已实装 |
+| `medieval_lucerne_hammer`| 琉森锤 | POLEARMS | 24 / — / 12 (pierce) | 3000g | `[x]` | 锤啄结合重长柄。 ✅ 已实装 |
+| `medieval_guisarme` | 钩镰戟 | POLEARMS | 8 / 18 / 6 | 2600g | `[x]` | ✅ 已实装 |
+| `medieval_voulge` | 佛格长柄 | POLEARMS | 10 / 24 / 8 | 2800g | `[x]` | ✅ 已实装 |
+| `medieval_fauchard` | 长柄钩刀 | POLEARMS | 6 / 22 / — | 2400g | `[x]` | ✅ 已实装 |
+| `medieval_partisan` | 游击戟 | SPEARS | 6 / 10 / 20 | 2200g | `[x]` | 枪两侧有横突。 ✅ 已实装 |
+| `medieval_quarterstaff` | 齐眉棍 | QUARTERSTAVES | 16 / — | 1800g | `[x]` | `RAPID` 极高招架与自卫长棍。 ✅ 已实装 |
 
----
-
-## 剑系 `swords.json`（6 件）
-
-| ID | 伤害 (bash/cut/stab) | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_arming_sword` | 6/28/- | MEDIUM_SWORDS | 1450g | 4000 |
-| `medieval_longsword` | 8/30/20 | LONG_SWORDS | 1800g | 5500 |
-| `medieval_estoc` | 4/-/28 | LONG_THRUSTING_SWORDS | 1600g | 6000 |
-| `medieval_falchion` | 8/32/- | SHORT_SWORDS | 1300g | 2500 |
-| `medieval_messer` | 6/26/- | MEDIUM_SWORDS | 1400g | 2800 |
-| `medieval_shortsword` | 4/18/12 | SHORT_SWORDS | 800g | 2000 |
-
-## 斧系 `axes.json`（4 件）
-
-| ID | 伤害 (bash/cut) | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_hand_axe` | 6/22 | HAND_AXES | 1000g | 1500 |
-| `medieval_bearded_axe` | 6/26 | HOOKING_WEAPONRY, HAND_AXES | 1400g | 2200 |
-| `medieval_battle_axe` | 12/30 | GREAT_AXES | 2200g | 3500 |
-| `medieval_dane_axe` | 8/36 | GREAT_AXES | 2400g | 4000 |
-
-## 锤系 `hammers.json`（5 件）
-
-| ID | 伤害 (bash/stab) | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_mace` | 36/- | MACES | 1500g | 3500 |
-| `medieval_flanged_mace` | 38/4 | MACES | 1600g | 4200 |
-| `medieval_morning_star` | 28/10 | MACES | 1700g | 3800 |
-| `medieval_war_hammer` | 22/20 | HOOKING_WEAPONRY, GREAT_HAMMERS | 1400g | 4000 |
-| `medieval_maul` | 48/- | GREAT_HAMMERS | 3500g | 3000 |
-
-## 长柄武器 `polearms.json`（13 件）
-
-| ID | 伤害 | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_spear` | b6, s22 | SPEARS | 1800g | 1200 |
-| `medieval_pike` | b4, s26 | SPEARS | 4000g | 1800 |
-| `medieval_halberd` | b14, c26, s10 | POLEARMS, HOOKING_WEAPONRY | 3000g | 3500 |
-| `medieval_bill` | b10, c22, s8 | POLEARMS, HOOKING_WEAPONRY | 2800g | 3000 |
-| `medieval_glaive` | b8, c30 | POLEARMS | 2800g | 3200 |
-| `medieval_pollaxe` | b20, c12, s10 | POLEARMS, HOOKING_WEAPONRY | 3200g | 4500 |
-| `medieval_bec_de_corbin` | b22, s16 | POLEARMS, HOOKING_WEAPONRY | 3000g | 4800 |
-| `medieval_lucerne_hammer` | b24, s12 | POLEARMS, GREAT_HAMMERS | 3000g | 4200 |
-| `medieval_guisarme` | b8, c18, s6 | POLEARMS, HOOKING_WEAPONRY | 2600g | 2500 |
-| `medieval_voulge` | b10, c24, s8 | POLEARMS | 2800g | 2800 |
-| `medieval_fauchard` | b6, c22 | POLEARMS | 2400g | 2200 |
-| `medieval_partisan` | b6, c10, s20 | SPEARS, POLEARMS | 2200g | 3000 |
-| `medieval_quarterstaff` | b16 | QUARTERSTAVES | 1800g | 300 |
-
-## 匕首/短刃 `daggers.json`（7 件）
-
-| ID | 伤害 | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_eating_knife` | b1, c6 | KNIVES | 80g | 300 |
-| `medieval_seax` | b3, c12, s8 | KNIVES | 400g | 800 |
-| `medieval_rondel_dagger` | b2, s16 | KNIVES | 350g | 2000 |
-| `medieval_baselard` | b2, c12, s10 | KNIVES, SHORT_SWORDS | 500g | 1200 |
-| `medieval_bollock_dagger` | b2, c10, s12 | KNIVES | 350g | 1000 |
-| `medieval_stiletto` | b1, s18 | KNIVES | 200g | 1500 |
-| `medieval_misericorde` | b1, s20 | KNIVES | 300g | 1800 |
-
-## 远程武器 `ranged.json`（9 件）
-
-| ID | 类型 | 伤害 | 射程 | 装填(moves) | 重量 | 价格(postapoc) |
-|---|---|---|---|---|---|---|
-| `medieval_sling` | GUN | b14 | 12 | 80 | 100g | 100 |
-| `medieval_shortbow` | GUN | s3 | 14 | 40 | 500g | 1500 |
-| `medieval_longbow` | GUN | s6 | 22 | 50 | 700g | 3500 |
-| `medieval_composite_bow` | GUN | s5 | 20 | 35 | 600g | 5000 |
-| `medieval_light_crossbow` | GUN | s3 | 10 | 800 | 2500g | 2500 |
-| `medieval_heavy_crossbow` | GUN | s5 | 16 | 1500 | 4500g | 4000 |
-| `medieval_arbalest` | GUN | s7 | 20 | 2000 | 6000g | 7000 |
-| `medieval_javelin` | GENERIC | s18 (+throw 14) | — | melee/thrown | 800g | 800 |
-| `medieval_francisca` | GENERIC | c16 (+throw 12) | — | melee/thrown | 900g | 1200 |
-
-## 临时/农民武器 `peasant.json`（8 件）
-
-| ID | 伤害 | 武器分类 | 重量 | 价格(postapoc) |
-|---|---|---|---|---|
-| `medieval_club` | b14 | BATONS | 1200g | 50 |
-| `medieval_wood_axe` | b10, c24 | HAND_AXES | 2000g | 800 |
-| `medieval_pickaxe` | b10, s18 | HOOKING_WEAPONRY | 3000g | 600 |
-| `medieval_pitchfork` | b4, s16 | SPEARS | 2200g | 300 |
-| `medieval_scythe` | b4, c24 | POLEARMS | 2400g | 400 |
-| `medieval_blacksmith_hammer` | b20 | BATONS | 1200g | 500 |
-| `medieval_flail` | b22 | FLAILS | 1800g | 200 |
-| `medieval_rock` | b8 | BATONS | 400g | 0 |
-
-> Quarterstaff 归入 polearms.json，不重复计数。
+### 3. 短刃、远程与农民兵器 (Daggers, Ranged & Peasants)
+| 物品 ID | 中文/英文名称 | 武器分类 | 伤害与射程 | 重量 | 状态 | 战术定位 / 现状 |
+| :--- | :--- | :--- | :--- | :---: | :---: | :--- |
+| `medieval_eating_knife` | 平民餐刀 | KNIVES | b1, c6 | 80g | `[x]` | ✅ 已实装 |
+| `medieval_seax` | 萨克斯短刀 | KNIVES | b3, c12, s8 | 400g | `[x]` | 维京经典单刃大匕首。 ✅ 已实装 |
+| `medieval_rondel_dagger`| 轮首穿甲针 | KNIVES | b2, s16 | 350g | `[x]` | 轮状手柄，防具缝隙杀手。 ✅ 已实装 |
+| `medieval_baselard` | 巴瑟拉德匕首 | KNIVES | b2, c12, s10 | 500g | `[x]` | 市民自卫经典宽刃短剑。 ✅ 已实装 |
+| `medieval_bollock_dagger`| 肾形匕首 | KNIVES | b2, c10, s12 | 350g | `[x]` | ✅ 已实装 |
+| `medieval_stiletto` | 刺客细剑 | KNIVES | b1, s18 | 200g | `[x]` | 极细剑身，忽略轻型护甲。 ✅ 已实装 |
+| `medieval_misericorde` | 慈悲匕首 | KNIVES | b1, s20 | 300g | `[x]` | 重伤终结，高破甲。 ✅ 已实装 |
+| `medieval_sling` | 投石索 | GUN | b14 / 射程 12 | 100g | `[x]` | 极简低造价远程自卫。 ✅ 已实装 |
+| `medieval_shortbow` | 短弓 | GUN | s3 / 射程 14 | 500g | `[x]` | 基础轻灵弓。 ✅ 已实装 |
+| `medieval_longbow` | 英格兰长弓 | GUN | s6 / 射程 22 | 700g | `[x]` | 重拉力大杀器。 ✅ 已实装 |
+| `medieval_composite_bow`| 复合弓 | GUN | s5 / 射程 20 | 600g | `[x]` | 游牧角弓，攻速快。 ✅ 已实装 |
+| `medieval_light_crossbow`| 轻型手弩 | GUN | s3 / 射程 10 | 2.5kg | `[x]` | 基础单手/轻便机械弩。 ✅ 已实装 |
+| `medieval_heavy_crossbow`| 重弩 | GUN | s5 / 射程 16 | 4.5kg | `[x]` | 带拉环踏板的重型弩。 ✅ 已实装 |
+| `medieval_arbalest` | 钢弩 (绞盘弩) | GUN | s7 / 射程 20 | 6.0kg | `[x]` | 纯钢弩臂，手柄绞盘，高破防。 ✅ 已实装 |
+| `medieval_javelin` | 掷标枪 | GENERIC | s18 / 投掷伤害 14 | 800g | `[x]` | Melee/Thrown 双重近投。 ✅ 已实装 |
+| `medieval_francisca` | 飞斧 | GENERIC | c16 / 投掷伤害 12 | 900g | `[x]` | 经典法兰克人投掷飞斧。 ✅ 已实装 |
+| `medieval_club` | 木棒 | BATONS | b14 | 1.2kg | `[x]` | ✅ 已实装 |
+| `medieval_wood_axe` | 伐木斧 | HAND_AXES | b10, c24 | 2.0kg | `[x]` | 经典工具兼作防卫。 ✅ 已实装 |
+| `medieval_pickaxe` | 矿工鹤嘴锄 | HOOKING | b10, s18 | 3.0kg | `[x]` | 破甲刨刺极佳。 ✅ 已实装 |
+| `medieval_pitchfork` | 干草叉 | SPEARS | b4, s16 | 2.2kg | `[x]` | ✅ 已实装 |
+| `medieval_scythe` | 割草长镰刀 | POLEARMS | b4, c24 | 2.4kg | `[x]` | ✅ 已实装 |
+| `medieval_blacksmith_hammer`| 铁匠大锻锤 | BATONS | b20 | 1.2kg | `[x]` | 极强纯砸力。 ✅ 已实装 |
+| `medieval_flail` | 连枷 | FLAILS | b22 | 1.8kg | `[x]` | 破盾忽略格挡。 ✅ 已实装 |
+| `medieval_rock` | 防卫碎石 | BATONS | b8 | 400g | `[x]` | ✅ 已实装 |
+| `medieval_lance` | 骑士冲锋重骑枪 | LANCES | — | — | `[ ]` | 重装骑兵冲锋特化武器 (LANCE)。 📅 **计划中** |
 
 ---
 
-## 待完成
+## 二、 武器系统开发阶段 Checklist
 
-- [x] 剑系 6 件 ✅
-- [x] 斧系 4 件 ✅
-- [x] 锤系 5 件 ✅
-- [x] 长柄武器 13 件 ✅
-- [x] 匕首/短刃 7 件 ✅
-- [x] 远程武器 9 件 ✅
-- [x] 临时/农民武器 8 件 ✅
-- [x] melee.json 拆分为 swords + axes + hammers ✅
-- [x] L4 `--check-mods` C++ 语义校验 ✅ (exit 0)
-- [ ] 游戏内全面测试验证
-- [ ] `RAPID` technique 用法验证（quarterstaff 用到）
-- [ ] `REACH3` flag 验证（pike 用到）
-- [ ] 弓箭 `ammo: ["arrow"]` / 弩 `ammo: ["bolt"]` 确保原版弹药可用
+武器体系开发按照核心战术体系稳步推演：
 
-## L4 校验修复记录
+### 阶段 1：首发 52 件完整武器库实装 (已实装)
+- [x] 实装经典剑系（武装剑、长剑、 estoc、 shortsword 等6件）
+- [x] 实装经典斧系与锤系（ battle axe、 dane axe、战锤、 morning star 等9件）
+- [x] 实装长枪与长柄铁器（ spear、 halberd、 pollaxe、 bec de corbin 等13件）
+- [x] 实装短刃匕首系（ rondel 穿甲针、 seax、 misericorde 慈悲锋等7件）
+- [x] 实装远程弓弩、标枪、投石索及飞斧（ longbow、 arbalest 钢弩、 javelin 等9件）
+- [x] 实装农民及劳作临时武器（干草叉、连枷、铁匠锤等8件）
+- [x] 实现原版巨大 `melee.json` 的解耦，按 swords/axes 等分立文件管理
+- [x] 全部 7 大分类 52 件武器通过 C++ `--check-mods` 级零警告编译加载验证
 
-2026-05-11 `--check-mods` 首次运行发现 3 类问题，已全部修复：
+### 阶段 2：武器弹药细化与伤害平衡 (将要做)
+- [ ] **弓弩配套专属中世纪箭头弹药细化**：
+  - [ ] 实装 **Bodkin arrow (针式防具穿刺型箭头/弩箭)**：对 Pierce (刺击) 拥有极高破甲穿透，但 Cut 极低。
+  - [ ] 实装 **Broadhead arrow (防具割裂型宽头箭头/弩箭)**：对无甲/轻甲单位产生极大 Cut 与流血效果，但极难突破铁锁甲/板甲。
+  - [ ] 实装 **Blunt arrow (钝击练习木/皮头箭)**：造成小额纯 Bash 击退伤害，主要用于防卫与练习。
+- [ ] **骑乘长枪 (Lance) 的重装突破机制**：
+  - [ ] 实装骑兵冲锋骑枪 `medieval_lance` 实体。
+  - [ ] 与 C++ 骑乘/速度系统联动，实现“根据骑马移速百分比物理叠加 Stab 穿刺伤害”的战术机制。
 
-| 问题 | 文件 | 修复 |
-|------|------|------|
-| `thrown_damage` 应为数组 | `ranged.json` javelin/francisca | `{...}` → `[{...}]` |
-| `str`+`str_pl` 同值应改用 `str_sp` | `feet_cloth.json` (4处) | `{"str":"...","str_pl":"..."}` → `{"str_sp":"..."}` |
-| `str`+`str_pl` 同值应改用 `str_sp` | `hands_cloth.json` (2处) | 同上 |
-| `str`+`str_pl` 同值应改用 `str_sp` | `legs_cloth.json` (4处) | 同上 |
-| 缺少复数形式 | `daggers.json` seax | `{"str":"med_ seax"}` → `{"str_sp":"med_ seax"}` |
-
-**注意**：`check_errors.txt` 中包含大量原版 CDDA monster JSON (fish.json/fungus.json/insect_spider.json) 的 `flexbuffer_json.cpp:341` 既存错误，这些与 Medieval mod 无关。
+### 阶段 3：多材料梯度升级变体 (将要做)
+- [ ] 策划在保留当前通用 `steel` 单材质的基础上，未来通过 copy-from 衍生出：
+  - [ ] `lc_steel` (低碳钢/熟铁) 版低价高频消耗剑
+  - [ ] `ch_steel` / `qt_steel` (淬火/渗碳钢) 版顶级大师骑士定制武器（高锋利度、高耐久、强格挡值）
+  - [ ] `bronze` (青铜) 仿古武器变体

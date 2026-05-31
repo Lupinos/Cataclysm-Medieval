@@ -12,6 +12,14 @@ def parse_profession(json, origin):
     elif type(json["name"]) is str:
         name_male = name_female = json["name"]
 
+    if "description" not in json:
+        if "name" in json or "id" in json:
+            write_text(name_male, origin, context="profession_male",
+                       comment="Profession name for male")
+            write_text(name_female, origin, context="profession_female",
+                       comment="Profession name for female")
+        return
+
     desc_male = ""
     desc_female = ""
     if type(json["description"]) is dict:
