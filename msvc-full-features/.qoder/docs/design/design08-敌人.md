@@ -16,9 +16,7 @@ CDDA 的 `Creature` 基类已内置完整部位分血框架，但 `monster` 子�
 
 ---
 
-## 改造方案（Monster 路线 — 已放弃）
-
-> ⚠️ 此方案经完整评估后已放弃。保留作为技术参考，Medieval Mod 走 NPC 路线。
+## Monster 部位 HP 修复方案
 
 ### Phase 1: C++ 改动（核心）
 
@@ -100,37 +98,81 @@ void monster::apply_damage( Creature *source, bodypart_id bp, int dam, bool ) {
 
 ---
 
-## 最终决策：放弃 Monster，全面使用 NPC 系统
+## 最终决策：双系统分层（2026-05-19 修订）
 
-> 2026-05-03：经过完整的部位分血 + 受伤系统评估，决定 **Medieval Mod 不使用 monster 系统**。
+> ~~2026-05-03：全面使用 NPC~~  
+> **2026-05-19 修订**：原决策"全员 NPC"被推翻。正确的做法是按生物类型分层——不是全或无。
 
-### 决策对比
+### 推翻原因
 
-| 维度 | Monster + 部位分血改造 | NPC 系统（Character） |
+把动物塞进 NPC 存在致命缺陷：
+
+1. **NPC 没有 harvest/dissect 机制**。动物/龙被杀死后无法出肉/皮/骨/器官——这是动物最核心的需求。
+2. **NPC 模板有 30+ 个字段，动物只需要其中 5 个**。skills/rng/装备池/出身故事/对话/商人——全是噪音。
+3. **Monster 已有很多动物需要的功能**：special_attacks（咬/抓/毒/扑）、anger/fear triggers、简单伤害公式——而 NPC 没有。
+4. **Monster 修部位 HP 只需要改 `apply_damage` 一行**，不是 ~65 行。
+
+### 修订后对比
+
+| 维度 | Monster + 部位 HP 修复 | NPC（Character） |
 |------|----------------------|---------------------|
-| **部位 HP** | 需 C++ 改造（~65 行） | ✅ 原生 12 部位分血 |
-| **解剖学自定义** | 需 C++ 改造 + JSON | ✅ 纯 JSON（`anatomy` 系统） |
-| **骨折** | 需要从零实现 | ✅ 原生 `is_limb_broken` |
-| **流血** | 需要从零实现 | ✅ 原生 `effect_bleed` |
-| **包扎/消毒/夹板** | 需要从零实现 | ✅ 原生支持 |
-| **部位伤残影响** | 需要从零实现 | ✅ 骨折影响奔跑/攻击/穿戴/施法 |
-| **护甲按部位** | 需额外实现 | ✅ 原生 per-part armor |
-| **NPC AI 行为** | 需额外实现 | ✅ 原生 AI（战斗/逃跑/对话） |
-| **JSON 工作量** | 大（全新怪物体系） | 中（改造 NPC 模板） |
-| **C++ 工作量** | 大（~65 行基础 + 无数附加） | **零** |
+| **部位 HP** | 修 `apply_damage` 一行 | ✅ 原生 |
+| **骨折/流血** | ❌（动物不需要） | ✅ |
+| **harvest/dissect** | ✅ 原生 | ❌ 需从零新写代码 |
+| **special_attacks** | ✅ 原生（咬/抓/扑/毒） | ❌（NPC 只有平 A） |
+| **装备/技能分布** | ❌ | ✅ |
+| **对话/派系** | ❌ | ✅ |
+| **C++ 工作量** | ~5 行 | 中等（harvest 需新增） |
 
-### 路线选择
+### 分层路线
 
-**主路线：NPC（Character）系统**
-- 所有"敌对生物"实际是 NPC，继承全套 Character 能力
-- 纯 JSON 即可定义不同生物的部位配置、HP、护甲
-- 利用 `anatomy` 系统定义不同生物的部位数量和类型
-- 利用 NPC faction/ai 系统控制行为
+```
+需要装备/对话/技能分布？
+    │
+    ├── 是 → NPC 系统
+    │       强盗、哥布林、大地精、巨魔、食人魔、巨人
+    │
+    └── 否 → Monster 系统（+ 部位 HP 修复）
+            狼、熊、鹿、野猪（纯野兽）
+            飞龙、地龙、狮鹫、蛇龙、树妖（纯战斗生物）
+```
 
-**备选路线：重新实现的平行类**
-- 如果未来 NPC 系统在性能或行为上有无法接受的限制
-- 可以考虑 fork 出 Character 的核心部位/受伤逻辑到新的 `combatant` 基类
-- 但这是远期选项，优先用 NPC 验证玩法可行性
+| 生物 | 系统 | 判断依据 |
+|------|------|---------|
+| 强盗/士兵 | NPC | 需要装备+技能分布+对话+派系 |
+| 哥布林 | NPC | 需要部落派系+装备偏好+偷窃行为 |
+| 大地精 | NPC | 需要军事化装备+纪律行为 |
+| 狗头人 | NPC | 需要陷阱+洞穴派系 |
+| 食人魔 | NPC | 需要粗糙装备+简单嗜好 |
+| 山岭巨人 | NPC | 需要粗糙装备+投石行为 |
+| 独眼巨人 | NPC | 需要放牧行为+可能对话 |
+| 沼泽巨人 | NPC | 不需要对话但有区域行为 |
+| 牛头人 | NPC | 需要迷宫守护行为+武器 |
+| **狼/熊/鹿/野猪** | **Monster** | 纯野兽，不需要装备/对话，需要 harvest |
+| **飞龙/地龙/蛇龙** | **Monster** | 不需要装备/对话，需要 harvest + special_attacks |
+| **狮鹫/蝎尾狮** | **Monster** | 不需要装备/对话，需要 harvest（可骑性另议） |
+| **树妖/多头蛇蜥** | **Monster** | 不需要装备/对话，需要 harvest |
+
+### Monster 部位 HP 修复（全部 C++ 改动）
+
+```cpp
+// src/monster.cpp — 当前
+void monster::apply_damage(Creature *source, bodypart_id /*bp*/, int dam, ...) {
+    if( is_dead_state() ) return;
+    hp -= dam;  // ❌ 绕过部位
+}
+
+// 改为：
+void monster::apply_damage(Creature *source, bodypart_id bp, int dam, ...) {
+    if( is_dead_state() ) return;
+    mod_part_hp_cur( bp, -dam );  // ✅ 走 Creature 基类部位方法
+    // 死亡判定改为检查致命部位归零
+}
+```
+
+同时修复 `get_hp()` / `get_hp(bp)` / `get_hp_max()` 委托给基类。总改动 ~5 行。
+
+Monster 的 `set_body()` 已经支持通过 `anatomy` JSON 定义部位——修复这三行后，纯 JSON 就能定义不同动物的部位配置。
 
 ---
 

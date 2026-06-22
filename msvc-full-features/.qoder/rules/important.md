@@ -14,12 +14,14 @@ alwaysApply: true
 docs/
 ├── vanilla/     # CDDA 原版系统调研（纯现状分析）
 ├── design/      # Medieval Mod 策划案（未来规划与方案设计）
-└── process/     # 实现进度跟踪（已完成与待完成的任务状态）
+├── process/     # 实现进度跟踪（进行中的任务状态）
+└── done/        # 已完成任务的归档（从 process 移入）
 ```
 
 - **vanilla/**：调研 CDDA 现有机制时写入，不混入中世纪策划
 - **design/**：中世纪改造的方案设计，每个策划案一个文件
-- **process/**：每次完成/推进改造任务后，必须更新对应的 process 文档进度
+- **process/**：进行中的任务进度。完成后移入 `done/`
+- **done/**：已完成任务归档。内容从 `process/` 移入，不直接新建
 
 ## 自动执行要求
 
