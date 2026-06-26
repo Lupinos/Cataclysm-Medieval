@@ -43,5 +43,167 @@
     "color": "brown",
     "see_cost": 5,
     "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_bandit_camp" ],
+    "name": "bandit camp",
+    "sym": "B",
+    "color": "red",
+    "see_cost": 5,
+    "flags": [ "RISK_HIGH" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "medieval_walled_village_nw",
+      "medieval_walled_village_n",
+      "medieval_walled_village_ne",
+      "medieval_walled_village_w",
+      "medieval_walled_village_e",
+      "medieval_walled_village_sw",
+      "medieval_walled_village_se"
+    ],
+    "name": "village wall",
+    "sym": "#",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_walled_village_c" ],
+    "name": "village center",
+    "sym": "V",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD", "SOURCE_DRINK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_walled_village_s" ],
+    "name": "village gate",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "medieval_fortified_town_nw",
+      "medieval_fortified_town_n1",
+      "medieval_fortified_town_n2",
+      "medieval_fortified_town_ne",
+      "medieval_fortified_town_w1",
+      "medieval_fortified_town_w2",
+      "medieval_fortified_town_w3",
+      "medieval_fortified_town_e1",
+      "medieval_fortified_town_e2",
+      "medieval_fortified_town_e3",
+      "medieval_fortified_town_sw",
+      "medieval_fortified_town_s1",
+      "medieval_fortified_town_s2",
+      "medieval_fortified_town_se"
+    ],
+    "name": "town wall",
+    "sym": "#",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [
+      "medieval_fortified_town_n_gate",
+      "medieval_fortified_town_s_gate"
+    ],
+    "name": "town gate",
+    "sym": "G",
+    "color": "yellow",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_smithy" ],
+    "name": "town smithy",
+    "sym": "+",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FABRICATION" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_keep" ],
+    "name": "lord's castle",
+    "sym": "C",
+    "color": "light_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD", "SOURCE_DRINK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_barracks" ],
+    "name": "guard barracks",
+    "sym": "B",
+    "color": "dark_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_church" ],
+    "name": "parish church",
+    "sym": "P",
+    "color": "light_gray",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_market" ],
+    "name": "central marketplace",
+    "sym": "V",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD", "SOURCE_DRINK" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_tavern" ],
+    "name": "town tavern",
+    "sym": "T",
+    "color": "cyan",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY", "SOURCE_FOOD" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_housing" ],
+    "name": "peasant cottage",
+    "sym": "H",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_stables" ],
+    "name": "town stables",
+    "sym": "S",
+    "color": "brown",
+    "see_cost": 5,
+    "flags": [ "SOURCE_SAFETY" ]
+  },
+  {
+    "type": "overmap_terrain",
+    "id": [ "medieval_fortified_town_crops" ],
+    "name": "crop field",
+    "sym": "F",
+    "color": "green",
+    "see_cost": 5,
+    "flags": [ "SOURCE_FOOD" ]
   }
 ]
+

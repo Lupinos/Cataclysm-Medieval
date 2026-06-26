@@ -1,0 +1,220 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_ROAD_AMBUSH",
+    "recurrence": "30 minutes",
+    "condition": {
+      "and": [
+        "u_is_outside",
+        { "one_in_chance": 20 }
+      ]
+    },
+    "effect": [
+      {
+        "weighted_list_eocs": [
+          [ "EOC_MED_BANDIT_AMBUSH_GRUNT", 45 ],
+          [ "EOC_MED_BANDIT_AMBUSH_SCAVENGERS", 35 ],
+          [ "EOC_MED_BANDIT_AMBUSH_MUGGER", 30 ],
+          [ "EOC_MED_BANDIT_AMBUSH_DUO", 30 ],
+          [ "EOC_MED_BANDIT_AMBUSH_SKIRMISHER", 25 ],
+          [ "EOC_MED_BANDIT_AMBUSH_SNIPER", 15 ],
+          [ "EOC_MED_BANDIT_AMBUSH_VANGUARD", 15 ],
+          [ "EOC_MED_BANDIT_AMBUSH_CRIMSON", 5 ]
+        ]
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_GRUNT",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_grunt",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "你听到两旁林木间传来沙沙异响，一名手持木棒的落单强盗从小道旁的暗处窜了出来！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_SCAVENGERS",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_grunt",
+        "real_count": 2,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "两个衣衫褴褛、面黄肌瘦的饥民手持干草叉从草丛中窜出，眼中闪烁着绝望而残忍的凶光！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_MUGGER",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_veteran",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "一名身手敏捷的强盗老手突然从前方的树梢上跃下，无声地挡住了你的去路，手中尖刀泛着寒芒！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_DUO",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_grunt",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true
+      },
+      {
+        "u_spawn_npc": "med_bandit_veteran",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "一阵急促的脚步声传来，一名带钢盔的强盗老手带着一名手下朝你逼近！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_SKIRMISHER",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_grunt",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true
+      },
+      {
+        "u_spawn_npc": "med_bandit_archer",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "你听到前方的树丛后面传来弓弦拉开的紧绷声，一名强盗弓手和一名手持木棒的同伙正从两翼合围过来！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_SNIPER",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_marksman",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "【致命冷箭】林风中忽然传来刺耳的尖啸！一名强盗神射手在远处的阴影里无声地搭起了弓，正用冰冷的箭头瞄准着你！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_VANGUARD",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_elite",
+        "real_count": 2,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "两名身穿沉重杰克甲、手持武装钢斧的强盗精锐踏着沉重的脚步朝你逼近，眼中满是嗜血的狂热！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_BANDIT_AMBUSH_CRIMSON",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_elite",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true
+      },
+      {
+        "u_spawn_npc": "med_bandit_marksman",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true
+      },
+      {
+        "u_spawn_npc": "med_bandit_chief",
+        "real_count": 1,
+        "min_radius": 15,
+        "max_radius": 25,
+        "open_air_allowed": true,
+        "outdoor_only": true,
+        "spawn_message": "【死亡威胁】树林深处传来刺耳的号角！一名身披厚重链甲的强盗头领率领着一名身穿杰克甲的强盗精锐与一名冷酷的神射手，带着窒息的杀意朝你合围过来！"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_TEST_SPAWN_ALL",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_beggar",
+        "real_count": 1,
+        "min_radius": 3,
+        "max_radius": 5,
+        "spawn_message": "【测试】伪装乞丐 (med_bandit_beggar) 已在您身边生成！可以按 e 对话。"
+      },
+      {
+        "u_spawn_npc": "med_bandit_elite",
+        "real_count": 1,
+        "min_radius": 3,
+        "max_radius": 5,
+        "spawn_message": "【测试】精锐强盗 (med_bandit_elite) 已在您身边生成！"
+      },
+      {
+        "u_spawn_npc": "med_bandit_archer",
+        "real_count": 1,
+        "min_radius": 3,
+        "max_radius": 5,
+        "spawn_message": "【测试】强盗弓手 (med_bandit_archer) 已在您身边生成！"
+      },
+      {
+        "u_spawn_npc": "med_bandit_marksman",
+        "real_count": 1,
+        "min_radius": 3,
+        "max_radius": 5,
+        "spawn_message": "【测试】强盗神射手 (med_bandit_marksman) 已在您身边生成！"
+      },
+      {
+        "u_spawn_npc": "med_bandit_toll_road",
+        "real_count": 1,
+        "min_radius": 3,
+        "max_radius": 5,
+        "spawn_message": "【测试】收费站强盗 (med_bandit_toll_road) 已在您身边生成！可以按 e 对话。"
+      }
+    ]
+  }
+]

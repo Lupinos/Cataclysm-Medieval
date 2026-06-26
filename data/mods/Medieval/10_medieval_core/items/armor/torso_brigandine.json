@@ -160,7 +160,7 @@
     "id": "med_corrazina",
     "copy-from": "med_brigandine_base",
     "type": "ARMOR",
-    "name": { "str": "med_ corrazina", "str_pl": "med_ corrazinas" },
+    "name": { "str": "med_ corrazina" },
     "description": "A highly protective, Italian-style transitional armor popular in the late 14th century.  Employs a combination of small, flexible steel plates along the waist and flanks, and larger, thick breastplate plates over the torso.  Superb front thrust protection while retaining moderate waist flexibility.",
     "weight": "8500 g",
     "volume": "4 L",

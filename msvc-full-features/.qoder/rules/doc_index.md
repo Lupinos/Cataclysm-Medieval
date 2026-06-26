@@ -45,6 +45,8 @@ alwaysApply: true
 | [code_material_system.md](../docs/vanilla/code_material_system.md) | 材料系统：material_type加载/验证流程、damage_type注册机制、stab抗性引擎支持、钢材7级分级与chain变体 |
 | [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md) | 护甲穿透系统：damage_unit→res_pen/res_mult全程链路、Character/Monster护甲吸收、Medieval STR×重量破甲改造 |
 | [code_localization_system.md](../docs/vanilla/code_localization_system.md) | 本地化与国际化系统：延迟翻译容器translation、自制MO解析器与哈希查找、自动化JSON文本提取工作流与Mod本地化策略 |
+| [code_item_damage_system.md](../docs/vanilla/code_item_damage_system.md) | 物品伤害/破损等级系统：底层的整千倍乘与离散折叠算法，剖析 JSON 伤害概率塌陷与强盗装备“整齐划一”的数学机理 |
+
 
 ## 中世纪策划案 (docs/design/)
 
@@ -98,6 +100,7 @@ alwaysApply: true
 | [medieval_settlement.md](../docs/process/medieval_settlement.md) | 聚落与地图实现进度：T5农舍测试mapgen、palette体系、overmap_terrain定义 |
 | [medieval_combat_rebalance.md](../docs/process/medieval_combat_rebalance.md) | 战斗重平衡进度：STR×武器重量破甲（C++ melee.cpp）、待考虑的后续改造项 |
 | [medieval_i18n_workflow.md](../docs/process/medieval_i18n_workflow.md) | 独立本地化工作流：基于规范 PO 的 0 硬编码编译与 AI 翻译增补流程 |
+| [medieval_bandit_system.md](../docs/process/medieval_bandit_system.md) | 强盗与遭遇系统进度：8大NPC类型、弹药自适应口袋、剧情收费路匪/乞丐陷阱、8组遭遇 EOC |
 
 ## 项目 Skills (.qoder/skills/)
 

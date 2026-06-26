@@ -1,0 +1,70 @@
+[
+  {
+    "type": "palette",
+    "id": "medieval_bandit_camp_palette",
+    "terrain": {
+      "_": "t_grass",
+      "T": "t_tree",
+      ",": "t_dirt",
+      "f": "t_splitrail_fence",
+      "g": "t_splitrail_fencegate_c",
+      "#": "t_wall_wattle",
+      "o": "t_window_empty",
+      "+": "t_door_c",
+      ".": "t_dirtfloor"
+    },
+    "furniture": {
+      "b": "f_straw_bed",
+      "t": "f_table",
+      "c": "f_chair",
+      "F": "f_firering"
+    }
+  },
+  {
+    "type": "mapgen",
+    "method": "json",
+    "om_terrain": [ "medieval_bandit_camp" ],
+    "weight": 100,
+    "object": {
+      "fill_ter": "t_grass",
+      "flags": [ "ERASE_ALL_BEFORE_PLACING_TERRAIN" ],
+      "faction_owner": [
+        { "id": "med_bandits", "x": [ 0, 23 ], "y": [ 0, 23 ] }
+      ],
+      "rows": [
+        "________________________",
+        "__TTTTTTT,,,,TTTTTTTTT__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__T,,fffffffffffff,,,T__",
+        "__T,,f,,,,,,,,,,,f,,,T__",
+        "__T,,f,,btc,,,,,,f,,,T__",
+        "__T,,f,,,,,,,,,,,f,,,T__",
+        "__T,,f,,,,F,,,,,,f,,,T__",
+        "__T,,f,,,,,,,,,,,f,,,T__",
+        "__T,,ffffffff+ffff,,,T__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__T,,,,,#####,,,,,,,,T__",
+        "__T,,,,,#...#,,,,,,,,T__",
+        "__T,,,,,#b..#,,,,,,,,T__",
+        "__T,,,,,#...#,,,,,,,,T__",
+        "__T,,,,,##+##,,,,,,,,T__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__T,,,,,,,g,,,,,,,,,,T__",
+        "__T,,,,,ff,ff,,,,,,,,T__",
+        "__T,,,,,,,,,,,,,,,,,,T__",
+        "__TTTTTTT,,,,TTTTTTTTT__",
+        "________________________"
+      ],
+      "palettes": [ "medieval_bandit_camp_palette" ],
+      "place_npcs": [
+        { "class": "med_bandit_chief", "x": 10, "y": 14 },
+        { "class": "med_bandit_veteran", "x": 6, "y": 6 },
+        { "class": "med_bandit_grunt", "x": 10, "y": 6 },
+        { "class": "med_bandit_grunt", "x": 12, "y": 8 },
+        { "class": "med_bandit_grunt", "x": 7, "y": 15 }
+      ]
+    }
+  }
+]

@@ -719,6 +719,37 @@ Mod 可以：
 - 通过 `migration_and_obsoletion.json` 淘汰/迁移物品
 - 通过 `mod_interactions/` 处理与其他 mod 的交互
 
+### 5.4 Mod 验证与调试流程 ★NEW
+
+#### 5.4.1 C++ 级别静态校验命令
+通过执行游戏可执行文件，可以对 JSON 数据的语法、类型字段、依赖一致性进行验证。
+
+*   **`--jsonverify` 限制**：此参数仅运行 `game::load_static_data()`，其只会加载少数全局静态配置 JSON（如 `auto_pickup`, `auto_notes`, `safemode`），并**不会**加载核心游戏数据 `data/json/` 或任何 Mod。
+*   **`--check-mods <mod_id>` 核心校验**：必须使用此参数（如 `--check-mods dda` 校验原版，`--check-mods medieval` 校验中世纪 Mod）才能执行全量 JSON 数据的读取、解析、合并与语义 Finalize 校验。所有的 JSON 语法错误与语义引用警告均在此命令中触发。
+
+由于默认的编译产物 `cataclysm-tiles.exe` 采用的是 Windows GUI 子系统，在终端直接运行它会立即返回，并且不会自动将其标准输出/错误打印在控制台上。
+
+*   **最佳实践（PowerShell 监测脚本）**：
+    在 `msvc-full-features/` 目录下提供了一个 `check_with_wait.ps1` 脚本。它通过删除旧日志、启动进程、重定向输出并强制睡眠 15 秒（如果进程未结束则继续等待）来安全地收集校验结果。
+    ```powershell
+    # 校验原版 DDA 核心数据并等待输出：
+    powershell -ExecutionPolicy Bypass -File .\check_with_wait.ps1 -Mode dda
+
+    # 校验中世纪 Mod 核心数据并等待输出：
+    powershell -ExecutionPolicy Bypass -File .\check_with_wait.ps1 -Mode medieval
+    ```
+    输出结果会在进程退出后被统一读取并打印在终端，包含：Standard Output、Standard Error、以及 `config/debug.log` 内容。
+
+#### 5.4.2 路径防冲突机制 (Duplicate Load Gotcha)
+在 Windows 环境下运行静态校验时，默认会载入基准数据目录下的模组以及用户数据目录下的模组。若当前工作目录与数据目录配置重叠，会导致 mod 被加载两次，触发 `there is already a mod with ident xxx` 的二级解析冲突。
+*   **根因**：`PATH_INFO::moddir()` 与 `PATH_INFO::user_moddir_path()` 指向了同一个物理路径。
+*   **防范方案**：在校验时**显式指定**不同路径的 `--basepath` 和 `--userdir`。例如，使 `--userdir` 指向一个没有 `mods` 文件夹的空父目录，强制使二者隔离，即可恢复正常加载校验。
+
+#### 5.4.3 校验常见 Lint 与 Gotchas
+1.  **空格格式校验**：CDDA 翻译文案与职业描述中，每个句子结束符号（如 `.`、`?`、`!`）后必须紧跟 **两个半角空格** (`.  `)，否则会触发 Lint 语义校验错误。
+2.  **大地图 OMT 属性匹配**：`overmap_terrain` 的 flags 必须严格匹配游戏引擎内部定义的枚举。例如，`SOURCE_WATER` 在高版本中不再有效，应当替换为 `SOURCE_DRINK`。
+3.  **Mapgen 矩阵宽度守恒**：在手绘 mapgen rows ASCII 矩阵时，若设定了 24x24 大小，所有行的字符串长度必须精确为 24 字符。添加门窗等特殊字符时需用其**替换**对应位置的墙壁或地面字符，而非插入，以防止行宽溢出到 25 字符。
+
 ---
 
 ## 6. 其他数据目录

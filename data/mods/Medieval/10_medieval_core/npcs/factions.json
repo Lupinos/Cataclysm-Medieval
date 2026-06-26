@@ -1,0 +1,54 @@
+[
+  {
+    "type": "faction",
+    "id": "med_bandits",
+    "name": "Bandits",
+    "likes_u": -30,
+    "respects_u": -30,
+    "known_by_u": false,
+    "size": 200,
+    "power": 30,
+    "food_supply": 57600,
+    "wealth": 5000,
+    "relations": {
+      "med_bandits": {
+        "kill on sight": false,
+        "watch your back": true,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": { "kill on sight": true },
+      "village_militia": { "kill on sight": true }
+    },
+    "description": "Desperate men who prey upon travelers and the weak.  Deserters, outlaws, and starving peasants driven to banditry by famine and war."
+  },
+  {
+    "type": "faction",
+    "id": "village_militia",
+    "name": "Village Militia",
+    "likes_u": 30,
+    "respects_u": 25,
+    "known_by_u": true,
+    "size": 150,
+    "power": 40,
+    "food_supply": 86400,
+    "wealth": 8000,
+    "relations": {
+      "village_militia": {
+        "kill on sight": false,
+        "watch your back": false,
+        "share my stuff": true,
+        "guard your stuff": true,
+        "lets you in": true,
+        "defends your space": true,
+        "knows your voice": true
+      },
+      "your_followers": { "kill on sight": false },
+      "med_bandits": { "kill on sight": true }
+    },
+    "description": "The local guards and defensive militia of the walled village, sworn to protect the common folk from outlaws, beasts, and the ravages of war."
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_GUARD",
+    "effect": [
+      {
+        "u_spawn_npc": "med_village_guard",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：城镇卫兵 (med_village_guard)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_ELITE",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_elite",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：强盗精英 (med_bandit_elite)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_ARCHER",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_archer",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：强盗弓手 (med_bandit_archer)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_MARKSMAN",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_marksman",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：强盗神射手 (med_bandit_marksman)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_CHIEF",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_chief",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：强盗首领 (med_bandit_chief)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_BEGGAR",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_beggar",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：伪装乞丐强盗 (med_bandit_beggar)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_GRUNT",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_grunt",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：普通强盗 (med_bandit_grunt)"
+      }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_MED_DEBUG_SPAWN_BANDIT_VETERAN",
+    "effect": [
+      {
+        "u_spawn_npc": "med_bandit_veteran",
+        "real_count": 1,
+        "min_radius": 1,
+        "max_radius": 2,
+        "spawn_message": "[DEBUG] 已在身边召出：强盗老手 (med_bandit_veteran)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "//": "=== WEAK BANDIT SUB-GROUPS ===",
+    "type": "item_group",
+    "id": "med_bandit_weak_torso",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 70 },
+      { "item": "med_tunic_wool", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_weak_legs",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_hose_wool", "prob": 75 },
+      { "item": "med_leg_wraps", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_weak_feet",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_turnshoes", "prob": 60 },
+      { "item": "med_boots_ankle", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_weak_head",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_coif_linen", "prob": 40 },
+      { "item": "med_straw_hat", "prob": 30 },
+      { "item": "med_cap_wool", "prob": 30 }
+    ]
+  },
+  {
+    "//": "=== WEAK BANDIT WORN - collection of categories ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_WEAK_worn",
+    "subtype": "collection",
+    "entries": [
+      { "group": "med_bandit_weak_torso", "prob": 100, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_weak_legs", "prob": 100, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_weak_feet", "prob": 90, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_weak_head", "prob": 40, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "//": "=== WEAK BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_WEAK_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_club", "prob": 25, "damage": [ 0, 3 ] },
+      { "item": "medieval_pitchfork", "prob": 15, "damage": [ 0, 3 ] },
+      { "item": "medieval_flail", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_wood_axe", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_hand_axe", "prob": 5, "damage": [ 0, 3 ] },
+      { "item": "medieval_rock", "prob": 15 },
+      { "item": "medieval_eating_knife", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_seax", "prob": 5, "damage": [ 0, 3 ] },
+      { "item": "medieval_blacksmith_hammer", "prob": 5, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "//": "=== MEDIUM BANDIT SUB-GROUPS ===",
+    "type": "item_group",
+    "id": "med_bandit_medium_armor",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_gambeson", "prob": 50 },
+      { "item": "med_armor_leather", "prob": 25 },
+      { "item": "med_tunic_wool", "prob": 25 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_medium_legs",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_hose_wool", "prob": 60 },
+      { "item": "med_split_hose", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_medium_feet",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_boots_ankle", "prob": 70 },
+      { "item": "med_boots_leather", "prob": 30 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_medium_head",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_cap_leather", "prob": 40 },
+      { "item": "med_coif_leather", "prob": 35 },
+      { "item": "med_helm_kettle", "prob": 25 }
+    ]
+  },
+  {
+    "//": "=== MEDIUM BANDIT WORN - collection of categories ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_MEDIUM_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 100, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_medium_armor", "prob": 85, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_medium_legs", "prob": 100, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_medium_feet", "prob": 95, "damage": [ 0, 3 ] },
+      { "group": "med_bandit_medium_head", "prob": 50, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "//": "=== MEDIUM BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_MEDIUM_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_falchion", "prob": 15, "damage": [ 0, 3 ] },
+      { "item": "medieval_hand_axe", "prob": 15, "damage": [ 0, 3 ] },
+      { "item": "medieval_bearded_axe", "prob": 8, "damage": [ 0, 3 ] },
+      { "item": "medieval_seax", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_messer", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_mace", "prob": 5, "damage": [ 0, 3 ] },
+      { "item": "medieval_shortsword", "prob": 5, "damage": [ 0, 3 ] },
+      { "item": "medieval_bollock_dagger", "prob": 10, "damage": [ 0, 3 ] },
+      { "item": "medieval_spear", "prob": 12, "damage": [ 0, 3 ] },
+      { "item": "medieval_flail", "prob": 8, "damage": [ 0, 3 ] },
+      { "item": "medieval_arming_sword", "prob": 2, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "//": "=== LEADER BANDIT SUB-GROUPS ===",
+    "type": "item_group",
+    "id": "med_bandit_leader_inner",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_gambeson", "prob": 65 },
+      { "item": "med_mail_shirt", "prob": 35 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_leader_outer",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_cuirass", "prob": 15 },
+      { "item": "med_heavy_coat_of_plates", "prob": 25 },
+      { "item": "med_corrazina", "prob": 25 },
+      { "item": "med_knights_brigandine", "prob": 20 },
+      { "item": "med_jack_of_plates", "prob": 15 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_leader_legs",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_joined_hose", "prob": 60 },
+      { "item": "med_hose_wool", "prob": 40 }
+    ]
+  },
+  {
+    "type": "item_group",
+    "id": "med_bandit_leader_head",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "med_helm_bascinet", "prob": 55 },
+      { "item": "med_helm_kettle", "prob": 35 },
+      { "item": "med_coif_leather", "prob": 10 }
+    ]
+  },
+  {
+    "//": "=== LEADER BANDIT WORN - collection of categories ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_LEADER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 100, "damage": [ 0, 2 ] },
+      { "group": "med_bandit_leader_inner", "prob": 100, "damage": [ 0, 2 ] },
+      { "group": "med_bandit_leader_outer", "prob": 90, "damage": [ 0, 2 ] },
+      { "group": "med_bandit_leader_legs", "prob": 100, "damage": [ 0, 2 ] },
+      { "group": "med_bandit_leader_head", "prob": 100, "damage": [ 0, 2 ] },
+      { "item": "med_gloves_leather", "prob": 80, "damage": [ 0, 2 ] },
+      { "item": "med_boots_leather", "prob": 100, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "//": "=== LEADER BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_LEADER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_arming_sword", "prob": 15, "damage": [ 0, 2 ] },
+      { "item": "medieval_battle_axe", "prob": 10, "damage": [ 0, 2 ] },
+      { "item": "medieval_war_hammer", "prob": 10, "damage": [ 0, 2 ] },
+      { "item": "medieval_morning_star", "prob": 8, "damage": [ 0, 2 ] },
+      { "item": "medieval_falchion", "prob": 10, "damage": [ 0, 2 ] },
+      { "item": "medieval_messer", "prob": 8, "damage": [ 0, 2 ] },
+      { "item": "medieval_longsword", "prob": 3, "damage": [ 0, 2 ] },
+      { "item": "medieval_flanged_mace", "prob": 5, "damage": [ 0, 2 ] },
+      { "item": "medieval_bearded_axe", "prob": 8, "damage": [ 0, 2 ] },
+      { "item": "medieval_rondel_dagger", "prob": 3, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "//": "=== STRONG (ELITE) BANDIT WORN ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_STRONG_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 100, "damage": [ 0, 2 ] },
+      { "item": "med_doublet", "prob": 80, "damage": [ 0, 2 ] },
+      { "item": "med_commoners_brigandine", "prob": 35, "damage": [ 0, 2 ] },
+      { "item": "med_jack_of_plates", "prob": 30, "damage": [ 0, 2 ] },
+      { "item": "med_cuir_bouilli_coat_of_plates", "prob": 25, "damage": [ 0, 2 ] },
+      { "item": "med_hose_wool", "prob": 100, "damage": [ 0, 2 ] },
+      { "item": "med_boots_ankle", "prob": 100, "damage": [ 0, 2 ] },
+      { "item": "med_helm_kettle", "prob": 40, "damage": [ 0, 2 ] },
+      { "item": "med_coif_leather", "prob": 30, "damage": [ 0, 2 ] },
+      { "item": "med_cap_leather", "prob": 20, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "//": "=== STRONG (ELITE) BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_STRONG_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_battle_axe", "prob": 20, "damage": [ 0, 2 ] },
+      { "item": "medieval_arming_sword", "prob": 20, "damage": [ 0, 2 ] },
+      { "item": "medieval_war_hammer", "prob": 15, "damage": [ 0, 2 ] },
+      { "item": "medieval_morning_star", "prob": 15, "damage": [ 0, 2 ] },
+      { "item": "medieval_falchion", "prob": 15, "damage": [ 0, 2 ] },
+      { "item": "medieval_bearded_axe", "prob": 10, "damage": [ 0, 2 ] },
+      { "item": "medieval_messer", "prob": 5, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "//": "=== ARCHER BANDIT WORN ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_ARCHER_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 100, "damage": [ 0, 3 ] },
+      { "item": "med_tunic_wool", "prob": 60, "damage": [ 0, 3 ] },
+      { "item": "med_armor_leather", "prob": 30, "damage": [ 0, 3 ] },
+      { "item": "med_hose_wool", "prob": 100, "damage": [ 0, 3 ] },
+      { "item": "med_turnshoes", "prob": 80, "damage": [ 0, 3 ] },
+      { "item": "med_coif_linen", "prob": 40, "damage": [ 0, 3 ] },
+      { "item": "med_cap_wool", "prob": 30, "damage": [ 0, 3 ] }
+    ]
+  },
+  {
+    "//": "=== ARCHER BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_ARCHER_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_shortbow", "prob": 50, "damage": [ 0, 3 ] },
+      { "item": "medieval_light_crossbow", "prob": 35, "damage": [ 0, 3 ] },
+      { "item": "medieval_sling", "prob": 15 }
+    ]
+  },
+  {
+    "//": "=== MARKSMAN BANDIT WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_BANDIT_MARKSMAN_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_longbow", "prob": 45, "damage": [ 0, 2 ] },
+      { "item": "medieval_heavy_crossbow", "prob": 35, "damage": [ 0, 2 ] },
+      { "item": "medieval_composite_bow", "prob": 20, "damage": [ 0, 2 ] }
+    ]
+  },
+  {
+    "//": "=== ARCHER BANDIT CARRY AMMO ===",
+    "type": "item_group",
+    "id": "med_bandit_archer_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "arrow_wood", "prob": 50, "count": [ 15, 25 ] },
+      { "item": "bolt_wood", "prob": 50, "count": [ 15, 25 ] },
+      { "item": "medieval_rock", "prob": 40, "count": [ 5, 10 ] }
+    ]
+  },
+  {
+    "//": "=== MARKSMAN BANDIT CARRY AMMO ===",
+    "type": "item_group",
+    "id": "med_bandit_marksman_carry",
+    "subtype": "collection",
+    "entries": [
+      { "item": "arrow_field_point_fletched", "prob": 50, "count": [ 20, 30 ] },
+      { "item": "bolt_wood_bodkin", "prob": 50, "count": [ 20, 30 ] }
+    ]
+  },
+  {
+    "//": "=== VILLAGE GUARD WORN ===",
+    "type": "item_group",
+    "id": "NC_MED_GUARD_worn",
+    "subtype": "collection",
+    "entries": [
+      { "item": "med_linen_shirt", "prob": 100, "damage": 0 },
+      { "item": "med_doublet", "prob": 80, "damage": 0 },
+      { "item": "med_gambeson", "prob": 100, "damage": 0 },
+      { "item": "med_mail_shirt", "prob": 60, "damage": 0 },
+      { "item": "med_hose_wool", "prob": 100, "damage": 0 },
+      { "item": "med_boots_leather", "prob": 100, "damage": 0 },
+      { "item": "med_helm_kettle", "prob": 100, "damage": 0 },
+      { "item": "med_gloves_leather", "prob": 80, "damage": 0 }
+    ]
+  },
+  {
+    "//": "=== VILLAGE GUARD WEAPON ===",
+    "type": "item_group",
+    "id": "NC_MED_GUARD_weapon",
+    "subtype": "distribution",
+    "entries": [
+      { "item": "medieval_spear", "prob": 60, "damage": 0 },
+      { "item": "medieval_halberd", "prob": 30, "damage": 0 },
+      { "item": "medieval_arming_sword", "prob": 10, "damage": 0 }
+    ]
+  }
+]

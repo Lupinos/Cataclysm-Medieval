@@ -38,6 +38,36 @@
     - **重要发现**：`road_nested.json` 中所有人行道、路灯、交通灯、人行横道、路边垃圾嵌套 mapgen **全部引用 `road_palette`**——只覆写一个 palette 即可改变所有道路子元素
     - **验证通过** (`--check-mods medieval` exit 0)
 
+- [x] **第四阶段：荒野据点与强盗营地管线打通（overmap_special）** ★NEW
+  - **实现逻辑**：定义独立 hostile faction (`med_bandits`) -> 三级 bandit NPC types / classes (`NC_MED_BANDIT_*`) -> 6组装备worn/weapon items-group -> 24x24 single-tile mapgen (`medieval_bandit_camp`) with place_npcs -> overmap_special wilderness spawn setup.
+  - 文件：`10_medieval_core/npcs/factions.json` — `med_bandits` faction
+  - 文件：`10_medieval_core/npcs/classes.json` — 3 个 npc_class
+  - 文件：`10_medieval_core/npcs/npc.json` — 3 个 npc 实例
+  - 文件：`10_medieval_core/npcs/bandit_equipment.json` — 6 个 item_group
+  - 文件：`10_medieval_core/mapgen/bandit_camp.json` — 1 个 24x24 single-tile mapgen, using `f_firering` campfire palette
+  - 文件：`10_medieval_core/overmap/overmap_terrain.json` — `medieval_bandit_camp` terrain registration
+  - 文件：`10_medieval_core/overmap/overmap_special.json` — `medieval_bandit_camp` special, spawning in wilderness.
+  - **已解决**：`generic_factory.h` compile runtime validation error: `invalid furniture id "f_campfire"`. Fixed by replacing with `f_firering` (stone fire ring).
+  - **验证通过** (`--check-mods medieval` exit 0, compiles perfectly with no warnings/errors).
+
+- [x] **第五阶段：5x5 特大城堡要塞聚落实装（overmap_special）** ★NEW
+  - **实现逻辑**：为了展现一个壮丽的中世纪堡垒城镇，在 `overmap_terrain.json` 注册 25 个独立网格 ID，并在 `overmap_special.json` 注册 5x5 连体 Special。在 `mapgen/fortified_town.json` 完整绘制 25 格 ASCII 图。
+  - **核心区域**：
+    - NW/NE/SW/SE：转角 watchtower 哨塔（含 log 墙、木梯、宝箱）。
+    - N/S Gate：滑轨大门（palisade gate + pulley），门内侧各部署 2 名 Town Guard 站岗。
+    - Smithy（[1,1]）：石木结构，含 forge 熔炉、anvil 铁砧。
+    - Keep（[2,1]）：10x14 石制领主城堡（rock wall + rock floor），含壁炉、藏宝箱、长桌椅、主卧。
+    - Barracks（[3,1]）：民兵营房，含训练假人、武器架、草垫床。
+    - Church（[1,2]）：Chapel 教堂，内设 altar/benches，户外带 dirtmound 墓地。
+    - Market（[2,2]）：核心石井广场，环绕木制商人货摊。
+    - Tavern（[3,2]）：酒馆旅店（wood floor），含 bar counter 吧台、灶台、木桌椅。
+    - Stables（[2,3]）：隔间马厩（splitrail fence + haypile）与 granary 谷仓。
+    - Crops（[3,3]）：大型庄稼菜园。
+  - 文件：`10_medieval_core/overmap/overmap_terrain.json` — 注册 25 个要塞 ID
+  - 文件：`10_medieval_core/overmap/overmap_special.json` — 注册 `medieval_fortified_town` Special
+  - 文件：`10_medieval_core/mapgen/fortified_town.json` — 编写 25 格 ASCII mapgen 连体定义
+  - **验证通过** (`--check-mods medieval` exit 0, 编译零警告，语法与语义完全正确)。
+
 ### 待做
 
 - [x] 验证 mapgen 在游戏中正确渲染
@@ -46,9 +76,10 @@
 - [ ] 游戏内实际测试村庄生成（需设 CITY_SIZE=2, CITY_SPACING=7）
 - [ ] 测试多格建筑（T4 农庄 / 2-4 格）
 - [ ] 建立中世纪 palette 库（提取公共 palette 而非每个建筑手写）
-- [ ] 补充村庄建筑：酒馆/麦酒屋、谷仓、水井、牛栏/羊圈
+- [ ] 补充村庄建筑：谷仓、水井、牛栏/羊圈
 - [ ] 覆写 `road` 的 map_extra（现代道路垃圾）
 - [ ] T2 市镇与 T1 大城（远期）
+
 
 ---
 
@@ -137,10 +168,17 @@
 │   ├── manor_house_t3.json        # T3 领主庄园宅邸
 │   ├── parish_church_t3.json      # T3 教区教堂+墓地
 │   ├── smithy_t3.json             # T3 铁匠铺
-│   └── mill_t3.json               # T3 磨坊
-└── overmap/
-    ├── overmap_terrain.json        # 中世纪 overmap_terrain 定义（5 个）
-    └── city_building.json          # city_building 条目（5 个）
+│   ├── mill_t3.json               # T3 磨坊
+│   └── bandit_camp.json           # 强盗营地 mapgen
+├── overmap/
+│   ├── overmap_terrain.json       # 中世纪 overmap_terrain 定义（含强盗营地）
+│   ├── overmap_special.json       # 强盗营地 overmap_special
+│   └── city_building.json         # city_building 条目（5 个）
+└── npcs/
+    ├── factions.json              # 强盗 faction
+    ├── classes.json               # 强盗 npc_class
+    ├── npc.json                   # 强盗 npc 实例
+    └── bandit_equipment.json      # 强盗 worn/weapon item_groups
 
 00_cleanup/
 ├── game_balance.json               # EXTERNAL_OPTION（OVERMAP_PLACE_CITIES=true）

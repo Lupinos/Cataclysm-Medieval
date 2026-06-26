@@ -1,0 +1,90 @@
+[
+  {
+    "type": "npc",
+    "id": "med_bandit_grunt",
+    "//": "Generic weak melee bandit — peasant with stolen tools.",
+    "name_suffix": "Bandit",
+    "class": "NC_MED_BANDIT_WEAK",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_veteran",
+    "//": "Experienced bandit with real weapons and some armor.",
+    "name_suffix": "Bandit",
+    "class": "NC_MED_BANDIT_MEDIUM",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_chief",
+    "//": "Bandit leader — the toughest fighter with the best gear.",
+    "name_suffix": "Bandit Chief",
+    "class": "NC_MED_BANDIT_LEADER",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_beggar",
+    "//": "A fake beggar who traps travelers into an ambush.",
+    "name_suffix": "Starving Peasant",
+    "class": "NC_MED_BANDIT_WEAK",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_MED_BANDIT_BEGGAR",
+    "faction": "no_faction"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_elite",
+    "//": "An armored bandit veteran who fights brutally.",
+    "name_suffix": "Bandit Elite",
+    "class": "NC_MED_BANDIT_STRONG",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_archer",
+    "//": "A bandit archer who shoots from afar.",
+    "name_suffix": "Bandit Archer",
+    "class": "NC_MED_BANDIT_ARCHER",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_bandit_marksman",
+    "//": "A deadly sniper using war bows or heavy crossbows.",
+    "name_suffix": "Bandit Marksman",
+    "class": "NC_MED_BANDIT_MARKSMAN",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "med_bandits"
+  },
+  {
+    "type": "npc",
+    "id": "med_village_guard",
+    "//": "A dedicated village sentinel defending the walls.",
+    "name_suffix": "Town Guard",
+    "class": "NC_MED_GUARD",
+    "attitude": 0,
+    "mission": 8,
+    "chat": "TALK_DONE",
+    "faction": "village_militia"
+  }
+]

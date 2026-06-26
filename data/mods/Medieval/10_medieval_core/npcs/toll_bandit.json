@@ -1,0 +1,119 @@
+[
+  {
+    "type": "npc",
+    "id": "med_bandit_toll_road",
+    "//": "A roadside bandit who blocks the road/bridge and demands a toll. Can trigger a fight and spawn backup.",
+    "name_suffix": "Toll Bandit",
+    "class": "NC_MED_BANDIT_MEDIUM",
+    "attitude": 0,
+    "mission": 7,
+    "chat": "TALK_MED_BANDIT_TOLL",
+    "faction": "no_faction"
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MED_BANDIT_TOLL",
+    "dynamic_line": "喂！此山是我开，此树是我栽！要想从此过，留下买路财。识相的就交出买路钱，或者用你身上值钱的装备进行交易，否则老子今天就在这放你的血！",
+    "responses": [
+      {
+        "text": "好吧，好吧，我们通过交易来解决，看看我有什么能给你。[进行交易]",
+        "effect": "start_trade",
+        "topic": "TALK_MED_BANDIT_TOLL_TRADE"
+      },
+      {
+        "text": "想要钱？老子手里这柄利刃就是给你的买路钱！[拒绝并开战]",
+        "topic": "TALK_DONE",
+        "effect": [
+          "hostile",
+          {
+            "u_spawn_npc": "med_bandit_grunt",
+            "real_count": 2,
+            "min_radius": 4,
+            "max_radius": 8,
+            "spawn_message": "【伏击】强盗吹响了尖锐的哨口，两旁的草丛里突然窜出两名同伙，挥舞着武器将你包围！"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MED_BANDIT_TOLL_TRADE",
+    "dynamic_line": "哼，算你识相。挑几样值钱的玩意儿留下，别想用破烂糊弄老子！",
+    "responses": [
+      {
+        "text": "我已经把交易款项给你了，我现在可以走了吧？",
+        "topic": "TALK_DONE"
+      },
+      {
+        "text": "我改主意了，你还是去地狱里数钱吧！[开战]",
+        "topic": "TALK_DONE",
+        "effect": [
+          "hostile",
+          {
+            "u_spawn_npc": "med_bandit_grunt",
+            "real_count": 2,
+            "min_radius": 4,
+            "max_radius": 8,
+            "spawn_message": "【伏击】强盗吹响了尖锐的哨口，两旁的草丛里突然窜出两名同伙，挥舞着武器将你包围！"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "talk_topic",
+    "id": "TALK_MED_BANDIT_BEGGAR",
+    "dynamic_line": "求求你，行行好吧！我已经好几天没吃任何东西了，我的腿在逃难时摔断了，动弹不得……能给我一点吃的吗？我快要饿死了……",
+    "responses": [
+      {
+        "text": "好吧，给你一些食物。[给予食物]",
+        "topic": "TALK_DONE",
+        "effect": [
+          "hostile",
+          {
+            "u_spawn_npc": "med_bandit_grunt",
+            "real_count": 2,
+            "min_radius": 4,
+            "max_radius": 8,
+            "spawn_message": "【背叛伏击】他狼吞虎咽地咬了几口食物，突然冷笑着站了起来，吹响了哨子！四周的草丛中猛地窜出两名拿着干草叉的强盗同伙！"
+          }
+        ]
+      },
+      {
+        "text": "离我远点，我身上没有多余的食物。[拒绝帮助]",
+        "topic": "TALK_DONE",
+        "effect": [
+          "hostile",
+          {
+            "u_spawn_npc": "med_bandit_grunt",
+            "real_count": 2,
+            "min_radius": 4,
+            "max_radius": 8
+          },
+          {
+            "u_spawn_npc": "med_bandit_veteran",
+            "real_count": 1,
+            "min_radius": 4,
+            "max_radius": 8,
+            "spawn_message": "【伏击翻脸】乞丐眼神一冷，直起腰拍了拍手：“敬酒不吃吃罚酒！本想让你死得痛快点，既然你一毛不拔，那就把命留下吧！”随着他的喝令，两名手下和一名强盗老手齐刷刷从两侧的树林里合围了过来！"
+          }
+        ]
+      },
+      {
+        "text": "少装蒜，骗子，你根本没断腿！再不滚我一剑砍了你！[识破并威胁]",
+        "topic": "TALK_DONE",
+        "effect": [
+          "hostile",
+          {
+            "u_spawn_npc": "med_bandit_grunt",
+            "real_count": 2,
+            "min_radius": 4,
+            "max_radius": 8,
+            "spawn_message": "【强硬冲突】他冷笑一声，慢条斯理地站了起来：“被看穿了吗？不过那又怎样？这里荒郊野岭的，明年的今天就是你的忌日！动手！”两名潜伏在暗处的强盗随之冲出！"
+          }
+        ]
+      }
+    ]
+  }
+]

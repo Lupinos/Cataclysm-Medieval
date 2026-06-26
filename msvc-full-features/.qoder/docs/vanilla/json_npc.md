@@ -1,4 +1,4 @@
-﻿# 参考文档：CDDA NPC 配置体系调研
+# 参考文档：CDDA NPC 配置体系调研
 
 > 来源：`cataclysm-dda/json/npcs/` 目录实地分析
 
@@ -423,6 +423,33 @@ CDDA 的随机遭遇不通过固定 spawn，而是通过 **EOC（Effect on Condi
   }
 }
 ```
+
+### 3.5 EOC 与对话直接生成 NPC 机制 (`u_spawn_npc`)
+
+除了利用大地图 mapgen 放置 NPC 外，CDDA 支持在对话或 EOC 效果中直接使用 **`u_spawn_npc`** / **`npc_spawn_npc`** 动态生成全新 NPC 实例（C++ 实现在 `src/npctalk.cpp:5757`）。
+
+#### ⚙️ 支持的 JSON 语法参数表：
+
+| 字段名 | 类型 | 含义 | 示例 / 说明 |
+|:---|:---|:---|:---|
+| `u_spawn_npc` | string | 生成 NPC 的模板 ID / 类 ID | `"med_bandit_grunt"` |
+| `real_count` | int / formula | 实际生成个数 | `1` 或 `{ "rng": [1, 2] }` |
+| `hallucination_count` | int / formula | 幻觉/假 NPC 生成个数 | 通常配合 `trait_HALLUCINATION` 使用 |
+| `min_radius` | int / formula | 最小生成距离 (格数) | `15` (通常为了在玩家视野外生成) |
+| `max_radius` | int / formula | 最大生成距离 (格数) | `25` |
+| `outdoor_only` | bool | 是否仅在户外生成 | `true` |
+| `indoor_only` | bool | 是否仅在室内生成 | `true` |
+| `open_air_allowed` | bool | 是否允许空中/虚空生成 | `false` |
+| `lifespan` | string / duration | 生存寿命 (到期自动消失) | `"2 hours"` |
+| `spawn_message` | string | 生成时的玩家 log 提示语 (单数) | `"一个强盗从林子中窜了出来！"` |
+| `spawn_message_plural` | string | 生成时的玩家 log 提示语 (复数) | `"数名强盗从阴影中将你包围！"` |
+
+#### ⚙️ 常用环境触发条件 (Condition)：
+* **`u_is_outside`** (bool)：检测玩家当前是否在户外（无屋顶遮挡）。
+* **`one_in_chance`** (int)：EOC 专用概率检查条件，如 `{"one_in_chance": 4}` 表示 25% 概率。
+
+---
+
 
 ---
 
