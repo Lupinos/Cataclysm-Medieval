@@ -62,9 +62,11 @@ alwaysApply: true
 
 ### NPC 式怪物体系 — [code_bodypart_hp_system.md](../docs/vanilla/code_bodypart_hp_system.md)
 
-- **决策**：全面使用 NPC（Character）系统替代 monster，原生 12 部位分血、骨折、流血、包扎
+- **决策（2026-05-19 修订）**：~~全面使用 NPC~~ → **双系统分层**
+  - **NPC**：人形敌人（强盗、哥布林、巨人等）— 需要装备/技能分布/派系/对话
+  - **Monster + 部位 HP 修复**：野兽/巨怪（狼、熊、龙、狮鹫等）— 需要 harvest/dissect/special_attacks
+  - Monster 部位 HP 修复仅需改 `apply_damage` 一行 + `get_hp()`/`get_hp_max()` 委托基类
 - 纯 JSON 定义不同生物的 `anatomy`（龙/蛇/人类各有不同部位配置）
-- NPC faction/AI 控制行为，原生护甲按部位、部位伤残影响战斗
 
 ### 战斗系统深度重构 — [code_bodypart_hp_system.md](../docs/vanilla/code_bodypart_hp_system.md) + [code_combat_system.md](../docs/vanilla/code_combat_system.md) + [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md)
 

@@ -46,6 +46,7 @@ alwaysApply: true
 | [code_armor_penetration_system.md](../docs/vanilla/code_armor_penetration_system.md) | 护甲穿透系统：damage_unit→res_pen/res_mult全程链路、Character/Monster护甲吸收、Medieval STR×重量破甲改造 |
 | [code_localization_system.md](../docs/vanilla/code_localization_system.md) | 本地化与国际化系统：延迟翻译容器translation、自制MO解析器与哈希查找、自动化JSON文本提取工作流与Mod本地化策略 |
 | [code_item_damage_system.md](../docs/vanilla/code_item_damage_system.md) | 物品伤害/破损等级系统：底层的整千倍乘与离散折叠算法，剖析 JSON 伤害概率塌陷与强盗装备“整齐划一”的数学机理 |
+| [code_harvest_drop_system.md](../docs/vanilla/code_harvest_drop_system.md) | 解剖/屠宰产物系统：harvest_drop_type→harvest→monster三层key引用链、harvest vs dissect差异、C++数据流 |
 
 
 ## 中世纪策划案 (docs/design/)
@@ -77,8 +78,10 @@ alwaysApply: true
 
 | 编号 | 文档 | 说明 |
 |------|------|------|
-| 08 | [design08-敌人.md](../docs/design/design08-敌人.md) | 中世纪部位分血改造方案：Monster路线技术细节 + 最终决策走NPC系统 |
-| 08_1 | [design08_1-野怪_强盗.md](../docs/design/design08_1-野怪_强盗.md) | 野怪 NPC 体系（一）—— 强盗：刷新配置、装备池、AI行为 |
+| 08 | [design08-敌人.md](../docs/design/design08-敌人.md) | **总决策**：双系统分层（NPC用于人形敌人，Monster+部位HP修复用于野兽/巨怪） |
+| 08_1 | [design08_1-野怪_强盗.md](../docs/design/design08_1-野怪_强盗.md) | NPC 体系（一）—— 强盗：刷新配置、装备池、AI行为 |
+| 08_2 | [design08_2-野怪_野生动物.md](../docs/design/design08_2-野怪_野生动物.md) | ⚠️ 修订为 Monster 路线 —— 14种真实中世纪动物（数值可作 Monster JSON 参考） |
+| 08_3 | [design08_3-野怪_奇幻.md](../docs/design/design08_3-野怪_奇幻.md) | ⚠️ 拆分为 NPC/ Monster —— 14种奇幻生物，生态+战利品，标注各自归属系统 |
 
 ### 战斗体系
 
@@ -89,7 +92,7 @@ alwaysApply: true
 
 ## 实现进度 (docs/process/)
 
-> Mediterranean Mod 各功能模块的实现进度跟踪。任务追踪详见 [core_work.md](core_work.md)。
+> Medieval Mod 各功能模块的实现进度跟踪。任务追踪详见 [core_work.md](core_work.md)。
 
 | 文档 | 说明 |
 |------|------|
@@ -101,19 +104,9 @@ alwaysApply: true
 | [medieval_combat_rebalance.md](../docs/process/medieval_combat_rebalance.md) | 战斗重平衡进度：STR×武器重量破甲（C++ melee.cpp）、待考虑的后续改造项 |
 | [medieval_i18n_workflow.md](../docs/process/medieval_i18n_workflow.md) | 独立本地化工作流：基于规范 PO 的 0 硬编码编译与 AI 翻译增补流程 |
 | [medieval_bandit_system.md](../docs/process/medieval_bandit_system.md) | 强盗与遭遇系统进度：8大NPC类型、弹药自适应口袋、剧情收费路匪/乞丐陷阱、8组遭遇 EOC |
-
-## 项目 Skills (.qoder/skills/)
-
-> Medieval Mod 专用技能的快速索引。
-
-| Skill | 说明 |
-|-------|------|
-| medieval-design | 交互式需求分析与策划案撰写，引导用户澄清需求后写入 docs/design/ |
-| medieval-json-item | CDDA JSON 物品数据生成（ARMOR, GENERIC, TOOL 等），含自动校验 |
-| medieval-json-check | C++ 级 JSON 语义验证（--check-mods），捕获语法/引用/一致性错误 |
-| medieval-json-mapgen | Mapgen 数据生成（overmap_terrain + palette + 24x24 ASCII mapgen），含地形家具参考表 |
-| medieval-json-itemgroup | item_group JSON 生成与增补：9维分类体系、需求驱动创建、item→group归属查询、跨skill公共服务 |
-| medieval-i18n | 独立的本地化自动编译工作流：支持 0 硬编码动态汉化与 PO 唯一源合并编译流程 |
+| [monster_bodypart_fix.md](../docs/process/monster_bodypart_fix.md) | Monster 部位 HP 修复计划：C++ 改动清单 (~10行) + 新部位/anatomy/测试点 |
+| [example_griffin.md](../docs/process/example_griffin.md) | 狮鹫示例改造计划：完整引用链（body_part→anatomy→monster→harvest→item） |
+| [ranged_aimed_part.md](../docs/process/ranged_aimed_part.md) | 射击部位瞄准系统：等效面积 BFS + targeting_graph 换 root + `~` 快捷键 |
 
 ## 项目工程文档 (repowiki/)
 
