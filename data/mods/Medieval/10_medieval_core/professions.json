@@ -10,5 +10,55 @@
       "male": { "entries": [  ] },
       "female": { "entries": [ { "item": "chestwrap" } ] }
     }
+  },
+  {
+    "type": "profession",
+    "id": "medieval_wandering_swordsman",
+    "name": "Wandering Swordsman",
+    "description": "You have drifted from one petty lord's service to another, fighting for coin, bread, or simply a place to sleep.  Now the roads are empty and your sword is all that remains.  A padded gambeson, a sharp blade, and the hope that your next meal is not your last.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "cutting" }, { "level": 1, "name": "dodge" }, { "level": 1, "name": "survival" } ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "med_linen_shirt" },
+          { "item": "med_gambeson" },
+          { "item": "med_hose_wool" },
+          { "item": "med_boots_ankle" },
+          { "item": "medieval_arming_sword" },
+          { "item": "medieval_bollock_dagger" },
+          { "item": "leather_pouch" },
+          { "item": "water_clean" },
+          { "item": "hardtack" }
+        ]
+      },
+      "male": { "entries": [ { "item": "loincloth" } ] },
+      "female": { "entries": [ { "item": "chestwrap" } ] }
+    }
+  },
+  {
+    "type": "profession",
+    "id": "medieval_novice_bowman",
+    "name": "Novice Bowman",
+    "description": "You were only a season into your training with the local levy when whatever happened… happened.  Your shortbow is still strung, your quiver holds twenty arrows, and the forest ahead is full of things that move in the dark.  Stay quiet, aim true, and pray your shafts find their mark.",
+    "points": 1,
+    "skills": [ { "level": 2, "name": "archery" }, { "level": 1, "name": "survival" }, { "level": 1, "name": "cutting" } ],
+    "items": {
+      "both": {
+        "entries": [
+          { "item": "med_linen_shirt" },
+          { "item": "med_tunic_wool" },
+          { "item": "med_hose_wool" },
+          { "item": "med_turnshoes" },
+          { "item": "medieval_shortbow" },
+          { "item": "arrow_wood_heavy", "charges": 20, "container-item": "quiver" },
+          { "item": "medieval_seax", "container-item": "sheath" },
+          { "item": "water_clean", "container-item": "waterskin" },
+          { "item": "jerky", "container-item": "leather_pouch" }
+        ]
+      },
+      "male": { "entries": [ { "item": "loincloth" } ] },
+      "female": { "entries": [ { "item": "chestwrap" } ] }
+    }
   }
 ]

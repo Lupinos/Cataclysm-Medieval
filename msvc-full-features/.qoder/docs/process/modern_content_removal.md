@@ -26,7 +26,7 @@ data/mods/Medieval/
 ├── monster_whitelist.json # MONSTER_WHITELIST：只保留野生动物
 ├── start_locations.json   # 自然地形起始位置（覆盖 field/forest/river）
 ├── scenarios.json         # SCENARIO_BLACKLIST(1个) + medieval_peasant 场景
-├── professions.json       # 仅1个裸体职业 naked_peasant
+├── professions.json       # 3个职业：naked_peasant、medieval_wandering_swordsman、medieval_novice_bowman
 ├── hobbies.json           # 现代 Background 移除：40个现代 hobby 的 subtype 覆写
 ├── recipes_obsolete.json  # 现代 Recipe 移除：1156条 result 标记为 obsolete
 ├── itemgroups/            # 现代 item_group 置空覆写（9个文件，140个组）
@@ -58,7 +58,7 @@ data/mods/Medieval/
 ✅ 第5步：检查启动报错 → 修复缺失引用(起始位置修复)
 ✅ 第6步：逐类覆写 item_group（140个，10个文件）
 ✅ 第7步：现代 Recipe 标记 obsolete（1156条）
-✅ 第8步：覆写 professions（1个裸体职业，所有其他场景/职业被SCENARIO_BLACKLIST屏蔽）
+✅ 第8步：覆写 professions（3个中世纪职业，所有其他原版场景/职业被SCENARIO_BLACKLIST屏蔽）
 ```
 
 ---
@@ -96,7 +96,7 @@ data/mods/Medieval/
 
 | 场景 | 起始位置 | 职业 | 说明 |
 |------|---------|------|------|
-| `medieval_peasant` | forest, field, river | `naked_peasant` | 干净的中世纪开局，无任何现代痕迹 |
+| `medieval_peasant` | forest, field, river | `naked_peasant` / `medieval_wandering_swordsman` / `medieval_novice_bowman` | 干净的中世纪开局，无任何现代痕迹 |
 
 - `SCENARIO_BLACKLIST` 白名单只含 `medieval_peasant`，屏蔽所有其他原版场景
 - 场景 flags: `LONE_START`（无NPC同伴）

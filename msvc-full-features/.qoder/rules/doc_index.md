@@ -47,6 +47,7 @@ alwaysApply: true
 | [code_localization_system.md](../docs/vanilla/code_localization_system.md) | 本地化与国际化系统：延迟翻译容器translation、自制MO解析器与哈希查找、自动化JSON文本提取工作流与Mod本地化策略 |
 | [code_item_damage_system.md](../docs/vanilla/code_item_damage_system.md) | 物品伤害/破损等级系统：底层的整千倍乘与离散折叠算法，剖析 JSON 伤害概率塌陷与强盗装备“整齐划一”的数学机理 |
 | [code_harvest_drop_system.md](../docs/vanilla/code_harvest_drop_system.md) | 解剖/屠宰产物系统：harvest_drop_type→harvest→monster三层key引用链、harvest vs dissect差异、C++数据流 |
+| [monster_wildlife_hp_overview.md](../docs/vanilla/monster_wildlife_hp_overview.md) | 原版野生动物HP概览：哺乳动物/鸟类/爬行两栖/鱼类血量分布与Medieval参考标尺 |
 
 
 ## 中世纪策划案 (docs/design/)
@@ -97,6 +98,7 @@ alwaysApply: true
 | 文档 | 说明 |
 |------|------|
 | [modern_content_removal.md](../docs/process/modern_content_removal.md) | 现代内容清除进度：5层拦截架构执行状态、1156条Recipe/40个Background移除详情 |
+| [medieval_professions.md](../docs/process/medieval_professions.md) | 开局职业实现进度：当前3个职业与待实现职业清单 |
 | [medieval_armor.md](../docs/process/medieval_armor.md) | 盔甲体系实现进度：13个占位符JSON按部位/层分隔，head→neck→torso×6→arms→hands→legs→feet→cloaks |
 | [medieval_clothing.md](../docs/process/medieval_clothing.md) | 日常衣物实现进度：29件平民服装+2种新材料，head/torso/legs/feet/cloaks/hands/accessories 共9文件 |
 | [medieval_weapons.md](../docs/process/medieval_weapons.md) | 武器体系实现进度：剑系6+斧系4+锤系5，共15件近战武器，steel单材质等级 |

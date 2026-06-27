@@ -7,7 +7,7 @@
     "points": 0,
     "start_name": "Wilderness",
     "allowed_locs": [ "sloc_forest", "sloc_field", "sloc_river" ],
-    "professions": [ "naked_peasant" ],
+    "professions": [ "naked_peasant", "medieval_wandering_swordsman", "medieval_novice_bowman" ],
     "flags": [ "LONE_START" ]
   }
 ]
