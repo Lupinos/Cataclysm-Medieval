@@ -382,13 +382,14 @@ bool mattack::eat_crop( monster *z )
 bool mattack::split( monster *z )
 {
     bool split_performed = false;
-    while( z->get_hp() / 2 > z->type->hp ) {
+    // Split when the blob has absorbed enough mass to exceed twice its normal maximum HP.
+    while( z->get_hp() > 2 * z->get_hp_max() ) {
         monster *const spawn = g->place_critter_around( z->type->id, z->pos(), 1 );
         if( !spawn ) {
             break;
         }
         split_performed = true;
-        z->set_hp( z->get_hp() - z->type->hp );
+        z->set_hp( z->get_hp() - z->get_hp_max() );
         //this is a new copy of the monster. Ideally we should copy the stats/effects that affect the parent
         spawn->make_ally( *z );
         add_msg_if_player_sees( *z, _( "The %s splits in two!" ), z->name() );

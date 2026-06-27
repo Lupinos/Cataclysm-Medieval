@@ -2485,7 +2485,12 @@ void monster::load( const JsonObject &data )
         newitem.deserialize( battery_item_json );
         battery_item = cata::make_value<item>( newitem );
     }
-    data.read( "hp", hp );
+    // Legacy "hp" field from before monsters used body-part HP.
+    // If present, redistribute it proportionally across the body.
+    int legacy_hp = 0;
+    if( data.read( "hp", legacy_hp ) ) {
+        set_hp( legacy_hp );
+    }
 
     // sp_timeout indicates an old save, prior to the special_attacks refactor
     if( data.has_array( "sp_timeout" ) ) {
@@ -2616,7 +2621,8 @@ void monster::store( JsonOut &json ) const
         json.member( "patrol_route", patrol_route );
         json.member( "next_patrol_point", next_patrol_point );
     }
-    json.member( "hp", hp );
+    // Body-part HP is stored by Creature::store through the "body" member.
+    // The legacy "hp" field is no longer written.
     json.member( "special_attacks", special_attacks );
     json.member( "friendly", friendly );
     json.member( "fish_population", fish_population );

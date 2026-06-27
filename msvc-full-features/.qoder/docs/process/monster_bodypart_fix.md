@@ -117,6 +117,48 @@ part_hp_max = round( type->hp * base_hp / 100 )
 | drake → `anatomy_drake` | 8 部位 | 是 |
 | griffin → `anatomy_griffin` | 10 部位 | 是 |
 
+### 阶段 5：移除 `monster::hp` 全局血，改纯部位 HP（已完成 ✅）
+
+#### 5.1 `src/monster.h` — 删除 `hp` 字段与 `get_hp/get_hp_max` 覆写 ✅
+
+让 `Creature` 基类的部位求和实现接管。
+
+#### 5.2 `src/monster.cpp` — 核心函数改造 ✅
+
+| 函数 | 改造 |
+|---|---|
+| 默认/id 构造函数 | 新增 `init_body_hp(total_hp)`，按 `base_hp * total_hp / 100` 初始化部位 |
+| `is_dead_state()` | 任一 `is_vital` 部位 HP ≤ 0 即死亡；无 vital 部位时 fallback 到总 HP ≤ 0 |
+| `apply_damage()` | 只扣部位 HP；死亡时 `set_killer` |
+| `heal()` | 按各部位 `hp_max` 比例分配治疗量 |
+| `set_hp()` | 按比例缩放所有部位当前 HP |
+| `poly()` | 按 `get_hp() / get_hp_max()` 百分比转换到新类型 |
+| `init_from_item()` | 用 `set_hp()` 处理尸体损坏/灼烧；机器人复活同样处理 |
+| `to_item()` | 用 `get_hp() / get_hp_max()` 计算物品损坏 |
+| `explode()` | 把一个 vital 部位设为 `INT_MIN + 1`，其余 vital 归零，保持 `-get_hp()` 巨大 |
+| `die_in_explosion()` | 所有 vital 部位设为 -9999 |
+| `hp_percentage()` | 改为 `get_hp() * 100 / get_hp_max()` |
+| 运行时引用 M1-M6 | morale regen、SUNDEATH、速度恢复等改用 `get_hp() / get_hp_max()` |
+
+#### 5.3 `src/monattack.cpp` / `src/monster_oracle.cpp` — 分裂逻辑 ✅
+
+原条件 `hp / 2 > type->hp` 在改后永远为 false。改为：
+
+```cpp
+while( get_hp() > 2 * get_hp_max() ) {
+    set_hp( get_hp() - get_hp_max() );
+}
+```
+
+#### 5.4 `src/savegame_json.cpp` — 序列化兼容 ✅
+
+- 写入：不再写 `"hp"` 字段（body parts 已由 `Creature::store` 保存）
+- 读取：若旧存档有 `"hp"`，读取后 `set_hp(legacy_hp)` 迁移到部位 HP
+
+#### 5.5 `tests/behavior_test.cpp` ✅
+
+分裂测试的 new_hp 从 `type->hp * 2 + 2` 改为 `get_hp_max() * 2 + 2`。
+
 ---
 
 ## 测试点

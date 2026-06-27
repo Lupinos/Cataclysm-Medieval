@@ -222,7 +222,6 @@ monster::monster()
 {
     unset_dest();
     wandf = 0;
-    hp = 60;
     moves = 0;
     friendly = 0;
     anger = 0;
@@ -244,6 +243,7 @@ monster::monster()
     aggro_character = true;
     set_anatomy( anatomy_default_anatomy );
     set_body();
+    init_body_hp( 60 );
 }
 
 monster::monster( const mtype_id &id ) : monster()
@@ -253,17 +253,7 @@ monster::monster( const mtype_id &id ) : monster()
     set_body();
     moves = type->speed;
     Creature::set_speed_base( type->speed );
-    hp = type->hp;
-
-    // Treat body_part::base_hp as a percentage multiplier of the monster's mtype HP.
-    // e.g. base_hp 80 on a monster with type->hp 30 gives 24 HP for that part.
-    for( auto &elem : body ) {
-        bodypart &bp = elem.second;
-        const int new_max = std::max( 1, static_cast<int>( std::round(
-                                   static_cast<double>( type->hp ) * bp.get_hp_max() / 100.0 ) ) );
-        bp.set_hp_max( new_max );
-        bp.set_hp_cur( new_max );
-    }
+    init_body_hp( type->hp );
     for( const auto &sa : type->special_attacks ) {
         mon_special_attack &entry = special_attacks[sa.first];
         entry.cooldown = rng( 0, sa.second->cooldown );
@@ -347,7 +337,7 @@ void monster::on_move( const tripoint_abs_ms &old_pos )
 
 void monster::poly( const mtype_id &id )
 {
-    double hp_percentage = static_cast<double>( hp ) / static_cast<double>( type->hp );
+    const double hp_percentage = static_cast<double>( get_hp() ) / static_cast<double>( get_hp_max() );
     if( !no_extra_death_drops ) {
         generate_inventory();
     }
@@ -356,7 +346,12 @@ void monster::poly( const mtype_id &id )
     Creature::set_speed_base( type->speed );
     anger = type->agro;
     morale = type->morale;
-    hp = static_cast<int>( hp_percentage * type->hp );
+    if( get_anatomy() != type->anatomy ) {
+        set_anatomy( type->anatomy );
+        set_body();
+        init_body_hp( type->hp );
+    }
+    set_hp( static_cast<int>( hp_percentage * get_hp_max() ) );
     special_attacks.clear();
     for( const auto &sa : type->special_attacks ) {
         mon_special_attack &entry = special_attacks[sa.first];
@@ -761,7 +756,7 @@ std::string monster::skin_name() const
 
 void monster::get_HP_Bar( nc_color &color, std::string &text ) const
 {
-    std::tie( text, color ) = ::get_hp_bar( hp, type->hp, true );
+    std::tie( text, color ) = ::get_hp_bar( get_hp(), get_hp_max(), true );
 }
 
 std::pair<std::string, nc_color> monster::get_attitude() const
@@ -976,7 +971,7 @@ std::string monster::extended_description() const
     }
 
     ss += "--\n";
-    const std::pair<std::string, nc_color> hp_bar = hp_description( hp, type->hp );
+    const std::pair<std::string, nc_color> hp_bar = hp_description( get_hp(), get_hp_max() );
     ss += colorize( hp_bar.first, hp_bar.second ) + "\n";
 
     const std::string speed_desc = speed_description(
@@ -1619,7 +1614,7 @@ monster_attitude monster::attitude( const Character *u ) const
 
 int monster::hp_percentage() const
 {
-    return get_hp( bodypart_id( "torso" ) ) * 100 / get_hp_max();
+    return get_hp() * 100 / get_hp_max();
 }
 
 int monster::get_eff_per() const
@@ -1830,7 +1825,18 @@ void monster::make_bleed( const effect_source &source, time_duration duration, i
 
 bool monster::is_dead_state() const
 {
-    return hp <= 0;
+    // A monster dies if any vital body part is destroyed, matching Character/NPC behavior.
+    bool has_vitals = false;
+    for( const bodypart_id &bp : get_all_body_parts( get_body_part_flags::only_main ) ) {
+        if( bp->is_vital ) {
+            has_vitals = true;
+            if( get_part_hp_cur( bp ) <= 0 ) {
+                return true;
+            }
+        }
+    }
+    // Fallback: if the anatomy has no vital parts, use total HP <= 0 to avoid immortality.
+    return !has_vitals && get_hp() <= 0;
 }
 
 bool monster::block_hit( Creature *, bodypart_id &, damage_instance & )
@@ -2111,22 +2117,50 @@ void monster::deal_damage_handle_type( const effect_source &source, const damage
 
 int monster::heal( const int delta_hp, bool overheal )
 {
-    const int maxhp = type->hp;
-    if( delta_hp <= 0 || ( hp >= maxhp && !overheal ) ) {
+    const int maxhp = get_hp_max();
+    if( delta_hp <= 0 || ( get_hp() >= maxhp && !overheal ) ) {
         return 0;
     }
 
-    const int old_hp = hp;
-    hp += delta_hp;
-    if( hp > maxhp && !overheal ) {
-        hp = maxhp;
+    // Distribute healing across body parts proportionally to their max HP.
+    int actually_healed = 0;
+    for( auto &elem : body ) {
+        bodypart &bp = elem.second;
+        const int gap = bp.get_hp_max() - bp.get_hp_cur();
+        if( gap <= 0 ) {
+            continue;
+        }
+        const int share = std::min( gap, static_cast<int>( std::round(
+                                          static_cast<double>( delta_hp ) * bp.get_hp_max() / maxhp ) ) );
+        bp.mod_hp_cur( share );
+        actually_healed += share;
     }
-    return hp - old_hp;
+    return actually_healed;
+}
+
+void monster::init_body_hp( const int total_hp )
+{
+    for( auto &elem : body ) {
+        bodypart &bp = elem.second;
+        const int new_max = std::max( 1, static_cast<int>( std::round(
+                                   static_cast<double>( total_hp ) * bp.get_hp_max() / 100.0 ) ) );
+        bp.set_hp_max( new_max );
+        bp.set_hp_cur( new_max );
+    }
 }
 
 void monster::set_hp( const int hp )
 {
-    this->hp = hp;
+    const int old_max = get_hp_max();
+    if( old_max <= 0 ) {
+        return;
+    }
+    const double ratio = static_cast<double>( hp ) / old_max;
+    for( auto &elem : body ) {
+        bodypart &bp = elem.second;
+        int new_cur = static_cast<int>( std::round( bp.get_hp_cur() * ratio ) );
+        bp.set_hp_cur( clamp( new_cur, 0, bp.get_hp_max() ) );
+    }
 }
 
 void monster::apply_damage( Creature *source, bodypart_id bp, int dam,
@@ -2138,12 +2172,10 @@ void monster::apply_damage( Creature *source, bodypart_id bp, int dam,
     // Ensure we can try to get at what hit us.
     reset_pathfinding_cd();
     // Track per-part hp for aimed ranged attacks / anatomy-based effects.
-    // Global hp is kept in sync to avoid breaking legacy code paths.
     if( has_part( bp, body_part_filter::next_best ) ) {
         mod_part_hp_cur( bp, -dam );
     }
-    hp -= dam;
-    if( hp < 1 ) {
+    if( is_dead_state() ) {
         set_killer( source );
     } else if( dam > 0 ) {
         process_trigger( mon_trigger::HURT, 1 + static_cast<int>( dam / 3 ) );
@@ -2156,7 +2188,12 @@ void monster::apply_damage( Creature *source, bodypart_id bp, int dam,
 
 void monster::die_in_explosion( Creature *source )
 {
-    hp = -9999; // huge to trigger explosion and prevent corpse item
+    // huge to trigger explosion and prevent corpse item
+    for( const bodypart_id &bp : get_all_body_parts( get_body_part_flags::only_main ) ) {
+        if( bp->is_vital ) {
+            set_part_hp_cur( bp, -9999 );
+        }
+    }
     die( source );
 }
 
@@ -2588,8 +2625,18 @@ bool monster::has_special( const std::string &special_name ) const
 void monster::explode()
 {
     // Handled in mondeath::normal
-    // +1 to avoid overflow when evaluating -hp
-    hp = INT_MIN + 1;
+    // Set one vital part to INT_MIN + 1 so that -get_hp() is huge without overflowing.
+    bool prime_set = false;
+    for( const bodypart_id &bp : get_all_body_parts( get_body_part_flags::only_main ) ) {
+        if( bp->is_vital ) {
+            if( !prime_set ) {
+                set_part_hp_cur( bp, INT_MIN + 1 );
+                prime_set = true;
+            } else {
+                set_part_hp_cur( bp, 0 );
+            }
+        }
+    }
 }
 
 void monster::process_turn()
@@ -3218,7 +3265,7 @@ void monster::process_effects()
 
     //Monster will regen morale and aggression if it is at/above max HP
     //It regens more morale and aggression if is currently fleeing.
-    if( type->regen_morale && hp >= type->hp ) {
+    if( type->regen_morale && get_hp() >= get_hp_max() ) {
         if( is_fleeing( player_character ) ) {
             morale = type->morale;
             anger = type->agro;
@@ -3284,8 +3331,8 @@ void monster::process_effects()
     if( has_flag( mon_flag_SUNDEATH ) && g->is_in_sunlight( pos() ) ) {
         add_msg_if_player_sees( *this, m_good, _( "The %s burns horribly in the sunlight!" ), name() );
         apply_damage( nullptr, bodypart_id( "torso" ), 100 );
-        if( hp < 0 ) {
-            hp = 0;
+        if( get_hp() < 0 ) {
+            set_hp( 0 );
         }
     }
 
@@ -3502,17 +3549,18 @@ void monster::init_from_item( item &itm )
     if( itm.is_corpse() ) {
         set_speed_base( get_speed_base() * 0.8 );
         const int burnt_penalty = itm.burnt;
-        hp = static_cast<int>( hp * 0.7 );
+        int new_hp = static_cast<int>( get_hp_max() * 0.7 );
         if( itm.damage_level() > 0 ) {
             set_speed_base( speed_base / ( itm.damage_level() + 1 ) );
-            hp /= itm.damage_level() + 1;
+            new_hp /= itm.damage_level() + 1;
         }
 
-        hp -= burnt_penalty;
+        new_hp -= burnt_penalty;
+        set_hp( new_hp );
 
         // HP can be 0 or less, in this case revive_corpse will just deactivate the corpse
-        if( hp > 0 && type->has_flag( mon_flag_REVIVES_HEALTHY ) ) {
-            hp = type->hp;
+        if( get_hp() > 0 && type->has_flag( mon_flag_REVIVES_HEALTHY ) ) {
+            set_hp( get_hp_max() );
             set_speed_base( type->speed );
         }
         const std::string up_time = itm.get_var( "upgrade_time" );
@@ -3535,7 +3583,8 @@ void monster::init_from_item( item &itm )
         // must be a robot
         const int damfac = itm.max_damage() - std::max( 0, itm.damage() ) + 1;
         // One hp at least, everything else would be unfair (happens only to monster with *very* low hp),
-        hp = std::max( 1, hp * damfac / ( itm.max_damage() + 1 ) );
+        const int new_hp = std::max( 1, get_hp_max() * damfac / ( itm.max_damage() + 1 ) );
+        set_hp( new_hp );
     }
 }
 
@@ -3546,7 +3595,7 @@ item monster::to_item() const
     }
     // Birthday is wrong, but the item created here does not use it anyway (I hope).
     item result( type->revert_to_itype, calendar::turn );
-    const int damfac = std::max( 1, ( result.max_damage() + 1 ) * hp / type->hp );
+    const int damfac = std::max( 1, ( result.max_damage() + 1 ) * get_hp() / get_hp_max() );
     result.set_damage( std::max( 0, ( result.max_damage() + 1 ) - damfac ) );
     return result;
 }
@@ -3631,26 +3680,6 @@ void monster::on_hit( Creature *source, bodypart_id,
 
     check_dead_state();
     // TODO: Faction relations
-}
-
-int monster::get_hp_max( const bodypart_id & ) const
-{
-    return type->hp;
-}
-
-int monster::get_hp_max() const
-{
-    return type->hp;
-}
-
-int monster::get_hp( const bodypart_id & ) const
-{
-    return hp;
-}
-
-int monster::get_hp() const
-{
-    return hp;
 }
 
 float monster::get_mountable_weight_ratio() const
@@ -3851,7 +3880,7 @@ void monster::on_load()
     int healed_speed = 0;
     if( get_speed_base() < type->speed ) {
         const int old_speed = get_speed_base();
-        if( hp >= type->hp ) {
+        if( get_hp() >= get_hp_max() ) {
             set_speed_base( type->speed );
         } else {
             const int speed_delta = std::max( healed * type->speed / type->hp, 1 );

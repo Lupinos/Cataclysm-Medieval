@@ -127,10 +127,6 @@ class monster : public Creature
         units::mass get_weight() const override;
         units::mass weight_capacity() const override;
         units::volume get_volume() const;
-        int get_hp( const bodypart_id & ) const override;
-        int get_hp() const override;
-        int get_hp_max( const bodypart_id & ) const override;
-        int get_hp_max() const override;
         int hp_percentage() const override;
         int get_eff_per() const override;
         void witness_thievery( item *it ) override;
@@ -374,12 +370,13 @@ class monster : public Creature
 
         void heal_bp( bodypart_id bp, int dam ) override;
         /**
-         * Flat addition to the monsters @ref hp. If `overheal` is true, this is not capped by max hp.
+         * Heals the monster's body parts proportionally to their max HP.
+         * If `overheal` is true, this is not capped by max hp.
          * Returns actually healed hp.
          */
         int heal( int delta_hp, bool overheal = false );
         /**
-         * Directly set the current @ref hp of the monster (not capped at the maximal hp).
+         * Directly set the current body-part HP of the monster proportionally.
          * You might want to use @ref heal / @ref apply_damage or @ref deal_damage instead.
          */
         void set_hp( int hp );
@@ -611,8 +608,10 @@ class monster : public Creature
     private:
         void process_trigger( mon_trigger trig, int amount );
         void process_trigger( mon_trigger trig, const std::function<int()> &amount_func );
-
-        int hp = 0;
+    
+        // Initialize body part HP from base_hp percentages of a total HP pool.
+        void init_body_hp( int total_hp );
+    
         std::map<std::string, mon_special_attack, std::less<>> special_attacks;
         std::optional<tripoint_abs_ms> goal;
         bool dead = false;

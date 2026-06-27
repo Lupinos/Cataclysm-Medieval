@@ -272,7 +272,7 @@ TEST_CASE( "check_monster_behavior_tree_shoggoth", "[monster][behavior]" )
     }
     SECTION( "Special Attack SPLIT" ) {
         test_monster.set_special( "SPLIT", 0 );
-        int new_hp = test_monster.type->hp * 2 + 2;
+        int new_hp = test_monster.get_hp_max() * 2 + 2;
         test_monster.set_hp( new_hp );
 
         // also set proper conditions for ABSORB_ITEMS to make sure SPLIT takes priority
@@ -329,7 +329,7 @@ TEST_CASE( "check_monster_behavior_tree_theoretical_corpse_eater", "[monster][be
     }
     SECTION( "Special Attack SPLIT" ) {
         test_monster.set_special( "SPLIT", 0 );
-        int new_hp = test_monster.type->hp * 2 + 2;
+        int new_hp = test_monster.get_hp_max() * 2 + 2;
         test_monster.set_hp( new_hp );
 
         // also set proper conditions for ABSORB_ITEMS to make sure SPLIT takes priority
