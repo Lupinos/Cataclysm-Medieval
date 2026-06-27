@@ -88,6 +88,7 @@ struct Target_attributes {
     double size_in_moa = 10800.0;
     float light = 0.0f;
     bool visible = true;
+    bodypart_id aimed_part;
     explicit Target_attributes() = default;
     explicit Target_attributes( tripoint src, tripoint target );
     explicit Target_attributes( int rng, double size, float l, bool can_see );

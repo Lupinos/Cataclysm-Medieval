@@ -10,6 +10,7 @@
 #include <string>
 #include <utility>
 
+#include "anatomy.h"
 #include "assign.h"
 #include "bodypart.h"
 #include "cached_options.h"
@@ -969,6 +970,26 @@ void mtype::load( const JsonObject &jo, const std::string &src )
     assign( jo, "harvest", harvest );
 
     optional( jo, was_loaded, "dissect", dissect );
+    optional( jo, was_loaded, "anatomy", anatomy, anatomy_id( "default_anatomy" ) );
+
+    // If no anatomy is explicitly defined, pick a sensible default based on bodytype.
+    if( !jo.has_member( "anatomy" ) ) {
+        static const std::set<bodytype_id> quadrupeds = {
+            bodytype_id( "bear" ), bodytype_id( "dog" ), bodytype_id( "wolf" ),
+            bodytype_id( "cat" ), bodytype_id( "pig" ), bodytype_id( "boar" ),
+            bodytype_id( "deer" ), bodytype_id( "cow" ), bodytype_id( "horse" ),
+            bodytype_id( "goat" ), bodytype_id( "sheep" )
+        };
+        static const std::set<bodytype_id> humanoids = {
+            bodytype_id( "human" ), bodytype_id( "zombie" )
+        };
+
+        if( quadrupeds.count( bodytype ) ) {
+            anatomy = anatomy_id( "medieval_quadruped_anatomy" );
+        } else if( humanoids.count( bodytype ) ) {
+            anatomy = anatomy_id( "human_anatomy" );
+        }
+    }
 
     if( jo.has_array( "shearing" ) ) {
         std::vector<shearing_entry> entries;

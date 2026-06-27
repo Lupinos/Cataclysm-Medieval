@@ -378,6 +378,9 @@ class avatar : public Character
 
         bool aim_cache_dirty = true;
 
+        // Last body part aimed at in ranged targeting UI (persists across separate aiming sessions).
+        bodypart_id last_aimed_part;
+
         const mood_face_id &character_mood_face( bool clear_cache = false ) const;
 
     private:

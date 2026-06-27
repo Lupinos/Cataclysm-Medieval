@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 
+#include "anatomy.h"
 #include "behavior.h"
 #include "calendar.h"
 #include "color.h"
@@ -292,6 +293,7 @@ struct mtype {
         mfaction_str_id default_faction;
         harvest_id harvest;
         harvest_id dissect;
+        anatomy_id anatomy = anatomy_id( "default_anatomy" );
         speed_description_id speed_desc;
         // Monster upgrade variables
         mtype_id upgrade_into;

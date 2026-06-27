@@ -958,7 +958,8 @@ struct projectile_attack_results {
 };
 
 projectile_attack_results Creature::select_body_part_projectile_attack(
-    const projectile &proj, const double goodhit, const double missed_by ) const
+    const projectile &proj, const double goodhit, const double missed_by,
+    const bodypart_id &aimed_part ) const
 {
     projectile_attack_results ret( proj );
     const bool magic = proj.proj_effects.count( "MAGIC" ) > 0;
@@ -969,7 +970,7 @@ projectile_attack_results Creature::select_body_part_projectile_attack(
     }
     // Range is -0.5 to 1.5 -> missed_by will be [1, 0], so the rng addition to it
     // will push it to at most 1.5 and at least -0.5
-    ret.bp_hit = get_anatomy()->select_body_part_projectile_attack( -0.5, 1.5, hit_value );
+    ret.bp_hit = get_anatomy()->select_body_part_projectile_attack( -0.5, 1.5, hit_value, aimed_part );
     float crit_mod = get_crit_factor( ret.bp_hit );
 
     const float crit_multiplier = proj.critical_multiplier;
@@ -1085,7 +1086,8 @@ void Creature::messaging_projectile_attack( const Creature *source,
  * @param print_messages enables message printing by default.
  */
 void Creature::deal_projectile_attack( Creature *source, dealt_projectile_attack &attack,
-                                       bool print_messages, const weakpoint_attack &wp_attack )
+                                       bool print_messages, const weakpoint_attack &wp_attack,
+                                       const bodypart_id &aimed_part )
 {
     const bool magic = attack.proj.proj_effects.count( "MAGIC" ) > 0;
     const double missed_by = attack.missed_by;
@@ -1099,7 +1101,7 @@ void Creature::deal_projectile_attack( Creature *source, dealt_projectile_attack
         if( mons && mons->mounted_player ) {
             if( !mons->has_flag( mon_flag_MECH_DEFENSIVE ) &&
                 one_in( std::max( 2, mons->get_size() - mons->mounted_player->get_size() ) ) ) {
-                mons->mounted_player->deal_projectile_attack( source, attack, print_messages, wp_attack );
+                mons->mounted_player->deal_projectile_attack( source, attack, print_messages, wp_attack, aimed_part );
                 return;
             }
         }
@@ -1140,7 +1142,7 @@ void Creature::deal_projectile_attack( Creature *source, dealt_projectile_attack
     proj.apply_effects_nodamage( *this, source );
 
     projectile_attack_results hit_selection = select_body_part_projectile_attack( proj, goodhit,
-            missed_by );
+            missed_by, aimed_part );
     // Create a copy that records whether the attack is a crit.
     weakpoint_attack wp_attack_copy = wp_attack;
     wp_attack_copy.is_crit = hit_selection.is_crit;

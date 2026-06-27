@@ -3,6 +3,7 @@
 #define CATA_SRC_ANATOMY_H
 
 #include <iosfwd>
+#include <map>
 #include <vector>
 
 #include "bodypart.h"
@@ -25,6 +26,10 @@ class anatomy
         std::vector<bodypart_id> cached_bps;
         /** Sum of chances to hit a body part randomly, without aiming. */
         float size_sum = 0.0f;
+
+        /** Cache for effective_size() results. */
+        mutable std::map<bodypart_id, double> effective_size_cache;
+        double calc_effective_size( const bodypart_id &root ) const;
 
         // TODO: get_better_name_for_function
         bodypart_str_id get_part_with_cumulative_hit_size( float size ) const;
@@ -50,7 +55,12 @@ class anatomy
         // Based on the value provided (which is between range_min and range_max),
         // select an appropriate body part to hit with a projectile attack
         bodypart_id select_body_part_projectile_attack( double range_min, double range_max,
-                double value ) const;
+                double value, bodypart_id aimed_part = bodypart_str_id::NULL_ID() ) const;
+
+        // Effective target size when aiming at a given body part.
+        // Uses BFS distance-weighted sum over the anatomy graph.
+        double effective_size( const bodypart_id &root ) const;
+        double effective_size_ratio( const bodypart_id &root ) const;
 
         std::vector<bodypart_id> get_bodyparts() const;
         float get_size_ratio( const anatomy_id &base ) const;

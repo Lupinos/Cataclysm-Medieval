@@ -3056,7 +3056,8 @@ class Character : public Creature, public visitable
          *  @return number of shots actually fired
          */
 
-        int fire_gun( const tripoint &target, int shots = 1 );
+        int fire_gun( const tripoint &target, int shots = 1,
+                      const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() );
         /**
          *  Fires a gun or auxiliary gunmod (ignoring any current mode)
          *  @param target where the first shot is aimed at (may vary for later shots)
@@ -3064,7 +3065,8 @@ class Character : public Creature, public visitable
          *  @param gun item to fire (which does not necessary have to be in the players possession)
          *  @return number of shots actually fired
          */
-        int fire_gun( const tripoint &target, int shots, item &gun );
+        int fire_gun( const tripoint &target, int shots, item &gun,
+                      const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() );
         /** Execute a throw */
         dealt_projectile_attack throw_item( const tripoint &target, const item &to_throw,
                                             const std::optional<tripoint> &blind_throw_from_pos = std::nullopt );

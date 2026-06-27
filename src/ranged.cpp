@@ -17,6 +17,7 @@
 #include <vector>
 
 #include "activity_actor_definitions.h"
+#include "anatomy.h"
 #include "avatar.h"
 #include "bionics.h"
 #include "ballistics.h"
@@ -218,6 +219,9 @@ class target_ui
         aim_type get_selected_aim_type() const;
 
         int get_sight_dispersion() const;
+        bodypart_id get_aimed_part() const {
+            return aimed_part;
+        }
 
     private:
         enum class Status : int {
@@ -240,6 +244,10 @@ class target_ui
         // Creature currently under cursor. nullptr if aiming at empty tile,
         // yourself or a creature you cannot see
         Creature *dst_critter = nullptr;
+        // Currently aimed body part. NULL_ID when no part is selected.
+        bodypart_id aimed_part;
+        // Cached list of body parts on dst_critter
+        std::vector<bodypart_id> target_parts;
         // List of visible hostile targets
         std::vector<Creature *> targets;
 
@@ -352,6 +360,12 @@ class target_ui
         // Cycle targets. 'direction' is either 1 or -1
         void cycle_targets( int direction );
 
+        // Cycle aimed body parts
+        void cycle_aimed_part();
+
+        // Select the default aimed body part (largest hit_size) for dst_critter.
+        void pick_default_aimed_part();
+
         // Set new view offset. Updates map cache if necessary
         void set_view_offset( const tripoint &new_offset ) const;
 
@@ -407,6 +421,7 @@ class target_ui
         void panel_recoil( int &text_y );
         void panel_spell_info( int &text_y );
         void panel_target_info( int &text_y, bool fill_with_blank_if_no_target );
+        void panel_aimed_part( int &text_y );
         void panel_turret_list( int &text_y );
 
         // On-selected-as-target checks that act as if they are on-hit checks.
@@ -853,17 +868,17 @@ void npc::pretend_fire( npc *source, int shots, item &gun )
     }
 }
 
-int Character::fire_gun( const tripoint &target, int shots )
+int Character::fire_gun( const tripoint &target, int shots, const bodypart_id &aimed_part )
 {
     item_location gun = get_wielded_item();
     if( !gun ) {
         debugmsg( "%s doesn't have a gun to fire", get_name() );
         return 0;
     }
-    return fire_gun( target, shots, *gun );
+    return fire_gun( target, shots, *gun, aimed_part );
 }
 
-int Character::fire_gun( const tripoint &target, int shots, item &gun )
+int Character::fire_gun( const tripoint &target, int shots, item &gun, const bodypart_id &aimed_part )
 {
     if( !gun.is_gun() ) {
         debugmsg( "%s tried to fire non-gun (%s).", get_name(), gun.tname() );
@@ -955,7 +970,7 @@ int Character::fire_gun( const tripoint &target, int shots, item &gun )
         std::map< Creature *, std::pair < int, int >> targets_hit;
         for( int projectile_number = 0; projectile_number < proj.count; ++projectile_number ) {
             dealt_projectile_attack shot = projectile_attack( proj, pos(), aim,
-                                           dispersion, this, in_veh, wp_attack, first );
+                                           dispersion, this, in_veh, wp_attack, first, aimed_part );
             first = false;
             if( shot.hit_critter ) {
                 int damage = shot.dealt_dam.total_damage();
@@ -1691,6 +1706,16 @@ static std::vector<aim_type_prediction> calculate_ranged_chances(
     const dispersion_sources &dispersion, const std::vector<confidence_rating> &confidence_ratings,
     const Target_attributes &target, const tripoint &pos )
 {
+    // Make a mutable copy so we can apply aimed_part size scaling.
+    Target_attributes mutable_target = target;
+    const bodypart_id &ap = ui.get_aimed_part();
+    if( ap.is_valid() && !ap->id.is_null() ) {
+        Creature *target_critter = get_creature_tracker().creature_at( pos );
+        if( target_critter ) {
+            mutable_target.size *= target_critter->get_anatomy()->effective_size_ratio( ap );
+        }
+    }
+
     std::vector<aim_type> aim_types { get_default_aim_type() };
     std::vector<aim_type_prediction> aim_outputs;
 
@@ -1700,7 +1725,7 @@ static std::vector<aim_type_prediction> calculate_ranged_chances(
 
     // predict how long it'll take to reach from current recoil
     // to the ui's selected default aim mode threshold.
-    const recoil_prediction aim_to_selected = predict_recoil( you, weapon, target,
+    const recoil_prediction aim_to_selected = predict_recoil( you, weapon, mutable_target,
             ui.get_sight_dispersion(), ui.get_selected_aim_type(), you.recoil );
 
     const double selected_steadiness = calc_steadiness( you, weapon, pos, aim_to_selected.recoil );
@@ -1719,7 +1744,7 @@ static std::vector<aim_type_prediction> calculate_ranged_chances(
         if( mode == target_ui::TargetMode::Throw || mode == target_ui::TargetMode::ThrowBlind ) {
             prediction.moves = throw_moves;
         } else {
-            prediction.moves = you.gun_engagement_moves( weapon, aim_type.threshold, you.recoil, target )
+            prediction.moves = you.gun_engagement_moves( weapon, aim_type.threshold, you.recoil, mutable_target )
                                + time_to_attack( you, *weapon.type );
         }
 
@@ -1737,7 +1762,7 @@ static std::vector<aim_type_prediction> calculate_ranged_chances(
             // predict how long it'll take to reach from current recoil
             // to the current aim mode's threshold.
             const recoil_prediction aim_to_type = ( aim_type == ui.get_selected_aim_type() ) ? aim_to_selected :
-                                                  predict_recoil( you, weapon, target, ui.get_sight_dispersion(), aim_type, you.recoil );
+                                                  predict_recoil( you, weapon, mutable_target, ui.get_sight_dispersion(), aim_type, you.recoil );
             prediction.steadiness = calc_steadiness( you, weapon, pos, aim_to_type.recoil );
         }
 
@@ -1747,7 +1772,7 @@ static std::vector<aim_type_prediction> calculate_ranged_chances(
                                       aim_to_selected.recoil );
 
         // this loop fills in the "confidence" values; the chances of great/good/graze outcomes
-        prediction.confidence = confidence_estimate( target, current_dispersion );
+        prediction.confidence = confidence_estimate( mutable_target, current_dispersion );
         for( const confidence_rating &rating : confidence_ratings ) {
             const int chance = std::min<int>( 100, 100 * rating.aim_level * prediction.confidence )
                                - prediction.chance_to_hit;
@@ -2535,6 +2560,20 @@ target_handler::trajectory target_ui::run()
         initial_dst = choose_initial_target();
     }
     set_cursor_pos( initial_dst );
+    if( reentered && activity ) {
+        if( dst_critter ) {
+            target_parts = dst_critter->get_all_body_parts();
+            if( activity->aimed_part.is_valid() && !activity->aimed_part->id.is_null() &&
+                std::find( target_parts.begin(), target_parts.end(), activity->aimed_part ) != target_parts.end() ) {
+                aimed_part = activity->aimed_part;
+            } else {
+                pick_default_aimed_part();
+            }
+        } else {
+            aimed_part = bodypart_str_id::NULL_ID();
+            target_parts.clear();
+        }
+    }
     if( dst != initial_dst ) {
         // Our target moved out of range
         action.clear();
@@ -2587,6 +2626,8 @@ target_handler::trajectory target_ui::run()
         // Handle received input
         if( handle_cursor_movement( action, skip_redraw ) ) {
             continue;
+        } else if( action == "TOGGLE_AIMED_PART" ) {
+            cycle_aimed_part();
         } else if( action == "TOGGLE_SNAP_TO_TARGET" ) {
             toggle_snap_to_target();
         } else if( action == "TOGGLE_TURRET_LINES" ) {
@@ -2699,6 +2740,13 @@ target_handler::trajectory target_ui::run()
         }
     }
 
+    if( activity ) {
+        activity->aimed_part = aimed_part;
+    }
+    if( you ) {
+        you->last_aimed_part = aimed_part;
+    }
+
     return traj;
 }
 
@@ -2745,6 +2793,7 @@ void target_ui::init_window_and_input()
     ctxt.register_action( "PREV_TARGET" );
     ctxt.register_action( "CENTER" );
     ctxt.register_action( "TOGGLE_SNAP_TO_TARGET" );
+    ctxt.register_action( "TOGGLE_AIMED_PART" );
     ctxt.register_action( "HELP_KEYBINDINGS" );
     ctxt.register_action( "QUIT" );
     ctxt.register_action( "MOUSE_MOVE" );
@@ -2934,6 +2983,7 @@ bool target_ui::set_cursor_pos( const tripoint &new_pos )
     }
 
     // Cache creature under cursor
+    Creature *old_dst_critter = dst_critter;
     if( src != dst ) {
         Creature *cr = get_creature_tracker().creature_at( dst, true );
         if( cr && pl_sees( *cr ) ) {
@@ -2943,6 +2993,9 @@ bool target_ui::set_cursor_pos( const tripoint &new_pos )
         }
     } else {
         dst_critter = nullptr;
+    }
+    if( old_dst_critter != dst_critter ) {
+        pick_default_aimed_part();
     }
 
     // Update mode-specific stuff
@@ -3570,6 +3623,10 @@ void target_ui::draw_ui_window()
     panel_target_info( text_y, fill_with_blank_if_no_target );
     text_y++;
 
+    if( dst_critter ) {
+        panel_aimed_part( text_y );
+    }
+
     if( mode == TargetMode::Turrets ) {
         panel_turret_list( text_y );
     } else if( status == Status::Good ) {
@@ -3729,6 +3786,11 @@ void target_ui::draw_controls_list( int text_y )
                                            bound_key( "SWITCH_AMMO" ).short_description() ) )
                              } );
         }
+    }
+    if( dst_critter ) {
+        lines.push_back( {9, colored( col_enabled, string_format( _( "[%s] Cycle aimed body part." ),
+                                      bound_key( "TOGGLE_AIMED_PART" ).short_description() ) )
+                         } );
     }
     if( mode == TargetMode::Turrets ) {
         const std::string label = draw_turret_lines
@@ -3897,6 +3959,72 @@ void target_ui::panel_spell_info( int &text_y )
 
     text_y += fold_and_print( w_target, point( 1, text_y ), getmaxx( w_target ) - 2, clr,
                               casting->description() );
+}
+
+void target_ui::cycle_aimed_part()
+{
+    if( !dst_critter ) {
+        return;
+    }
+    if( target_parts.empty() ) {
+        target_parts = dst_critter->get_all_body_parts();
+    }
+    if( target_parts.empty() ) {
+        return;
+    }
+    auto it = std::find( target_parts.begin(), target_parts.end(), aimed_part );
+    if( it == target_parts.end() || ++it == target_parts.end() ) {
+        aimed_part = target_parts.front();
+    } else {
+        aimed_part = *it;
+    }
+}
+
+void target_ui::pick_default_aimed_part()
+{
+    if( !dst_critter ) {
+        aimed_part = bodypart_str_id::NULL_ID();
+        target_parts.clear();
+        return;
+    }
+    if( target_parts.empty() ) {
+        target_parts = dst_critter->get_all_body_parts();
+    }
+    if( target_parts.empty() ) {
+        aimed_part = bodypart_str_id::NULL_ID();
+        return;
+    }
+    // Prefer the last aimed part if it still belongs to this target.
+    if( you->last_aimed_part.is_valid() && !you->last_aimed_part->id.is_null() &&
+        std::find( target_parts.begin(), target_parts.end(), you->last_aimed_part ) != target_parts.end() ) {
+        aimed_part = you->last_aimed_part;
+        return;
+    }
+    aimed_part = *std::max_element( target_parts.begin(), target_parts.end(),
+    []( const bodypart_id & lhs, const bodypart_id & rhs ) {
+        return lhs->hit_size < rhs->hit_size;
+    } );
+}
+
+void target_ui::panel_aimed_part( int &text_y )
+{
+    if( !dst_critter ) {
+        return;
+    }
+    std::string text;
+    const std::string cycle_key = ctxt.get_desc( "TOGGLE_AIMED_PART", 1 );
+    if( !aimed_part.is_valid() || aimed_part->id.is_null() ) {
+        text = string_format( _( "Aiming: %s  [%s] select part" ),
+                              colorize( _( "No part selected" ), c_dark_gray ),
+                              cycle_key );
+    } else {
+        const double ratio = dst_critter->get_anatomy()->effective_size_ratio( aimed_part );
+        text = string_format(
+                   _( "Aiming: <color_white>%s</color>  Size: <color_yellow>%.0f%%</color>  [%s] cycle" ),
+                   aimed_part->name.translated(), ratio * 100.0, cycle_key );
+    }
+    nc_color col = c_light_gray;
+    print_colored_text( w_target, point( 1, text_y++ ), col, col, text );
 }
 
 void target_ui::panel_target_info( int &text_y, bool fill_with_blank_if_no_target )

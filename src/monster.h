@@ -14,6 +14,7 @@
 #include <utility>
 #include <vector>
 
+#include "bodypart.h"
 #include "calendar.h"
 #include "character_id.h"
 #include "color.h"
@@ -360,7 +361,8 @@ class monster : public Creature
         void melee_attack( Creature &p, bool ) = delete;
         void deal_projectile_attack( Creature *source, dealt_projectile_attack &attack,
                                      bool print_messages = true,
-                                     const weakpoint_attack &wp_attack = weakpoint_attack() ) override;
+                                     const weakpoint_attack &wp_attack = weakpoint_attack(),
+                                     const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() ) override;
         void deal_damage_handle_type( const effect_source &source, const damage_unit &du, bodypart_id bp,
                                       int &damage, int &pain ) override;
         void apply_damage( Creature *source, bodypart_id bp, int dam,

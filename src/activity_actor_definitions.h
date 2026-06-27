@@ -11,6 +11,7 @@
 #include <vector>
 
 #include "activity_type.h"
+#include "bodypart.h"
 #include "calendar.h"
 #include "character.h"
 #include "clone_ptr.h"
@@ -53,6 +54,7 @@ class aim_activity_actor : public activity_actor
         bool aiming_at_critter = false; // Whether aiming at critter or a tile
         bool snap_to_target = false;
         bool shifting_view = false;
+        bodypart_id aimed_part;
         tripoint initial_view_offset;
         /** Target UI requested to abort aiming */
         bool aborted = false;

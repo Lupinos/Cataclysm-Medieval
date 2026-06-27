@@ -349,7 +349,7 @@ void aim_activity_actor::finish( player_activity &act, Character &who )
     }
 
     gun_mode gun = weapon->gun_current_mode();
-    who.fire_gun( fin_trajectory.back(), gun.qty, *gun );
+    who.fire_gun( fin_trajectory.back(), gun.qty, *gun, aimed_part );
 
     if( weapon && weapon->gun_current_mode()->has_flag( flag_RELOAD_AND_SHOOT ) ) {
         // RAS weapons are currently bugged, this is a workaround so bug impact
@@ -368,6 +368,7 @@ void aim_activity_actor::finish( player_activity &act, Character &who )
     aim_actor.abort_if_no_targets = true;
     aim_actor.fake_weapon = this->fake_weapon;
     aim_actor.initial_view_offset = this->initial_view_offset;
+    aim_actor.aimed_part = this->aimed_part;
 
     // if invalid target or it's dead - reset it so a new one is acquired
     shared_ptr_fast<Creature> last_target = who.last_target.lock();
@@ -395,6 +396,7 @@ void aim_activity_actor::serialize( JsonOut &jsout ) const
     jsout.member( "aiming_at_critter", aiming_at_critter );
     jsout.member( "snap_to_target", snap_to_target );
     jsout.member( "shifting_view", shifting_view );
+    jsout.member( "aimed_part", aimed_part );
     jsout.member( "initial_view_offset", initial_view_offset );
     jsout.member( "aborted", aborted );
     jsout.member( "reload_requested", reload_requested );
@@ -417,6 +419,7 @@ std::unique_ptr<activity_actor> aim_activity_actor::deserialize( JsonValue &jsin
     data.read( "aiming_at_critter", actor.aiming_at_critter );
     data.read( "snap_to_target", actor.snap_to_target );
     data.read( "shifting_view", actor.shifting_view );
+    data.read( "aimed_part", actor.aimed_part );
     data.read( "initial_view_offset", actor.initial_view_offset );
     data.read( "aborted", actor.aborted );
     data.read( "reload_requested", actor.reload_requested );

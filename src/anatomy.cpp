@@ -3,7 +3,9 @@
 #include <array>
 #include <cmath>
 #include <cstddef>
+#include <map>
 #include <numeric>
+#include <queue>
 #include <set>
 #include <string>
 #include <unordered_set>
@@ -325,11 +327,66 @@ std::vector<bodypart_id> anatomy::get_all_eligable_parts( int min_hit, int max_h
     return ret;
 }
 
-bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
-        const double range_max, const double value ) const
+double anatomy::calc_effective_size( const bodypart_id &root ) const
 {
-    // Find the body part with the biggest hitsize - we will treat this as the center of mass
+    std::map<bodypart_id, int> dist;
+    std::queue<bodypart_id> q;
+    q.push( root );
+    dist[root] = 0;
+    while( !q.empty() ) {
+        bodypart_id cur = q.front();
+        q.pop();
+        for( const bodypart_id &bp : cached_bps ) {
+            if( dist.count( bp ) ) {
+                continue;
+            }
+            if( bp->connected_to == cur.id() || cur->connected_to == bp.id() ) {
+                dist[bp] = dist[cur] + 1;
+                q.push( bp );
+            }
+        }
+    }
+    double total = 0.0;
+    for( const auto &[bp, d] : dist ) {
+        total += static_cast<double>( bp->hit_size ) / ( d + 1.0 );
+    }
+    return total;
+}
+
+double anatomy::effective_size( const bodypart_id &root ) const
+{
+    auto it = effective_size_cache.find( root );
+    if( it != effective_size_cache.end() ) {
+        return it->second;
+    }
+    double es = calc_effective_size( root );
+    effective_size_cache[root] = es;
+    return es;
+}
+
+double anatomy::effective_size_ratio( const bodypart_id &root ) const
+{
+    if( cached_bps.empty() ) {
+        return 1.0;
+    }
     const bodypart_id biggest_bp = *std::max_element( cached_bps.begin(), cached_bps.end(),
+    []( const bodypart_id & lhs, const bodypart_id & rhs ) {
+        return lhs->hit_size < rhs->hit_size;
+    } );
+    const double biggest_size = effective_size( biggest_bp );
+    if( biggest_size <= 0.0 ) {
+        return 1.0;
+    }
+    return effective_size( root ) / biggest_size;
+}
+
+bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
+        const double range_max, const double value, const bodypart_id aimed_part ) const
+{
+    // Use the aimed part as the root when valid, otherwise fall back to center of mass.
+    const bodypart_id root = ( aimed_part.is_valid() && !aimed_part->id.is_null() )
+                             ? aimed_part
+                             : *std::max_element( cached_bps.begin(), cached_bps.end(),
     []( const bodypart_id & lhs, const bodypart_id & rhs ) {
         return lhs->hit_size < rhs->hit_size;
     } );
@@ -347,7 +404,7 @@ bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
     // Create a graph
     targeting_graph<bodypart_id, bp_wrapper> graph;
     // Fill it in with our body parts
-    graph.generate( biggest_bp, cached_bps );
+    graph.generate( root, cached_bps );
 
     // And now, select the right body part
     return graph.select( range_min, range_max, value );

@@ -1,5 +1,14 @@
 # 任务：射击部位瞄准系统
 
+## 状态
+
+- [x] C++ 改造已完成
+- [x] `monster_bodypart_fix` 前置已完成
+- [x] 部位 HP 按 `type->hp` 百分比缩放已完成
+- [x] `bodytype` → 默认 `anatomy` 映射已完成（四足动物测试）
+- [x] `last_aimed_part` 持久化（跨射箭会话记忆部位）已完成
+- [ ] 实机测试
+
 ## 目标
 
 玩家在射击/投掷瞄准界面（`target_ui`）中，可以主动选择攻击目标的特定部位。选中后：
@@ -372,17 +381,33 @@ dealt_projectile_attack shot = projectile_attack(
 
 ## 文件清单
 
-| 文件 | 改/新 | 内容 |
-|------|-------|------|
-| `src/anatomy.h` | 改 | `effective_size()` / `effective_size_ratio()` / `select_body_part_projectile_attack` 签名 |
-| `src/anatomy.cpp` | 改 | BFS 等效面积计算、缓存、换 root 的 `select_body_part_projectile_attack` |
-| `src/creature.h` | 改 | `select_body_part_projectile_attack` 传 `aimed_part` |
-| `src/creature.cpp` | 改 | `deal_projectile_attack` 中 `target_size` 缩放 + 部位选择传参 |
-| `src/ballistics.h` | 改 | `projectile_attack` 签名加 `aimed_part` |
-| `src/ballistics.cpp` | 改 | `projectile_attack` 传参到 `deal_projectile_attack` |
-| `src/ranged.h` | 改 | `target_ui` 加 `aimed_part`、`target_parts`、`cycle_aimed_part()` |
-| `src/ranged.cpp` | 改 | 按键注册、按键处理、UI 绘制、命中率重算、`fire_gun` 传参 |
-| `data/raw/keybindings.json` | 改 | `TOGGLE_AIMED_PART` 绑定 |
+| 文件 | 改/新 | 状态 | 内容 |
+|------|-------|------|------|
+| `src/anatomy.h` | 改 | ✅ | `effective_size()` / `effective_size_ratio()` / `select_body_part_projectile_attack` 签名 |
+| `src/anatomy.cpp` | 改 | ✅ | BFS 等效面积计算、缓存、换 root 的 `select_body_part_projectile_attack` |
+| `src/creature.h` | 改 | ✅ | `deal_projectile_attack` / `select_body_part_projectile_attack` 加 `aimed_part` |
+| `src/creature.cpp` | 改 | ✅ | 部位选择传 `aimed_part` |
+| `src/ballistics.h` | 改 | ✅ | `projectile_attack` 签名加 `aimed_part` |
+| `src/ballistics.cpp` | 改 | ✅ | `target_size` 缩放、仅对目标传 `aimed_part` |
+| `src/ranged.h` | 改 | ✅ | `Target_attributes` 加 `aimed_part` |
+| `src/ranged.cpp` | 改 | ✅ | `target_ui` 加 `~` 键循环、UI 面板、命中率缩放、`fire_gun` 传参 |
+| `src/character.h` | 改 | ✅ | `fire_gun` 签名加 `aimed_part` |
+| `src/activity_actor_definitions.h` | 改 | ✅ | `aim_activity_actor` 加 `aimed_part` |
+| `src/activity_actor.cpp` | 改 | ✅ | 序列化/反序列化、`finish` 传 `aimed_part` |
+| `src/monster.h` | 改 | ✅ | `deal_projectile_attack` override 加 `aimed_part` |
+| `src/monster.cpp` | 改 | ✅ | `deal_projectile_attack` 实现加 `aimed_part` |
+| `data/raw/keybindings.json` | 改 | ✅ | `TOGGLE_AIMED_PART` 绑定 |
+
+## 实现备注
+
+- `monster_bodypart_fix.md` 阶段 1 已先实施，使 Monster 拥有可瞄部位。
+- `apply_damage` 采用过渡方案：同步扣减部位 HP 与全局 HP，避免破坏依赖 `monster::hp` 的旧代码。
+- 瞄小部位时 `target_size` 按等效面积比例自然缩小，无需额外 `missed_by` 惩罚。
+- 命中后 `targeting_graph` 以 `aimed_part` 为 root，弹丸更大概率落在瞄准部位或其近邻。
+- 意外命中其他生物时不应用 `aimed_part`。
+- 切换目标或首次瞄准时，默认选中 `hit_size` 最大的部位。
+- 弓箭等 RAS 武器每次射击后会退出瞄准界面；`avatar::last_aimed_part` 会记住上次部位，下次按 `f` 重新瞄准时自动恢复（若该部位仍属于当前目标）。
+- Medieval 四足动物拥有 5 个可瞄部位：torso / head / front legs / hind legs / tail。
 
 ---
 

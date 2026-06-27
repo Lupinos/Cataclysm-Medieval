@@ -1599,6 +1599,8 @@ void avatar::store( JsonOut &json ) const
 
     json.member( "preferred_aiming_mode", preferred_aiming_mode );
 
+    json.member( "last_aimed_part", last_aimed_part );
+
     json.member( "power_prev_turn", power_prev_turn );
 }
 
@@ -1673,6 +1675,8 @@ void avatar::load( const JsonObject &data )
           grab_point );
 
     data.read( "magic", magic );
+
+    data.read( "last_aimed_part", last_aimed_part );
 
     calc_mutation_levels();
     drench_mut_calc();

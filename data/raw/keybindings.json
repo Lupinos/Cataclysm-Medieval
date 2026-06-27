@@ -1390,6 +1390,13 @@
   },
   {
     "type": "keybinding",
+    "id": "TOGGLE_AIMED_PART",
+    "category": "TARGET",
+    "name": "Cycle aimed body part",
+    "bindings": [ { "input_method": "keyboard_char", "key": "`" } ]
+  },
+  {
+    "type": "keybinding",
     "id": "TOGGLE_MOVE_CURSOR_VIEW",
     "category": "TARGET",
     "name": "Toggle shift view / move cursor",

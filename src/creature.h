@@ -462,7 +462,8 @@ class Creature : public viewer
         // Makes a ranged projectile attack against the creature
         // Sets relevant values in `attack`.
         virtual void deal_projectile_attack( Creature *source, dealt_projectile_attack &attack,
-                                             bool print_messages = true, const weakpoint_attack &wp_attack = weakpoint_attack() );
+                                             bool print_messages = true, const weakpoint_attack &wp_attack = weakpoint_attack(),
+                                             const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() );
 
         /**
          * Deals the damage via an attack. Allows armor mitigation etc.
@@ -1378,7 +1379,7 @@ class Creature : public viewer
         double accuracy_projectile_attack( dealt_projectile_attack &attack ) const;
         // what bodypart does the projectile hit
         projectile_attack_results select_body_part_projectile_attack( const projectile &proj,
-                double goodhit, double missed_by ) const;
+                double goodhit, double missed_by, const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() ) const;
         // do messaging and SCT for projectile hit
         void messaging_projectile_attack( const Creature *source,
                                           const projectile_attack_results &hit_selection, int total_damage ) const;

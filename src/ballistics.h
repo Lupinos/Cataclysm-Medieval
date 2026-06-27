@@ -2,6 +2,7 @@
 #ifndef CATA_SRC_BALLISTICS_H
 #define CATA_SRC_BALLISTICS_H
 
+#include "bodypart.h"
 #include "weakpoint.h"
 #include "weighted_list.h"
 
@@ -36,7 +37,8 @@ projectile_attack_aim projectile_attack_roll( const dispersion_sources &dispersi
 dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tripoint &source,
         const tripoint &target_arg, const dispersion_sources &dispersion,
         Creature *origin = nullptr, const vehicle *in_veh = nullptr,
-        const weakpoint_attack &attack = weakpoint_attack(), bool first = true );
+        const weakpoint_attack &attack = weakpoint_attack(), bool first = true,
+        const bodypart_id &aimed_part = bodypart_str_id::NULL_ID() );
 
 /* Used for selecting which part to target in a projectile attack
  * Primarily a template for ease of testing, but can be reused!

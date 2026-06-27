@@ -1,0 +1,13 @@
+[
+  {
+    "id": "medieval_quadruped_anatomy",
+    "type": "anatomy",
+    "parts": [
+      "medieval_quadruped_torso",
+      "medieval_quadruped_head",
+      "medieval_quadruped_front_legs",
+      "medieval_quadruped_hind_legs",
+      "medieval_quadruped_tail"
+    ]
+  }
+]

@@ -9,6 +9,7 @@
 #include <string>
 #include <tuple>
 
+#include "anatomy.h"
 #include "ascii_art.h"
 #include "avatar.h"
 #include "bodypart.h"
@@ -248,9 +249,21 @@ monster::monster()
 monster::monster( const mtype_id &id ) : monster()
 {
     type = &id.obj();
+    set_anatomy( type->anatomy );
+    set_body();
     moves = type->speed;
     Creature::set_speed_base( type->speed );
     hp = type->hp;
+
+    // Treat body_part::base_hp as a percentage multiplier of the monster's mtype HP.
+    // e.g. base_hp 80 on a monster with type->hp 30 gives 24 HP for that part.
+    for( auto &elem : body ) {
+        bodypart &bp = elem.second;
+        const int new_max = std::max( 1, static_cast<int>( std::round(
+                                   static_cast<double>( type->hp ) * bp.get_hp_max() / 100.0 ) ) );
+        bp.set_hp_max( new_max );
+        bp.set_hp_cur( new_max );
+    }
     for( const auto &sa : type->special_attacks ) {
         mon_special_attack &entry = special_attacks[sa.first];
         entry.cooldown = rng( 0, sa.second->cooldown );
@@ -2044,7 +2057,8 @@ bool monster::melee_attack( Creature &target, float accuracy )
 }
 
 void monster::deal_projectile_attack( Creature *source, dealt_projectile_attack &attack,
-                                      bool print_messages, const weakpoint_attack &wp_attack )
+                                      bool print_messages, const weakpoint_attack &wp_attack,
+                                      const bodypart_id &aimed_part )
 {
     const projectile &proj = attack.proj;
     double &missed_by = attack.missed_by; // We can change this here
@@ -2065,7 +2079,7 @@ void monster::deal_projectile_attack( Creature *source, dealt_projectile_attack 
         missed_by = accuracy_headshot;
     }
 
-    Creature::deal_projectile_attack( source, attack, print_messages, wp_attack );
+    Creature::deal_projectile_attack( source, attack, print_messages, wp_attack, aimed_part );
 
     if( !is_hallucination() && attack.hit_critter == this ) {
         // Maybe TODO: Get difficulty from projectile speed/size/missed_by
@@ -2115,7 +2129,7 @@ void monster::set_hp( const int hp )
     this->hp = hp;
 }
 
-void monster::apply_damage( Creature *source, bodypart_id /*bp*/, int dam,
+void monster::apply_damage( Creature *source, bodypart_id bp, int dam,
                             const bool /*bypass_med*/ )
 {
     if( is_dead_state() ) {
@@ -2123,6 +2137,11 @@ void monster::apply_damage( Creature *source, bodypart_id /*bp*/, int dam,
     }
     // Ensure we can try to get at what hit us.
     reset_pathfinding_cd();
+    // Track per-part hp for aimed ranged attacks / anatomy-based effects.
+    // Global hp is kept in sync to avoid breaking legacy code paths.
+    if( has_part( bp, body_part_filter::next_best ) ) {
+        mod_part_hp_cur( bp, -dam );
+    }
     hp -= dam;
     if( hp < 1 ) {
         set_killer( source );

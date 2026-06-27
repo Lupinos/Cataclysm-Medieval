@@ -10,6 +10,8 @@
 #include <set>
 #include <vector>
 
+#include "anatomy.h"
+#include "bodypart.h"
 #include "calendar.h"
 #include "creature.h"
 #include "creature_tracker.h"
@@ -202,7 +204,8 @@ projectile_attack_aim projectile_attack_roll( const dispersion_sources &dispersi
 
 dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tripoint &source,
         const tripoint &target_arg, const dispersion_sources &dispersion, Creature *origin,
-        const vehicle *in_veh, const weakpoint_attack &wp_attack, bool first )
+        const vehicle *in_veh, const weakpoint_attack &wp_attack, bool first,
+        const bodypart_id &aimed_part )
 {
     const bool do_animation = first && get_option<bool>( "ANIMATION_PROJECTILES" );
 
@@ -214,6 +217,10 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     double target_size = target_critter != nullptr ?
                          target_critter->ranged_target_size() :
                          here.ranged_target_size( target_arg );
+    // Scale target size when aiming at a specific body part.
+    if( target_critter != nullptr && aimed_part.is_valid() && !aimed_part->id.is_null() ) {
+        target_size *= target_critter->get_anatomy()->effective_size_ratio( aimed_part );
+    }
     projectile_attack_aim aim = projectile_attack_roll( dispersion, range, target_size );
 
     if( target_critter && target_critter->as_character() &&
@@ -437,8 +444,11 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
                 attack.proj.impact = attack.proj.shot_impact;
                 print_messages = false;
             }
+            // Only apply aimed_part scaling/landing to the intended target.
+            const bodypart_id &bp_for_critter = ( critter == target_critter ) ? aimed_part :
+                                                  bodypart_str_id::NULL_ID();
             critter->deal_projectile_attack( null_source ? nullptr : origin, attack, print_messages,
-                                             wp_attack );
+                                             wp_attack, bp_for_critter );
 
             if( critter->is_npc() ) {
                 critter->as_npc()->on_attacked( *origin );

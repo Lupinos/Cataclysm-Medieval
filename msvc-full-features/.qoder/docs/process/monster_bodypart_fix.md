@@ -14,61 +14,91 @@
 
 ## 改造内容
 
-### 阶段 1：C++ 核心修复（~10 行）
+### 阶段 1：C++ 核心修复（已完成）
 
-#### 1.1 `src/mtype.h` — 加 anatomy 字段
+#### 1.1 `src/mtype.h` — 加 anatomy 字段 ✅
 
 ```cpp
-anatomy_id anatomy = anatomy_id( "default_anatomy" );  // 加在 mtype 结构体中
+anatomy_id anatomy = anatomy_id( "default_anatomy" );
 ```
 
-#### 1.2 `src/monstergenerator.cpp` — 加载 anatomy
+#### 1.2 `src/monstergenerator.cpp` — 加载 anatomy ✅
 
 ```cpp
 optional( jo, was_loaded, "anatomy", mon.anatomy, anatomy_id( "default_anatomy" ) );
 ```
 
-#### 1.3 `src/monster.cpp` — 构造时改用自身 anatomy
+#### 1.3 `src/monster.cpp` — 构造时改用自身 anatomy ✅
 
 ```cpp
-// 改前：
-set_anatomy( anatomy_default_anatomy );
-
-// 改后：
 set_anatomy( type->anatomy );
 ```
 
-#### 1.4 `src/monster.cpp` — `apply_damage` 不再绕过 bp
+#### 1.4 `src/monster.cpp` — `apply_damage` 同步部位 HP ✅（过渡方案）
 
 ```cpp
-// 改前：
-void monster::apply_damage( Creature *source, bodypart_id /*bp*/, int dam, ... ) {
-    hp -= dam;  // 全局 HP
-}
-
-// 改后：
 void monster::apply_damage( Creature *source, bodypart_id bp, int dam, ... ) {
-    mod_part_hp_cur( bp, -dam );  // 部位 HP
-    // 死亡判定：致命部位归零
+    if( has_part( bp, body_part_filter::next_best ) ) {
+        mod_part_hp_cur( bp, -dam );  // 部位 HP
+    }
+    hp -= dam;  // 全局 HP 保持同步，避免破坏依赖 hp 字段的代码
 }
 ```
 
-#### 1.5 `src/monster.cpp` — `get_hp` / `get_hp_max` 委托基类
+> 注：当前为过渡方案。全局 HP 仍用于死亡判定与旧代码，部位 HP 用于远程瞄准等新增系统。后续可切换为纯部位 HP + vital 部位死亡判定。
+
+#### 1.5 `src/monster.cpp` — 部位 HP 按 `type->hp` 百分比缩放 ✅
+
+`body_part::base_hp` 解释为 `type->hp` 的百分比系数：
 
 ```cpp
-// 移除 override 或用 super call
+part_hp_max = round( type->hp * base_hp / 100 )
 ```
+
+使同一 anatomy 模板能适配不同体型的怪物（熊大血多，狼小血少）。
+
+#### 1.6 `src/monstergenerator.cpp` — `bodytype` 默认 anatomy 映射 ✅
+
+怪物 JSON 未指定 `"anatomy"` 时，按 `bodytype` 自动选择：
+
+| bodytype | 默认 anatomy |
+|---|---|
+| `bear`, `dog`, `wolf`, `cat`, `pig`, `boar`, `deer`, `cow`, `horse`, `goat`, `sheep` | `medieval_quadruped_anatomy` |
+| `human`, `zombie` | `human_anatomy` |
+| 其他 | `default_anatomy` |
 
 ### 阶段 2：新建部位类型（JSON）
+
+#### 2.1 四足动物部位（已完成 ✅）
+
+文件：`data/mods/Medieval/10_medieval_core/body_parts.json`
+
+| 部位 | base_hp（系数） | hit_size | is_vital | 说明 |
+|------|-----------------|----------|----------|------|
+| `medieval_quadruped_torso` | 80 | 36 | ✅ | 躯干 |
+| `medieval_quadruped_head` | 60 | 6 | ✅ | 头 |
+| `medieval_quadruped_front_legs` | 50 | 12 | — | 前腿（合并） |
+| `medieval_quadruped_hind_legs` | 55 | 14 | — | 后腿（合并） |
+| `medieval_quadruped_tail` | 30 | 4 | — | 尾巴 |
+
+> `base_hp` 是 `type->hp` 的百分比系数，非绝对血量。
+
+#### 2.2 奇幻生物部位（待做）
 
 | 部位 | base_hp | hit_size | 说明 |
 |------|---------|----------|------|
 | `wing_l` | 40 | 18 | 左翼 |
 | `wing_r` | 40 | 18 | 右翼 |
-| `neck` | 30 | 5 | 颈部（可选，狮鹫需要） |
-| `tail` | 20 | 8 | 尾巴（可选，龙需要） |
+| `neck` | 30 | 5 | 颈部（狮鹫） |
+| `tail` | 20 | 8 | 尾巴（龙） |
 
 ### 阶段 3：新建 anatomy（JSON）
+
+#### 3.1 四足动物 anatomy（已完成 ✅）
+
+- `medieval_quadruped_anatomy`：torso / head / front_legs / hind_legs / tail
+
+#### 3.2 奇幻生物 anatomy（待做）
 
 | anatomy | 部位数 | 说明 |
 |---------|--------|------|
