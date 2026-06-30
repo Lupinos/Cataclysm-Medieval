@@ -381,7 +381,8 @@ double anatomy::effective_size_ratio( const bodypart_id &root ) const
 }
 
 bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
-        const double range_max, const double value, const bodypart_id aimed_part ) const
+        const double range_max, const double value, const bodypart_id aimed_part,
+        std::vector<bodypart_id> *out_path, const double root_weight_multiplier ) const
 {
     // Use the aimed part as the root when valid, otherwise fall back to center of mass.
     const bodypart_id root = ( aimed_part.is_valid() && !aimed_part->id.is_null() )
@@ -407,5 +408,5 @@ bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
     graph.generate( root, cached_bps );
 
     // And now, select the right body part
-    return graph.select( range_min, range_max, value );
+    return graph.select( range_min, range_max, value, out_path, root_weight_multiplier );
 }

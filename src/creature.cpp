@@ -951,6 +951,11 @@ struct projectile_attack_results {
     bodypart_id bp_hit;
     std::string wp_hit;
     bool is_crit = false;
+    // Debug info: the random value that selected the body part, the
+    // targeting-graph path it walked along, and the root weight multiplier.
+    double hit_value = 0.0;
+    std::vector<bodypart_id> hit_path;
+    double root_multiplier = 1.0;
 
     explicit projectile_attack_results( const projectile &proj ) {
         max_damage = proj.impact.total_damage();
@@ -959,18 +964,39 @@ struct projectile_attack_results {
 
 projectile_attack_results Creature::select_body_part_projectile_attack(
     const projectile &proj, const double goodhit, const double missed_by,
-    const bodypart_id &aimed_part ) const
+    const bodypart_id &aimed_part, const Creature *source,
+    const weakpoint_attack &wp_attack ) const
 {
     projectile_attack_results ret( proj );
     const bool magic = proj.proj_effects.count( "MAGIC" ) > 0;
-    double hit_value = missed_by + rng_float( -0.5, 0.5 );
+    ret.hit_value = missed_by + rng_float( -0.5, 0.5 );
     if( magic ) {
         // Best possible hit
-        hit_value = -0.5;
+        ret.hit_value = -0.5;
     }
+
+    // Calculate a multiplier for the aimed (root) body part.  Better sights,
+    // higher PER, and higher weapon skill make the intended part stand out
+    // relative to neighbouring parts.
+    double root_weight_multiplier = 1.0;
+    if( source != nullptr && source->as_character() != nullptr && wp_attack.weapon != nullptr ) {
+        const Character *ch = source->as_character();
+        const item *weapon = wp_attack.weapon;
+        if( weapon->is_gun() ) {
+            const int sight_dispersion = weapon->type->gun->sight_dispersion;
+            const double sight_bonus = std::max( 0.0, ( 100.0 - sight_dispersion ) / 200.0 );
+            const double per_bonus = ( ch->get_per() - 10 ) / 10.0;
+            const skill_id sk = weapon->gun_skill();
+            const double skill_bonus = sk.is_valid() ? ch->get_skill_level( sk ) / 10.0 : 0.0;
+            root_weight_multiplier += sight_bonus + per_bonus + skill_bonus;
+        }
+    }
+    ret.root_multiplier = root_weight_multiplier;
+
     // Range is -0.5 to 1.5 -> missed_by will be [1, 0], so the rng addition to it
     // will push it to at most 1.5 and at least -0.5
-    ret.bp_hit = get_anatomy()->select_body_part_projectile_attack( -0.5, 1.5, hit_value, aimed_part );
+    ret.bp_hit = get_anatomy()->select_body_part_projectile_attack( -0.5, 1.5, ret.hit_value, aimed_part,
+            &ret.hit_path, root_weight_multiplier );
     float crit_mod = get_crit_factor( ret.bp_hit );
 
     const float crit_multiplier = proj.critical_multiplier;
@@ -1142,7 +1168,61 @@ void Creature::deal_projectile_attack( Creature *source, dealt_projectile_attack
     proj.apply_effects_nodamage( *this, source );
 
     projectile_attack_results hit_selection = select_body_part_projectile_attack( proj, goodhit,
-            missed_by, aimed_part );
+            missed_by, aimed_part, source, wp_attack );
+
+    // Debug output for the player: show the targeting-graph path so they can see
+    // why a specific body part was hit.  The displayed weights match the distance
+    // attenuation and root weight multiplier used by targeting_graph::select.
+    if( source != nullptr && source->is_avatar() && aimed_part.is_valid() && !aimed_part->id.is_null() ) {
+        source->add_msg_if_player( m_info,
+                                   "[sel] goodhit=%.3f missed_by=%.3f hit_value=%.3f mult=%.2f",
+                                   goodhit, missed_by, hit_selection.hit_value,
+                                   hit_selection.root_multiplier );
+        const std::vector<bodypart_id> &path = hit_selection.hit_path;
+        if( !path.empty() ) {
+            const double mult = hit_selection.root_multiplier;
+            double total_weight = 0.0;
+            size_t distance = 0;
+            for( const bodypart_id &bp : path ) {
+                double weight = bp->hit_size / static_cast<double>( distance + 1 );
+                if( distance == 0 ) {
+                    weight *= mult;
+                }
+                total_weight += weight;
+                ++distance;
+            }
+            const double scale_factor = total_weight > 0.0 ? 2.0 / total_weight : 0.0;
+            const double normalized_value = hit_selection.hit_value + 0.5;
+
+            std::string path_text;
+            double accumulated = 0.0;
+            distance = 0;
+            for( const bodypart_id &bp : path ) {
+                double weight = bp->hit_size / static_cast<double>( distance + 1 );
+                if( distance == 0 ) {
+                    weight *= mult;
+                }
+                ++distance;
+                const double start = accumulated * scale_factor;
+                accumulated += weight;
+                const double end = accumulated * scale_factor;
+                if( !path_text.empty() ) {
+                    path_text += " > ";
+                }
+                path_text += string_format( "%s(%.1f)[%.2f-%.2f]",
+                                            bp->name.translated().c_str(),
+                                            weight, start, end );
+            }
+
+            source->add_msg_if_player( m_info,
+                                       "Aimed %s, roll %.2f / 2.00: %s => %s",
+                                       aimed_part->name.translated().c_str(),
+                                       normalized_value,
+                                       path_text.c_str(),
+                                       hit_selection.bp_hit->name.translated().c_str() );
+        }
+    }
+
     // Create a copy that records whether the attack is a crit.
     weakpoint_attack wp_attack_copy = wp_attack;
     wp_attack_copy.is_crit = hit_selection.is_crit;

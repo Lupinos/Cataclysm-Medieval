@@ -189,7 +189,8 @@ projectile_attack_aim projectile_attack_roll( const dispersion_sources &dispersi
     aim.dispersion = dispersion.roll();
 
     // an isosceles triangle is formed by the intended and actual target tiles
-    aim.missed_by_tiles = iso_tangent( range, units::from_arcmin( aim.dispersion ) );
+    const units::angle vertex = units::from_arcmin( aim.dispersion );
+    aim.missed_by_tiles = iso_tangent( range, vertex );
 
     // fraction we missed a monster target by (0.0 = perfect hit, 1.0 = miss)
     if( target_size > 0.0 ) {
@@ -217,11 +218,33 @@ dealt_projectile_attack projectile_attack( const projectile &proj_arg, const tri
     double target_size = target_critter != nullptr ?
                          target_critter->ranged_target_size() :
                          here.ranged_target_size( target_arg );
+    double effective_size_ratio = 1.0;
     // Scale target size when aiming at a specific body part.
     if( target_critter != nullptr && aimed_part.is_valid() && !aimed_part->id.is_null() ) {
-        target_size *= target_critter->get_anatomy()->effective_size_ratio( aimed_part );
+        effective_size_ratio = target_critter->get_anatomy()->effective_size_ratio( aimed_part );
+        target_size *= effective_size_ratio;
     }
     projectile_attack_aim aim = projectile_attack_roll( dispersion, range, target_size );
+
+    // Debug output for the player: show the inputs to projectile_attack_roll so
+    // we can verify why a shot ended up where it did.
+    if( origin != nullptr && origin->is_avatar() && aimed_part.is_valid() && !aimed_part->id.is_null() ) {
+        const units::angle vertex = units::from_arcmin( aim.dispersion );
+        add_msg( m_info,
+                 "[proj] range=%.1f raw_size=%.2f eff_ratio=%.3f final_size=%.2f "
+                 "disp_max=%.0f disp_roll=%.1f vertex_rad=%.4f tan_half=%.4f missed_tiles=%.3f missed_by=%.3f",
+                 range,
+                 target_critter != nullptr ? target_critter->ranged_target_size() :
+                 here.ranged_target_size( target_arg ),
+                 effective_size_ratio,
+                 target_size,
+                 dispersion.max(),
+                 aim.dispersion,
+                 units::to_radians( vertex ),
+                 tan( vertex / 2 ),
+                 aim.missed_by_tiles,
+                 aim.missed_by );
+    }
 
     if( target_critter && target_critter->as_character() &&
         target_critter->as_character()->has_flag( json_flag_HARDTOHIT ) ) {

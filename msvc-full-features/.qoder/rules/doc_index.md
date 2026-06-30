@@ -89,6 +89,8 @@ alwaysApply: true
 | 编号 | 文档 | 说明 |
 |------|------|------|
 | 09 | [design09-战斗系统重置.md](../docs/design/design09-战斗系统重置.md) | 战斗系统深度重置：手动技艺选择 + 部位瞄准，双轮UI、n/k技能线性缩放 |
+| 09_1 | [design09_1-部位血量系统.md](../docs/design/design09_1-部位血量系统.md) | 部位血量系统：移除 monster::hp，vital 部位死亡判定 + 塔科夫式伤害扩散 |
+| 09_2 | [design09_2-怪物部位行动影响.md](../docs/design/design09_2-怪物部位行动影响.md) | 怪物部位伤害对行动的影响：方案 B 设计与实施计划（未完成） |
 
 
 ## 实现进度 (docs/process/)

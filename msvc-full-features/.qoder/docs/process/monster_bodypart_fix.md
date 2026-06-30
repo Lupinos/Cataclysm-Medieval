@@ -75,10 +75,12 @@ part_hp_max = round( type->hp * base_hp / 100 )
 
 | 部位 | base_hp（系数） | hit_size | is_vital | 说明 |
 |------|-----------------|----------|----------|------|
-| `medieval_quadruped_torso` | 80 | 36 | ✅ | 躯干 |
+| `medieval_quadruped_torso` | 80 | 24 | ✅ | 躯干 |
 | `medieval_quadruped_head` | 60 | 6 | ✅ | 头 |
-| `medieval_quadruped_front_legs` | 50 | 12 | — | 前腿（合并） |
-| `medieval_quadruped_hind_legs` | 55 | 14 | — | 后腿（合并） |
+| `medieval_quadruped_front_leg_l` | 25 | 6 | — | 左前腿 |
+| `medieval_quadruped_front_leg_r` | 25 | 6 | — | 右前腿 |
+| `medieval_quadruped_hind_leg_l` | 28 | 7 | — | 左后腿 |
+| `medieval_quadruped_hind_leg_r` | 28 | 7 | — | 右后腿 |
 | `medieval_quadruped_tail` | 30 | 4 | — | 尾巴 |
 
 > `base_hp` 是 `type->hp` 的百分比系数，非绝对血量。
@@ -171,7 +173,108 @@ while( get_hp() > 2 * get_hp_max() ) {
 
 ---
 
+### 阶段 6：部位伤害影响怪物行动（进行中 ⏳，方案 A：limb_score）
+
+#### 6.1 设计决策
+
+- 采用 **方案 A**：让怪物使用与 NPC/玩家统一的 `limb_score` 体系
+- 本期只接入三层：移动速度、视觉、近战/撕咬
+- 无 limb_score 贡献的怪物返回 1.0，避免破坏原版/default_anatomy 怪物
+
+#### 6.2 Medieval body_part limb_scores 补全（已完成 ✅）
+
+文件：`data/mods/Medieval/10_medieval_core/body_parts.json`
+
+| 部位 | limb_scores |
+|---|---|
+| `medieval_quadruped_torso` | `balance` 0.7 |
+| `medieval_quadruped_head` | `reaction` 0.2, `vision` 0.3, `night_vis` 0.3 |
+| `medieval_quadruped_front_leg_l` | `grip` 0.15, `manip` 0.05 |
+| `medieval_quadruped_front_leg_r` | `grip` 0.15, `manip` 0.05 |
+| `medieval_quadruped_hind_leg_l` | `move_speed` 0.25 |
+| `medieval_quadruped_hind_leg_r` | `move_speed` 0.25 |
+| `medieval_quadruped_tail` | `balance` 0.3 |
+
+#### 6.3 C++ 实现（进行中）
+
+| 文件 | 改造 |
+|---|---|
+| `src/monster.h` | 新增 `get_speed() override` 和 `get_limb_score()` 声明 |
+| `src/monster.cpp` | 实现 `get_limb_score()`；`get_speed()` 乘 `move_speed` score；`sight_range()` / `get_eff_per()` 乘 vision score；`melee_attack()` 乘 grip/manip score |
+
+#### 6.4 效果规则
+
+| 能力 | 依赖 score | 效果 |
+|---|---|---|
+| 移动速度 | `move_speed` | 后腿受伤 → 减速；两腿全断 → 接近爬行 |
+| 视觉 | `vision` / `night_vis` | 头部/眼睛受伤 → 视野缩短 |
+| 近战/撕咬 | `grip` / `manip` | 前肢/口器受伤 → 伤害下降，最低 25% |
+
+---
+
+## 测试点
+
+1. `mon_bear` 受击后 `get_part_hp_cur(head)` 降低，而非全局 `hp`
+2. 致命部位（is_vital）归零 → 死亡
+3. 非致命部位（wing_l）归零 → 不死亡，但可能影响移动/攻击
+4. `harvest` 产物在死亡时正常生成
+5. `dissect` 产物在死亡时预生成进尸体口袋
+6. 狼/熊后腿受伤后移动速度下降
+7. 头部受伤后怪物视觉范围缩短
+8. 前肢受伤后近战伤害下降
+
+---
+
+### 阶段 7：伤害扩散机制（待做 ⏳）
+
+基于 [design09_1-部位血量系统](../design/design09_1-部位血量系统.md) 中新增的伤害扩散设计。
+
+| 文件 | 改造 |
+|---|---|
+| `src/creature.cpp` — `deal_damage()` | 溢出/残废部位伤害按 BFS 距离加权扩散到全身；扩散伤害不重新计算护甲；玩家/NPC/怪物一致 |
+
+#### 7.1 核心规则
+
+- 触发：`HP > 0` 但单次伤害超过剩余 HP 时，溢出部分扩散；`HP <= 0` 时整次伤害扩散
+- 原部位：`HP <= 0` 后完全不吃伤害
+- 目标：从命中部位出发，**只扩散到 BFS 距离 1 和 2 的部位**
+- 系数：`1.0 / (distance + 1)`
+  - 距离 1：0.5
+  - 距离 2：0.33
+  - 距离 ≥3：不参与
+- 分配：按系数比例均分扩散池
+- 护甲：扩散伤害不再计算护甲
+- 一致性：玩家、NPC、怪物完全一致
+
+#### 7.2 测试点
+
+1. 命中满血部位，伤害未溢出时，只扣目标部位
+2. 命中残废非 vital 部位，伤害扩散到躯干等相邻部位
+3. 扩散伤害可进入 vital 部位并触发死亡
+4. 玩家被怪物打残腿后，继续打腿的伤害会扩散到躯干
+
+#### 7.3 工作量评估
+
+| 工作项 | 复杂度 | 说明 |
+|---|---|---|
+| `src/anatomy.h` / `src/anatomy.cpp` | 低 | 新增 `get_distance_map(root)` 或复用 `targeting_graph`，返回 root 到各部位的 BFS 距离（限制 ≤2） |
+| `src/creature.cpp` — `Creature::deal_damage()` | 中 | 在 `apply_damage` 前插入扩散逻辑：计算溢出 → 查询距离 → 按系数加权分配 → 对每个候选部位调用 `apply_damage` |
+| `src/character.cpp` — `Character::deal_damage()` | 低（复用） | `Character::deal_damage()` 会先调用 `Creature::deal_damage()`，扩散自动生效；但出血/感染/疼痛等后续效果仍基于原始命中部位，需在测试中确认是否可接受 |
+| 调试输出 | 低 | 可加临时 log 显示溢出伤害、扩散目标及分配量 |
+| 平衡测试 | 中高 | 需验证：满级角色/怪物是否因扩散过快击杀；玩家被围攻时是否暴毙 |
+
+**预估**：约 1.5~2 小时编码 + 1~2 小时测试调参。
+
+**主要风险**：
+- `Creature::deal_damage()` 是核心路径，改动影响所有生物（怪物、NPC、玩家）
+- 扩散伤害绕过护甲后，高伤武器可能异常强力
+- Character 的后续效果（出血、感染、疼痛）不会为扩散部位分别触发，可能需要在 `spread_damage` 中手动补一些效果，或接受其作为"内部创伤"不触发外伤效果
+
+---
+
 ## 风险
 
 - `apply_damage` 修改后，所有现有 monster 的死亡判定从"全局 hp<=0"变成"致命部位 hp<=0"——需验证已有 monster（特别是 boss 级）的生存力是否下降
 - 已有 UI 显示的是全局 HP 条——修复后需要确认是否显示部位总 HP（`get_hp()` 求和已自动支持）
+- 怪物 `get_limb_score` 对无贡献 anatomy 返回 1.0 的兜底逻辑，需确认不会意外放大能力
+- 伤害扩散机制会显著改变"打腿刮痧"体验，需关注玩家生存压力是否过大

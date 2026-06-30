@@ -961,8 +961,15 @@ int Character::fire_gun( const tripoint &target, int shots, item &gun, const bod
             elem.amount = enchantment_cache->modify_value( enchant_vals::mod::RANGED_DAMAGE, elem.amount );
         }
         dispersion_sources dispersion = get_weapon_dispersion( gun );
-        dispersion.add_range( recoil_total() );
+        const double current_recoil = recoil_total();
+        dispersion.add_range( current_recoil );
         dispersion.add_spread( proj.shot_spread );
+
+        if( is_avatar() && aimed_part.is_valid() && !aimed_part->id.is_null() ) {
+            add_msg_if_player( m_info,
+                               "[fire_gun] after recoil=%.0f shot_spread=%d final_max=%.0f",
+                               current_recoil, proj.shot_spread, dispersion.max() );
+        }
 
         bool first = true;
         bool headshot = false;
@@ -2304,17 +2311,21 @@ dispersion_sources Character::get_weapon_dispersion( const item &obj ) const
 {
     int weapon_dispersion = obj.gun_dispersion();
     dispersion_sources dispersion( weapon_dispersion );
-    dispersion.add_range( ranged_dex_mod() );
+    const int dex_mod = ranged_dex_mod();
+    dispersion.add_range( dex_mod );
 
-    dispersion.add_range( get_modifier( character_modifier_ranged_dispersion_manip_mod ) );
+    const int manip_mod = get_modifier( character_modifier_ranged_dispersion_manip_mod );
+    dispersion.add_range( manip_mod );
 
+    int driving_penalty = 0;
     if( is_driving() ) {
         // get volume of gun (or for auxiliary gunmods the parent gun)
         const item *parent = has_item( obj ) ? find_parent( obj ) : nullptr;
         const int vol = ( parent ? parent->volume() : obj.volume() ) / 250_ml;
 
         /** @EFFECT_DRIVING reduces the inaccuracy penalty when using guns whilst driving */
-        dispersion.add_range( std::max( vol - get_skill_level( skill_driving ), 1.0f ) * 20 );
+        driving_penalty = std::max( vol - get_skill_level( skill_driving ), 1.0f ) * 20;
+        dispersion.add_range( driving_penalty );
     }
 
     /** @EFFECT_GUN improves usage of accurate weapons and sights */
@@ -2325,13 +2336,11 @@ dispersion_sources Character::get_weapon_dispersion( const item &obj ) const
     // then beginners will rely heavily on high-precision weapons, while experts are not.
     // Obviously this is not true.
     // So use a constant instead.
-    if( obj.gun_skill() == skill_archery ) {
-        dispersion.add_range( dispersion_from_skill( avgSkill,
-                              450 / get_option< float >( "GUN_DISPERSION_DIVIDER" ) ) );
-    } else {
-        dispersion.add_range( dispersion_from_skill( avgSkill,
-                              300 / get_option< float >( "GUN_DISPERSION_DIVIDER" ) ) );
-    }
+    const double skill_base = obj.gun_skill() == skill_archery ?
+                              450 / get_option< float >( "GUN_DISPERSION_DIVIDER" ) :
+                              300 / get_option< float >( "GUN_DISPERSION_DIVIDER" );
+    const double skill_penalty = dispersion_from_skill( avgSkill, skill_base );
+    dispersion.add_range( skill_penalty );
 
     float disperation_mod = enchantment_cache->modify_value( enchant_vals::mod::WEAPON_DISPERSION,
                             1.0f );
@@ -2344,6 +2353,15 @@ dispersion_sources Character::get_weapon_dispersion( const item &obj ) const
         // Adding dispersion for additional debuff
         dispersion.add_range( 150 );
         dispersion.add_multiplier( 4 );
+    }
+
+    if( is_avatar() ) {
+        add_msg_if_player( m_info,
+                           "[get_weapon_dispersion] weapon=%d dex=%d manip=%d drive=%d "
+                           "skill=%.1f (base=%.1f pen=%.1f) enchant=%.2f max=%.0f",
+                           weapon_dispersion, dex_mod, manip_mod, driving_penalty,
+                           avgSkill, skill_base, skill_penalty,
+                           disperation_mod, dispersion.max() );
     }
 
     return dispersion;

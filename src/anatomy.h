@@ -53,9 +53,15 @@ class anatomy
         std::vector<bodypart_id> get_all_eligable_parts( int min_hit, int max_hit,
                 bool can_attack_high ) const;
         // Based on the value provided (which is between range_min and range_max),
-        // select an appropriate body part to hit with a projectile attack
+        // select an appropriate body part to hit with a projectile attack.
+        // If out_path is non-null, it receives the sequence of body parts considered
+        // along the targeting graph path (for debugging / UI display).
+        // root_weight_multiplier scales the weight of the aimed/root part to model
+        // focus, good sights, or high PER making the intended target stand out.
         bodypart_id select_body_part_projectile_attack( double range_min, double range_max,
-                double value, bodypart_id aimed_part = bodypart_str_id::NULL_ID() ) const;
+                double value, bodypart_id aimed_part = bodypart_str_id::NULL_ID(),
+                std::vector<bodypart_id> *out_path = nullptr,
+                double root_weight_multiplier = 1.0 ) const;
 
         // Effective target size when aiming at a given body part.
         // Uses BFS distance-weighted sum over the anatomy graph.

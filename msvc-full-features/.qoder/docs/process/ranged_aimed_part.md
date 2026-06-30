@@ -404,10 +404,11 @@ dealt_projectile_attack shot = projectile_attack(
 - `apply_damage` 采用过渡方案：同步扣减部位 HP 与全局 HP，避免破坏依赖 `monster::hp` 的旧代码。
 - 瞄小部位时 `target_size` 按等效面积比例自然缩小，无需额外 `missed_by` 惩罚。
 - 命中后 `targeting_graph` 以 `aimed_part` 为 root，弹丸更大概率落在瞄准部位或其近邻。
+- **路径权重衰减**：`targeting_graph::select` 中路径上每个部位的贡献按距离 root 衰减，`weight = hit_size / (distance + 1)`，避免大躯干抢走大部分命中区间。
 - 意外命中其他生物时不应用 `aimed_part`。
 - 切换目标或首次瞄准时，默认选中 `hit_size` 最大的部位。
 - 弓箭等 RAS 武器每次射击后会退出瞄准界面；`avatar::last_aimed_part` 会记住上次部位，下次按 `f` 重新瞄准时自动恢复（若该部位仍属于当前目标）。
-- Medieval 四足动物拥有 5 个可瞄部位：torso / head / front legs / hind legs / tail。
+- Medieval 四足动物拥有 8 个可瞄部位：torso / head / front_leg_l / front_leg_r / hind_leg_l / hind_leg_r / tail。
 
 ---
 

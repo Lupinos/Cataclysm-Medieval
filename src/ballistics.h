@@ -2,6 +2,8 @@
 #ifndef CATA_SRC_BALLISTICS_H
 #define CATA_SRC_BALLISTICS_H
 
+#include <vector>
+
 #include "bodypart.h"
 #include "weakpoint.h"
 #include "weighted_list.h"
@@ -12,6 +14,7 @@ class vehicle;
 struct dealt_projectile_attack;
 struct projectile;
 struct tripoint;
+
 
 /** Aim result for a single projectile attack */
 struct projectile_attack_aim {
@@ -124,7 +127,9 @@ class targeting_graph
             }
         }
 
-        T select( const double range_min, const double range_max, double value ) const {
+        T select( const double range_min, const double range_max, double value,
+                  std::vector<T> *out_path = nullptr,
+                  const double root_weight_multiplier = 1.0 ) const {
             // First, find the path we will follow
             // That is, what body parts we will hit with less and less accurate shots
             std::list<const node *> path;
@@ -140,6 +145,12 @@ class targeting_graph
                 }
                 path.push_back( connections[*next.pick()] );
             }
+            if( out_path != nullptr ) {
+                out_path->clear();
+                for( const node *nd : path ) {
+                    out_path->push_back( nd->val );
+                }
+            }
 
             // This will make the lowest possible value of 'value' 0,
             // and the highest possible value 'range_max' - 'range_min'
@@ -147,10 +158,21 @@ class targeting_graph
             // And below, we'll have a scale factor of 2 / total_weight
             value -= range_min;
 
-            // Now, find the total weight along our path
+            // Weight drops off with distance from the aimed (root) part.  A part
+            // one step away from the root contributes half its raw weight, two
+            // steps away one third, etc.  This makes aimed shots stick closer to
+            // the intended part instead of immediately sliding to a large neighbour.
+            // The root weight may be multiplied to represent sharpshooter focus /
+            // high-quality sights making the aimed part stand out.
             double total_weight = 0.0;
+            size_t distance = 0;
             for( const node *nd : path ) {
-                total_weight += nd->weight;
+                double node_weight = nd->weight;
+                if( distance == 0 ) {
+                    node_weight *= root_weight_multiplier;
+                }
+                total_weight += node_weight / static_cast<double>( distance + 1 );
+                ++distance;
             }
 
             // And using this, and the min/max ranges of our target value,
@@ -158,8 +180,14 @@ class targeting_graph
             double scale_factor = ( range_max - range_min ) / total_weight;
             // Then, just walk along the path
             double accumulated_weight = 0.0;
+            distance = 0;
             for( const node *nd : path ) {
-                accumulated_weight += nd->weight * scale_factor;
+                double node_weight = nd->weight;
+                if( distance == 0 ) {
+                    node_weight *= root_weight_multiplier;
+                }
+                accumulated_weight += ( node_weight / static_cast<double>( distance + 1 ) ) * scale_factor;
+                ++distance;
                 // And quit when we've gone far enough that we can't make it to the next part
                 if( accumulated_weight > value ) {
                     return nd->val;

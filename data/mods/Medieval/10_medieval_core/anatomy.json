@@ -5,8 +5,10 @@
     "parts": [
       "medieval_quadruped_torso",
       "medieval_quadruped_head",
-      "medieval_quadruped_front_legs",
-      "medieval_quadruped_hind_legs",
+      "medieval_quadruped_front_leg_l",
+      "medieval_quadruped_front_leg_r",
+      "medieval_quadruped_hind_leg_l",
+      "medieval_quadruped_hind_leg_r",
       "medieval_quadruped_tail"
     ]
   }

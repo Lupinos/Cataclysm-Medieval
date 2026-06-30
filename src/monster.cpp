@@ -148,6 +148,12 @@ static const material_id material_steel( "steel" );
 static const material_id material_stone( "stone" );
 static const material_id material_veggy( "veggy" );
 
+static const limb_score_id limb_score_grip( "grip" );
+static const limb_score_id limb_score_manip( "manip" );
+static const limb_score_id limb_score_move_speed( "move_speed" );
+static const limb_score_id limb_score_night_vis( "night_vis" );
+static const limb_score_id limb_score_vision( "vision" );
+
 static const mfaction_str_id monfaction_acid_ant( "acid_ant" );
 static const mfaction_str_id monfaction_ant( "ant" );
 static const mfaction_str_id monfaction_bee( "bee" );
@@ -847,15 +853,32 @@ int monster::print_info( const catacurses::window &w, int vStart, int vLines, in
     }
     oss << "\n";
 
-    // Print health bar, monster name, then statuses on the first line.
-    nc_color bar_color = c_white;
-    std::string bar_str;
-    get_HP_Bar( bar_color, bar_str );
-    oss << get_tag_from_color( bar_color ) << bar_str << "</color>";
-    oss << "<color_white>" << std::string( 5 - utf8_width( bar_str ), '.' ) << "</color> ";
+    // Print monster name, then statuses on the first line; per-part HP bars follow.
     oss << get_tag_from_color( basic_symbol_color() ) << name() << "</color> ";
     oss << "<color_h_white>" << get_effect_status() << "</color>";
     vStart += fold_and_print( w, point( column, vStart ), max_width, c_white, oss.str() );
+
+    // Per-part HP bars on the next line if space allows.
+    if( vStart < vEnd ) {
+        std::ostringstream parts_hp;
+        bool first = true;
+        for( const bodypart_id &bp : get_all_body_parts( get_body_part_flags::only_main ) ) {
+            const int cur = get_part_hp_cur( bp );
+            const int max = get_part_hp_max( bp );
+            if( max <= 0 ) {
+                continue;
+            }
+            const std::pair<std::string, nc_color> bar = ::get_hp_bar( cur, max, true );
+            if( !first ) {
+                parts_hp << " ";
+            }
+            first = false;
+            parts_hp << get_tag_from_color( bar.second ) << body_part_name( bp ) << ":" << bar.first << "</color>";
+        }
+        if( !parts_hp.str().empty() ) {
+            vStart += fold_and_print( w, point( column, vStart ), max_width, c_white, parts_hp.str() );
+        }
+    }
 
     Character &pc = get_player_character();
     bool sees_player = sees( pc );
@@ -1258,15 +1281,19 @@ int monster::sight_range( const float light_level ) const
         return 1;
     }
     static const float default_daylight = default_daylight_level();
+    const float day_vis_score = get_limb_score( limb_score_vision );
+    const float night_vis_score = get_limb_score( limb_score_night_vis );
     if( light_level == 0 ) {
-        return type->vision_night;
+        return static_cast<int>( type->vision_night * night_vis_score );
     } else if( light_level >= default_daylight ) {
-        return type->vision_day;
+        return static_cast<int>( type->vision_day * day_vis_score );
     }
     int range = ( light_level * type->vision_day + ( default_daylight - light_level ) *
                   type->vision_night ) / default_daylight;
+    const float vis_score = ( light_level * day_vis_score + ( default_daylight - light_level ) *
+                              night_vis_score ) / default_daylight;
 
-    return range;
+    return static_cast<int>( range * vis_score );
 }
 
 bool monster::made_of( const material_id &m ) const
@@ -1619,7 +1646,10 @@ int monster::hp_percentage() const
 
 int monster::get_eff_per() const
 {
-    return std::min( type->vision_night, type->vision_day );
+    const float day_vis_score = get_limb_score( limb_score_vision );
+    const float night_vis_score = get_limb_score( limb_score_night_vis );
+    return std::min( static_cast<int>( type->vision_night * night_vis_score ),
+                     static_cast<int>( type->vision_day * day_vis_score ) );
 }
 
 void monster::process_triggers()
@@ -1910,6 +1940,11 @@ bool monster::melee_attack( Creature &target, float accuracy )
     if( !is_hallucination() && type->melee_dice > 0 ) {
         damage.add_damage( damage_bash, dice( type->melee_dice, type->melee_sides ) );
     }
+    // Wounds to gripping/manipulating limbs reduce melee effectiveness.
+    const float grip_score = get_limb_score( limb_score_grip );
+    const float manip_score = get_limb_score( limb_score_manip );
+    const float melee_score = std::max( grip_score, manip_score );
+    damage.mult_damage( std::max( 0.25f, melee_score ) );
 
     dealt_damage_instance dealt_dam;
 
@@ -2420,6 +2455,30 @@ float monster::get_hit_base() const
 float monster::get_dodge_base() const
 {
     return type->sk_dodge;
+}
+
+int monster::get_speed() const
+{
+    const int base = Creature::get_speed();
+    const float move_score = get_limb_score( limb_score_move_speed );
+    return std::max( 25, static_cast<int>( base * move_score ) );
+}
+
+float monster::get_limb_score( const limb_score_id &score ) const
+{
+    float total = 0.0f;
+    float total_max = 0.0f;
+    for( const std::pair<const bodypart_str_id, bodypart> &id : body ) {
+        total += id.second.get_limb_score( score );
+        total_max += id.second.get_limb_score_max( score );
+    }
+    // If no body part contributes to this score, behave as if the monster has
+    // the full capability.  This avoids breaking monsters that use anatomy
+    // templates without limb_scores (e.g. default_anatomy).
+    if( total_max <= 0.0f ) {
+        return 1.0f;
+    }
+    return clamp( total / total_max, 0.0f, 1.0f );
 }
 
 float monster::hit_roll() const

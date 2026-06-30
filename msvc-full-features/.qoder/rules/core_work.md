@@ -39,7 +39,7 @@ alwaysApply: true
 - [x] 现代 Recipe 标记 obsolete（1156 条）
 - [x] MONSTER_WHITELIST（WILDLIFE + NULL）
 - [x] 覆写 item_group（140 组置空，10 文件）
-- [x] 覆写 professions（3个初始职业：裸体流浪者 + 流浪剑士 + 新兵弓手，SCENARIO_BLACKLIST屏蔽所有原版场景）
+- [x] 覆写 professions（4个初始职业 + 2个测试职业，SCENARIO_BLACKLIST屏蔽所有原版场景）
 
 ## 短线任务：屏蔽现代内容（当前阶段）
 
@@ -47,7 +47,7 @@ alwaysApply: true
 
 1. [x] 配置 MONSTER_WHITELIST
 2. [x] 覆写 item_group（140 组置空，10 文件）
-3. [x] 覆写 professions（3个初始职业 + 1个场景白名单）
+3. [x] 覆写 professions（4个初始职业 + 2个测试职业 + 1个场景白名单）
 
 ---
 

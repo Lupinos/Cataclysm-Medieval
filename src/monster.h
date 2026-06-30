@@ -402,10 +402,14 @@ class monster : public Creature
         float get_hit_base() const override;
         float get_dodge_base() const override;
 
+        int    get_speed() const override;
         float  get_dodge() const override;       // Natural dodge, or 0 if we're occupied
         float  get_melee() const override; // For determining attack skill when awarding dodge practice.
         float  hit_roll() const override;  // For the purposes of comparing to player::dodge_roll()
         float  dodge_roll() const override;  // For the purposes of comparing to player::hit_roll()
+
+        // Limb score support for wound-affected capabilities (movement, vision, melee).
+        float get_limb_score( const limb_score_id &score ) const;
 
         bool can_attack_high() const override; // Can we attack upper limbs?
         int get_grab_strength() const; // intensity of grabbed effect
