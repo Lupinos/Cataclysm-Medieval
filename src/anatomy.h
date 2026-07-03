@@ -68,6 +68,13 @@ class anatomy
         double effective_size( const bodypart_id &root ) const;
         double effective_size_ratio( const bodypart_id &root ) const;
 
+        // Compute a random spread path for damage that overflows a destroyed
+        // body part. Walks the anatomy graph from root, selecting neighbors by
+        // hit_size weight (like targeting_graph), up to max_distance steps.
+        // Returns [root, neighbor1, neighbor2, ...] (root included at index 0).
+        std::vector<bodypart_id> get_spread_path( const bodypart_id &root,
+                int max_distance = 2 ) const;
+
         std::vector<bodypart_id> get_bodyparts() const;
         float get_size_ratio( const anatomy_id &base ) const;
         float get_hit_size_sum() const;

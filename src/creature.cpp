@@ -5,6 +5,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <functional>
+#include <iterator>
 #include <map>
 #include <memory>
 #include <optional>
@@ -1299,13 +1300,34 @@ dealt_damage_instance Creature::deal_damage( Creature *source, bodypart_id bp,
     // get eocs for all damage effects
     d.ondamage_effects( source, this, dam, bp.id() );
 
-    if( total_base_damage < total_damage ) {
-        // Only deal more HP than remains if damage not including crit multipliers is higher.
-        total_damage = clamp( get_hp( bp ), total_base_damage, total_damage );
+    const int original_total_damage = total_damage;
+    const int target_hp = get_hp( bp );
+    int damage_to_target = 0;
+    int overflow = 0;
+
+    if( target_hp > 0 ) {
+        if( total_base_damage < total_damage ) {
+            // Only deal more HP than remains if damage not including crit multipliers is higher.
+            damage_to_target = clamp( target_hp, total_base_damage, total_damage );
+        } else {
+            damage_to_target = std::min( total_damage, target_hp );
+        }
+        overflow = original_total_damage - damage_to_target;
+    } else {
+        // Target body part is already destroyed; all damage overflows and spreads.
+        overflow = original_total_damage;
     }
+
+    // Apply the portion that actually hits the target part.
+    total_damage = damage_to_target;
     mod_pain( total_pain );
 
     apply_damage( source, bp, total_damage );
+
+    // Spread overflow damage to nearby body parts (Tarkov-style).
+    if( overflow > 0 ) {
+        spread_damage( source, bp, overflow );
+    }
 
     if( wp != nullptr ) {
         wp->apply_effects( *this, total_damage, attack_copy );
@@ -1313,6 +1335,84 @@ dealt_damage_instance Creature::deal_damage( Creature *source, bodypart_id bp,
 
     return dealt_dams;
 }
+
+void Creature::spread_damage( Creature *source, const bodypart_id &bp, int amount )
+{
+    if( amount <= 0 ) {
+        return;
+    }
+
+    const anatomy &anat = get_anatomy().obj();
+
+    // Pick a random spread path: [bp, neighbor1, neighbor2].
+    const std::vector<bodypart_id> path = anat.get_spread_path( bp, 2 );
+    if( path.size() < 2 ) {
+        return;
+    }
+
+    // Randomized weights that always sum to 1.2.
+    // distance 1 fluctuates in [0.5, 0.9], distance 2 gets the remainder.
+    const double dist1_weight = rng_float( 0.5, 0.9 );
+    const double dist2_weight = 1.2 - dist1_weight;
+
+    struct target_t {
+        bodypart_id bp;
+        double weight;
+    };
+    std::vector<target_t> targets;
+    if( path.size() > 1 ) {
+        targets.push_back( { path[1], dist1_weight } );
+    }
+    if( path.size() > 2 ) {
+        targets.push_back( { path[2], dist2_weight } );
+    }
+    if( targets.empty() ) {
+        return;
+    }
+
+    double total_weight = 0.0;
+    for( const target_t &t : targets ) {
+        total_weight += t.weight;
+    }
+
+    // Largest remainder method for integer allocation.
+    std::map<bodypart_id, int> shares;
+    std::vector<std::pair<bodypart_id, double>> fractional;
+    int allocated = 0;
+    for( const target_t &t : targets ) {
+        const double exact = amount * t.weight / total_weight;
+        const int base = static_cast<int>( std::floor( exact ) );
+        shares[t.bp] = base;
+        allocated += base;
+        fractional.emplace_back( t.bp, exact - base );
+    }
+    int remainder = amount - allocated;
+    std::sort( fractional.begin(), fractional.end(),
+    []( const std::pair<bodypart_id, double> &a, const std::pair<bodypart_id, double> &b ) {
+        return a.second > b.second;
+    } );
+    for( int i = 0; i < remainder && i < static_cast<int>( fractional.size() ); ++i ) {
+        shares[fractional[i].first] += 1;
+    }
+
+    // Apply damage and build log.
+    std::string spread_log;
+    for( const std::pair<const bodypart_id, int> &pair : shares ) {
+        if( pair.second > 0 ) {
+            apply_damage( source, pair.first, pair.second );
+            if( !spread_log.empty() ) {
+                spread_log += ", ";
+            }
+            spread_log += string_format( "%s:%d", pair.first->name.translated().c_str(), pair.second );
+        }
+    }
+
+    if( source != nullptr && source->is_avatar() && !spread_log.empty() ) {
+        source->add_msg_if_player( m_info, "[spread] %s overflow=%d -> %s",
+                                   bp->name.translated().c_str(), amount, spread_log.c_str() );
+    }
+}
+
 void Creature::deal_damage_handle_type( const effect_source &source, const damage_unit &du,
                                         bodypart_id bp, int &damage, int &pain )
 {

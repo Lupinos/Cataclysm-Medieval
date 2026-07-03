@@ -16,7 +16,7 @@ struct projectile;
 struct tripoint;
 
 
-/** Aim result for a single projectile attack */
+/** Aim result for a single projectile attack */11111112
 struct projectile_attack_aim {
     ///< Hit quality, where 0.0 is a perfect hit and 1.0 is a miss
     double missed_by = 0;

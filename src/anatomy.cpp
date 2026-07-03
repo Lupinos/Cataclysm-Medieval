@@ -410,3 +410,51 @@ bodypart_id anatomy::select_body_part_projectile_attack( const double range_min,
     // And now, select the right body part
     return graph.select( range_min, range_max, value, out_path, root_weight_multiplier );
 }
+
+std::vector<bodypart_id> anatomy::get_spread_path( const bodypart_id &root,
+        const int max_distance ) const
+{
+    std::vector<bodypart_id> path;
+    if( !root.is_valid() || root->id.is_null() || max_distance <= 0 ) {
+        return path;
+    }
+    path.push_back( root );
+
+    // Build an undirected adjacency list from the parent (connected_to) pointers.
+    std::map<bodypart_id, std::vector<bodypart_id>> adj;
+    for( const bodypart_id &bp : cached_bps ) {
+        if( bp->connected_to.is_null() ) {
+            continue;
+        }
+        const bodypart_id parent = bp->connected_to.id();
+        adj[bp].push_back( parent );
+        adj[parent].push_back( bp );
+    }
+
+    // Walk the graph, selecting the next part by hit_size weight.
+    std::set<bodypart_id> visited;
+    visited.insert( root );
+    bodypart_id current = root;
+
+    for( int step = 0; step < max_distance; ++step ) {
+        weighted_float_list<bodypart_id> next;
+        for( const bodypart_id &neighbor : adj[current] ) {
+            if( visited.count( neighbor ) ) {
+                continue;
+            }
+            next.add( neighbor, neighbor->hit_size );
+        }
+        if( next.empty() ) {
+            break;
+        }
+        const bodypart_id *selected = next.pick();
+        if( selected == nullptr ) {
+            break;
+        }
+        path.push_back( *selected );
+        visited.insert( *selected );
+        current = *selected;
+    }
+
+    return path;
+}

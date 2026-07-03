@@ -1383,6 +1383,8 @@ class Creature : public viewer
                 const bodypart_id &aimed_part = bodypart_str_id::NULL_ID(),
                 const Creature *source = nullptr,
                 const weakpoint_attack &wp_attack = weakpoint_attack() ) const;
+        // spread overflow damage from a destroyed body part to nearby parts
+        void spread_damage( Creature *source, const bodypart_id &bp, int amount );
         // do messaging and SCT for projectile hit
         void messaging_projectile_attack( const Creature *source,
                                           const projectile_attack_results &hit_selection, int total_damage ) const;
