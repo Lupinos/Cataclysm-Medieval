@@ -15,26 +15,31 @@
 
 游戏设计是两类process的需求来源。每份process注明对应design，维护该类别的技术设计、实际完成内容、未完成事项和必要验证事实。design不引用process，不随代码或JSON变动自动改变。
 
-## 编辑事件与文档agent
+## Git提交与文档同步
 
-`tools/watch-process.cjs` 在云端开发机上监听 `src/`、`data/`、`tests/`、`tools/` 和 `build-scripts/` 中的代码与JSON编辑。连续编辑合并后调用本机的 `codex exec`，由云端模型读取对应设计与实际代码，只更新 `docs/process/json/` 或 `docs/process/code/`。
-
-文档目录不参与监听，不会因agent写文档而再次触发。agent不修改源码或设计，不提交Git；纯Bug修复、没有设计归属或没有可归档事实时不创建占位文档。验证未执行时必须如实记录。
-
-独立Codex CLI完成登录并通过模型调用验证后，在仓库根目录启动：
+开始代码或JSON任务前，在当前检出中运行：
 
 ```bash
-nohup node tools/watch-process.cjs > .git/process-watch.log 2>&1 < /dev/null &
-echo $! > .git/process-watch.pid
+bash tools/setup-hooks.sh
 ```
 
-监听与调用结果见 `.git/process-watch.log`，agent详细输出见 `.git/process-agent.log`。停止：
+该脚本设置当前仓库的 `core.hooksPath=.githooks`，启用 `.githooks/commit-msg`；`tools/setup-cloud.sh` 也会调用它。钩子文件随Git保存，但仓库配置不会随克隆迁移，所以新检出仍需执行安装。安装只需要Git和Bash，无需独立Codex CLI认证或常驻进程。
 
-```bash
-kill "$(cat .git/process-watch.pid)"
+钩子检查暂存区中 `src/`、`data/`、`tests/`、`tools/`、`build-scripts/`、`.githooks/` 及根目录构建入口的代码与JSON改动，包括删除。代码要求同时暂存 `docs/process/code/*.md` 的新增或修改，JSON要求 `docs/process/json/*.md`；两类改动同时存在时分别核对。删除process文件不能替代更新。
+
+遗漏时提交失败，提醒文字随Git命令结果返回给当前agent。当前agent根据实际改动查阅design、更新同名process的完整章节，暂存后重试。脚本不生成文档，也不验证内容语义；即使文件检查通过，agent仍须核对设计归属、实现事实和验证结果。
+
+纯Bug排查与修复不入档。工具链知识在本README维护；没有新的可归档事实也不制造占位文档。符合这些规则时，在提交说明末尾以空行隔开，给出具体理由，例如：
+
+```text
+fix: correct door state handling
+
+Process-Docs: skip 纯 Bug 修复，无新增设计或实现方案
 ```
 
-监听进程与CLI登录属于当前开发机的运行状态，不随Git分支自动迁移。更换开发机后需要验证登录并重新启动监听；代码和文档通过Git远端保存。
+此说明是agent对无需更新process的明确判断，不是取消文档职责。正常提交必须执行钩子，不通过 `--no-verify`、禁用钩子或API提交绕过。钩子只在执行提交的开发机上运行，不会唤醒已结束的对话。
+
+旧的 `tools/watch-process.cjs` 已移除。旧开发机若仍有此前启动的监听进程，核实进程身份后停止；不再启动监听器或独立文档agent。
 
 ## 云端工具链
 

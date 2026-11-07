@@ -1,5 +1,6 @@
 #!/bin/bash
 set -euo pipefail
+bash "$(dirname -- "${BASH_SOURCE[0]}")/setup-hooks.sh"
 # Use the existing isolated checkout; do not create a Git worktree.
 setup_root=/workspace/cataclysm-env
 mkdir -p "$setup_root"/{debs,sysroot,apt/lists/partial,apt/cache/archives/partial}

@@ -1,0 +1,44 @@
+#!/bin/bash
+set -euo pipefail
+
+code_changed=0
+json_changed=0
+while IFS= read -r -d '' file; do
+    case "$file" in
+        *.json) json_changed=1 ;;
+        .githooks/*|*.c|*.cc|*.cpp|*.cxx|*.h|*.hh|*.hpp|*.hxx|*.py|*.js|*.mjs|*.cjs|*.ts|*.tsx|*.sh|*.cmake|CMakeLists.txt|Makefile|*/CMakeLists.txt|*/Makefile)
+            code_changed=1 ;;
+    esac
+done < <(git diff --cached --name-only --no-renames -z -- src/ data/ tests/ tools/ build-scripts/ .githooks/ CMakeLists.txt Makefile)
+
+if (( code_changed == 0 && json_changed == 0 )); then
+    exit 0
+fi
+
+if git interpret-trailers --parse "$1" | grep -Eq '^Process-Docs: skip[[:blank:]]+[^[:space:]]'; then
+    echo 'process 核对：采用提交说明中的豁免理由，由当前 agent 负责确认符合 AGENTS.md。' >&2
+    exit 0
+fi
+
+missing=()
+if (( code_changed )) && [[ -z "$(git diff --cached --name-only --no-renames --diff-filter=AM -- 'docs/process/code/*.md')" ]]; then
+    missing+=('docs/process/code/')
+fi
+if (( json_changed )) && [[ -z "$(git diff --cached --name-only --no-renames --diff-filter=AM -- 'docs/process/json/*.md')" ]]; then
+    missing+=('docs/process/json/')
+fi
+if (( ${#missing[@]} == 0 )); then
+    exit 0
+fi
+
+printf '提交暂停：代码/JSON 已暂存，但以下类别没有暂存 process 文档更新：\n' >&2
+printf '  %s\n' "${missing[@]}" >&2
+cat >&2 <<'MESSAGE'
+当前 agent：请读取 AGENTS.md、docs/README.md 和对应 design，核对实际改动。
+需要归档时，更新对应 design 同名 process 的完整章节，暂存后重新提交。
+纯 Bug 排查/修复不入档；工具链知识写 docs/README.md。
+符合规则的无需更新情形，请在提交说明末尾用空行隔开并写明具体理由：
+Process-Docs: skip <理由>
+不要使用 --no-verify，也不要启动独立 Codex CLI。
+MESSAGE
+exit 1
