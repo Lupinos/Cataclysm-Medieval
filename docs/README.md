@@ -15,6 +15,27 @@
 
 游戏设计是两类process的需求来源。每份process注明对应design，维护该类别的技术设计、实际完成内容、未完成事项和必要验证事实。design不引用process，不随代码或JSON变动自动改变。
 
+## 编辑事件与文档agent
+
+`tools/watch-process.cjs` 在云端开发机上监听 `src/`、`data/`、`tests/`、`tools/` 和 `build-scripts/` 中的代码与JSON编辑。连续编辑合并后调用本机的 `codex exec`，由云端模型读取对应设计与实际代码，只更新 `docs/process/json/` 或 `docs/process/code/`。
+
+文档目录不参与监听，不会因agent写文档而再次触发。agent不修改源码或设计，不提交Git；纯Bug修复、没有设计归属或没有可归档事实时不创建占位文档。验证未执行时必须如实记录。
+
+独立Codex CLI完成登录并通过模型调用验证后，在仓库根目录启动：
+
+```bash
+nohup node tools/watch-process.cjs > .git/process-watch.log 2>&1 < /dev/null &
+echo $! > .git/process-watch.pid
+```
+
+监听与调用结果见 `.git/process-watch.log`，agent详细输出见 `.git/process-agent.log`。停止：
+
+```bash
+kill "$(cat .git/process-watch.pid)"
+```
+
+监听进程与CLI登录属于当前开发机的运行状态，不随Git分支自动迁移。更换开发机后需要验证登录并重新启动监听；代码和文档通过Git远端保存。
+
 ## 历史来源
 
 旧实现与原始旧文档保存在 `archive/medieval-before-redo` 分支，原路径为 `msvc-full-features/.qoder/docs/`。其中原版调研的勘正内容已恢复到当前vanilla目录。
