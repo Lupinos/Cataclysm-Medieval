@@ -36,6 +36,10 @@ kill "$(cat .git/process-watch.pid)"
 
 监听进程与CLI登录属于当前开发机的运行状态，不随Git分支自动迁移。更换开发机后需要验证登录并重新启动监听；代码和文档通过Git远端保存。
 
+## 云端工具链
+
+`bash tools/setup-cloud.sh` 准备隔离的构建依赖并编译游戏和测试程序。依赖、构建缓存和运行日志保存在仓库外的 `/workspace/cataclysm-env/`，不提交到Git。日常增量编译及最小测试入口见根目录AGENTS.md。
+
 ## 历史来源
 
 旧实现与原始旧文档保存在 `archive/medieval-before-redo` 分支，原路径为 `msvc-full-features/.qoder/docs/`。其中原版调研的勘正内容已恢复到当前vanilla目录。

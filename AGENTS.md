@@ -27,6 +27,8 @@
 
 重做基点：CDDA `0.H-branch` 的 `6dae8435e804bc11dd85baa21954ba6297e7841f`。旧Medieval代码和JSON未迁入。
 
+首次准备云端工具链运行 `bash tools/setup-cloud.sh`；日常使用下列增量编译和最小测试入口。
+
 ```bash
 cd /workspace/Cataclysm-Medieval
 /workspace/cataclysm-env/venv/bin/cmake --build /workspace/cataclysm-env/build --target cataclysm cata_test --parallel 5
