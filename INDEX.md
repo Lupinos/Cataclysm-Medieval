@@ -1,4 +1,4 @@
-# 全仓库文档索引
+# 中世纪项目文档索引
 
 开始工作时先读相关 **design**；查询当前实现时优先查对应 **process（如有）**，再核对源码、JSON 与测试。启动阅读和索引维护要求见 [AGENTS.md](AGENTS.md)。
 
@@ -7,7 +7,7 @@
 1. [盔甲总设计](docs/design/design02-盔甲.md)：时代背景、防具分类、材料与分层防护。
 2. [布里根丁与板甲衣细分](docs/design/design02_1-布里根丁与板甲衣细分.md)：过渡期防具变体与设计方案。
 3. [旧盔甲实现记录](docs/archive/technical/medieval_armor.md)：旧分支装备与参数归档，**不代表当前 Medieval 分支已实现**。
-4. [原版护甲穿透调研](docs/vanilla/code_armor_penetration_system.md) 与 [护甲平衡指南](doc/ARMOR_BALANCE_AND_DESIGN.md)：机制背景参考。
+4. [护甲穿透调研](docs/vanilla/code_armor_penetration_system.md)：我们整理的原版机制背景参考。
 
 ## 当前进度查询
 
@@ -15,22 +15,9 @@
 
 ## 覆盖与维护
 
-逐项收录仓库中的 `.md`、`.rst`、`.adoc` 文档，`doc/`、`docs/` 中的 `.txt` 说明，以及各目录 `README.txt`、`LICENSE.txt`。源码、JSON 数据、翻译、词典、素材清单与构建配置不逐项收录。链接路径相对于仓库根目录。
+仅收录我们维护的 `docs/` 文档，包括 design、process（如有）、vanilla 调研和技术归档；不收录原版 `doc/`、其他模组或仓库其他目录的文档。链接路径相对于仓库根目录。
 
 文档增删、移动、重命名或简介与正文不符后，在同一次提交中同步更新本索引。
-
-## 仓库入口与协作规范
-
-| 文档位置 | 简介 |
-| --- | --- |
-| [.github/pull_request_template.md](.github/pull_request_template.md) | 提交 Pull Request 时使用的说明模板。 |
-| [AGENTS.md](AGENTS.md) | 协作约定：最小改动、文档分类、design 优先、process 查询与索引维护。 |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | 社区行为准则、参与规范与归属声明。 |
-| [INDEX.md](INDEX.md) | 全仓库文档主索引，包含位置、简介、盔甲阅读入口及当前进度文档位置。 |
-| [ISSUES.md](ISSUES.md) | Issues：How to create new issues properly、Rule zero、Bug reports |
-| [LICENSE.txt](LICENSE.txt) | 代码与随附组件的许可条款及版权声明。 |
-| [README.md](README.md) | Cataclysm: Dark Days Ahead：Downloads、Packaging status、Compile |
-| [lang/notes/README_all_translators.md](lang/notes/README_all_translators.md) | Instructions for Cataclysm-DDA translators：Translation file format、Translation file header、Format strings and newlines |
 
 ## 中世纪游戏策划（design）
 
@@ -103,136 +90,3 @@
 | [docs/archive/technical/modern_content_removal.md](docs/archive/technical/modern_content_removal.md) | 旧分支技术归档：现代内容清除进度；仅供参考。 |
 | [docs/archive/technical/monster_bodypart_fix.md](docs/archive/technical/monster_bodypart_fix.md) | 旧分支技术归档：任务：Monster 部位 HP 修复；仅供参考。 |
 | [docs/archive/technical/ranged_aimed_part.md](docs/archive/technical/ranged_aimed_part.md) | 旧分支技术归档：任务：射击部位瞄准系统；仅供参考。 |
-
-## 原版开发与机制文档（doc）
-
-| 文档位置 | 简介 |
-| --- | --- |
-| [doc/ARMOR_BALANCE_AND_DESIGN.md](doc/ARMOR_BALANCE_AND_DESIGN.md) | CDDA 原版护甲机制与平衡指南：防护、覆盖、材料、累赘及防具设计。 |
-| [doc/ARTIFACTS.md](doc/ARTIFACTS.md) | Artifacts：Introduction、Generation、charge_types |
-| [doc/ASCII_ART.md](doc/ASCII_ART.md) | Making ASCII art for CDDA：ASCII art Editors、Installing REXPaint、Drawing |
-| [doc/BASECAMP.md](doc/BASECAMP.md) | Basecamp：Recommended reading、Adding alternate basecamp upgrade paths、recipe JSONs |
-| [doc/Blank_Building_Template.txt](doc/Blank_Building_Template.txt) | 空白建筑地图绘制模板。 |
-| [doc/CHANGELOG_GUIDELINES.md](doc/CHANGELOG_GUIDELINES.md) | Changelog Guidelines：该主题的说明与参考。 |
-| [doc/CLIMBING.md](doc/CLIMBING.md) | Climbing Aids：example definition、`id`、`type` |
-| [doc/CODE_STYLE.md](doc/CODE_STYLE.md) | Code Style Guide：Code Example、Code Guidelines |
-| [doc/COLOR.md](doc/COLOR.md) | Colors：Color string format、Examples of color strings、Color code |
-| [doc/COMPILING/COMPILER_SUPPORT.md](doc/COMPILING/COMPILER_SUPPORT.md) | Compilers Supported：Mingw and Mingw-w64、MSYS2、XCode |
-| [doc/COMPILING/COMPILING-CMAKE-VCPKG.md](doc/COMPILING/COMPILING-CMAKE-VCPKG.md) | Compiling CMAKE VCPKG：Disclaimer、1 Prerequisites、2 Configure |
-| [doc/COMPILING/COMPILING-CMAKE.md](doc/COMPILING/COMPILING-CMAKE.md) | Compiling CMAKE：Disclaimer、Prerequisites、Build Environment |
-| [doc/COMPILING/COMPILING-CYGWIN.md](doc/COMPILING/COMPILING-CYGWIN.md) | Compilation guide for 64 bit Windows (using Cygwin)：Prerequisites:、Installation:、Configuration: |
-| [doc/COMPILING/COMPILING-DEVCONTAINER.md](doc/COMPILING/COMPILING-DEVCONTAINER.md) | Compilation guide for devcontainers in Visual Studio Code：Prerequisites:、Installation:、Cross-compiling from Linux to Windows |
-| [doc/COMPILING/COMPILING-FLATPAK.md](doc/COMPILING/COMPILING-FLATPAK.md) | Compiling Flatpak：该主题的说明与参考。 |
-| [doc/COMPILING/COMPILING-MSYS.md](doc/COMPILING/COMPILING-MSYS.md) | Compilation guide for 64-bit Windows (using MSYS2)：Prerequisites:、Installation:、Configuration: |
-| [doc/COMPILING/COMPILING-VS-VCPKG.md](doc/COMPILING/COMPILING-VS-VCPKG.md) | Compilation guide for Windows (using Visual Studio and vcpkg)：Prerequisites:、Installation and configuration:、cd to the appropriate folder first |
-| [doc/COMPILING/COMPILING.md](doc/COMPILING/COMPILING.md) | Compiling：General Linux Guide、Compiler、Tools |
-| [doc/CONSRTUCTION_BALANCE.md](doc/CONSRTUCTION_BALANCE.md) | Construction Balance：该主题的说明与参考。 |
-| [doc/CONTRIBUTING.md](doc/CONTRIBUTING.md) | Contribute：Using a good text editor、All PRs must have a "Summary" section、Contributing via GitHub |
-| [doc/DEVELOPER_FAQ.md](doc/DEVELOPER_FAQ.md) | Developer FAQ：Adding stuff、Adding a monster、Adding structures to the map |
-| [doc/DEVELOPER_TOOLING.md](doc/DEVELOPER_TOOLING.md) | Developer Tooling：Pre-commit hook、Code style (astyle)、JSON style |
-| [doc/EFFECTS_JSON.md](doc/EFFECTS_JSON.md) | Effects：How to give effects in-game?、Comestibles、Creature attacks |
-| [doc/EFFECT_ON_CONDITION.md](doc/EFFECT_ON_CONDITION.md) | Effect On Condition：Fields、Alpha and Beta Talkers、Typical Alpha and Beta Talkers by cases |
-| [doc/EXAMINE.md](doc/EXAMINE.md) | Terrain/Furniture Examination Actions：Hardcoded Examine Actions、Examine Actors、`appliance_convert` |
-| [doc/FACTIONS.md](doc/FACTIONS.md) | NPC factions：Scale of faction values、Faction relations |
-| [doc/FREQUENTLY_MADE_SUGGESTIONS.md](doc/FREQUENTLY_MADE_SUGGESTIONS.md) | Frequently Made Suggestions：Project Management、Game Features、Performance |
-| [doc/GAME_BALANCE.md](doc/GAME_BALANCE.md) | Game Balance：Stat system scaling:、Skill system scaling:、Monster melee skill scaling: |
-| [doc/GUIDE_COMESTIBLES.md](doc/GUIDE_COMESTIBLES.md) | Guide to add Comestibles：List of special comestibles:、List of normal comestibles, in order of priority:、Liquid |
-| [doc/HOW_YOU_CAN_HELP.md](doc/HOW_YOU_CAN_HELP.md) | How You Can Help：Other ways to help、Issue labels、Languages |
-| [doc/IN_REPO_MODS.md](doc/IN_REPO_MODS.md) | Getting Mods Into The Repository：Why have in-repo mods?、What kind of mods can be in the CleverRaven repository?、What is necessary for a mod to be included in the repository? |
-| [doc/ITEM_SPAWN.md](doc/ITEM_SPAWN.md) | Item spawn system：Collection or Distribution、Format、Entries array |
-| [doc/JSON_FLAGS.md](doc/JSON_FLAGS.md) | JSON Flags：Notes、Inheritance、TODO |
-| [doc/JSON_INFO.md](doc/JSON_INFO.md) | JSON INFO：Introduction、Overall structure、Common properties |
-| [doc/JSON_INHERITANCE.md](doc/JSON_INHERITANCE.md) | JSON Inheritance：Examples、Support、Guidelines |
-| [doc/JSON_LOADING_ORDER.md](doc/JSON_LOADING_ORDER.md) | JSON Loading Order：Same-depth loading order |
-| [doc/JSON_Mapping_Guides/Guide_for_beginning_mapgen.md](doc/JSON_Mapping_Guides/Guide_for_beginning_mapgen.md) | Guide for basic mapgen：该主题的说明与参考。 |
-| [doc/JSON_Mapping_Guides/Guide_for_intermediate_mapgen.md](doc/JSON_Mapping_Guides/Guide_for_intermediate_mapgen.md) | Guide For Intermediate Mapgen：该主题的说明与参考。 |
-| [doc/JSON_Mapping_Guides/JSON_ROOF_MAPGEN.md](doc/JSON_Mapping_Guides/JSON_ROOF_MAPGEN.md) | Adding Json Roof Guide：Making the Roof Map、Linking the main floor and the roof、Overmap Specials |
-| [doc/JSON_STYLE.md](doc/JSON_STYLE.md) | JSON Style Guide：JSON Example、Formatting tool、Using git to filter JSON files with uncommitted changes (provided there are no spaces in the file or directory names). |
-| [doc/JSON_TOOLS.md](doc/JSON_TOOLS.md) | JSON tools：Keys and Values、Examples、Examples and use cases |
-| [doc/LORE.md](doc/LORE.md) | Faction Lore：The Blob、Lore owner: ?、The Blob Questions |
-| [doc/Lore/design-balance.md](doc/Lore/design-balance.md) | Design - Overview of game balance principles：Balance around general game concepts、Overall combat balance、Sound |
-| [doc/Lore/design-doc.md](doc/Lore/design-doc.md) | Design - Design Doc Overview：About this Page、How to Understand the Design Docs、Design Overview |
-| [doc/Lore/design-gameplay.md](doc/Lore/design-gameplay.md) | Design - Gameplay：Gameplay Table of Contents、Objectives、Game Stages and Timeline |
-| [doc/Lore/design-user-experience.md](doc/Lore/design-user-experience.md) | Design - User Experience：User Experience Table of Contents、Overview、Deployment |
-| [doc/Lore/lore-background.md](doc/Lore/lore-background.md) | Lore - Background Story：Summary、Timeline |
-| [doc/Lore/lore-factions.md](doc/Lore/lore-factions.md) | Lore - CDDA Faction Lore and Design Document：CDDA Faction Lore and Design Goals: Deep Dive、CDDA-Earth Native Human Factions、Free Merchants |
-| [doc/Lore/lore.md](doc/Lore/lore.md) | Lore - Setting：Supporting Documents、Story、Style and Structure |
-| [doc/Lore/technology.md](doc/Lore/technology.md) | Lore - Technology in the Cataclysm：Summary、Civilian Tech、Cybernetics |
-| [doc/MAGIC.md](doc/MAGIC.md) | Magic, Spells, and Enchantments：Spells、The template spell、Mandatory fields |
-| [doc/MANUAL_OF_STYLE.md](doc/MANUAL_OF_STYLE.md) | Manual Of Style：该主题的说明与参考。 |
-| [doc/MAPGEN.md](doc/MAPGEN.md) | MAPGEN：How buildings and terrain are generated、Adding mapgen entries、Methods |
-| [doc/MARTIALART_JSON.md](doc/MARTIALART_JSON.md) | Martial arts and Techniques：Martial arts、Techniques、Attack vectors |
-| [doc/MISSIONS_JSON.md](doc/MISSIONS_JSON.md) | Creating missions：type、id、name |
-| [doc/MODDING.md](doc/MODDING.md) | Modding guide：Other guides、The basics、Creating a barebones mod |
-| [doc/MONSTERS.md](doc/MONSTERS.md) | MONSTERS：Monster properties、"name"、"description" |
-| [doc/MONSTER_SPECIAL_ATTACKS.md](doc/MONSTER_SPECIAL_ATTACKS.md) | How to add special attacks to monsters：Monster special attacks、TODO、Adding `special_attacks` to monsters |
-| [doc/MOVE_MODE.md](doc/MOVE_MODE.md) | Movement Modes：definition、`type`、`id` |
-| [doc/MUTATIONS.md](doc/MUTATIONS.md) | Mutations：System info、Mutagens and primers、Thresholds |
-| [doc/NPCs.md](doc/NPCs.md) | NPCs：Creating new NPCs、NPC Class definition、Shopkeeper NPC configuration |
-| [doc/OVERMAP.md](doc/OVERMAP.md) | Overmap Generation：Overview、Overmap generation、Terminology and Types |
-| [doc/PLAYER_ACTIVITY.md](doc/PLAYER_ACTIVITY.md) | Activities：Adding new activities、JSON Properties、Termination |
-| [doc/POINTS_COORDINATES.md](doc/POINTS_COORDINATES.md) | Points, tripoints, and coordinate systems：Axes、Coordinate systems、Vertical coordinates |
-| [doc/PORTAL_STORM_BALANCE_AND_DESIGN.md](doc/PORTAL_STORM_BALANCE_AND_DESIGN.md) | Portal Storm Design：Ideas、Reminders、Long Term Desires |
-| [doc/POSTAPOC_PRICE_GUIDE.md](doc/POSTAPOC_PRICE_GUIDE.md) | Post-apocalypse Price Guide：Pricing philosophy |
-| [doc/PRACTICE_RECIPES.md](doc/PRACTICE_RECIPES.md) | Practice Recipes：JSON fields、Example |
-| [doc/PROFICIENCY.md](doc/PROFICIENCY.md) | Proficiencies：Skills and proficiencies、Proficiency trees or graphs、Effects of gaining proficiency |
-| [doc/PROFICIENCY_LIST.md](doc/PROFICIENCY_LIST.md) | Proficiencies List：Magiclysm proficiencies |
-| [doc/REGION_SETTINGS.md](doc/REGION_SETTINGS.md) | Region Settings：Fields、Example、Region Terrain / Furniture |
-| [doc/RELEASE_DIFF.md](doc/RELEASE_DIFF.md) | Release Diff：该主题的说明与参考。 |
-| [doc/SOUNDPACKS.md](doc/SOUNDPACKS.md) | Soundpacks：soundpack.txt format、JSON format、Sound effects |
-| [doc/STEEL_CRAFTING.md](doc/STEEL_CRAFTING.md) | Making and working with steel grades：Defining Steel Grades、Slag、Budget Steel |
-| [doc/TER_FURN_TRANSFORM.md](doc/TER_FURN_TRANSFORM.md) | Terrain and Furniture Transforms：该主题的说明与参考。 |
-| [doc/TESTING.md](doc/TESTING.md) | Testing Cataclysm：Guidelines、Writing test cases、Requiring or Checking |
-| [doc/TESTING_YOUR_CHANGES.md](doc/TESTING_YOUR_CHANGES.md) | Testing your changes and making sure they work as expected：Style、Applying your changes locally、Using the debug menu |
-| [doc/TILESET.md](doc/TILESET.md) | TILESETS：Terminology、JSON Schema、Tile entry |
-| [doc/TRANSLATING.md](doc/TRANSLATING.md) | Translating Cataclysm: DDA：Translators、Getting Started、Glossary |
-| [doc/TRANSLATING_MOD.md](doc/TRANSLATING_MOD.md) | Translating MOD：In Cataclysm DDA root directory |
-| [doc/USER_INTERFACE_AND_ACCESSIBILITY.md](doc/USER_INTERFACE_AND_ACCESSIBILITY.md) | User Interface / Accessibility：SDL version requirement of the tiles build、Compatibility with screen readers |
-| [doc/VEHICLES_JSON.md](doc/VEHICLES_JSON.md) | Vehicle prototypes：Vehicle prototypes、Part order、Parts list |
-| [doc/VITAMIN.md](doc/VITAMIN.md) | Vitamins：definition、`id`、`type` |
-| [doc/WEATHER_TYPE.md](doc/WEATHER_TYPE.md) | Weather Types：`weather_type` properties |
-| [doc/WIDGETS.md](doc/WIDGETS.md) | Widgets：Sidebar Modification、Widgets、Required fields |
-| [doc/melee_weapons/MELEE_BALANCE_SPREADSHEET.md](doc/melee_weapons/MELEE_BALANCE_SPREADSHEET.md) | Melee Balance Spreadsheet：Overview、Raw、Filter |
-| [doc/unicode_chars_palette.txt](doc/unicode_chars_palette.txt) | 地图及界面绘制可用的 Unicode 字符参考。 |
-
-## 模组与数据说明
-
-| 文档位置 | 简介 |
-| --- | --- |
-| [data/json/LOADING_ORDER.md](data/json/LOADING_ORDER.md) | JSON Loading Order：Same-depth loading order |
-| [data/json/mapgen/lab/README.md](data/json/mapgen/lab/README.md) | Lab JSON Quick Guide：Quick Guide for new lab areas:、Quick Guide for new lab dead-ends:、Quick Guide for new lab rooms: |
-| [data/json/npcs/godco/NECC_INFO.md](data/json/npcs/godco/NECC_INFO.md) | NPCs：该主题的说明与参考。 |
-| [data/json/npcs/refugee_center/FREE_MERCHANTS_INFO.md](data/json/npcs/refugee_center/FREE_MERCHANTS_INFO.md) | Shops：该主题的说明与参考。 |
-| [data/mods/Aftershock/README.md](data/mods/Aftershock/README.md) | Design Document：Areas seeking contributors、Size as of 0.F Stable :  31,084 Lines、Here be dragons! |
-| [data/mods/Aftershock/crafting_system.md](data/mods/Aftershock/crafting_system.md) | Scrap Crafting System：Overview、Current Scrap Categories、Scrap Tiers Briefly Explained |
-| [data/mods/Aftershock/items/armor/exosuit/exosuit_guide.md](data/mods/Aftershock/items/armor/exosuit/exosuit_guide.md) | Exosuit Guide：Getting started、Background、Frame |
-| [data/mods/Aftershock/suit_operating_time.md](data/mods/Aftershock/suit_operating_time.md) | Powered Armor Balance：Operating time |
-| [data/mods/Backrooms/README.md](data/mods/Backrooms/README.md) | Backrooms CDDA：Warning: You MUST choose the scenario "Backrooms" when creating a character!、Questions、What's the current state of the mod? |
-| [data/mods/BlazeIndustries/README.txt](data/mods/BlazeIndustries/README.txt) | README：该主题的说明与参考。 |
-| [data/mods/BombasticPerks/docs/contributing.md](data/mods/BombasticPerks/docs/contributing.md) | Contributing to Bombastic Perks：Rules for all content、Naming Convention、Adding |
-| [data/mods/BombasticPerks/docs/expanding_with_mods.md](data/mods/BombasticPerks/docs/expanding_with_mods.md) | Expanding Bombastic Perks With Mods：Adding the perk |
-| [data/mods/DinoMod/DESIGN.md](data/mods/DinoMod/DESIGN.md) | Design Document SPOILERS AHEAD：What belongs in DinoMod?、Realism vs. Fun、Adding, replacing, removing |
-| [data/mods/DinoMod/README.md](data/mods/DinoMod/README.md) | DinoMod：Takeaway Features |
-| [data/mods/Graphical_Overmap/readme.txt](data/mods/Graphical_Overmap/readme.txt) | readme：该主题的说明与参考。 |
-| [data/mods/MA/README.md](data/mods/MA/README.md) | MA：Implemented Features、Plannned Features、Notes |
-| [data/mods/Magiclysm/lore.md](data/mods/Magiclysm/lore.md) | History：Classes、Class Characteristics |
-| [data/mods/Magiclysm/magic_balance.md](data/mods/Magiclysm/magic_balance.md) | Spells：Difficulty、Max Level、Attack Stats |
-| [data/mods/Megafauna/readme.md](data/mods/Megafauna/readme.md) | readme：该主题的说明与参考。 |
-| [data/mods/MindOverMatter/NewPowerGuide.md](data/mods/MindOverMatter/NewPowerGuide.md) | Adding New Powers：Maintaining the Theme、Intelligence Bonuses、Path Capabilities |
-| [data/mods/MindOverMatter/PowerDescriptionSpoilers.md](data/mods/MindOverMatter/PowerDescriptionSpoilers.md) | Power Descriptions：Biokinesis、Overcome Pain (C)、Physical Enhancement (C) |
-| [data/mods/MindOverMatter/README.md](data/mods/MindOverMatter/README.md) | Mind Over Matter：该主题的说明与参考。 |
-| [data/mods/MindOverMatter/lore_spoilers.md](data/mods/MindOverMatter/lore_spoilers.md) | LORE：PROJECT PHAVIAN、HUMAN ASCENSION |
-| [data/mods/No_Hope/README.md](data/mods/No_Hope/README.md) | No Hope：List of features |
-| [data/mods/Sky_Island/README.md](data/mods/Sky_Island/README.md) | Sky Islands：Warning:、Overview、You Can't Go Back |
-| [data/mods/TEST_DATA/README.md](data/mods/TEST_DATA/README.md) | Test Data pseudo-mod：该主题的说明与参考。 |
-| [data/mods/Xedra_Evolved/README.md](data/mods/Xedra_Evolved/README.md) | Agents of Change：Lore、I want to believe、Chapter 1 Hail Arcadia |
-| [data/mods/alt_map_key/readme.txt](data/mods/alt_map_key/readme.txt) | readme：该主题的说明与参考。 |
-| [data/mods/classic_zombies/design-doc.md](data/mods/classic_zombies/design-doc.md) | The DDotDDD - Dark Days of the Dead Design Document：Mission Statement、Gameplay、Desired changes to monster stats |
-| [data/mods/classic_zombies/place_names.md](data/mods/classic_zombies/place_names.md) | place names：该主题的说明与参考。 |
-| [data/mods/innawood/readme.md](data/mods/innawood/readme.md) | Goal：Changes |
-
-## 工具说明
-
-| 文档位置 | 简介 |
-| --- | --- |
-| [tools/llama/README.md](tools/llama/README.md) | Using llama to accelerate your build：Troubleshooting |
