@@ -4,8 +4,8 @@
 
 ## 盔甲文档阅读入口
 
-1. [盔甲总设计](docs/design/design02-盔甲.md)：时代背景、防具分类、材料与分层防护。
-2. [布里根丁与板甲衣细分](docs/design/design02_1-布里根丁与板甲衣细分.md)：过渡期防具变体与设计方案。
+1. [盔甲总设计](docs/design/design02-盔甲.md)：用途区分、外层主甲与垫衣/锁甲组合、负重及防护原则。
+2. [布里根丁与板甲衣细分](docs/design/design02_1-布里根丁与板甲衣细分.md)：防具定位、初始数值区间、重量一致性与原方案评判。
 3. [旧盔甲实现记录](docs/archive/technical/medieval_armor.md)：旧分支装备与参数归档，**不代表当前 Medieval 分支已实现**。
 4. [护甲穿透调研](docs/vanilla/code_armor_penetration_system.md)：我们整理的原版机制背景参考。
 
@@ -25,8 +25,8 @@
 | --- | --- |
 | [docs/design/design00-清理现代内容.md](docs/design/design00-%E6%B8%85%E7%90%86%E7%8E%B0%E4%BB%A3%E5%86%85%E5%AE%B9.md) | 中世纪转换 mod 设计方案：5层拦截架构、item_group覆写策略、物品注入通道、硬编码限制 |
 | [docs/design/design01-世界观.md](docs/design/design01-%E4%B8%96%E7%95%8C%E8%A7%82.md) | 世界观与威胁体系：中世纪背景设定、危险来源、文明等级 |
-| [docs/design/design02-盔甲.md](docs/design/design02-%E7%9B%94%E7%94%B2.md) | 盔甲体系：14世纪末~15世纪初过渡期，布料→锁子甲→板甲的完整防护链 |
-| [docs/design/design02_1-布里根丁与板甲衣细分.md](docs/design/design02_1-%E5%B8%83%E9%87%8C%E6%A0%B9%E4%B8%81%E4%B8%8E%E6%9D%BF%E7%94%B2%E8%A1%A3%E7%BB%86%E5%88%86.md) | 布里根丁与板甲衣细分及抽象化重构：退化抽象基类模板，细化10件过渡期防具及配套肢体防具 |
+| [docs/design/design02-盔甲.md](docs/design/design02-%E7%9B%94%E7%94%B2.md) | 盔甲游戏策划：薄垫衣与厚布甲区分、普通层叠穿代价、外层主甲、部位防护和负重取舍。 |
+| [docs/design/design02_1-布里根丁与板甲衣细分.md](docs/design/design02_1-%E5%B8%83%E9%87%8C%E6%A0%B9%E4%B8%81%E4%B8%8E%E6%9D%BF%E7%94%B2%E8%A1%A3%E7%BB%86%E5%88%86.md) | 板甲衣、布里根丁与胸背甲：形制定位、厚度/重量/累赘初始区间、锁甲与肢体甲及数据合理性评判。 |
 | [docs/design/design03-日常衣物.md](docs/design/design03-%E6%97%A5%E5%B8%B8%E8%A1%A3%E7%89%A9.md) | 低端衣物与日常装备（平民层）：麻、羊毛、基础皮革，覆盖全阶层日常着装 |
 | [docs/design/design04-武器.md](docs/design/design04-%E6%AD%A6%E5%99%A8.md) | 武器体系：Oakeshott XV-XVIII型、60+种武器分类、伤害类型×反甲逻辑矩阵 |
 | [docs/design/design04_1-quality体系.md](docs/design/design04_1-quality%E4%BD%93%E7%B3%BB.md) | 装备 Quality 体系（设计冻结/非初版）：材料变体走JSON copy-from，Quality作为纯运行时属性，区分武器/盔甲影响 |
@@ -50,6 +50,7 @@
 | [docs/vanilla/code_armor_penetration_system.md](docs/vanilla/code_armor_penetration_system.md) | 护甲穿透系统：damage_unit→res_pen/res_mult全程链路、Character/Monster护甲吸收、Medieval STR×重量破甲改造 |
 | [docs/vanilla/code_bodypart_hp_system.md](docs/vanilla/code_bodypart_hp_system.md) | 部位分血架构：Creature五层部位体系、Monster绕过机制、Character受伤三层模型 |
 | [docs/vanilla/code_city_generation_system.md](docs/vanilla/code_city_generation_system.md) | 城市/城镇生成系统：place_cities()入口、build_city_street()递归、建筑池 |
+| [docs/vanilla/code_clothing_layer_system.md](docs/vanilla/code_clothing_layer_system.md) | 穿衣分层调研：同层子部位冲突、额外累赘算法、刚性限制、原版防具基准及 to_hit 的适用范围。 |
 | [docs/vanilla/code_combat_system.md](docs/vanilla/code_combat_system.md) | 战斗系统：伤害类型、护甲穿透、近战命中/暴击/格挡、远程瞄准/后坐力 |
 | [docs/vanilla/code_crafting_system.md](docs/vanilla/code_crafting_system.md) | 制作与技能：双轨制技能系统、配方学习、熟练度、建造蓝图 |
 | [docs/vanilla/code_harvest_drop_system.md](docs/vanilla/code_harvest_drop_system.md) | 解剖/屠宰产物系统：harvest_drop_type→harvest→monster三层key引用链、harvest vs dissect差异、C++数据流 |
