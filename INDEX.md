@@ -4,10 +4,11 @@
 
 ## 盔甲文档阅读入口
 
-1. [盔甲总设计](docs/design/design02-盔甲.md)：用途区分、外层主甲与垫衣/锁甲组合、负重及防护原则。
-2. [布里根丁与板甲衣细分](docs/design/design02_1-布里根丁与板甲衣细分.md)：防具定位、初始数值区间、重量一致性与原方案评判。
-3. [旧盔甲实现记录](docs/archive/technical/medieval_armor.md)：旧分支装备与参数归档，**不代表当前 Medieval 分支已实现**。
-4. [护甲穿透调研](docs/vanilla/code_armor_penetration_system.md)：我们整理的原版机制背景参考。
+1. [盔甲总设计](docs/design/design02-盔甲.md)：分类、层位、材料、装备关系与地域配装。
+2. 分案：[板甲](docs/design/design02_1-板甲.md)、[布面甲与片甲](docs/design/design02_2-布面甲.md)、[皮甲](docs/design/design02_3-皮甲.md)、[绗缝甲与武装衣](docs/design/design02_4-绗缝甲与武装衣.md)、[锁甲与锁板甲](docs/design/design02_5-锁甲.md)：按部位列出具体装备、内含构件及独立件组合。
+3. [日常衣物与随身装备](docs/design/design03-日常衣物.md)：衣物、携行附件及与武器、盔甲的配装关系。
+4. [服装 JSON 教程与字段手册](docs/vanilla/guide02_clothing_json.md)、[穿衣分层调研](docs/vanilla/code_clothing_layer_system.md)、[护甲穿透调研](docs/vanilla/code_armor_penetration_system.md)：编写方式与原版机制参考。
+5. [旧盔甲实现记录](docs/archive/technical/medieval_armor.md)：旧分支装备与参数归档，**不代表当前 Medieval 分支已实现**。
 
 ## 当前进度查询
 
@@ -25,13 +26,30 @@
 | --- | --- |
 | [docs/design/design00-清理现代内容.md](docs/design/design00-%E6%B8%85%E7%90%86%E7%8E%B0%E4%BB%A3%E5%86%85%E5%AE%B9.md) | 中世纪转换 mod 设计方案：5层拦截架构、item_group覆写策略、物品注入通道、硬编码限制 |
 | [docs/design/design01-世界观.md](docs/design/design01-%E4%B8%96%E7%95%8C%E8%A7%82.md) | 世界观与威胁体系：中世纪背景设定、危险来源、文明等级 |
-| [docs/design/design02-盔甲.md](docs/design/design02-%E7%9B%94%E7%94%B2.md) | 盔甲游戏策划：薄垫衣与厚布甲区分、普通层叠穿代价、外层主甲、部位防护和负重取舍。 |
-| [docs/design/design02_1-布里根丁与板甲衣细分.md](docs/design/design02_1-%E5%B8%83%E9%87%8C%E6%A0%B9%E4%B8%81%E4%B8%8E%E6%9D%BF%E7%94%B2%E8%A1%A3%E7%BB%86%E5%88%86.md) | 板甲衣、布里根丁与胸背甲：形制定位、厚度/重量/累赘初始区间、锁甲与肢体甲及数据合理性评判。 |
-| [docs/design/design03-日常衣物.md](docs/design/design03-%E6%97%A5%E5%B8%B8%E8%A1%A3%E7%89%A9.md) | 低端衣物与日常装备（平民层）：麻、羊毛、基础皮革，覆盖全阶层日常着装 |
-| [docs/design/design04-武器.md](docs/design/design04-%E6%AD%A6%E5%99%A8.md) | 武器体系：Oakeshott XV-XVIII型、60+种武器分类、伤害类型×反甲逻辑矩阵 |
+| [docs/design/design02-盔甲.md](docs/design/design02-%E7%9B%94%E7%94%B2.md) | 盔甲分类、指定层位、材料可选性、独立件与组合关系，以及对应武器目录的地域配装。 |
+| [docs/design/design02_1-板甲.md](docs/design/design02_1-%E6%9D%BF%E7%94%B2.md) | 板甲头颈、躯干及四肢手足的具体形制、分区材料厚度与穿戴组合。 |
+| [docs/design/design02_2-布面甲.md](docs/design/design02_2-%E5%B8%83%E9%9D%A2%E7%94%B2.md) | 板甲衣、布里根丁、杰克甲、鳞甲与札甲，含札片头盔、护颈及躯干主甲定值比较。 |
+| [docs/design/design02_3-皮甲.md](docs/design/design02_3-%E7%9A%AE%E7%94%B2.md) | 硬化皮革与条片加强复合护具：覆盖、材料厚度、内含构件及配装关系。 |
+| [docs/design/design02_4-绗缝甲与武装衣.md](docs/design/design02_4-%E7%BB%97%E7%BC%9D%E7%94%B2%E4%B8%8E%E6%AD%A6%E8%A3%85%E8%A1%A3.md) | 厚型独立织物甲、薄型甲下武装衣与配套软护具的覆盖、分区用料及组合。 |
+| [docs/design/design02_5-锁甲.md](docs/design/design02_5-%E9%94%81%E7%94%B2.md) | 锁甲衣、兜帽、护颈、补片和腿具，附锁板甲；说明环结构、分区与穿戴单位。 |
+| [docs/design/design03-日常衣物.md](docs/design/design03-%E6%97%A5%E5%B8%B8%E8%A1%A3%E7%89%A9.md) | 逐部位日常衣物、腰带与携行附件、射箭辅助用品及地域衣着与衣甲配装。 |
+| [docs/design/design04-武器.md](docs/design/design04-%E6%AD%A6%E5%99%A8.md) | 武器分类总纲、统一文档结构、物品粒度、构件材料及各类武器选型与使用取舍。 |
 | [docs/design/design04_1-quality体系.md](docs/design/design04_1-quality%E4%BD%93%E7%B3%BB.md) | 装备 Quality 体系（设计冻结/非初版）：材料变体走JSON copy-from，Quality作为纯运行时属性，区分武器/盔甲影响 |
+| [docs/design/design04_2-剑与战刀.md](docs/design/design04_2-%E5%89%91%E4%B8%8E%E6%88%98%E5%88%80.md) | 剑、战刀与军刀等具体装备：原型、握持用途、构件材料及携行附件关系。 |
+| [docs/design/design04_3-斧.md](docs/design/design04_3-%E6%96%A7.md) | 战斧、长柄斧与工具斧的具体类型、原型、斧头装柄结构及用途取舍。 |
+| [docs/design/design04_4-锤棍与连枷.md](docs/design/design04_4-%E9%94%A4%E6%A3%8D%E4%B8%8E%E8%BF%9E%E6%9E%B7.md) | 棱锤、战锤、棍棒、长棍与连枷候选：具体类型、构件材料及使用定位。 |
+| [docs/design/design04_5-枪矛与长柄兵器.md](docs/design/design04_5-%E6%9E%AA%E7%9F%9B%E4%B8%8E%E9%95%BF%E6%9F%84%E5%85%B5%E5%99%A8.md) | 枪矛、骑枪及复合长柄兵器：头部结构、柄与连接方式、握持和用途差别。 |
+| [docs/design/design04_6-匕首与短刃.md](docs/design/design04_6-%E5%8C%95%E9%A6%96%E4%B8%8E%E7%9F%AD%E5%88%83.md) | 贴身副武器与日用刀的具体类型、原型、构件材料及独立刀鞘关系。 |
+| [docs/design/design04_7-远程与投掷.md](docs/design/design04_7-%E8%BF%9C%E7%A8%8B%E4%B8%8E%E6%8A%95%E6%8E%B7.md) | 弓弩、投石索、投掷武器与弹药，区分完整武器、独立上弦器与携行附件。 |
 | [docs/design/design05-职业.md](docs/design/design05-%E8%81%8C%E4%B8%9A.md) | 开局职业与技能映射：中世纪社会阶层→CDDA profession/skill体系 |
-| [docs/design/design06-建筑.md](docs/design/design06-%E5%BB%BA%E7%AD%91.md) | 中世纪聚落与建筑体系：村庄布局、建筑类型、材料与建造逻辑 |
+| [docs/design/design06-建筑.md](docs/design/design06-%E5%BB%BA%E7%AD%91.md) | 聚居地类型总纲：规模与功能、典型建筑、空间组合及独立野外地点的分类边界。 |
+| [docs/design/design06_1-城镇.md](docs/design/design06_1-%E5%9F%8E%E9%95%87.md) | 集镇、城镇及各类城市的原型、典型民用建筑、公共设施与空间关系。 |
+| [docs/design/design06_2-农村聚居地.md](docs/design/design06_2-%E5%86%9C%E6%9D%91%E8%81%9A%E5%B1%85%E5%9C%B0.md) | 农庄、小村、村庄与庄园聚居地的住宅、农业附屋、公共建筑及经营关系。 |
+| [docs/design/design06_3-城堡与要塞.md](docs/design/design06_3-%E5%9F%8E%E5%A0%A1%E4%B8%8E%E8%A6%81%E5%A1%9E.md) | 设防庄园、城堡与要塞等类型的防御、居住、驻军、仓储及后勤建筑。 |
+| [docs/design/design06_4-修道院聚居地.md](docs/design/design06_4-%E4%BF%AE%E9%81%93%E9%99%A2%E8%81%9A%E5%B1%85%E5%9C%B0.md) | 修院、修道院庄园与朝圣聚居地的宗教、生活、农业、接待及救济设施。 |
+| [docs/design/design06_5-港口与河港.md](docs/design/design06_5-%E6%B8%AF%E5%8F%A3%E4%B8%8E%E6%B2%B3%E6%B8%AF.md) | 渔村、渡口、河港、海港与商馆区的住宅、加工、仓储、船坊及关税建筑。 |
+| [docs/design/design06_6-矿业与其他生产聚居地.md](docs/design/design06_6-%E7%9F%BF%E4%B8%9A%E4%B8%8E%E5%85%B6%E4%BB%96%E7%94%9F%E4%BA%A7%E8%81%9A%E5%B1%85%E5%9C%B0.md) | 矿业、采石、盐业、林业及专业工坊聚居地的生产、居住与供应设施。 |
+| [docs/design/design06_7-独立建筑与野外地点.md](docs/design/design06_7-%E7%8B%AC%E7%AB%8B%E5%BB%BA%E7%AD%91%E4%B8%8E%E9%87%8E%E5%A4%96%E5%9C%B0%E7%82%B9.md) | 聚居区外的独宅、生产院落、行旅节点、宗教与防御据点、营地及探索变体。 |
 | [docs/design/design07-冒险者工会.md](docs/design/design07-%E5%86%92%E9%99%A9%E8%80%85%E5%B7%A5%E4%BC%9A.md) | 冒险者工会体系：单一工会/多分会架构、声望等级、三层任务池、NPC/服务设计 |
 | [docs/design/design08-敌人.md](docs/design/design08-%E6%95%8C%E4%BA%BA.md) | **总决策**：双系统分层（NPC用于人形敌人，Monster+部位HP修复用于野兽/巨怪） |
 | [docs/design/design08_1-野怪_强盗.md](docs/design/design08_1-%E9%87%8E%E6%80%AA_%E5%BC%BA%E7%9B%97.md) | NPC 体系（一）—— 强盗：刷新配置、装备池、AI行为 |
@@ -44,6 +62,23 @@
 | [docs/design/design09_4-远程部位瞄准.md](docs/design/design09_4-%E8%BF%9C%E7%A8%8B%E9%83%A8%E4%BD%8D%E7%9E%84%E5%87%86.md) | 远程部位瞄准策划：攻击部位选择与命中规则。 |
 
 ## 原版机制调研（vanilla）
+
+本批新版编写指南采用 `guide<策划编号>_` 命名；跨专题共用指南采用 `guide_shared_`。编号表示主要关联的策划案，不是文档版本号。既有 `json_`、`code_` 等调研保留原名。
+
+### 本批新版编写指南
+
+| 文档位置 | 简介 |
+| --- | --- |
+| [docs/vanilla/guide02_clothing_json.md](docs/vanilla/guide02_clothing_json.md) | 从完整服装实例逐步讲解覆盖、材料、单侧、层位、口袋、继承与状态切换，附字段手册和源码驱动编辑流程。 |
+| [docs/vanilla/guide04_weapons_inventory.md](docs/vanilla/guide04_weapons_inventory.md) | 原版武器相关声明与字段路径盘点，列出出现频次、JSON 类型和可定位实例。 |
+| [docs/vanilla/guide04_weapons_json.md](docs/vanilla/guide04_weapons_json.md) | 以完整武器和分步实例讲解近战、投掷、弓弩枪械、弹药、附件、技巧与状态切换，附字段及源码机制。 |
+| [docs/vanilla/guide06_building_inventory.md](docs/vanilla/guide06_building_inventory.md) | 原版 mapgen、palette、terrain 与 furniture 的声明统计、字段路径、取值与实例盘点。 |
+| [docs/vanilla/guide06_building_json.md](docs/vanilla/guide06_building_json.md) | 具体建筑 mapgen 的声明、布局、palette、参数、嵌套、更新与多层生成规则及源码机制。 |
+| [docs/vanilla/guide06_building_placement.md](docs/vanilla/guide06_building_placement.md) | 建筑全部符号与坐标放置通道的子字段、默认值、概率、坐标及引用规则。 |
+| [docs/vanilla/guide06_building_terrain_furniture.md](docs/vanilla/guide06_building_terrain_furniture.md) | 局部地形与家具的继承、移动、开关、屋顶、破坏、拆解、工作台、作物和交互字段。 |
+| [docs/vanilla/guide_shared_json_testing.md](docs/vanilla/guide_shared_json_testing.md) | 游戏 JSON 的解析、格式化、命令行检查、自动测试和游戏内调试方式及各自验证范围。 |
+
+### 既有机制说明
 
 | 文档位置 | 简介 |
 | --- | --- |

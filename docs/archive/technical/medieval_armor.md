@@ -1,6 +1,6 @@
 # 中世纪盔甲与战术防护体系实现方案
 
-> 策划案 → [design02-盔甲.md](../../design/design02-盔甲.md) 与 [design02_1-布里根丁与板甲衣细分.md](../../design/design02_1-布里根丁与板甲衣细分.md)
+> 策划案 → [design02-盔甲.md](../../design/design02-盔甲.md) 与 [布面甲](../../design/design02_2-布面甲.md)
 
 本文记录中世纪模组中**所有战术级防具/盔甲项（共 42 件）**的内容与规划。日常布织服装参见 [medieval_clothing.md](medieval_clothing.md)。
 
