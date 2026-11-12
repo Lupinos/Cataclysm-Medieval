@@ -1,5 +1,7 @@
 # 战斗系统深度重置：手动技艺选择 + 部位瞄准
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > 基于 [code_combat_system.md](../vanilla/code_combat_system.md) 和 [json_martial.md](../vanilla/json_martial.md) 的 Medieval Mod 战斗系统策划。
 > 需求来源：近战手动技艺选择 + 部位瞄准系统，构建 CDDA 原版没有的"精确攻击"机制。
 

@@ -1,5 +1,7 @@
 # Technique (技艺) JSON 字段深度调研
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > CDDA 原版 `technique` 类型的完整字段字典 —— JSON 定义、C++ 加载默认值、运行时行为。
 > 源文件：`data/json/techniques.json`（3494 行，167 个技术）、`src/martialarts.h`、`src/martialarts.cpp`、`src/melee.cpp`、`src/bonuses.h`、`src/bonuses.cpp`
 

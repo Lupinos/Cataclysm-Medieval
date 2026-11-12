@@ -1,5 +1,7 @@
 # 护甲穿透系统 (Armor Penetration System)
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > CDDA 原版护甲穿透机制的完整流程：从伤害生成到护甲减免
 > Medieval 改造点：在 `roll_melee_damage_internal` 引入 STR × 武器重量破甲
 

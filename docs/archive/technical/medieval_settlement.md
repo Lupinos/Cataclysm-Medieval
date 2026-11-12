@@ -1,5 +1,7 @@
 # 中世纪聚落与地图：实现方案
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > 对应策划案：[design06-建筑.md](../../design/design06-建筑.md)
 > 原版调研：[json_map.md](../../vanilla/json_map.md)、[code_city_generation_system.md](../../vanilla/code_city_generation_system.md)
 

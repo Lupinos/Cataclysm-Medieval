@@ -1,5 +1,7 @@
 ﻿# 参考文档：CDDA 战斗系统配置调研
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > 来源：`cataclysm-dda/json/` 目录实地分析
 > 覆盖：techniques.json / martialarts.json / body_parts.json / anatomy.json / limb_scores.json / hit_range.json / effects.json（战斗相关部分）
 

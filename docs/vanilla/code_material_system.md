@@ -1,5 +1,7 @@
 # CDDA 材料系统调研
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > 调研日期：2026-05-06
 > 调研范围：`src/material.cpp` / `src/material.h` / `src/damage.cpp` / `src/damage.h` / `data/json/materials.json` / `data/json/damage_types.json`
 

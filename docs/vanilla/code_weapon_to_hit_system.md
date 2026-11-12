@@ -1,5 +1,7 @@
 # CDDA 武器命中（to_hit）与双手握持系统
 
+> **LEGACY — 仅供参考。** 本文为旧文档，未在本分支重新确认；不得直接作为当前设计要求、实现进度或机制事实的依据。使用前须核对现行文档与实际代码。
+
 > 调研 `data/json/items/melee/` 中每件武器都携带的 `"grip"/"surface"/"length"/"balance"` 词条，
 > 以及 `ALWAYS_TWOHAND` flag 的实际 C++ 作用。
 
