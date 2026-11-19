@@ -1,3 +1,5 @@
+import csv
+import io
 import json
 import os
 import subprocess
@@ -27,12 +29,13 @@ class DependencyToolTest(unittest.TestCase):
         path.write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
         return path
 
-    def run_tool(self, *args, ok=True):
+    def run_tool(self, *args, ok=True, json_output=True):
         self.assertTrue(
             TOOL.is_file(), "Dependency tool has not been implemented"
         )
         result = subprocess.run(
-            [sys.executable, str(TOOL), *args, "--root", "data", "--json"],
+            [sys.executable, str(TOOL), *args, "--root", "data",
+             *(["--json"] if json_output else [])],
             cwd=self.root,
             capture_output=True,
             text=True,
@@ -41,7 +44,7 @@ class DependencyToolTest(unittest.TestCase):
             self.assertEqual(
                 result.returncode, 0, result.stderr + result.stdout
             )
-            return json.loads(result.stdout)
+            return json.loads(result.stdout) if json_output else result.stdout
         self.assertNotEqual(result.returncode, 0, result.stdout)
         return result
 
@@ -67,6 +70,45 @@ class DependencyToolTest(unittest.TestCase):
         self.assertEqual(
             self.run_tool("stats", "--type", "item")["declarations"], 3
         )
+
+    def test_list_defaults_to_every_declaration(self):
+        self.write(
+            "base.json",
+            [
+                *({"type": "GENERIC", "id": f"item_{i}"} for i in range(60)),
+                {"type": "GENERIC", "abstract": "base_item"},
+                {"type": "mapgen", "object": {}},
+                {"type": "GENERIC", "id": "item_0", "copy-from": "base_item"},
+            ],
+        )
+        result = self.run_tool("list")
+        self.assertEqual(result["count"], 63)
+        self.assertEqual(len(result["definitions"]), 63)
+        self.assertFalse(result["truncated"])
+        self.assertEqual(result["definitions"][61]["ids"], [])
+        self.assertEqual(result["definitions"][62]["ids"], ["item:item_0"])
+        self.assertTrue(self.run_tool("list", "--limit", "1")["truncated"])
+
+    def test_csv_can_review_ids_abstracts_and_definitions_without_ids(self):
+        self.write(
+            "base.json",
+            [
+                {"type": "GENERIC", "abstract": "base_item"},
+                {"type": "GENERIC", "id": ["a", "b"], "name": {"str": "物品"},
+                 "copy-from": "base_item"},
+                {"type": "mapgen", "object": {}},
+            ],
+        )
+        output = self.run_tool("list", "--csv", json_output=False)
+        rows = list(csv.DictReader(io.StringIO(output)))
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(rows[0]["abstract"], "true")
+        self.assertEqual(json.loads(rows[1]["ids"]), ["item:a", "item:b"])
+        self.assertEqual(rows[1]["name"], "物品")
+        self.assertEqual(rows[1]["copy_from"], "base_item")
+        self.assertEqual(rows[2]["location"], "@data/base.json#/2")
+        self.assertEqual(rows[2]["decision"], "")
+        self.assertEqual(rows[2]["reason"], "")
 
     def test_query_tracks_typed_links_and_dependency_paths(self):
         self.write(

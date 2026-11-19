@@ -1,0 +1,2012 @@
+id,variant,name,decision,reason
+10l_methanol_tank,,10L methanol fuel cartridge,remove,物品定义使用工业合成材料 plastic
+10l_plastic,,10L plastic block,remove,物品定义使用工业合成材料 plastic
+1cyl_combustion,,0.05L 1-cylinder engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+1cyl_combustion_large,,0.2L large 1-cylinder engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+1cyl_combustion_small,,0.02L small 1-cylinder engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+1st_aid_box,,first aid kit box,remove,物品定义使用工业合成材料 plastic
+2011_17_mag,,2011 10mm 17-round magazine,remove,物品定义使用工业合成材料 plastic
+2011_22_mag,,2011 10mm 22-round magazine,remove,物品定义使用工业合成材料 plastic
+20x66_10_mag,,20x66mm 10-round magazine,remove,物品定义使用工业合成材料 plastic
+20x66_20_mag,,RM20 20-round magazine,remove,物品定义使用工业合成材料 plastic
+20x66_40_mag,,RM20 40-round magazine,remove,物品定义使用工业合成材料 plastic
+20x66_beanbag,,20x66mm beanbag,remove,物品定义使用工业合成材料 plastic
+20x66_flare,,20x66mm flare,remove,物品定义使用工业合成材料 plastic
+20x66_shot,,20x66mm buckshot,remove,物品定义使用工业合成材料 plastic
+20x66_slug,,20x66mm slug,remove,物品定义使用工业合成材料 plastic
+28l_methanol_tank,,28L methanol fuel cartridge,remove,物品定义使用工业合成材料 plastic
+2lcanteen,,2.5L canteen,remove,物品定义使用工业合成材料 plastic
+30gal_barrel,,30 gallon barrel,remove,物品定义使用工业合成材料 plastic
+410shot_bird,,.410 birdshot,remove,物品定义使用工业合成材料 plastic
+410shot_hull,,.410 hull,remove,物品定义使用工业合成材料 plastic
+410shot_slug,,.410 slug,remove,物品定义使用工业合成材料 plastic
+5l_methanol_tank,,5L methanol fuel cartridge,remove,物品定义使用工业合成材料 plastic
+5l_plastic,,5L plastic block,remove,物品定义使用工业合成材料 plastic
+5x50_100_mag,,5x50mm 100-round magazine,remove,物品定义使用工业合成材料 plastic
+5x50_50_mag,,5x50mm 50-round magazine,remove,物品定义使用工业合成材料 plastic
+5x50_hull,,5x50mm hull,remove,物品定义使用工业合成材料 plastic
+5x50dart,,RA110 5x50mm flechette,remove,物品定义使用工业合成材料 plastic
+60l_methanol_tank,,60L methanol fuel cartridge,remove,物品定义使用工业合成材料 plastic
+8mm_caseless,,8x40mm FMJ,remove,物品定义使用工业合成材料 plastic
+8x40_100_mag,,8x40mm 100-round magazine,remove,物品定义使用工业合成材料 plastic
+8x40_10_mag,,8x40mm 10-round magazine,remove,物品定义使用工业合成材料 plastic
+8x40_250_mag,,8x40mm 250-round drum magazine,remove,物品定义使用工业合成材料 plastic
+8x40_25_mag,,8x40mm 25-round magazine,remove,物品定义使用工业合成材料 plastic
+8x40_500_mag,,8x40mm 500-round drum magazine,remove,物品定义使用工业合成材料 plastic
+8x40_50_mag,,8x40mm 50-round magazine,remove,物品定义使用工业合成材料 plastic
+90two40,,Beretta 90-two .40 S&W,remove,物品定义使用工业合成材料 plastic
+AT4,,AT4,remove,物品定义使用工业合成材料 fiberglass
+EMPbomb,,EMP bomb,remove,物品定义使用工业合成材料 plastic
+EMPbomb_act,,active EMP bomb,remove,物品定义使用工业合成材料 plastic
+FB_nylon_double_holster,,nylon front-to-back double holster,remove,物品定义使用工业合成材料 nylon
+M24,,M24+2,remove,物品定义使用工业合成材料 plastic
+PR24-extended,,PR-24 baton (extended),remove,物品定义使用工业合成材料 plastic
+PR24-retracted,,PR-24 baton (retracted),remove,物品定义使用工业合成材料 plastic
+RAM,,RAM,remove,物品定义使用工业合成材料 plastic
+RPG-7_tbg7v,,TBG-7V 105mm rocket,remove,物品定义使用工业合成材料 plastic
+RPG_die,,RPG die,remove,物品定义使用工业合成材料 plastic
+TDI,,Glock SMG+1,remove,物品定义使用工业合成材料 plastic
+TDI,TDI,Vector SMG .45,remove,物品定义使用工业合成材料 plastic
+UPS_OFF,,UPS (off),remove,电子设备及运转状态
+UPS_ON,,UPS (on),remove,电子设备及运转状态
+UPS_off,,UPS,remove,电子设备及运转状态
+XL_nylon_holster,,large nylon holster,remove,物品定义使用工业合成材料 nylon
+a180mag1,,.22 165-round polymer magazine,remove,物品定义使用工业合成材料 plastic
+a180mag1,a180mag1,American-180 polymer 165-round magazine,remove,物品定义使用工业合成材料 plastic
+a180mag3,,.22 220-round polymer magazine,remove,物品定义使用工业合成材料 plastic
+a180mag3,a180mag3,American-180 polymer 220-round magazine,remove,物品定义使用工业合成材料 plastic
+a180mag4,,.22 275-round polymer magazine,remove,物品定义使用工业合成材料 plastic
+a180mag4,a180mag4,American-180 polymer 275-round magazine,remove,物品定义使用工业合成材料 plastic
+acorns,,acorns (fresh),keep,自然资源、果实及基础材料
+acr_300blk,,Remington ACR .300BLK+1,remove,物品定义使用工业合成材料 plastic
+adjustable_stock,,adjustable stock,remove,物品定义使用工业合成材料 plastic
+adrenaline_injector,,epinephrine autoinjector,remove,物品定义使用工业合成材料 plastic
+aero_engine_light,,5.24L light aero-engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+af2011a1mag,,AF2011A1 16-round double magazine,remove,物品定义使用工业合成材料 plastic
+aim_game,,aim game target practice kit,remove,物品定义使用工业合成材料 plastic
+air_launcher,,novelty pneumatic launcher,remove,物品定义使用工业合成材料 plastic
+airhorn,,compressed air horn,remove,物品定义使用工业合成材料 plastic
+airsoft_helmet,,airsoft helmet,remove,"物品定义使用工业合成材料 plastic, plastic_pad"
+airspeargun,,pneumatic speargun,remove,物品定义使用工业合成材料 plastic
+ak74mag,,AK-74M 30-round magazine,remove,物品定义使用工业合成材料 plastic
+aketon_gloves_nylon,,nylon arming gloves (poor fit),remove,物品定义使用工业合成材料 nylon
+aketon_hood_nylon,,nylon coif (poor fit),remove,物品定义使用工业合成材料 nylon
+aketon_nylon,,nylon aketon (poor fit),remove,物品定义使用工业合成材料 nylon
+aketon_nylon_vest,,nylon aketon vest (poor fit),remove,物品定义使用工业合成材料 nylon
+aketon_pants_nylon,,nylon arming pants (poor fit),remove,物品定义使用工业合成材料 nylon
+albuterol,,albuterol,remove,物品定义使用工业合成材料 plastic
+altered_exposed_wiring_prototype,,exposed-wiring prototype,remove,物品定义使用工业合成材料 plastic
+altered_phone,,Bakelite phone,remove,物品定义使用工业合成材料 plastic
+altered_stopwatch,,glitching stopwatch,remove,物品定义使用工业合成材料 plastic
+amplifier,,amplifier circuit,remove,物品定义使用工业合成材料 plastic
+amplifier_head,,amplifier head,remove,物品定义使用工业合成材料 plastic
+analytical_set_basic,,basic laboratory analysis kit,remove,物品定义使用工业合成材料 plastic
+android_arms,,set of android arms,remove,物品定义使用工业合成材料 plastic
+android_chassis,,android skeleton,remove,物品定义使用工业合成材料 plastic
+android_legs,,set of android legs,remove,物品定义使用工业合成材料 plastic
+angle_grinder,,angle grinder,remove,物品定义使用工业合成材料 plastic
+ankle_wallet_pouch,,ankle wallet pouch,remove,物品定义使用工业合成材料 nylon
+apple,,apple (fresh),keep,自然资源、果实及基础材料
+apron_cut_resistant,,cut-resistant apron,remove,物品定义使用工业合成材料 kevlar
+apron_plastic,,plastic apron,remove,物品定义使用工业合成材料 plastic
+ar10,,AR-10,remove,物品定义使用工业合成材料 plastic
+ar_glasses_advanced,,pair of advanced AR glasses,remove,物品定义使用工业合成材料 plastic
+ar_glasses_basic,,pair of basic AR glasses,remove,物品定义使用工业合成材料 plastic
+armguard_cut_resistant,,pair of cut-resistant arm sleeves (poor fit),remove,物品定义使用工业合成材料 kevlar
+armguard_hard,,pair of hard arm guards,remove,"物品定义使用工业合成材料 neoprene, plastic"
+armguard_soft,,pair of neoprene arm sleeves (poor fit),remove,物品定义使用工业合成材料 neoprene
+armor_bio_eyes,,protective lenses,remove,物品定义使用工业合成材料 plastic
+armor_mercenary_bottom,,mercenary pants,remove,物品定义使用工业合成材料 kevlar_layered
+armor_mercenary_top,,mercenary coat,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+armor_nomad_chainmail,,nomad chainmail (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra"
+armor_nomad_heavyplate,,nomad heavy plate armor,remove,"物品定义使用工业合成材料 kevlar, lycra"
+armor_nomad_lightplate,,nomad light plate armor,remove,"物品定义使用工业合成材料 kevlar, lycra"
+armor_nomad_plate,,nomad plate armor,remove,"物品定义使用工业合成材料 kevlar, lycra"
+armor_riot,,riot armor suit,remove,物品定义使用工业合成材料 plastic_pad
+armor_riot_arm,,pair of riot arm guards,remove,物品定义使用工业合成材料 plastic_pad
+armor_riot_leg,,pair of riot leg guards,remove,物品定义使用工业合成材料 plastic_pad
+armor_riot_torso,,riot chest guard,remove,物品定义使用工业合成材料 plastic_pad
+armrig,,armband pouch,remove,物品定义使用工业合成材料 plastic
+arrow_cf,,carbon fiber hunting arrow,remove,物品定义使用工业合成材料 kevlar_rigid
+arrowrest,,arrow rest,remove,物品定义使用工业合成材料 plastic
+atomic_coffeepot,,atomic coffeemaker,remove,物品定义使用工业合成材料 plastic
+atomic_lamp,,atomic lamp (active),remove,物品定义使用工业合成材料 plastic
+atomic_lamp_off,,atomic lamp (covered),remove,物品定义使用工业合成材料 plastic
+atomic_light,,atomic reading light (active),remove,物品定义使用工业合成材料 plastic
+atomic_light_off,,atomic reading light (covered),remove,物品定义使用工业合成材料 plastic
+augmag_100rd,,AUG 100-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+augmag_10rd,,AUG 10-round magazine,remove,物品定义使用工业合成材料 plastic
+augmag_30rd,,AUG 30-round magazine,remove,物品定义使用工业合成材料 plastic
+augmag_42rd,,AUG 42-round magazine,remove,物品定义使用工业合成材料 plastic
+axmc,,modular sniper rifle+3,remove,物品定义使用工业合成材料 plastic
+axmc,axmc,Accuracy International AXMC,remove,物品定义使用工业合成材料 plastic
+backpack,,backpack,remove,物品定义使用工业合成材料 nylon
+backpack_giant,,giant novelty backpack,remove,物品定义使用工业合成材料 nylon
+backpack_hunting,,hunting backpack,remove,物品定义使用工业合成材料 nylon
+badge_doctor,,doctor badge,remove,物品定义使用工业合成材料 plastic
+badge_foodkid,,Foodkid badge,remove,物品定义使用工业合成材料 plastic
+bag_body_bag,,body bag,remove,物品定义使用工业合成材料 plastic
+bag_durasack,,reusable plastic sack,remove,物品定义使用工业合成材料 plastic
+bag_garbage,,garbage bag,remove,物品定义使用工业合成材料 plastic
+bag_iv,,IV bag,remove,物品定义使用工业合成材料 plastic
+bag_plastic,,plastic bag,remove,物品定义使用工业合成材料 plastic
+bag_zipper,,zipper bag,remove,物品定义使用工业合成材料 plastic
+balaclava_cut_resistant,,cut-resistant balaclava (poor fit),remove,物品定义使用工业合成材料 kevlar
+ballistic_vest_esapi,,US ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_esapi,swat_ballistic_vest,SWAT ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_esapi,us_ballistic_vest,US ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_heavy,,heavy ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_heavy,ballistic_vest_heavy_military,heavy ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_heavy,ballistic_vest_heavy_xedra,XEDRA containment armor,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ballistic_vest_light,,light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_black,black light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_future,hexagonal light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_meme,gaudy light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_olive,olive light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_punisher,skull light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+ballistic_vest_light,ballistic_vest_light_tan,tan light ballistic vest (mag pouches),remove,物品定义使用工业合成材料 nylon
+banjo,,banjo,remove,物品定义使用工业合成材料 nylon
+barometer,,barometer,remove,物品定义使用工业合成材料 plastic
+barrette,,barrette,remove,物品定义使用工业合成材料 plastic
+basket_laundry,,laundry basket,remove,物品定义使用工业合成材料 plastic
+bat_nerf,,foam rubber bat,remove,物品定义使用工业合成材料 plastic
+baton,,expandable baton,remove,物品定义使用工业合成材料 plastic
+baton-extended,,expandable baton (extended),remove,物品定义使用工业合成材料 plastic
+battery_car,,car battery,remove,物品定义使用工业合成材料 plastic
+battleship,,Warships,remove,物品定义使用工业合成材料 plastic
+bbholster,,belly band holster,remove,物品定义使用工业合成材料 lycra
+beekeeping_hood,,beekeeping hood (poor fit),remove,物品定义使用工业合成材料 plastic
+beeper,,back-up beeper,remove,物品定义使用工业合成材料 plastic
+belt_loop_large,,large belt loop,remove,物品定义使用工业合成材料 nylon
+belt_loop_medium,,medium belt loop,remove,物品定义使用工业合成材料 nylon
+belt_loop_small,,small belt loop,remove,物品定义使用工业合成材料 nylon
+betavoltaic,,betavoltaic cell,remove,物品定义使用工业合成材料 plastic
+bfr,,Magnum Research BFR,remove,物品定义使用工业合成材料 plastic
+bholster,,deep concealment holster,remove,物品定义使用工业合成材料 lycra
+bike_rack,,bike rack,remove,物品定义使用工业合成材料 plastic
+bikini_bottom,,bikini bottom (poor fit),remove,物品定义使用工业合成材料 lycra
+bikini_bottom,black_bikini_bottom,black bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,blue_bikini_bottom,blue bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,camo_bikini_bottom,camo bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,flag_bikini_bottom,flag bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,floral_bikini_bottom,floral bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,generic_bikini_bottom,bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,maid_bikini_bottom,maid bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,pink_bikini_bottom,pink bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,red_bikini_bottom,red bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,skull_bikini_bottom,skull bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,tropical_bikini_bottom,tropical bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom,white_bikini_bottom,white bikini bottom,remove,物品定义使用工业合成材料 lycra
+bikini_bottom_short,,short bikini bottom (poor fit),remove,物品定义使用工业合成材料 lycra
+bikini_top,,bikini top (poor fit),remove,物品定义使用工业合成材料 lycra
+bikini_top,black_bikini_top,black bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,blue_bikini_top,blue bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,camo_bikini_top,camo bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,flag_bikini_top,flag bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,floral_bikini_top,floral bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,generic_bikini_top,bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,maid_bikini_top,maid bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,pink_bikini_top,pink bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,red_bikini_top,red bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,skull_bikini_top,skull bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,tropical_bikini_top,tropical bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top,white_bikini_top,white bikini top,remove,物品定义使用工业合成材料 lycra
+bikini_top_short,,short bikini top (poor fit),remove,物品定义使用工业合成材料 lycra
+binder_top,,binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_american,american binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_black,black binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_blue,blue binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_dinos,dinosaur binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_floral,floral binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_gray,gray binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_green,green binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_meme,meme binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_mushroom,mushroom binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_nonbinary,non-binary flag binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_orange,orange binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_pink,pink binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_red,red binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_ribcage,ribcage binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_trans,trans flag binder,remove,物品定义使用工业合成材料 lycra
+binder_top,binder_top_white,white binder,remove,物品定义使用工业合成材料 lycra
+binoculars,,pair of binoculars,remove,物品定义使用工业合成材料 plastic
+bio_adrenaline,,Adrenaline Pump CBM (sterile),remove,电子仿生植入装置
+bio_ads,,Active Defense System CBM (sterile),remove,电子仿生植入装置
+bio_alarm,,Alarm System CBM (sterile),remove,电子仿生植入装置
+bio_ankles,,Squeaky Ankles CBM (sterile),remove,电子仿生植入装置
+bio_ar,,Integrated AR System CBM (sterile),remove,电子仿生植入装置
+bio_armor_arms,,Arms Alloy Plating CBM (sterile),remove,电子仿生植入装置
+bio_armor_eyes,,Protective Lenses CBM (sterile),remove,电子仿生植入装置
+bio_armor_head,,Head Alloy Plating CBM (sterile),remove,电子仿生植入装置
+bio_armor_legs,,Legs Alloy Plating CBM (sterile),remove,电子仿生植入装置
+bio_armor_torso,,Torso Alloy Plating CBM (sterile),remove,电子仿生植入装置
+bio_batteries,,Battery System CBM (sterile),remove,电子仿生植入装置
+bio_blade,,Monomolecular Blade CBM (sterile),remove,电子仿生植入装置
+bio_blood_anal,,Blood Analysis CBM (sterile),remove,电子仿生植入装置
+bio_blood_filter,,Blood Filter CBM (sterile),remove,电子仿生植入装置
+bio_cable,,Cable Charger System CBM (sterile),remove,电子仿生植入装置
+bio_carbon,,Subdermal Carbon Filament CBM (sterile),remove,电子仿生植入装置
+bio_chain_lightning,,Chain Lightning CBM (sterile),remove,电子仿生植入装置
+bio_claws,,Bionic Claws CBM (sterile),remove,电子仿生植入装置
+bio_climate,,Internal Climate Control CBM (sterile),remove,电子仿生植入装置
+bio_cloak,,Cloaking System CBM (sterile),remove,电子仿生植入装置
+bio_cqb,,Close Quarters Battle CBM (sterile),remove,电子仿生植入装置
+bio_deformity,,Bionic-Induced Deformity CBM (sterile),remove,电子仿生植入装置
+bio_dex_enhancer,,Wired Reflexes CBM (sterile),remove,电子仿生植入装置
+bio_digestion,,Expanded Digestive System CBM (sterile),remove,电子仿生植入装置
+bio_dis_acid,,Acidic Discharge CBM (sterile),remove,电子仿生植入装置
+bio_dis_shock,,Electrical Discharge CBM (sterile),remove,电子仿生植入装置
+bio_drain,,Electrical Drain CBM (sterile),remove,电子仿生植入装置
+bio_ears,,Enhanced Hearing CBM (sterile),remove,电子仿生植入装置
+bio_emp,,Directional EMP CBM (sterile),remove,电子仿生植入装置
+bio_emp_armgun,,EMP Projector CBM (sterile),remove,电子仿生植入装置
+bio_emp_gun,,EMP Projector,remove,物品定义使用工业合成材料 plastic
+bio_ethanol,,Ethanol Burner CBM (sterile),remove,电子仿生植入装置
+bio_evap,,Aero-Evaporator CBM (sterile),remove,电子仿生植入装置
+bio_eye_enhancer,,Diamond Cornea CBM (sterile),remove,电子仿生植入装置
+bio_eye_optic,,Telescopic Eyes CBM (sterile),remove,电子仿生植入装置
+bio_face_mask,,Facial Distortion CBM (sterile),remove,电子仿生植入装置
+bio_faraday,,Dielectric Capacitance System CBM (sterile),remove,电子仿生植入装置
+bio_faulty_electromagnetic_leak,,Electromagnetic Leak CBM (sterile),remove,电子仿生植入装置
+bio_faulty_grossfood,,Taste Fouler CBM (sterile),remove,电子仿生植入装置
+bio_fingerhack,,Fingerhack CBM (sterile),remove,电子仿生植入装置
+bio_fitnessband,,Calorie Tracker CBM (sterile),remove,电子仿生植入装置
+bio_flashbang,,Flashbang Generator CBM (sterile),remove,电子仿生植入装置
+bio_flashlight,,Cranial Flashlight CBM (sterile),remove,电子仿生植入装置
+bio_fuel_cell_gasoline,,Gasoline Fuel Cell CBM (sterile),remove,电子仿生植入装置
+bio_geiger,,Integrated Dosimeter CBM (sterile),remove,电子仿生植入装置
+bio_gills,,Respirator CBM (sterile),remove,电子仿生植入装置
+bio_glowy,,Glowy Thing CBM (sterile),remove,电子仿生植入装置
+bio_ground_sonar,,Terranian Sonar CBM (sterile),remove,电子仿生植入装置
+bio_heat_absorb,,Heat Drain CBM (sterile),remove,电子仿生植入装置
+bio_heatsink,,Thermal Dissipation CBM (sterile),remove,电子仿生植入装置
+bio_hydraulics,,Hydraulic Muscles CBM (sterile),remove,电子仿生植入装置
+bio_infrared,,Infrared Vision CBM (sterile),remove,电子仿生植入装置
+bio_int_enhancer,,Cerebral Booster CBM (sterile),remove,电子仿生植入装置
+bio_itchy,,Itchy Metal Thing CBM (sterile),remove,电子仿生植入装置
+bio_jointservo,,Joint Servo CBM (sterile),remove,电子仿生植入装置
+bio_lampoil,,Oil Generator CBM (sterile),remove,电子仿生植入装置
+bio_laser,,Finger-Mounted Laser CBM (sterile),remove,电子仿生植入装置
+bio_laser_gun,,laser finger,remove,物品定义使用工业合成材料 plastic
+bio_leaky,,Leaky Bionic CBM (sterile),remove,电子仿生植入装置
+bio_leukocyte,,Leukocyte Breeder System CBM (sterile),remove,电子仿生植入装置
+bio_lighter,,Finger Lighter CBM (sterile),remove,电子仿生植入装置
+bio_lightning,,Chain Lightning,remove,物品定义使用工业合成材料 plastic
+bio_lockpick,,Fingerpick CBM (sterile),remove,电子仿生植入装置
+bio_magnet,,Electromagnetic Unit CBM (sterile),remove,电子仿生植入装置
+bio_membrane,,Nictitating Membrane CBM (sterile),remove,电子仿生植入装置
+bio_memory,,Enhanced Memory Banks CBM (sterile),remove,电子仿生植入装置
+bio_metabolics,,Metabolic Interchange CBM (sterile),remove,电子仿生植入装置
+bio_meteorologist,,Weather Reader CBM (sterile),remove,电子仿生植入装置
+bio_nanobots,,Repair Nanobots CBM (sterile),remove,电子仿生植入装置
+bio_night,,Artificial Night Generator CBM (sterile),remove,电子仿生植入装置
+bio_night_vision,,Implanted Night Vision CBM (sterile),remove,电子仿生植入装置
+bio_noise,,Noisemaker CBM (sterile),remove,电子仿生植入装置
+bio_nostril,,Bionic Nostril CBM (sterile),remove,电子仿生植入装置
+bio_ods,,Offensive Defense System CBM (sterile),remove,电子仿生植入装置
+bio_painkiller,,Sensory Dulling CBM (sterile),remove,电子仿生植入装置
+bio_pitch_perfect,,Throwing Assist CBM (sterile),remove,电子仿生植入装置
+bio_pokedeye,,Bionic Visual Impairment CBM (sterile),remove,电子仿生植入装置
+bio_power_storage,,Power Storage CBM (sterile),remove,电子仿生植入装置
+bio_power_storage_mkII,,Power Storage Mk. II CBM (sterile),remove,电子仿生植入装置
+bio_power_weakness,,Power Overload CBM (sterile),remove,电子仿生植入装置
+bio_probability_travel,,Probability Travel CBM (sterile),remove,电子仿生植入装置
+bio_purifier,,Air Filtration System CBM (sterile),remove,电子仿生植入装置
+bio_radio,,Infolink CBM (sterile),remove,电子仿生植入装置
+bio_radleak,,Radioactive Leak CBM (sterile),remove,电子仿生植入装置
+bio_radscrubber,,Radiation Scrubber System CBM (sterile),remove,电子仿生植入装置
+bio_razors,,Fingertip Razors CBM (sterile),remove,电子仿生植入装置
+bio_recoil,,Recoil Compensators CBM (sterile),remove,电子仿生植入装置
+bio_recycler,,Recycler Unit CBM (sterile),remove,电子仿生植入装置
+bio_remote,,Remote Controller CBM (sterile),remove,电子仿生植入装置
+bio_resonator,,Sonic Resonator CBM (sterile),remove,电子仿生植入装置
+bio_scent_mask,,Olfactory Mask CBM (sterile),remove,电子仿生植入装置
+bio_shakes,,Bionic Short Circuit CBM (sterile),remove,电子仿生植入装置
+bio_shock,,Electroshock Unit CBM (sterile),remove,电子仿生植入装置
+bio_shockwave,,Shockwave Generator CBM (sterile),remove,电子仿生植入装置
+bio_shotgun,,Shotgun Arm CBM (sterile),remove,电子仿生植入装置
+bio_shotgun_gun,,bionic shotgun,remove,物品定义使用工业合成材料 plastic
+bio_sleep_shutdown,,Sleep Mode Shutdown CBM (sterile),remove,电子仿生植入装置
+bio_sleepy,,Endocrine Enervator CBM (sterile),remove,电子仿生植入装置
+bio_soporific,,Soporific Induction CBM (sterile),remove,电子仿生植入装置
+bio_spasm,,Motor Control Overstimulator CBM (sterile),remove,电子仿生植入装置
+bio_speed,,Synaptic Accelerator CBM (sterile),remove,电子仿生植入装置
+bio_stiff,,Wire-Induced Stiffness CBM (sterile),remove,电子仿生植入装置
+bio_str_enhancer,,Muscle Augmentation CBM (sterile),remove,电子仿生植入装置
+bio_sunglasses,,Anti-Glare Compensators CBM (sterile),remove,电子仿生植入装置
+bio_surgical_razor,,Autonomous Surgical Scalpels CBM (sterile),remove,电子仿生植入装置
+bio_synaptic_regen,,Synaptic Regeneration System CBM (sterile),remove,电子仿生植入装置
+bio_synlungs,,Synthetic Lungs CBM (sterile),remove,电子仿生植入装置
+bio_syringe,,Intravenous Needletip CBM (sterile),remove,电子仿生植入装置
+bio_targeting,,Targeting System CBM (sterile),remove,电子仿生植入装置
+bio_taser,,Super Stun Gun CBM (sterile),remove,电子仿生植入装置
+bio_taste_blocker,,Taste Modifier CBM (sterile),remove,电子仿生植入装置
+bio_tattoo_led,,LED Tattoo CBM (sterile),remove,电子仿生植入装置
+bio_teleport,,Teleportation Unit CBM (sterile),remove,电子仿生植入装置
+bio_thumbs,,Self-Locking Thumbs CBM (sterile),remove,电子仿生植入装置
+bio_time_freeze,,Time Dilation CBM (sterile),remove,电子仿生植入装置
+bio_tools,,Integrated Multitool CBM (sterile),remove,电子仿生植入装置
+bio_torsionratchet,,Joint Torsion Ratchet CBM (sterile),remove,电子仿生植入装置
+bio_trickle,,Trickle Charger CBM (sterile),remove,电子仿生植入装置
+bio_trip,,Visual Disruptor CBM (sterile),remove,电子仿生植入装置
+bio_uncanny_dodge,,Uncanny Dodge CBM (sterile),remove,电子仿生植入装置
+bio_ups,,Unified Power System CBM (sterile),remove,电子仿生植入装置
+bio_voice,,Voice Remodulator CBM (sterile),remove,电子仿生植入装置
+bio_watch,,Internal Chronometer CBM (sterile),remove,电子仿生植入装置
+bio_water_extractor,,Water Extraction Unit CBM (sterile),remove,电子仿生植入装置
+bio_weight,,Titanium Skeletal Bracing CBM (sterile),remove,电子仿生植入装置
+bite_suit,,canine bite suit (poor fit),remove,物品定义使用工业合成材料 kevlar
+black_pen,,black pen,remove,物品定义使用工业合成材料 plastic
+blindfold_duct,,duct tape blindfold,remove,物品定义使用工业合成材料 plastic
+blindfold_duct_up,,duct tape blindfold (raised),remove,物品定义使用工业合成材料 plastic
+blue_pen,,blue pen,remove,物品定义使用工业合成材料 plastic
+blun_flechette,,blunderbuss flechette,remove,物品定义使用工业合成材料 plastic
+bodysuit_lycra,,lycra bodysuit (poor fit),remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,batman_suit_black,super hero black bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,black_widow_suit,black infiltration bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,bondage_suit,bondage lycra bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,flag_suit,flag bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,samus_zero_suit_black,futuristic black bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,samus_zero_suit_blue,futuristic blue bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,samus_zero_suit_red,futuristic red bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,skeleton_suit,skeleton bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,spiderman_suit_red,super hero spider bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,superhero_suit_green,super hero green bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,superhero_suit_pink,super hero pink bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,superhero_suit_purple,super hero purple bodysuit,remove,物品定义使用工业合成材料 lycra
+bodysuit_lycra,superman_suit_blue,super hero blue bodysuit,remove,物品定义使用工业合成材料 lycra
+boltcutters,,pair of bolt cutters,remove,物品定义使用工业合成材料 plastic
+bone,,bone,keep,自然资源、果实及基础材料
+boobytrap,,booby trap,remove,物品定义使用工业合成材料 plastic
+book_binder,,book binder,remove,物品定义使用工业合成材料 plastic
+boots_fsurvivor,,pair of survivor fireboots (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+boots_h20survivor,,pair of Kevlar diving boots (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+boots_h20survivor_light,,pair of light Kevlar diving overboots (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+boots_h20survivor_thick,,pair of thick Kevlar diving boots (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+boots_hiking,,pair of hiking boots (poor fit),remove,物品定义使用工业合成材料 plastic
+boots_hsurvivor,,pair of heavy survivor boots (poor fit),remove,物品定义使用工业合成材料 kevlar
+boots_lsurvivor,,pair of light survivor boots (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+boots_survivor,,pair of survivor boots (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+boots_winter,,pair of winter boots (poor fit),remove,物品定义使用工业合成材料 plastic
+boots_wsurvivor,,pair of winter survivor boots (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+boots_wsurvivor_nofur,,pair of faux fur winter survivor boots (poor fit),remove,物品定义使用工业合成材料 nomex
+bot_EMP_hack,,inactive EMP hack,remove,物品定义使用工业合成材料 plastic
+bot_antimateriel,,inactive M2HB autonomous CROWS II,remove,物品定义使用工业合成材料 plastic
+bot_c4_hack,,inactive C-4 hack,remove,物品定义使用工业合成材料 plastic
+bot_crows_m240,,inactive autonomous M240 CROWS II,remove,物品定义使用工业合成材料 plastic
+bot_flashbang_hack,,inactive flashbang hack,remove,物品定义使用工业合成材料 plastic
+bot_gasbomb_hack,,inactive tear gas hack,remove,物品定义使用工业合成材料 plastic
+bot_grenade_hack,,inactive grenade hack,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_BM,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_BM2,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_BS,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_GM,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_GR,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_lab_security_drone_YM,,inactive security drone,remove,物品定义使用工业合成材料 plastic
+bot_manhack,,inactive manhack,remove,物品定义使用工业合成材料 plastic
+bot_rifleturret,,inactive autonomous M249 CROWS II,remove,物品定义使用工业合成材料 plastic
+bot_robofac_camspy,,inactive camspy,remove,物品定义使用工业合成材料 plastic
+bot_robofac_skittergun,,inactive exterminatron,remove,物品定义使用工业合成材料 plastic
+bot_skitterbot,,inactive skitterbot,remove,物品定义使用工业合成材料 plastic
+bot_tazer_hack,,inactive tazer hack,remove,物品定义使用工业合成材料 plastic
+bot_turret,,inactive turret,remove,物品定义使用工业合成材料 plastic
+bot_turret_riot,,inactive riot control turret,remove,物品定义使用工业合成材料 plastic
+bottle_bathroom,,plastic soap bottle,remove,物品定义使用工业合成材料 plastic
+bottle_folding,,foldable plastic bottle,remove,物品定义使用工业合成材料 plastic
+bottle_plastic,,plastic bottle,remove,物品定义使用工业合成材料 plastic
+bottle_plastic_pill_prescription,,plastic prescription bottle,remove,物品定义使用工业合成材料 plastic
+bottle_plastic_small,,small plastic bottle,remove,物品定义使用工业合成材料 plastic
+bottle_suppressor,,soda bottle silencer,remove,物品定义使用工业合成材料 plastic
+bottle_twoliter,,large plastic bottle,remove,物品定义使用工业合成材料 plastic
+bow_saw,,bow saw,remove,物品定义使用工业合成材料 plastic
+bow_scope,,bow scope,remove,物品定义使用工业合成材料 plastic
+bow_sight,,five pin bow sight,remove,物品定义使用工业合成材料 plastic
+bow_sight_pin,,single pin bow sight,remove,物品定义使用工业合成材料 plastic
+bow_stabilizer,,bow stabilizer,remove,物品定义使用工业合成材料 plastic
+bow_stabilizer_set,,bow stabilizer system,remove,物品定义使用工业合成材料 plastic
+box_battery_charger,,disconnected box battery charger,remove,物品定义使用工业合成材料 plastic
+boxcutter,,boxcutter knife,remove,物品定义使用工业合成材料 plastic
+bracelet_friendship,,friendship bracelet,remove,物品定义使用工业合成材料 plastic
+breadboard,,breadboard,remove,电子元件
+bren2_556,,Bren 5.56x45mm carbine+2,remove,物品定义使用工业合成材料 plastic
+bren2_556,bren2_556,CZ Bren 2,remove,物品定义使用工业合成材料 plastic
+bren2_762,,Bren 7.62mm carbine+2,remove,物品定义使用工业合成材料 plastic
+bren2_762,805_bren,CZ 805 Bren,remove,物品定义使用工业合成材料 plastic
+bren2_762,bren2_762,CZ Bren 2,remove,物品定义使用工业合成材料 plastic
+bren2_762mag10,,Bren 2 10-round magazine,remove,物品定义使用工业合成材料 plastic
+bren2_762mag30,,Bren 2 30-round magazine,remove,物品定义使用工业合成材料 plastic
+briefcase,,briefcase,remove,物品定义使用工业合成材料 plastic
+broken_EMP_hack,,broken EMP hack,remove,物品定义使用工业合成材料 plastic
+broken_c4_hack,,broken C-4 hack,remove,物品定义使用工业合成材料 plastic
+broken_copbot,,broken police bot,remove,物品定义使用工业合成材料 plastic
+broken_dispatch,,broken riot dispatch,remove,物品定义使用工业合成材料 plastic
+broken_dispatch_military,,broken military dispatch,remove,物品定义使用工业合成材料 plastic
+broken_eyebot,,broken eyebot,remove,物品定义使用工业合成材料 plastic
+broken_flashbang_hack,,broken flashbang hack,remove,物品定义使用工业合成材料 plastic
+broken_gasbomb_hack,,broken tear gas hack,remove,物品定义使用工业合成材料 plastic
+broken_grenade_hack,,broken grenade hack,remove,物品定义使用工业合成材料 plastic
+broken_grocerybot,,broken grocery bot,remove,物品定义使用工业合成材料 plastic
+broken_grocerybot_busted,,broken grocery bot,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_BM,,broken blue maintenance security drone,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_BM2,,broken blue maintenance security drone,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_BS,,broken black security drone,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_GM,,broken green maintenance security drone,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_GR,,broken green research security drone,remove,物品定义使用工业合成材料 plastic
+broken_lab_security_drone_YM,,broken yellow maintenance security drone,remove,物品定义使用工业合成材料 plastic
+broken_manhack,,broken manhack,remove,物品定义使用工业合成材料 plastic
+broken_mininuke_hack,,broken mininuke hack,remove,物品定义使用工业合成材料 plastic
+broken_molebot,,broken miner bot,remove,物品定义使用工业合成材料 plastic
+broken_nursebot,,broken nurse bot,remove,物品定义使用工业合成材料 plastic
+broken_riotbot,,broken riot control bot,remove,物品定义使用工业合成材料 plastic
+broken_robofac_camspy,,broken camspy,remove,物品定义使用工业合成材料 plastic
+broken_robofac_prototype,,broken prototype robot,remove,物品定义使用工业合成材料 plastic
+broken_robofac_skittergun,,broken exterminatron,remove,物品定义使用工业合成材料 plastic
+broken_science_bot,,broken lab defense bot,remove,物品定义使用工业合成材料 plastic
+broken_secubot,,broken secubot,remove,物品定义使用工业合成材料 plastic
+broken_skitterbot,,broken skitterbot,remove,物品定义使用工业合成材料 plastic
+broken_talon_m202a1,,broken M202A1 TALON,remove,物品定义使用工业合成材料 plastic
+broken_tazer_hack,,broken tazer hack,remove,物品定义使用工业合成材料 plastic
+broken_turret,,broken turret,remove,物品定义使用工业合成材料 plastic
+broketent,,damaged tent,remove,物品定义使用工业合成材料 plastic
+browning_blr,,Browning BLR,remove,物品定义使用工业合成材料 plastic
+brush,,scrub brush,remove,物品定义使用工业合成材料 plastic
+brush_toilet,,toilet brush,remove,物品定义使用工业合成材料 plastic
+bt_apc9k,,B&T APC9 PRO K+2,remove,物品定义使用工业合成材料 plastic
+btmp9mag_9x19mm_10rd,,APC9 10-round magazine,remove,物品定义使用工业合成材料 plastic
+btmp9mag_9x19mm_15,,APC9 15-round magazine,remove,物品定义使用工业合成材料 plastic
+bubblewrap,,bubble wrap,remove,物品定义使用工业合成材料 plastic
+bundle_nylon,,bundle of synthetic fabric,remove,物品定义使用工业合成材料 nylon
+bunker_coat,,turnout coat (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nomex"
+bunker_pants,,turnout trousers (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nomex"
+burette,,burette,remove,物品定义使用工业合成材料 plastic
+burnt_out_bionic,,burnt out bionic,remove,物品定义使用工业合成材料 plastic
+butane_tank,,butane tank,remove,物品定义使用工业合成材料 plastic
+button_plastic,,plastic button,remove,物品定义使用工业合成材料 plastic
+c_fishspear,,carbon fiber fishing spear,remove,物品定义使用工业合成材料 kevlar_rigid
+cable,,copper wire,remove,物品定义使用工业合成材料 plastic
+cable_speaker,,speaker cable,remove,物品定义使用工业合成材料 plastic
+cable_xlr,,XLR cable,remove,物品定义使用工业合成材料 plastic
+camelbak,,hydration pack,remove,物品定义使用工业合成材料 plastic
+camera,,camera,remove,电子设备及运转状态
+camera_bag,,camera bag,remove,"物品定义使用工业合成材料 nylon, plastic"
+camera_control,,camera display,remove,物品定义使用工业合成材料 plastic
+camera_pro,,professional camera,remove,电子设备及运转状态
+canteen,,plastic canteen,remove,物品定义使用工业合成材料 plastic
+canteen_pouch,,canteen pouch,remove,物品定义使用工业合成材料 nylon
+car_headlight,,car headlight,remove,物品定义使用工业合成材料 plastic
+carbonfiber_boat_hull,,carbon fiber boat hull,remove,物品定义使用工业合成材料 kevlar_rigid
+cargo_aisle,,floor trunk,remove,物品定义使用工业合成材料 plastic
+cargo_rack,,cargo carrier,remove,物品定义使用工业合成材料 plastic
+carpet_armguards,,pair of carpet arm guards,remove,物品定义使用工业合成材料 plastic
+carpet_bracers,,pair of carpet bracers,remove,物品定义使用工业合成材料 plastic
+carpet_cuirass,,carpet cuirass,remove,物品定义使用工业合成材料 plastic
+carpet_greaves,,pair of carpet greaves,remove,物品定义使用工业合成材料 plastic
+carpet_legguards,,pair of carpet leg guards,remove,物品定义使用工业合成材料 plastic
+carton_sealed,,paper carton,remove,物品定义使用工业合成材料 plastic
+carver_off,,electric carver (off),remove,物品定义使用工业合成材料 plastic
+case_violin,,violin case,remove,物品定义使用工业合成材料 plastic
+cash_register,,cash register,remove,物品定义使用工业合成材料 plastic
+casket74mag,,AK-74M 60-round magazine,remove,物品定义使用工业合成材料 plastic
+cell_phone,,cellphone,remove,电子设备及运转状态
+cell_phone_flashlight,,cellphone - Flashlight,remove,电子设备及运转状态
+chainsaw_off,,chainsaw (off),remove,物品定义使用工业合成材料 plastic
+chair_folding,,folding chair,remove,物品定义使用工业合成材料 plastic
+chaps_cut_resistant,,chainsaw chaps,remove,物品定义使用工业合成材料 kevlar
+char_purifier,,charcoal water purifier,remove,物品定义使用工业合成材料 plastic
+cheek_pad,,cheek pad,remove,物品定义使用工业合成材料 plastic
+chemical_thrower,,makeshift chemical thrower,remove,物品定义使用工业合成材料 plastic
+chestguard_hard,,hard chest guard,remove,"物品定义使用工业合成材料 neoprene, plastic"
+chestwrap,,chestwrap,keep,已在荒野开局或第一项基础制作使用
+circsaw_off,,circular saw (off),remove,物品定义使用工业合成材料 plastic
+circuit,,circuit board,remove,物品定义使用工业合成材料 plastic
+cleansuit,,cleansuit (poor fit),remove,物品定义使用工业合成材料 plastic
+cloak_wool,,wool cloak,keep,已在荒野开局或第一项基础制作使用
+clock,,clock,remove,物品定义使用工业合成材料 plastic
+clothes_hanger,,clothes hanger,remove,物品定义使用工业合成材料 plastic
+clown_nose,,clown nose,remove,物品定义使用工业合成材料 plastic
+clown_suit,,clown suit (poor fit),remove,物品定义使用工业合成材料 plastic
+coat_rain,,rain coat (poor fit),remove,物品定义使用工业合成材料 plastic
+cobalt_60,,cobalt-60 pellet,remove,物品定义使用工业合成材料 plastic
+coffeemaker,,coffeemaker,remove,物品定义使用工业合成材料 plastic
+colt_ro635,,Colt Model 635,remove,物品定义使用工业合成材料 plastic
+combat_shirt,,combat shirt (poor fit),remove,物品定义使用工业合成材料 nylon
+combatsaw_off,,combat chainsaw (off),remove,物品定义使用工业合成材料 plastic
+compbow,,compound hunting bow,remove,物品定义使用工业合成材料 plastic
+compcrossbow,,compound crossbow,remove,物品定义使用工业合成材料 plastic
+compgreatbow,,compound greatbow,remove,物品定义使用工业合成材料 plastic
+condiment_bottle_sealed,,condiment bottle,remove,物品定义使用工业合成材料 plastic
+condom,,condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_blue,blue condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_banana,banana flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_cherry,cherry flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_foodplace,food™ flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_jalapeno,jalapeno flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_orange,orange flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_flavored_strawberry,strawberry flavored condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_green,green condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_pink,pink condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_plain,condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_red,red condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_ribbed,ribbed condom,remove,物品定义使用工业合成材料 plastic
+condom,condom_yellow,yellow condom,remove,物品定义使用工业合成材料 plastic
+condom_sealed,,sealed condom,remove,物品定义使用工业合成材料 plastic
+contacts,,pair of contact lenses,remove,物品定义使用工业合成材料 plastic
+corded_powerdrill,,power drill,remove,物品定义使用工业合成材料 plastic
+cordless_drill,,cordless drill,remove,物品定义使用工业合成材料 plastic
+cordless_impact_wrench,,cordless impact wrench,remove,物品定义使用工业合成材料 plastic
+counterweight_pouch,,counterweight pouch,remove,物品定义使用工业合成材料 nylon
+cup_plastic,,plastic cup,remove,物品定义使用工业合成材料 plastic
+cuvettes,,set of spectrometry cuvettes,remove,物品定义使用工业合成材料 plastic
+cx4,,9x19mm pistol-caliber carbine,remove,物品定义使用工业合成材料 plastic
+cx4,cx4,Cx4 Storm,remove,物品定义使用工业合成材料 plastic
+cyborg_matrix,,cybernetic neural matrix,remove,物品定义使用工业合成材料 plastic
+cz600,,bolt-action trail carbine+1,remove,物品定义使用工业合成材料 plastic
+cz600,cz600,CZ 600 TRAIL,remove,物品定义使用工业合成材料 plastic
+cz75,,CZ 75 B,remove,物品定义使用工业合成材料 plastic
+daypack,,daypack,remove,"物品定义使用工业合成材料 nylon, plastic"
+debug_lux_meter,,debug lux meter,remove,物品定义使用工业合成材料 plastic
+decoy_elfa,,standpipe maintenance log,remove,物品定义使用工业合成材料 plastic
+dehydrator,,food dehydrator,remove,物品定义使用工业合成材料 plastic
+delay_fuze,,delayed fuze,remove,物品定义使用工业合成材料 plastic
+dentures,,set of dentures,remove,物品定义使用工业合成材料 plastic
+deployment_bag,,deployment bag,remove,物品定义使用工业合成材料 nylon
+depowered_armor,,salvaged power armor,remove,动力装甲及其部件
+depowered_helmet,,salvaged power armor helmet,remove,动力装甲及其部件
+dimensional_anchor,,5-point anchor,remove,物品定义使用工业合成材料 kevlar
+directional_antenna,,directional antenna,remove,电子设备及运转状态
+disc_golf,,disc,remove,物品定义使用工业合成材料 plastic
+dive_bag,,dive bag,remove,物品定义使用工业合成材料 plastic
+diveknife,,dive knife,remove,物品定义使用工业合成材料 plastic
+divemask_full_modular,,modular full-face diving mask,remove,物品定义使用工业合成材料 plastic
+divemask_full_scuba_notready,,full-face diving mask,remove,物品定义使用工业合成材料 plastic
+diving_flashlight_small,,mini diving flashlight (off),remove,物品定义使用工业合成材料 plastic
+diving_flashlight_small_hipower,,high-power mini diving flashlight (off),remove,物品定义使用工业合成材料 plastic
+diving_flashlight_variable,,high-power mini diving flashlight (off),remove,物品定义使用工业合成材料 plastic
+dnd,,Blobs and Bandits,remove,物品定义使用工业合成材料 plastic
+dnd_2,,Swords and Fireballs,remove,物品定义使用工业合成材料 plastic
+dnd_3,,Sticks and Stones,remove,物品定义使用工业合成材料 plastic
+dog_tag_dog,,dog tag,remove,物品定义使用工业合成材料 plastic
+doublespeargun,,double roller speargun,remove,物品定义使用工业合成材料 plastic
+dragonskin,,dragon skin vest,remove,物品定义使用工业合成材料 nylon
+dressage_whip,,dressage whip,remove,物品定义使用工业合成材料 nylon
+drinking_hat,,drinking hat,remove,物品定义使用工业合成材料 plastic
+dry_bag,,dry bag,remove,物品定义使用工业合成材料 plastic
+dry_bag_large,,large dry bag,remove,物品定义使用工业合成材料 plastic
+dry_duffelbag,,dry duffel bag,remove,物品定义使用工业合成材料 plastic
+duct_tape,,duct tape,remove,物品定义使用工业合成材料 plastic
+dump_pouch,,tactical dump pouch,remove,"物品定义使用工业合成材料 nylon, plastic"
+duster_survivor,,survivor duster (poor fit),remove,物品定义使用工业合成材料 kevlar
+e_combatsaw_off,,electric combat chainsaw (off),remove,物品定义使用工业合成材料 plastic
+e_handcuffs,,electronic handcuffs,remove,电子设备及运转状态
+ear_plugs,,pair of ear plugs,remove,物品定义使用工业合成材料 plastic
+ear_spool,,plug,remove,物品定义使用工业合成材料 plastic
+eclipse_glasses,,pair of eclipse glasses,remove,物品定义使用工业合成材料 plastic
+eink_tablet_pc,,e-ink tablet PC,remove,电子设备及运转状态
+eink_tablet_pc_on,,e-ink tablet PC (on),remove,电子设备及运转状态
+elbow_pads,,pair of elbow pads,remove,物品定义使用工业合成材料 plastic
+elec_chainsaw_off,,electric chainsaw (off),remove,物品定义使用工业合成材料 plastic
+elec_hairtrimmer,,electric hair trimmer,remove,物品定义使用工业合成材料 plastic
+elec_shears,,electric shears,remove,物品定义使用工业合成材料 plastic
+electric_lantern,,electric lantern (off),remove,物品定义使用工业合成材料 plastic
+electric_masonrysaw_off,,electric masonry saw (off) (UPS),remove,物品定义使用工业合成材料 plastic
+electric_spinwheel,,electric spinwheel,remove,物品定义使用工业合成材料 plastic
+electrohack,,electrohack,remove,电子设备及运转状态
+electrolysis_kit,,electrolysis kit,remove,物品定义使用工业合成材料 plastic
+electronics_controls,,electronics control unit,remove,物品定义使用工业合成材料 plastic
+emer_blanket,,emergency blanket,remove,物品定义使用工业合成材料 plastic
+emf_detector,,EMF detector (off),remove,电子设备及运转状态
+emf_detector_on,,EMF detector (on),remove,电子设备及运转状态
+emp_gun,,XM34 EMP projector,remove,物品定义使用工业合成材料 plastic
+engine_1cyl_diesel_large,,0.2L large 1-cylinder diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+engineering_makerspace_kit,,makerspace kit for STEM,remove,物品定义使用工业合成材料 plastic
+engineering_robotics_kit,,robotics kit for young learners,remove,物品定义使用工业合成材料 plastic
+entry_suit,,entry suit (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+eod_plate,,EOD fragmentation plate,remove,"物品定义使用工业合成材料 kevlar, plastic_pad"
+eraser,,eraser,remove,物品定义使用工业合成材料 plastic
+exodii_ac_kit,,external climate control kit,remove,物品定义使用工业合成材料 plastic
+exodii_computer,,unfamiliar electronic thingy,remove,物品定义使用工业合成材料 plastic
+exodii_ingot_plastic,,enormous plastic block,remove,物品定义使用工业合成材料 plastic
+exodii_micro_computer,,small unfamiliar electronic thingy,remove,物品定义使用工业合成材料 plastic
+exodii_sensor,,cybernetic sensor,remove,物品定义使用工业合成材料 plastic
+exodii_wire_kit,,CBM interface wire kit,remove,物品定义使用工业合成材料 plastic
+extension_cable,,extension cord,remove,物品定义使用工业合成材料 plastic
+face_shield_plastic,,plastic face shield,remove,物品定义使用工业合成材料 plastic
+factory_handguard,,factory handguard,remove,物品定义使用工业合成材料 plastic
+famas,,MAS .223+1,remove,物品定义使用工业合成材料 plastic
+fan,,desk fan,remove,物品定义使用工业合成材料 plastic
+fancy_glasses_bifocal,,pair of stylish bifocal glasses,remove,物品定义使用工业合成材料 plastic
+fancy_glasses_eye,,pair of stylish corrective glasses,remove,物品定义使用工业合成材料 plastic
+fancy_glasses_reading,,pair of stylish reading glasses,remove,物品定义使用工业合成材料 plastic
+fancy_sunglasses,,pair of stylish sunglasses,remove,物品定义使用工业合成材料 plastic
+fancy_sunglasses_bifocal,,pair of stylish bifocal sunglasses,remove,物品定义使用工业合成材料 plastic
+fancy_sunglasses_eye,,pair of stylish corrective sunglasses,remove,物品定义使用工业合成材料 plastic
+fancy_sunglasses_reading,,pair of stylish reading sunglasses,remove,物品定义使用工业合成材料 plastic
+fancy_transition_glasses_bifocal,,pair of stylish transition bifocal glasses,remove,物品定义使用工业合成材料 plastic
+fancy_transition_glasses_eye,,pair of stylish transition corrective glasses,remove,物品定义使用工业合成材料 plastic
+fancy_transition_glasses_reading,,pair of stylish transition reading glasses,remove,物品定义使用工业合成材料 plastic
+fanny,,fanny pack,remove,"物品定义使用工业合成材料 nylon, plastic"
+faux_fur_cat_tail,,faux fur cat tail,remove,物品定义使用工业合成材料 plastic
+fc_hairpin,,fancy hairpin,remove,物品定义使用工业合成材料 plastic
+feather,,feather,keep,自然资源、果实及基础材料
+feeding_kit,,feeding kit,remove,物品定义使用工业合成材料 plastic
+fema_data,,FEMA data,remove,物品定义使用工业合成材料 plastic
+fencing_jacket,,fencing jacket,remove,物品定义使用工业合成材料 nylon
+fencing_pants,,fencing pants (poor fit),remove,物品定义使用工业合成材料 nylon
+feral_jackboot_gun,,feral bikers' shotgun,remove,物品定义使用工业合成材料 plastic
+feral_militia_gun,,mad militias' rifle,remove,物品定义使用工业合成材料 plastic
+fidget_spinner,,fidget spinner,remove,物品定义使用工业合成材料 plastic
+filter_air,,air filter,remove,物品定义使用工业合成材料 plastic
+filter_air_makeshift,,makeshift air filter,remove,物品定义使用工业合成材料 plastic
+fire_gauntlets,,pair of fire gauntlets (poor fit),remove,物品定义使用工业合成材料 nomex
+firehelmet,,firefighter helmet (poor fit),remove,"物品定义使用工业合成材料 nomex, plastic"
+fish_trap,,plastic fish trap,remove,物品定义使用工业合成材料 plastic
+fishing_rod_2pc_packed,,two-piece fishing rod (packed),remove,物品定义使用工业合成材料 fiberglass
+fishing_rod_professional,,pro fishing rod,remove,物品定义使用工业合成材料 fiberglass
+fishing_rod_tele_packed,,telescoping fishing rod (packed),remove,物品定义使用工业合成材料 fiberglass
+fishing_waders,,pair of fishing waders (poor fit),remove,物品定义使用工业合成材料 plastic
+fitness_band,,fitness band,remove,物品定义使用工业合成材料 plastic
+fitover_sunglasses,,pair of fit-over sunglasses (poor fit),remove,物品定义使用工业合成材料 plastic
+five-point_harness,,5-point harness,remove,物品定义使用工业合成材料 nylon
+flag_swimsuit,,swimsuit (poor fit),remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,black_swimsuit,black swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,blue_swimsuit,blue swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,camo_swimsuit,camo swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,flag_swimsuit,flag swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,floral_swimsuit,floral swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,generic_swimsuit,swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,lifeguard_swimsuit,lifeguard swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,pink_swimsuit,pink swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,red_swimsuit,red swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,striped_swimsuit,striped swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,tropical_swimsuit,tropical swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flag_swimsuit,white_swimsuit,white swimsuit,remove,"物品定义使用工业合成材料 lycra, nylon"
+flaregun,,flaregun,remove,物品定义使用工业合成材料 plastic
+flashbang,,flashbang,remove,物品定义使用工业合成材料 plastic
+flashlight,,flashlight (off),remove,物品定义使用工业合成材料 plastic
+flashlight_mount_wrist,,diving flashlight wrist mount,remove,物品定义使用工业合成材料 plastic
+flashlight_pouch,,flashlight pouch,remove,物品定义使用工业合成材料 nylon
+flight_helmet,,military flight helmet (poor fit),remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+flight_helmet_on,,military flight helmet (on) (poor fit),remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+flint,,flint,keep,自然资源、果实及基础材料
+floodlight,,floodlight,remove,物品定义使用工业合成材料 plastic
+flotation_vest,,flotation vest,remove,物品定义使用工业合成材料 plastic
+flu_shot,,flu shot,remove,物品定义使用工业合成材料 plastic
+flux_comp_gen,,explosively pumped flux compression generator,remove,电子元件
+fn57,,5.7mm pistol,remove,物品定义使用工业合成材料 plastic
+fn57,fn57,FN Five-seveN,remove,物品定义使用工业合成材料 plastic
+fn_p90,,5.7mm automatic PDW,remove,物品定义使用工业合成材料 plastic
+fn_p90,fn_p90,FN P90,remove,物品定义使用工业合成材料 plastic
+fnp90mag,,5.7mm 50-round magazine,remove,物品定义使用工业合成材料 plastic
+fnp90mag,fnp90mag,P90 50-round magazine,remove,物品定义使用工业合成材料 plastic
+folding_poncho,,rain poncho,remove,物品定义使用工业合成材料 plastic
+folding_stock,,folding stock,remove,物品定义使用工业合成材料 plastic
+food_processor,,food processor,remove,物品定义使用工业合成材料 plastic
+foodperson_mask,,Foodperson mask,remove,物品定义使用工业合成材料 plastic
+foot_locker_recharge_station,,disconnected foot locker recharging station,remove,物品定义使用工业合成材料 plastic
+foot_protectors_eod,,pair of EOD foot protectors,remove,"物品定义使用工业合成材料 nomex, plastic_pad"
+football_armor,,football armor,remove,物品定义使用工业合成材料 plastic_pad
+footrags,,pair of foot rags,keep,已在荒野开局或第一项基础制作使用
+forge,,electric forge,remove,物品定义使用工业合成材料 plastic
+frisbee,,frisbee,remove,物品定义使用工业合成材料 plastic
+fs2000,,FS2000+1,remove,物品定义使用工业合成材料 plastic
+fsurvivor_jumpsuit,,Kevlar firesuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, nomex"
+fsurvivor_suit,,survivor firesuit (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, nomex"
+funnel,,funnel,remove,物品定义使用工业合成材料 plastic
+funnel_separation,,separation funnel,remove,物品定义使用工业合成材料 plastic
+fur_cat_ears,,pair of fuzzy cat ears,remove,物品定义使用工业合成材料 plastic
+fur_cat_tail,,fuzzy cat tail,remove,物品定义使用工业合成材料 plastic
+g_warhammer,,Battlehammer,remove,物品定义使用工业合成材料 plastic
+g_warhammer40k,,Battlehammer 20k,remove,物品定义使用工业合成材料 plastic
+gadget_pouch,,gadget pouch,remove,物品定义使用工业合成材料 nylon
+gambeson_gloves_nylon,,nylon arming mittens (poor fit),remove,物品定义使用工业合成材料 nylon
+gambeson_nylon,,nylon gambeson (poor fit),remove,物品定义使用工业合成材料 nylon
+gambeson_nylon_thinsleeved,,nylon thin-sleeved gambeson (poor fit),remove,物品定义使用工业合成材料 nylon
+gambeson_nylon_vest,,nylon sleeveless gambeson (poor fit),remove,物品定义使用工业合成材料 nylon
+gambeson_pants_nylon,,nylon heavy arming pants (poor fit),remove,物品定义使用工业合成材料 nylon
+game_watch,,game watch,remove,物品定义使用工业合成材料 plastic
+gartersheath1,,garter sheath (poor fit),remove,"物品定义使用工业合成材料 nylon, plastic"
+gartersheath2,,garter double sheath (poor fit),remove,"物品定义使用工业合成材料 nylon, plastic"
+gas_charger,,gas-powered UPS (off),remove,电子设备及运转状态
+gas_charger_on,,gas-powered UPS (on),remove,电子设备及运转状态
+gas_mask_pouch,,gas mask pouch,remove,物品定义使用工业合成材料 nylon
+gasfilter_med,,gas mask cartridge,remove,物品定义使用工业合成材料 plastic
+gasfilter_sm,,filter mask cartridge,remove,物品定义使用工业合成材料 plastic
+gasket_plastic,,plastic gasket,remove,物品定义使用工业合成材料 plastic
+gasket_plastic_set,,plastic gasket set,remove,物品定义使用工业合成材料 plastic
+gatling_mech_laser,,CMES laser cannon,remove,物品定义使用工业合成材料 plastic
+geiger_off,,geiger counter (off),remove,电子设备及运转状态
+geiger_on,,geiger counter (on),remove,电子设备及运转状态
+gelbox,,electrophoresis tray,remove,物品定义使用工业合成材料 plastic
+gift_card,,gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,barber_gift_card,barbershop gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,bookstore_gift_card,$5 gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,clothing_gift_card,$20 gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,hardware_gift_card,$10 gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,mall_gift_card,5% discount card,remove,物品定义使用工业合成材料 plastic
+gift_card,megastore_gift_card,$100 gift card,remove,物品定义使用工业合成材料 plastic
+gift_card,restaurant_gift_card,restaurant gift card,remove,物品定义使用工业合成材料 plastic
+glass_cutter,,handheld glass cutter,remove,物品定义使用工业合成材料 plastic
+glasses_bal,,pair of ballistic glasses,remove,"物品定义使用工业合成材料 nylon, plastic"
+glasses_bifocal,,pair of bifocal glasses,remove,物品定义使用工业合成材料 plastic
+glasses_eye,,pair of eyeglasses,remove,物品定义使用工业合成材料 plastic
+glasses_monocle,,monocle,remove,物品定义使用工业合成材料 plastic
+glasses_reading,,pair of reading glasses,remove,物品定义使用工业合成材料 plastic
+glasses_safety,,pair of safety glasses,remove,物品定义使用工业合成材料 plastic
+glock17_17,,Glock 9x19mm 17-round magazine,remove,物品定义使用工业合成材料 plastic
+glock17_22,,Glock 9x19mm 22-round magazine,remove,物品定义使用工业合成材料 plastic
+glock40bigmag,,Glock .40 S&W/.357 SIG 22-round magazine,remove,物品定义使用工业合成材料 plastic
+glock40mag,,Glock .40 S&W/.357 SIG 15-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_17,,Glock duty pistol,remove,物品定义使用工业合成材料 plastic
+glock_17,glock_17,Glock 17,remove,物品定义使用工业合成材料 plastic
+glock_19,,Glock carry pistol,remove,物品定义使用工业合成材料 plastic
+glock_19,glock_19,Glock 19,remove,物品定义使用工业合成材料 plastic
+glock_20,,Glock pistol,remove,物品定义使用工业合成材料 plastic
+glock_20,glock_20,Glock 20,remove,物品定义使用工业合成材料 plastic
+glock_20mag,,Glock 10mm 15-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_21,,Glock pistol,remove,物品定义使用工业合成材料 plastic
+glock_21,glock_21,Glock 21,remove,物品定义使用工业合成材料 plastic
+glock_21mag,,Glock .45 13-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_21mag,glock_21mag,Glock 21 13-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_21mag26,,Glock .45 26-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_21mag26,glock_21mag26,Glock 21 26-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_22,,Glock 22,remove,物品定义使用工业合成材料 plastic
+glock_29,,compact Glock pistol,remove,物品定义使用工业合成材料 plastic
+glock_29,glock_29,Glock 29,remove,物品定义使用工业合成材料 plastic
+glock_29mag,,Glock 10mm 10-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_29mag,glock_29mag,Glock 10mm 10-round magazine,remove,物品定义使用工业合成材料 plastic
+glock_drum_100rd,,Glock 9x19mm 100-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+glock_drum_50rd,,Glock 9x19mm 50-round drum magazine,remove,物品定义使用工业合成材料 plastic
+glockbigmag,,Glock 9x19mm 30-round magazine,remove,物品定义使用工业合成材料 plastic
+glockmag,,Glock 9x19mm 15-round magazine,remove,物品定义使用工业合成材料 plastic
+gloves_bag,,pair of bag gloves,remove,物品定义使用工业合成材料 plastic
+gloves_claws,,pair of claw gloves,remove,物品定义使用工业合成材料 plastic
+gloves_cut_resistant,,pair of cut-resistant gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_eod,,pair of EOD overhand protectors,remove,物品定义使用工业合成材料 kevlar_layered
+gloves_fsurvivor,,pair of survivor firegloves (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, nomex"
+gloves_h20survivor,,pair of Kevlar wetsuit gloves (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+gloves_h20survivor_light,,pair of light Kevlar wetsuit overgloves (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+gloves_h20survivor_thick,,pair of Kevlar wetsuit gloves (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+gloves_hsurvivor,,pair of heavy survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+gloves_lsurvivor,,pair of light survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_lsurvivor_fingerless,,pair of fingerless light survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_medical,,pair of medical gloves,remove,物品定义使用工业合成材料 plastic
+gloves_survivor,,pair of survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_survivor_fingerless,,pair of fingerless survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_tactical,,pair of tactical gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_wsurvivor,,pair of winter survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+gloves_wsurvivor_nofur,,pair of faux fur winter survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+glowplug,,glow plug,remove,物品定义使用工业合成材料 plastic
+glowstick,,glowstick,remove,物品定义使用工业合成材料 plastic
+glowstick_dead,,dead glowstick,remove,物品定义使用工业合成材料 plastic
+glowstick_lit,,active glowstick,remove,物品定义使用工业合成材料 plastic
+gobag,,go bag,remove,物品定义使用工业合成材料 plastic
+goggles_ir,,pair of infrared goggles,remove,物品定义使用工业合成材料 plastic
+goggles_ir_on,,pair of infrared goggles (on),remove,物品定义使用工业合成材料 plastic
+goggles_nv,,pair of light amp goggles,remove,物品定义使用工业合成材料 plastic
+goggles_nv_on,,pair of light amp goggles (on),remove,物品定义使用工业合成材料 plastic
+goggles_ski,,pair of ski goggles,remove,物品定义使用工业合成材料 plastic
+goggles_swim,,pair of swim goggles,remove,物品定义使用工业合成材料 plastic
+goggles_welding,,pair of welding goggles,remove,物品定义使用工业合成材料 plastic
+golf_bag,,golf bag,remove,"物品定义使用工业合成材料 nylon, plastic"
+golf_ball,,golf ball,remove,物品定义使用工业合成材料 plastic
+gosling_jacket,,scorpion ornamented jacket (poor fit),remove,物品定义使用工业合成材料 nylon
+green_pen,,green pen,remove,物品定义使用工业合成材料 plastic
+grenade,,grenade,remove,物品定义使用工业合成材料 plastic
+grenade_act,,active grenade,remove,物品定义使用工业合成材料 plastic
+grenade_emp,,EMP grenade,remove,物品定义使用工业合成材料 plastic
+grenade_emp_act,,active EMP grenade,remove,物品定义使用工业合成材料 plastic
+grenade_pouch,,grenade pouch,remove,"物品定义使用工业合成材料 nylon, plastic"
+grenadebandolier,,large grenade pouch,remove,物品定义使用工业合成材料 nylon
+grip,,forward grip,remove,物品定义使用工业合成材料 plastic
+grip_mount,,replaceable furniture kit,remove,物品定义使用工业合成材料 plastic
+h20survivor_jumpsuit,,Kevlar wetsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene"
+h20survivor_jumpsuit_light,,light Kevlar wetsuit oversuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene"
+h20survivor_suit,,survivor wetsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, plastic"
+h2o_pouch,,H2O pouch,remove,物品定义使用工业合成材料 nylon
+hair_dryer,,hair dryer,remove,物品定义使用工业合成材料 plastic
+hand_crank_charger,,hand-crank charger,remove,电子设备及运转状态
+hand_pump,,hand pump,remove,物品定义使用工业合成材料 plastic
+handflare,,flare,remove,物品定义使用工业合成材料 plastic
+handflare_dead,,dead flare,remove,物品定义使用工业合成材料 plastic
+hat_hard,,hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,black_hat_hard,black hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,blue_hat_hard,blue hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,brown_hat_hard,brown hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,camo_hat_hard,camo hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,cartoon_hat_hard,cartoon hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,flag_hat_hard,flag hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,green_hat_hard,green hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,grey_hat_hard,grey hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,orange_hat_hard,orange hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,pink_hat_hard,pink hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,red_hat_hard,red hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,skull_hat_hard,skull hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,steampunk_hat_hard,steampunk hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,white_hat_hard,white hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard,yellow_hat_hard,yellow hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,,summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,black_hat_hard,black summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,blue_hat_hard,blue summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,brown_hat_hard,brown summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,camo_hat_hard,camo summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,cartoon_hat_hard,cartoon summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,flag_hat_hard,flag summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,green_hat_hard,green summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,grey_hat_hard,grey summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,orange_hat_hard,orange summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,pink_hat_hard,pink summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,red_hat_hard,red summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,skull_hat_hard,skull summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,steampunk_hat_hard,steampunk summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,white_hat_hard,white summer hard hat,remove,物品定义使用工业合成材料 plastic
+hat_hard_hooded,yellow_hat_hard,yellow summer hard hat,remove,物品定义使用工业合成材料 plastic
+hazmat_suit,,hazmat suit (poor fit),remove,物品定义使用工业合成材料 plastic
+hd_tow_cable,,heavy-duty tow cable,remove,物品定义使用工业合成材料 plastic
+headgear,,headgear (poor fit),remove,物品定义使用工业合成材料 plastic_pad
+headlight_reinforced,,reinforced headlight,remove,物品定义使用工业合成材料 plastic
+headphones_circumaural,,headphones,remove,物品定义使用工业合成材料 plastic
+heatpack,,heat pack,remove,物品定义使用工业合成材料 plastic
+heatpack_used,,used heat pack,remove,物品定义使用工业合成材料 plastic
+heavy_atomic_battery_cell,,heavy plutonium fuel battery,remove,工业电池
+heavy_battery_cell,,heavy battery,remove,工业电池
+heavy_disposable_cell,,heavy disposable battery,remove,工业电池
+heavy_dry_cell,,heavy dry battery,remove,工业电池
+heavy_load_bearing_vest,,heavy load bearing vest,remove,物品定义使用工业合成材料 nylon
+heavy_plus_battery_cell,,heavy battery (high-capacity),remove,工业电池
+heavy_steel_ballistic_plate,,heavy steel ballistic plate,remove,物品定义使用工业合成材料 nylon
+helmet_army,,army helmet (poor fit),remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+helmet_army_outdated,,flak helmet (poor fit),remove,物品定义使用工业合成材料 plastic
+helmet_army_outdated,helmet_m1,M1 helmet,remove,物品定义使用工业合成材料 plastic
+helmet_army_outdated,helmet_ssh,SSh-68 helmet,remove,物品定义使用工业合成材料 plastic
+helmet_ball,,baseball helmet,remove,"物品定义使用工业合成材料 plastic, plastic_pad"
+helmet_bike,,bike helmet,remove,"物品定义使用工业合成材料 plastic, plastic_pad"
+helmet_eod,,EOD helmet,remove,"物品定义使用工业合成材料 kevlar_rigid, plastic, plastic_pad"
+helmet_football,,football helmet,remove,物品定义使用工业合成材料 plastic_pad
+helmet_motor,,full-face motorcycle helmet,remove,"物品定义使用工业合成材料 plastic, plastic_pad"
+helmet_motor_raised,,full-face motorcycle helmet (raised visor),remove,物品定义使用工业合成材料 plastic
+helmet_nomad,,nomad cowl (poor fit),remove,物品定义使用工业合成材料 plastic
+helmet_riding,,riding helmet,remove,"物品定义使用工业合成材料 plastic, plastic_pad"
+helmet_riot,,riot helmet,remove,物品定义使用工业合成材料 plastic
+helmet_riot_raised,,riot helmet (raised visor),remove,物品定义使用工业合成材料 plastic
+helmet_scavenger,,scavenger cowl (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+helmet_skid,,skid lid,remove,物品定义使用工业合成材料 plastic
+hi_power_40,,Browning Hi-Power .40 S&W,remove,物品定义使用工业合成材料 plastic
+hi_power_9mm,,Browning Hi-Power 9x19mm,remove,物品定义使用工业合成材料 plastic
+hickory_nut,,hickory nuts,keep,自然资源、果实及基础材料
+hickory_root,,hickory root,keep,自然资源、果实及基础材料
+high_end_folding_stock,,modular folding stock,remove,物品定义使用工业合成材料 plastic
+hk417_13,,HK417 A2+1,remove,物品定义使用工业合成材料 plastic
+hk_g36,,G36 assault rifle,remove,物品定义使用工业合成材料 plastic
+hk_g36,hk_g36,H&K G36,remove,物品定义使用工业合成材料 plastic
+hk_mp5,,H&K MP5A2,remove,物品定义使用工业合成材料 plastic
+hk_mp7,,H&K MP7A2+1,remove,物品定义使用工业合成材料 plastic
+hk_ump45,,UMP45 SMG+1,remove,物品定义使用工业合成材料 plastic
+hk_ump45,hk_ump45,H&K UMP45,remove,物品定义使用工业合成材料 plastic
+hk_usc45,,H&K USC 45 Carbine,remove,物品定义使用工业合成材料 plastic
+hockey_stick,,hockey stick,remove,物品定义使用工业合成材料 plastic
+holo_sight,,holographic sight,remove,物品定义使用工业合成材料 plastic
+homemade_bomb,,homemade bomb,remove,物品定义使用工业合成材料 plastic
+homemade_bomb_act,,homemade bomb,remove,物品定义使用工业合成材料 plastic
+homemade_demolition_charge,,homemade demolition charge,remove,物品定义使用工业合成材料 plastic
+homemade_demolition_charge_act,,homemade demolition charge (lit),remove,物品定义使用工业合成材料 plastic
+hood_fsurvivor,,survivor firehood (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, nomex"
+hood_h20survivor,,Kevlar wetsuit hood (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+hood_h20survivor_light,,light Kevlar wetsuit overhood (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+hood_h20survivor_thick,,thick Kevlar wetsuit hood (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+hood_lsurvivor,,light survivor hood (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+hood_rain,,rain hood,remove,物品定义使用工业合成材料 plastic
+hood_survivor,,survivor hood (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+hood_wsurvivor,,winter survivor hood (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+hood_wsurvivor_nofur,,winter faux fur survivor hood (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+horn_bicycle,,bicycle horn,remove,物品定义使用工业合成材料 plastic
+horn_big,,truck horn,remove,物品定义使用工业合成材料 plastic
+horn_car,,car horn,remove,物品定义使用工业合成材料 plastic
+hotplate,,hotplate,remove,物品定义使用工业合成材料 plastic
+hotplate_induction,,induction hotplate,remove,物品定义使用工业合成材料 plastic
+hpt3895,,.380 ACP pistol-caliber carbine,remove,物品定义使用工业合成材料 plastic
+hpt3895,hpt3895,Hi-Point 3895,remove,物品定义使用工业合成材料 plastic
+hptc9,,Hi-Point C-9,remove,物品定义使用工业合成材料 plastic
+hptcf380,,Hi-Point CF-380,remove,物品定义使用工业合成材料 plastic
+hptjcp,,Hi-Point Model JCP,remove,物品定义使用工业合成材料 plastic
+hptjhp,,Hi-Point pistol,remove,物品定义使用工业合成材料 plastic
+hptjhp,hptjhp,Hi-Point Model JHP,remove,物品定义使用工业合成材料 plastic
+hsurvivor_jumpsuit,,steel-plated Kevlar jumpsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nylon"
+hsurvivor_suit,,heavy survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+huge_atomic_battery_cell,,military plutonium fuel cell,remove,工业电池
+hydrogen_tank,,hydrogen tank,remove,物品定义使用工业合成材料 plastic
+hygrometer,,hygrometer,remove,物品定义使用工业合成材料 plastic
+i4_combustion,,1.6L I4 engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+i4_diesel,,1.6L I4 diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+i6_diesel,,6L I6 diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+ice_utility_exoskeleton_off,,ICE utility exoskeleton,remove,物品定义使用工业合成材料 plastic
+ifak_pouch,,IFAK pouch,remove,物品定义使用工业合成材料 neoprene
+impact_fuze,,impact fuze,remove,物品定义使用工业合成材料 plastic
+inflatable_airbag,,inflatable airbag,remove,物品定义使用工业合成材料 plastic
+inflatable_section,,inflatable section,remove,物品定义使用工业合成材料 plastic
+inhaler,,inhaler,remove,物品定义使用工业合成材料 plastic
+instant_coffee,,instant coffee mix,remove,物品定义使用工业合成材料 plastic
+integrated_patchskin3,,patchwork armor,remove,物品定义使用工业合成材料 kevlar
+internal_battery_compartment,,internal battery compartment,remove,物品定义使用工业合成材料 plastic
+internal_ethanol_tank,,internal ethanol tank,remove,物品定义使用工业合成材料 plastic
+internal_gasoline_tank,,internal gasoline tank,remove,物品定义使用工业合成材料 plastic
+internal_oil_tank,,internal oil tank,remove,物品定义使用工业合成材料 plastic
+iotv_groin_plate,,ballistic groin protector,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+iotv_shoulder_plate,,ballistic shoulder protector,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+ipok,,individual patrol officer kit,remove,物品定义使用工业合成材料 plastic
+it_battery_mount,,storage battery case,remove,物品定义使用工业合成材料 plastic
+it_handheld_battery_mount,,tool battery mount,remove,物品定义使用工业合成材料 plastic
+iwi_tavor_x95_300blk,,IWI Tavor X95 .300BLK+1,remove,物品定义使用工业合成材料 plastic
+jacket_army,,army jacket (poor fit),remove,物品定义使用工业合成材料 nylon
+jacket_army_modern,,combat blouse (poor fit),remove,物品定义使用工业合成材料 nylon
+jacket_eod,,EOD jacket,remove,"物品定义使用工业合成材料 kevlar, nomex, plastic_pad"
+jacket_eod_light,,tactical EOD jacket,remove,"物品定义使用工业合成材料 kevlar, nomex, plastic_pad"
+jacket_evac,,emergency jacket,remove,物品定义使用工业合成材料 plastic
+jacket_windbreaker,,windbreaker (poor fit),remove,物品定义使用工业合成材料 nylon
+jerrycan,,plastic jerrycan,remove,物品定义使用工业合成材料 plastic
+jerrypack,,jerrypack,remove,物品定义使用工业合成材料 plastic
+jug_plastic,,gallon jug,remove,物品定义使用工业合成材料 plastic
+jumper_cable,,jumper cable,remove,物品定义使用工业合成材料 plastic
+juniper,,junipers,keep,自然资源、果实及基础材料
+k_gambeson,,Kevlar gambeson (poor fit),remove,"物品定义使用工业合成材料 kevlar, kevlar_layered"
+k_gambeson_hood,,Kevlar gambeson hood (poor fit),remove,"物品定义使用工业合成材料 kevlar, kevlar_layered"
+k_gambeson_pants,,Kevlar arming pants (poor fit),remove,"物品定义使用工业合成材料 kevlar, kevlar_layered"
+k_gambeson_sleeve,,pair of Kevlar gambeson sleeves (poor fit),remove,"物品定义使用工业合成材料 kevlar, kevlar_layered"
+k_gambeson_vest,,Kevlar gambeson vest (poor fit),remove,"物品定义使用工业合成材料 kevlar, kevlar_layered"
+ketene_lamp,,ketene lamp,remove,物品定义使用工业合成材料 plastic
+kevlar,,Kevlar vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+kevlar_armor_cow,,Kevlar-lined cow peto,remove,物品定义使用工业合成材料 kevlar_layered
+kevlar_armor_horse,,Kevlar-lined horse peto,remove,物品定义使用工业合成材料 kevlar_layered
+kevlar_harness,,Kevlar dog harness,remove,物品定义使用工业合成材料 kevlar_layered
+kevlar_nape_protector,,Kevlar nape protector,remove,物品定义使用工业合成材料 kevlar
+kevlar_patch,,Kevlar patch,remove,物品定义使用工业合成材料 kevlar
+kevlar_shears,,pair of Kevlar shears,remove,物品定义使用工业合成材料 plastic
+knee_pads,,pair of knee pads,remove,物品定义使用工业合成材料 plastic
+knife_combat,,National Guard bayonet,remove,物品定义使用工业合成材料 plastic
+knife_combat_army,,Bayonet,remove,物品定义使用工业合成材料 plastic
+knife_combat_army,akbayonet,AK bayonet,remove,物品定义使用工业合成材料 plastic
+knife_combat_army,m9bayonet,Army bayonet,remove,物品定义使用工业合成材料 plastic
+knife_combat_marine,,USMC bayonet,remove,物品定义使用工业合成材料 plastic
+knife_folding,,folding knife,remove,物品定义使用工业合成材料 plastic
+knife_swissarmy,,Swiss Army knife,remove,物品定义使用工业合成材料 plastic
+kord,,Kord 6P67+2,remove,物品定义使用工业合成材料 plastic
+kp32,,Kel-Tec P-32,remove,物品定义使用工业合成材料 plastic
+ksg,,compact bullpup shotgun+1,remove,物品定义使用工业合成材料 plastic
+ksg,ksg,Kel-Tec KSG,remove,物品定义使用工业合成材料 plastic
+ksg-25,,extended bullpup shotgun+1,remove,物品定义使用工业合成材料 plastic
+ksg-25,ksg-25,Kel-Tec KSG-25,remove,物品定义使用工业合成材料 plastic
+ksub2000,,Kel-Tec SUB-2000+1,remove,物品定义使用工业合成材料 plastic
+lanyard,,lanyard,remove,物品定义使用工业合成材料 plastic
+laptop,,laptop computer,remove,电子设备及运转状态
+laptop_screen_lit,,laptop computer - lit screen,remove,电子设备及运转状态
+large_lcd_screen,,large LCD screen,remove,物品定义使用工业合成材料 plastic
+large_propane_tank,,large propane tank,remove,物品定义使用工业合成材料 plastic
+large_tent_kit,,large tent,remove,物品定义使用工业合成材料 plastic
+large_turbine_engine,,"119.95L 6,000 HP gas turbine engine",remove,工业内燃、蒸汽或燃气涡轮发动机
+largebroketent,,large damaged tent,remove,物品定义使用工业合成材料 plastic
+laser_rifle,,A7 laser rifle,remove,物品定义使用工业合成材料 plastic
+laser_sight,,underbarrel laser sight,remove,物品定义使用工业合成材料 plastic
+latrunculi,,latrunculi set,remove,物品定义使用工业合成材料 plastic
+lawn_dart,,lawn dart,remove,物品定义使用工业合成材料 plastic
+lc_esapi_plate,,mild ESAPI plate,remove,物品定义使用工业合成材料 nylon
+lc_esbi_plate,,mild ESBI plate,remove,物品定义使用工业合成材料 nylon
+leather_cat_ears,,pair of leather cat ears,remove,物品定义使用工业合成材料 plastic
+leather_cat_tail,,leather cat tail,remove,物品定义使用工业合成材料 plastic
+leg_sheath6,,throwing knives leg sheath (poor fit),remove,物品定义使用工业合成材料 nylon
+leggings,,leggings (poor fit),remove,物品定义使用工业合成材料 lycra
+leggings,leggings_black,black leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_blue,blue leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_brown,brown leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_fire,fire leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_geometric,geometric leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_leopard,leopard print leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_olive,olive leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_purple,purple leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_red,red leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_tiger,tiger stripe leggings,remove,物品定义使用工业合成材料 lycra
+leggings,leggings_zerba,zebra leggings,remove,物品定义使用工业合成材料 lycra
+legguard_hard,,pair of hard leg guards,remove,"物品定义使用工业合成材料 neoprene, plastic"
+legpouch,,ankle ammo pouch,remove,物品定义使用工业合成材料 nylon
+legpouch_large,,leg ammo pouch,remove,物品定义使用工业合成材料 nylon
+legrig,,drop leg pouch,remove,物品定义使用工业合成材料 nylon
+legrig_wetsuit,,pair of diving pouches,remove,"物品定义使用工业合成材料 neoprene, nylon, nylon_2"
+leotard,,leotard (poor fit),remove,物品定义使用工业合成材料 lycra
+level_3_vest,,hard armor vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+level_3_vest,fema_armor_vest,humanitarian ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+level_3_vest,national_guard_armor_vest,National Guard ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+level_3_vest,police_armor_vest,police ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+lifestraw,,lifestraw,remove,物品定义使用工业合成材料 plastic
+light_atomic_battery_cell,,light plutonium fuel battery,remove,工业电池
+light_battery_cell,,light battery,remove,工业电池
+light_detector,,light detector,remove,物品定义使用工业合成材料 plastic
+light_disposable_cell,,light disposable battery,remove,工业电池
+light_dry_cell,,light dry battery,remove,工业电池
+light_emergency_red,,emergency vehicle light (red),remove,物品定义使用工业合成材料 plastic
+light_grip,,lightweight replacement furniture,remove,物品定义使用工业合成材料 plastic
+light_load_bearing_vest,,light load bearing vest,remove,物品定义使用工业合成材料 nylon
+light_minus_atomic_battery_cell,,ultra-light plutonium fuel battery,remove,工业电池
+light_minus_battery_cell,,ultra-light battery,remove,工业电池
+light_minus_disposable_cell,,ultra-light disposable battery,remove,工业电池
+light_plus_battery_cell,,light battery (high-capacity),remove,工业电池
+lighter,,lighter,remove,物品定义使用工业合成材料 plastic
+liq_bandage_spray,,spray bottle of liquid bandage,remove,物品定义使用工业合成材料 plastic
+livestock_carrier,,livestock carrier,remove,物品定义使用工业合成材料 plastic
+load_bearing_vest,,load bearing vest,remove,物品定义使用工业合成材料 nylon
+loincloth,,loincloth (poor fit),keep,已在荒野开局或第一项基础制作使用
+long_speargun,,long speargun,remove,物品定义使用工业合成材料 plastic
+lsurvivor_armor,,mercenary body armor,remove,"物品定义使用工业合成材料 kevlar, kevlar_layered, nylon"
+lsurvivor_jumpsuit,,light Kevlar jumpsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nylon"
+lsurvivor_pants,,light survivor cargo pants (poor fit),remove,物品定义使用工业合成材料 kevlar
+lsurvivor_suit,,light survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+lunchbox,,lunchbox,remove,物品定义使用工业合成材料 plastic
+lux_meter,,lux meter,remove,物品定义使用工业合成材料 plastic
+lycra_patch,,Lycra patch,remove,物品定义使用工业合成材料 lycra
+m11,,M11,remove,物品定义使用工业合成材料 plastic
+m110a1,,M110A1+4,remove,物品定义使用工业合成材料 plastic
+m14ebr,,M14 EBR-RI,remove,物品定义使用工业合成材料 plastic
+m17,,service handgun,remove,物品定义使用工业合成材料 plastic
+m17,m17,M17,remove,物品定义使用工业合成材料 plastic
+m1911,,M1911 pistol,remove,物品定义使用工业合成材料 plastic
+m1911,m1911,M1911,remove,物品定义使用工业合成材料 plastic
+m1911,m1911_MEU,M45A1,remove,物品定义使用工业合成材料 plastic
+m1911a1_38super,,M1911A1,remove,物品定义使用工业合成材料 plastic
+m2010,,M2010 ESR,remove,物品定义使用工业合成材料 plastic
+m203,,M203A1,remove,物品定义使用工业合成材料 plastic
+m231pfw,,M16 firing port gun+1,remove,物品定义使用工业合成材料 plastic
+m231pfw,m231pfw,M231 port firing weapon,remove,物品定义使用工业合成材料 plastic
+m240,,M240+1,remove,物品定义使用工业合成材料 plastic
+m249,,M249+1,remove,物品定义使用工业合成材料 plastic
+m26_mass_mag_3,,M26-MASS 3-round magazine,remove,物品定义使用工业合成材料 plastic
+m26_mass_mag_5,,M26-MASS 5-round magazine,remove,物品定义使用工业合成材料 plastic
+m26_mass_standalone,,M26-MASS standalone shotgun+1,remove,物品定义使用工业合成材料 plastic
+m26_mass_stock,,MASS compatible stock,remove,物品定义使用工业合成材料 plastic
+m4_carlgustav,,M3E1 recoilless rifle,remove,物品定义使用工业合成材料 plastic
+m60,,M60+1,remove,物品定义使用工业合成材料 plastic
+magic_8_ball,,Magic 8-Ball,remove,物品定义使用工业合成材料 plastic
+magnetron,,magnetron,remove,电子元件
+magnifying_glass,,magnifying glass,remove,物品定义使用工业合成材料 plastic
+mahjong,,mahjong set,remove,物品定义使用工业合成材料 plastic
+makarov,,Makarov pistol,remove,物品定义使用工业合成材料 plastic
+makarov,makarov,Makarov PM,remove,物品定义使用工业合成材料 plastic
+makeshift_funnel,,makeshift funnel,remove,物品定义使用工业合成材料 plastic
+makeshift_sealer,,makeshift vacuum sealer,remove,物品定义使用工业合成材料 plastic
+makeshift_stethoscope,,makeshift stethoscope,remove,物品定义使用工业合成材料 plastic
+makeshift_vacuum_mold,,makeshift vacuum mold,remove,物品定义使用工业合成材料 plastic
+makeshift_welding_blanket,,makeshift welding blanket,remove,物品定义使用工业合成材料 kevlar
+manual_rifle,,FM 23-16 Army marksmanship manual,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_gun_10,Adaptive Rifle,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_gun_11,The Art of the Rifle,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_gun_12,Shooter's Bible Guide to Rifle Ballistics,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_gun_13,The Gun,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle,FM 23-16 Army marksmanship manual,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_1,SAS and Elite Forces Guide Sniper,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_2,Precision Rifle Marksmanship: The Fundamentals,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_3,Precision Long Range Shooting And Hunting,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_4,The Marine Sniping Handbook,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_5,How to Shoot,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_6,Rifle Shooting for Beginners,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_7,Great Hunting Rifles: Victorian to the Present,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_8,FM 3-22.9: Rifle Marksmanship M16-/M4- Series,remove,物品定义使用工业合成材料 plastic
+manual_rifle,manual_rifle_9,FM 3-22.68: Crew-Served Machine Guns 5.56-mm And 7.62-mm,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,,FM 23-25 Army bayonet manual,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing,FM 23-25 Army bayonet manual,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing_1,"The Halberd and Other European Pole Arms, 1300-1650",remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing_2,Boarders Away: With Steel-Edged Weapons and Polearms,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing_3,Polearms of Paulus Hector Mair,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing_4,Hafted Weapons in Medieval and Renaissance Europe,remove,物品定义使用工业合成材料 plastic
+manual_stabbing,manual_stabbing_5,Japanese Spears,remove,物品定义使用工业合成材料 plastic
+manual_swimming,,Water Survival Training Field Manual,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming,Water Survival Training Field Manual,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_1,Built from Broken,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_10,Hard Work Pays Off,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_2,Science of Running,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_3,Overcoming Gravity,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_4,Calisthenics for Beginners,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_5,The Squat Bible,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_6,Functional Training and Beyond,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_7,New Functional Training for Sports,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_8,The World's Fittest Book,remove,物品定义使用工业合成材料 plastic
+manual_swimming,manual_swimming_9,Blueprint,remove,物品定义使用工业合成材料 plastic
+mask_bal,,ballistic mask,remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+mask_bunker,,firefighter PBA mask (poor fit),remove,"物品定义使用工业合成材料 nomex, plastic"
+mask_filter,,filter mask,remove,物品定义使用工业合成材料 plastic
+mask_fsurvivor,,survivor firemask (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, nomex"
+mask_fsurvivorxl,,XL survivor firemask (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, nomex"
+mask_gas,,gas mask,remove,物品定义使用工业合成材料 plastic
+mask_gas_half,,half-face gas mask,remove,物品定义使用工业合成材料 plastic
+mask_gas_xl,,XL gas mask,remove,物品定义使用工业合成材料 plastic
+mask_gas_xs,,XS gas mask (too small),remove,物品定义使用工业合成材料 plastic
+mask_guy_fawkes,,Guy Fawkes mask,remove,物品定义使用工业合成材料 plastic
+mask_h20survivor,,survivor divemask (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, plastic"
+mask_hockey,,hockey mask,remove,物品定义使用工业合成材料 plastic
+mask_hsurvivor,,heavy survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_lsurvivor,,light survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_lsurvivorxl,,XL light survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_skull,,skull mask,remove,物品定义使用工业合成材料 plastic
+mask_skull,bear_plastic_mask,plastic bear mask,remove,物品定义使用工业合成材料 plastic
+mask_skull,generic_plastic_mask,plastic skull mask,remove,物品定义使用工业合成材料 plastic
+mask_skull,goblin_plastic_mask,plastic goblin mask,remove,物品定义使用工业合成材料 plastic
+mask_skull,unicorn_plastic_mask,plastic unicorn mask,remove,物品定义使用工业合成材料 plastic
+mask_skull,zombie_plastic_mask,plastic zombie mask,remove,物品定义使用工业合成材料 plastic
+mask_survivor,,survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_survivorxl,,XL survivor mask (poor fit),remove,"物品定义使用工业合成材料 kevlar_layered, plastic"
+mask_wsurvivor,,winter survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_wsurvivor_nofur,,faux fur winter survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_wsurvivorxl,,XL winter survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+mask_wsurvivorxl_nofur,,XL faux fur winter survivor mask (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+masonrysaw_off,,masonry saw (off),remove,物品定义使用工业合成材料 plastic
+mbag,,messenger bag,remove,"物品定义使用工业合成材料 nylon, plastic"
+mc_knife_rambo,,medium steel survival knife,remove,物品定义使用工业合成材料 plastic
+mdrx,,Desert Tech bullpup carbine,remove,物品定义使用工业合成材料 plastic
+mdrx,mdrx,Desert Tech MDRX,remove,物品定义使用工业合成材料 plastic
+medical_tape,,medical tape,remove,物品定义使用工业合成材料 plastic
+medium_atomic_battery_cell,,medium plutonium fuel battery,remove,工业电池
+medium_battery_cell,,medium battery,remove,工业电池
+medium_disposable_cell,,medium disposable battery,remove,工业电池
+medium_dry_cell,,medium dry battery,remove,工业电池
+medium_plus_battery_cell,,medium battery (high-capacity),remove,工业电池
+medium_propane_tank,,medium propane tank,remove,物品定义使用工业合成材料 plastic
+medium_turbine_engine,,"38L 1,900 HP gas turbine engine",remove,工业内燃、蒸汽或燃气涡轮发动机
+melchior_platter,,supercomputer platter,remove,电子元件
+melting_point,,melting point apparatus,remove,物品定义使用工业合成材料 plastic
+memory_card,,memory card,remove,物品定义使用工业合成材料 plastic
+menstrual_cup,,menstrual cup,remove,物品定义使用工业合成材料 plastic
+menstrual_pad,,menstrual pad,remove,物品定义使用工业合成材料 plastic
+methanol_fuel_cell,,methanol fuel cell UPS,remove,电子设备及运转状态
+microcentrifuge,,microcentrifuge,remove,物品定义使用工业合成材料 plastic
+microphone_xlr_generic,,XLR microphone,remove,物品定义使用工业合成材料 plastic
+microwave,,microwave,remove,物品定义使用工业合成材料 plastic
+mil_flight_suit,,military flight suit (poor fit),remove,物品定义使用工业合成材料 nomex
+military_explosive_bomb,,military explosive bomb,remove,物品定义使用工业合成材料 plastic
+miner_hat,,mining helmet,remove,物品定义使用工业合成材料 plastic
+mininuke,,SADM mininuke,remove,物品定义使用工业合成材料 nylon
+misc_repairkit,,miscellaneous repair kit,remove,物品定义使用工业合成材料 plastic
+mitresaw,,disconnected mitre saw,remove,物品定义使用工业合成材料 plastic
+mixer_music,,mixer,remove,物品定义使用工业合成材料 plastic
+mk47,,Mk47 Mutant+1,remove,物品定义使用工业合成材料 plastic
+modern_handguard,,high end hand guard,remove,物品定义使用工业合成材料 plastic
+modular_ar15,,AR-15,remove,物品定义使用工业合成材料 plastic
+modular_deagle,,Desert Eagle pistol,remove,物品定义使用工业合成材料 plastic
+modular_deagle,modular_deagle,Desert Eagle Mark XIX,remove,物品定义使用工业合成材料 plastic
+modular_deagle,modular_deagle_gold,golden Desert Eagle Mark XIX,remove,物品定义使用工业合成材料 plastic
+modular_m16a4,,M16 burst rifle+2,remove,物品定义使用工业合成材料 plastic
+modular_m16a4,modular_m16a4,M16A4,remove,物品定义使用工业合成材料 plastic
+modular_m27_assault_rifle,,M27 assault rifle+1,remove,物品定义使用工业合成材料 plastic
+modular_m27_assault_rifle,modular_h&k416a5,H&K416 A5,remove,物品定义使用工业合成材料 plastic
+modular_m27_assault_rifle,modular_m27iar,M27 IAR,remove,物品定义使用工业合成材料 plastic
+modular_m27_assault_rifle,modular_m38dmr,M38 DMR,remove,物品定义使用工业合成材料 plastic
+modular_m4_carbine,,M4 carbine+1,remove,物品定义使用工业合成材料 plastic
+modular_m4_carbine,m4_cqbr,Mk 18 CQBR,remove,物品定义使用工业合成材料 plastic
+modular_m4_carbine,modular_m4a1,M4A1,remove,物品定义使用工业合成材料 plastic
+mold_plastic,,plastic mold,remove,物品定义使用工业合成材料 plastic
+molle_large_rucksack,,MOLLE large rucksack,remove,"物品定义使用工业合成材料 nylon, plastic"
+molle_medium_rucksack,,MOLLE medium rucksack,remove,"物品定义使用工业合成材料 nylon, plastic"
+molle_pack,,MOLLE assault pack,remove,"物品定义使用工业合成材料 nylon, plastic"
+monopoly,,Capitalism,remove,物品定义使用工业合成材料 plastic
+mop_folded,,collapsible mop,remove,物品定义使用工业合成材料 plastic
+mossberg_500,,6-round combat shotgun,remove,物品定义使用工业合成材料 plastic
+mossberg_500,mossberg_500,Mossberg 500 Field,remove,物品定义使用工业合成材料 plastic
+mossberg_500,mossberg_500_security,Mossberg 500 Security,remove,物品定义使用工业合成材料 plastic
+mossberg_930,,8-round auto-loading shotgun+1,remove,物品定义使用工业合成材料 plastic
+mossberg_930,m1014,M1014,remove,物品定义使用工业合成材料 plastic
+mossberg_930,mossberg_930,Mossberg 930 SPX,remove,物品定义使用工业合成材料 plastic
+motor,,electric motor,remove,工业电机
+motor_enhanced,,enhanced electric motor,remove,工业电机
+motor_large,,large electric motor,remove,工业电机
+motor_micro,,micro electric motor,remove,物品定义使用工业合成材料 plastic
+motor_small,,small electric motor,remove,工业电机
+motor_super,,super electric motor,remove,工业电机
+motor_tiny,,tiny electric motor,remove,工业电机
+motor_train1300,,"1,300 HP electric train engine",remove,工业电机
+motorbike_armor,,motorcycle armor (poor fit),remove,"物品定义使用工业合成材料 lycra, plastic_pad"
+motorbike_boots,,pair of motorcycle boots (poor fit),remove,物品定义使用工业合成材料 kevlar
+motorbike_pants,,motorcycle jeans (poor fit),remove,"物品定义使用工业合成材料 kevlar, plastic_pad"
+mouthpiece,,protective mouthpiece (poor fit),remove,物品定义使用工业合成材料 plastic
+mp3,,mp3 player (off),remove,电子设备及运转状态
+mp3_on,,mp3 player (on),remove,电子设备及运转状态
+mp5_10_mag,,BA10 30-round magazine,remove,物品定义使用工业合成材料 plastic
+mp5_10_mag,mp5_10_mag,MP5/10 30-round magazine,remove,物品定义使用工业合成材料 plastic
+mp5mag_100rd,,MP5 100-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+mr73,,Manurhin MR 73+2,remove,物品定义使用工业合成材料 plastic
+mrad_smr,,Barrett precision rifle+3,remove,物品定义使用工业合成材料 plastic
+mrad_smr,mrad_smr,Barrett MRAD SMR,remove,物品定义使用工业合成材料 plastic
+mre_asianbeef,,Asian beef & vegetables entree (fresh),remove,现代军粮包装及其内容物
+mre_bag,,MRE bag,remove,物品定义使用工业合成材料 plastic
+mre_bag_dessert,,MRE dessert bag,remove,物品定义使用工业合成材料 plastic
+mre_bag_small,,small MRE bag,remove,物品定义使用工业合成材料 plastic
+mre_bag_spread,,MRE spread bag,remove,物品定义使用工业合成材料 plastic
+mre_bbqbeef,,BBQ beef entree (fresh),remove,现代军粮包装及其内容物
+mre_beef,,beef brisket entree (fresh),remove,现代军粮包装及其内容物
+mre_beefstew,,beef stew entree (fresh),remove,现代军粮包装及其内容物
+mre_beeftaco,,beef taco entree (fresh),remove,现代军粮包装及其内容物
+mre_cheesepizza,,cheese pizza entree (fresh),remove,现代军粮包装及其内容物
+mre_cheesetort,,cheese tortellini entree (fresh),remove,现代军粮包装及其内容物
+mre_chicken,,chicken chunks entree (fresh),remove,现代军粮包装及其内容物
+mre_chickenburritobowl,,chicken burrito bowl entree (fresh),remove,现代军粮包装及其内容物
+mre_chickennoodle,,chicken noodle entree (fresh),remove,现代军粮包装及其内容物
+mre_chickenpesto,,chicken pesto & pasta entree (fresh),remove,现代军粮包装及其内容物
+mre_chilibeans,,chili & beans entree (fresh),remove,现代军粮包装及其内容物
+mre_chilimac,,chili & macaroni entree (fresh),remove,现代军粮包装及其内容物
+mre_hashbrownbacon,,hash browns & bacon entree (fresh),remove,现代军粮包装及其内容物
+mre_hotdog,,frankfurters & beans entree (fresh),remove,现代军粮包装及其内容物
+mre_lemontuna,,lemon pepper tuna entree (fresh),remove,现代军粮包装及其内容物
+mre_lobstermedley,,lobster seafood medley entree (fresh),remove,现代军粮包装及其内容物
+mre_macaronimarinara,,macaroni & marinara entree (fresh),remove,现代军粮包装及其内容物
+mre_maplesausage,,maple sausage entree (fresh),remove,现代军粮包装及其内容物
+mre_meatball,,meatballs & marinara entree (fresh),remove,现代军粮包装及其内容物
+mre_mexicanchickenstew,,Mexican chicken stew entree (fresh),remove,现代军粮包装及其内容物
+mre_mushroomfettuccine,,mushroom fettuccine entree (fresh),remove,现代军粮包装及其内容物
+mre_package,,MRE package,remove,物品定义使用工业合成材料 plastic
+mre_pepperjackbeef,,pepper jack beef entree (fresh),remove,现代军粮包装及其内容物
+mre_pizza,,pepperoni pizza entree (fresh),remove,现代军粮包装及其内容物
+mre_ratatouille,,ratatouille entree (fresh),remove,现代军粮包装及其内容物
+mre_ravioli,,ravioli entree (fresh),remove,现代军粮包装及其内容物
+mre_sfettuccine,,spinach fettuccine entree (fresh),remove,现代军粮包装及其内容物
+mre_southwestbeef,,southwest beef & beans entree (fresh),remove,现代军粮包装及其内容物
+mre_spaghetti,,spaghetti entree (fresh),remove,现代军粮包装及其内容物
+mre_veggy,,vegetarian taco entree (fresh),remove,现代军粮包装及其内容物
+multi_cooker,,multi-cooker,remove,物品定义使用工业合成材料 plastic
+multimeter,,multimeter,remove,物品定义使用工业合成材料 plastic
+mut_longpull,,Ranged pulling implement,remove,物品定义使用工业合成材料 plastic
+mut_quills,,Assault barbs,remove,物品定义使用工业合成材料 plastic
+nailgun,,nail gun,remove,物品定义使用工业合成材料 plastic
+neoprene,,neoprene patch,remove,物品定义使用工业合成材料 neoprene
+nitrogen_tank,,nitrogen tank,remove,物品定义使用工业合成材料 plastic
+noise_emitter,,noise emitter (off),remove,电子设备及运转状态
+noise_emitter_on,,noise emitter (on),remove,电子设备及运转状态
+nomad_bodyglove_1,,nomad bodyglove (poor fit),remove,物品定义使用工业合成材料 lycra
+nomex,,Nomex patch,remove,物品定义使用工业合成材料 nomex
+nomex_gloves,,pair of flame-resistant gloves (poor fit),remove,物品定义使用工业合成材料 nomex
+nomex_hood,,flame-resistant hood (poor fit),remove,物品定义使用工业合成材料 nomex
+nomex_sockmitts,,pair of Nomex sock mitts (poor fit),remove,物品定义使用工业合成材料 nomex
+nomex_socks,,pair of flame-resistant socks (poor fit),remove,物品定义使用工业合成材料 nomex
+nomex_suit,,flame-resistant suit (poor fit),remove,物品定义使用工业合成材料 nomex
+nre_recorder,,NRE recorder,remove,电子设备及运转状态
+nylon,,synthetic fabric patch,remove,物品定义使用工业合成材料 nylon
+nylon_bag,,nylon bag,remove,物品定义使用工业合成材料 nylon
+nylon_holster,,nylon holster,remove,物品定义使用工业合成材料 nylon
+nylon_quiver,,nylon quiver,remove,物品定义使用工业合成材料 nylon
+nylon_scabbard,,nylon scabbard,remove,物品定义使用工业合成材料 nylon
+omnicamera,,security camera,remove,物品定义使用工业合成材料 plastic
+omnicamera_reinforced,,reinforced security camera,remove,物品定义使用工业合成材料 plastic
+optical_cloak,,FB51 optical cloak (poor fit) (UPS),remove,物品定义使用工业合成材料 plastic
+oxy_torch,,acetylene torch,remove,物品定义使用工业合成材料 plastic
+oxygen_concentrator,,oxygen concentrator,remove,物品定义使用工业合成材料 plastic
+oxygen_cylinder,,oxygen tank,remove,物品定义使用工业合成材料 plastic
+oxygen_tank,,oxygen delivery kit,remove,物品定义使用工业合成材料 plastic
+p226_357sig,,SIG P226,remove,物品定义使用工业合成材料 plastic
+p226_9mm,,SIG P226 MK25,remove,物品定义使用工业合成材料 plastic
+p226mag_10rd_9x19mm,,P226 9x19mm 10-round magazine,remove,物品定义使用工业合成材料 plastic
+p228mag_13rd_9x19mm,,M11 13-round magazine,remove,物品定义使用工业合成材料 plastic
+p320_357sig,,SIG P320 Compact,remove,物品定义使用工业合成材料 plastic
+p320mag_10rd_9x19mm,,service handgun 10-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_10rd_9x19mm,p320mag_10rd_9x19mm,M17 10-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_13rd_357sig,,P320 .357 SIG 13-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_17rd_9x19mm,,service handgun 17-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_17rd_9x19mm,p320mag_17rd_9x19mm,M17 17-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_21rd_9x19mm,,service handgun 21-round magazine,remove,物品定义使用工业合成材料 plastic
+p320mag_21rd_9x19mm,p320mag_21rd_9x19mm,M17 21-round magazine,remove,物品定义使用工业合成材料 plastic
+p50,,high-capacity 5.7mm handgun,remove,物品定义使用工业合成材料 plastic
+p50,p50,Kel-Tec P50,remove,物品定义使用工业合成材料 plastic
+paint_can_plastic,,plastic paint can,remove,物品定义使用工业合成材料 plastic
+paintball,,paintball,remove,物品定义使用工业合成材料 plastic
+paintballgun,,paintball gun,remove,物品定义使用工业合成材料 plastic
+pants_army,,army pants (poor fit),remove,物品定义使用工业合成材料 nylon
+pants_hiking,,hiking pants (poor fit),remove,物品定义使用工业合成材料 nylon
+pants_survivor,,survivor cargo pants (poor fit),remove,物品定义使用工业合成材料 kevlar
+pants_tactical,,tactical pants (poor fit),remove,物品定义使用工业合成材料 nylon
+pants_tactical,tactical_pants_black,black-camo tactical pants,remove,物品定义使用工业合成材料 nylon
+pants_tactical,tactical_pants_coyote,coyote tactical pants,remove,物品定义使用工业合成材料 nylon
+pants_tactical,tactical_pants_desert,desert-camo tactical pants,remove,物品定义使用工业合成材料 nylon
+pants_tactical,tactical_pants_green,olive-drab tactical pants,remove,物品定义使用工业合成材料 nylon
+pants_tactical,tactical_pants_grey,wolf tactical pants,remove,物品定义使用工业合成材料 nylon
+parachute_mil,,military parachute,remove,物品定义使用工业合成材料 nylon
+peeler,,vegetable peeler,remove,物品定义使用工业合成材料 plastic
+permanent_marker,,permanent marker,remove,物品定义使用工业合成材料 plastic
+pet_carrier,,pet carrier,remove,物品定义使用工业合成材料 plastic
+petpack,,petpack,remove,"物品定义使用工业合成材料 nylon, plastic"
+ph_meter,,pH meter,remove,物品定义使用工业合成材料 plastic
+pictionary,,Picturesque,remove,物品定义使用工业合成材料 plastic
+pike_pole,,pike pole,remove,物品定义使用工业合成材料 fiberglass
+pilot_light,,pilot light,remove,物品定义使用工业合成材料 plastic
+pine_bough,,pine bough,keep,自然资源、果实及基础材料
+pinecone,,pinecone,keep,自然资源、果实及基础材料
+pipe_launcher40mm,,40mm pipe launcher,remove,物品定义使用工业合成材料 plastic
+pistol_stock,,pistol stock,remove,物品定义使用工业合成材料 plastic
+plant_fibre,,plant fiber,keep,自然资源、果实及基础材料
+plasma_gun,,PPA-5,remove,物品定义使用工业合成材料 plastic
+plastic_bag_vac,,vacuum-packed bag,remove,物品定义使用工业合成材料 plastic
+plastic_boat_hull,,plastic boat hull,remove,物品定义使用工业合成材料 plastic
+plastic_bucket,,plastic tub,remove,物品定义使用工业合成材料 plastic
+plastic_chin_guard,,plastic chin guard,remove,物品定义使用工业合成材料 plastic
+plastic_chunk,,plastic chunk,remove,物品定义使用工业合成材料 plastic
+plastic_jack_o_lantern,,plastic jack o'lantern,remove,物品定义使用工业合成材料 plastic
+plastic_jack_o_lantern_lit,,spooky plastic jack o'lantern,remove,物品定义使用工业合成材料 plastic
+plastic_mandible_guard,,plastic mandible guard,remove,物品定义使用工业合成材料 plastic
+plastic_pot_flower,,plastic flower pot,remove,物品定义使用工业合成材料 plastic
+plastic_sheet,,large plastic sheet,remove,物品定义使用工业合成材料 plastic
+plastic_sheet_small,,plastic sheet,remove,物品定义使用工业合成材料 plastic
+plastic_shopping_bag,,plastic shopping bag,remove,物品定义使用工业合成材料 plastic
+plastic_six_dice,,plastic die,remove,物品定义使用工业合成材料 plastic
+plastichoboreel,,plastic hand fishing reel,remove,物品定义使用工业合成材料 plastic
+plastron_plastic,,plastic chest protector,remove,物品定义使用工业合成材料 plastic
+plectrum,,plectrum,remove,物品定义使用工业合成材料 plastic
+plr16,,Rifle caliber pistol,remove,物品定义使用工业合成材料 plastic
+plr16,plr16,Kel-Tec PLR16,remove,物品定义使用工业合成材料 plastic
+plunger_futuristic,,professional plunger,remove,物品定义使用工业合成材料 plastic
+pockknife,,pocket knife,remove,物品定义使用工业合成材料 plastic
+pointy_stick,,pointy stick,keep,已在荒野开局或第一项基础制作使用
+polaroid_photo,,polaroid photo,remove,物品定义使用工业合成材料 plastic
+polesaw_off,,polesaw (off),remove,物品定义使用工业合成材料 plastic
+polisher,,electric polisher,remove,物品定义使用工业合成材料 plastic
+polycarbonate_sheet,,polycarbonate sheet,remove,物品定义使用工业合成材料 plastic
+pom_poms,,pair of pom poms,remove,物品定义使用工业合成材料 plastic
+poncho_makeshift,,makeshift poncho,remove,物品定义使用工业合成材料 plastic
+pool_ball,,pool ball,remove,物品定义使用工业合成材料 plastic
+poppirate,,Pop-up Pirate,remove,物品定义使用工业合成材料 plastic
+portable_game,,handheld game system,remove,电子设备及运转状态
+portal,,portal generator,remove,物品定义使用工业合成材料 plastic
+postman_hat,,mail carrier hat,remove,物品定义使用工业合成材料 plastic
+pouch_autoclave,,autoclave pouch,remove,物品定义使用工业合成材料 plastic
+power_armor_basic,,combat exoskeleton,remove,动力装甲及其部件
+power_armor_basic_on,,combat exoskeleton (on) (UPS),remove,动力装甲及其部件
+power_armor_frame,,power armor hauling frame,remove,动力装甲及其部件
+power_armor_generator,,power armor generator frame,remove,动力装甲及其部件
+power_armor_heavy,,heavy combat exoskeleton,remove,动力装甲及其部件
+power_armor_heavy_on,,heavy combat exoskeleton (on) (UPS),remove,动力装甲及其部件
+power_armor_helmet_basic,,environmental combat helmet,remove,动力装甲及其部件
+power_armor_helmet_basic_on,,environmental combat helmet (on) (UPS),remove,动力装甲及其部件
+power_armor_helmet_heavy,,heavy environmental combat helmet,remove,动力装甲及其部件
+power_armor_helmet_heavy_on,,heavy environmental combat helmet (on) (UPS),remove,动力装甲及其部件
+power_armor_helmet_light,,light environmental combat helmet,remove,动力装甲及其部件
+power_armor_helmet_light_on,,light environmental combat helmet (on) (UPS),remove,动力装甲及其部件
+power_armor_light,,field combat exoskeleton,remove,动力装甲及其部件
+power_armor_light_on,,field combat exoskeleton (on) (UPS),remove,动力装甲及其部件
+power_cord,,power cord,remove,物品定义使用工业合成材料 plastic
+power_supply,,power converter,remove,物品定义使用工业合成材料 plastic
+powered_earmuffs,,shooter's earmuffs,remove,物品定义使用工业合成材料 plastic
+powered_earmuffs_on,,shooter's earmuffs,remove,物品定义使用工业合成材料 plastic
+powered_earplugs,,shooter's ear plugs (UPS),remove,物品定义使用工业合成材料 plastic
+press,,hand press,remove,物品定义使用工业合成材料 plastic
+press_dowel,,makeshift shotshell 'press',remove,物品定义使用工业合成材料 plastic
+pressure_tank,,pressurized tank,remove,物品定义使用工业合成材料 plastic
+primitive_knife,,stone knife,keep,已在荒野开局或第一项基础制作使用
+processor,,processor board,remove,物品定义使用工业合成材料 plastic
+propane_torch,,propane torch,remove,物品定义使用工业合成材料 plastic
+prophylactic_antivenom,,injectable prophylactic antivenom,remove,物品定义使用工业合成材料 plastic
+puller,,kinetic bullet puller,remove,物品定义使用工业合成材料 plastic
+pumpkin_mask,,pumpkin mask,remove,物品定义使用工业合成材料 plastic
+purifier_smart_shot,,purifier smart shot,remove,物品定义使用工业合成材料 plastic
+px4,,Beretta Px4 Storm,remove,物品定义使用工业合成材料 plastic
+px4_40,,Beretta Px4 Storm .40 S&W,remove,物品定义使用工业合成材料 plastic
+quad_rotors,,set of rotors,remove,物品定义使用工业合成材料 plastic
+rack_test_tube,,test tube rack,remove,物品定义使用工业合成材料 plastic
+rack_test_tube_micro,,microcentrifuge tube tray,remove,物品定义使用工业合成材料 plastic
+rad_badge,,radiation badge,remove,物品定义使用工业合成材料 plastic
+rad_monitor,,radiation biomonitor,remove,物品定义使用工业合成材料 plastic
+radio,,radio (off),remove,物品定义使用工业合成材料 plastic
+radio_car,,RC car,remove,物品定义使用工业合成材料 plastic
+radio_pouch,,tactical radio pouch,remove,物品定义使用工业合成材料 nylon
+radio_repeater_mod,,radio repeater mod,remove,物品定义使用工业合成材料 plastic
+radiocontrol,,RC control,remove,物品定义使用工业合成材料 plastic
+raging_bull,,Taurus Raging Bull,remove,物品定义使用工业合成材料 plastic
+ragpouch,,pouch,keep,已在荒野开局或第一项基础制作使用
+rail_laser_sight,,rail laser sight,remove,物品定义使用工业合成材料 plastic
+rail_mount,,side mount,remove,物品定义使用工业合成材料 plastic
+rake_plastic,,plastic rake,remove,物品定义使用工业合成材料 plastic
+rashguard,,rashguard shirt (poor fit),remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,black_rashguard_shirt,black rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,blue_rashguard_shirt,blue rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,camo_rashguard_shirt,camo rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,flag_rashguard_shirt,flag rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,floral_rashguard_shirt,floral rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,gothic_rashguard_shirt,gothic rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,jungle_rashguard_shirt,jungle rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,lifeguard_rashguard_shirt,lifeguard rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,pink_rashguard_shirt,pink rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,red_rashguard_shirt,red rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,skull_rashguard_shirt,skull rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,tropical_rashguard_shirt,tropical rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+rashguard,white_rashguard_shirt,white rashguard shirt,remove,"物品定义使用工业合成材料 lycra, nylon"
+razor_shaving,,shaving razor,remove,物品定义使用工业合成材料 plastic
+rdb_223,,5.56x45mm bullpup rifle,remove,物品定义使用工业合成材料 plastic
+rdb_223,rdb_223,Kel-Tec RDB,remove,物品定义使用工业合成材料 plastic
+reading_light,,reading light,remove,物品定义使用工业合成材料 plastic
+rebreather,,rebreather mask,remove,物品定义使用工业合成材料 plastic
+rebreather_on,,rebreather mask (on),remove,物品定义使用工业合成材料 plastic
+rebreather_xl,,XL rebreather mask,remove,物品定义使用工业合成材料 plastic
+rebreather_xl_on,,XL rebreather mask (on),remove,物品定义使用工业合成材料 plastic
+rebreather_xs,,XS rebreather mask (too small),remove,物品定义使用工业合成材料 plastic
+receiver,,signal receiver,remove,物品定义使用工业合成材料 plastic
+recharge_station,,recharging station,remove,物品定义使用工业合成材料 plastic
+recipe_bullets,,The Handloader's Helper,remove,物品定义使用工业合成材料 plastic
+recipe_caseless,,Rivtech design binder,remove,物品定义使用工业合成材料 plastic
+recipe_elfa,,standpipe maintenance log,remove,物品定义使用工业合成材料 plastic
+recipe_lab_elec,,lab journal-Herrera,remove,物品定义使用工业合成材料 plastic
+recipe_labchem,,chemical reference-CLASSIFIED,remove,物品定义使用工业合成材料 plastic
+recipe_maiar,,lab journal-x-|xp,remove,物品定义使用工业合成材料 plastic
+recipe_medicalmut,,"PE023 ""Medical"": Application and Findings",remove,物品定义使用工业合成材料 plastic
+recipe_mil_augs,,2XI design binder-CLASSIFIED,remove,物品定义使用工业合成材料 plastic
+recipe_serum,,Best Practices for Compound Delivery,remove,物品定义使用工业合成材料 plastic
+reciprocating_saw,,reciprocating saw,remove,物品定义使用工业合成材料 plastic
+recoil_stock,,recoil stock,remove,物品定义使用工业合成材料 plastic
+recon_mech_laser,,RMES marksman system,remove,物品定义使用工业合成材料 plastic
+record_accounting,,corporate accounting ledger,remove,物品定义使用工业合成材料 plastic
+recurbow,,modern recurve bow,remove,物品定义使用工业合成材料 fiberglass
+red_dot_sight,,red dot sight,remove,物品定义使用工业合成材料 plastic
+red_pen,,red pen,remove,物品定义使用工业合成材料 plastic
+ref_lighter_butane,,refillable butane lighter,remove,物品定义使用工业合成材料 plastic
+remington_700,,Remington 700 .30-06,remove,物品定义使用工业合成材料 plastic
+remington_870,,5-round hunting shotgun,remove,物品定义使用工业合成材料 plastic
+remington_870,browning_a5,Browning Auto 5,remove,物品定义使用工业合成材料 plastic
+remington_870,ithaca37,Ithaca M37 Featherlight,remove,物品定义使用工业合成材料 plastic
+remington_870,remington_1100,Remington 1100 competition,remove,物品定义使用工业合成材料 plastic
+remington_870,remington_870,Remington 870 Wingmaster,remove,物品定义使用工业合成材料 plastic
+remotevehcontrol,,remote vehicle controller,remove,物品定义使用工业合成材料 plastic
+retool_ar15_223rem,,mid-length .223 upper receiver,remove,物品定义使用工业合成材料 plastic
+retool_ar15_300blk,,mid-length .300BLK upper receiver,remove,物品定义使用工业合成材料 plastic
+retool_ar15_450,,rifle .450 upper receiver,remove,物品定义使用工业合成材料 plastic
+retool_ar15_50beowulf,,rifle 12.7x42mm upper receiver,remove,物品定义使用工业合成材料 plastic
+retool_ar15_762,,7.62x39mm upper receiver,remove,物品定义使用工业合成材料 plastic
+retool_mdrx_223rem,,MDRX .223 extended-assembly,remove,物品定义使用工业合成材料 plastic
+retool_mdrx_300blk,,MDRX .300BLK standard-assembly,remove,物品定义使用工业合成材料 plastic
+retool_mdrx_308win,,MDRX .308 extended-assembly,remove,物品定义使用工业合成材料 plastic
+rfb_308,,7.62x51mm bullpup rifle,remove,物品定义使用工业合成材料 plastic
+rfb_308,rfb_308,Kel-Tec RFB,remove,物品定义使用工业合成材料 plastic
+rigid_kevlar_plate,,rigid Kevlar plate,remove,物品定义使用工业合成材料 kevlar_rigid
+rigid_plastic_sheet,,rigid plastic sheet,remove,物品定义使用工业合成材料 plastic
+robofac10,,HWP 10-round shotgun magazine,remove,物品定义使用工业合成材料 plastic
+robofac100,,HWP 100-round 5.56 double drum magazine,remove,物品定义使用工业合成材料 plastic
+robofac20,,HWP 20-round 7.62 magazine,remove,物品定义使用工业合成材料 plastic
+robofac30,,HWP 30-round shotgun drum magazine,remove,物品定义使用工业合成材料 plastic
+robofac40,,HWP 40-round 5.56 magazine,remove,物品定义使用工业合成材料 plastic
+robofac50,,HWP 50-round 7.62 drum magazine,remove,物品定义使用工业合成材料 plastic
+robofac60,,HWP 60-round 9mm helical magazine,remove,物品定义使用工业合成材料 plastic
+robofac60_123ln,,HWP 60-round 12.3 magazine,remove,物品定义使用工业合成材料 plastic
+robofac_armor_anchor,,Hub 01 modular defense anchor (poor fit),remove,"物品定义使用工业合成材料 kevlar, nylon"
+robofac_armor_rig,,Hub 01 modular defense system (poor fit),remove,"物品定义使用工业合成材料 kevlar, nylon"
+robofac_basic_greaves,,pair of Hub 01 prototype greaves,remove,物品定义使用工业合成材料 plastic
+robofac_basic_helmet,,Hub 01 prototype helmet,remove,物品定义使用工业合成材料 plastic
+robofac_basic_mantle,,Hub 01 prototype mantle,remove,物品定义使用工业合成材料 plastic
+robofac_basic_skirt,,Hub 01 prototype skirt,remove,物品定义使用工业合成材料 plastic
+robofac_basic_vambraces,,pair of Hub 01 prototype vambraces,remove,物品定义使用工业合成材料 plastic
+robofac_enviro_suit,,Hub 01 environmental suit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nomex, vinyl"
+robofac_gun,,Hub 01 HWP+5,remove,物品定义使用工业合成材料 plastic
+robofac_gun_40mm,,Hub 01 FSP+4,remove,物品定义使用工业合成材料 plastic
+robofac_gun_40mm_10rd,,FSP 10-round 40x46 magazine,remove,物品定义使用工业合成材料 plastic
+robofac_gun_40mm_3rd,,FSP 3-round 40x46 magazine,remove,物品定义使用工业合成材料 plastic
+robofac_gun_40mm_5rd,,FSP 5-round 40x46 magazine,remove,物品定义使用工业合成材料 plastic
+robofac_gun_kit,,Hub 01 HWP maintenance kit,remove,"物品定义使用工业合成材料 nylon, plastic"
+robofac_head_rig,,Hub 01 modular recon headgear (poor fit),remove,"物品定义使用工业合成材料 kevlar, nylon"
+robofac_kevlar_greaves,,pair of Hub 01 ballistic greaves,remove,"物品定义使用工业合成材料 kevlar, plastic"
+robofac_kevlar_helmet,,Hub 01 ballistic helmet,remove,"物品定义使用工业合成材料 kevlar, plastic"
+robofac_kevlar_mantle,,Hub 01 ballistic mantle,remove,"物品定义使用工业合成材料 kevlar, plastic"
+robofac_kevlar_skirt,,Hub 01 ballistic skirt,remove,"物品定义使用工业合成材料 kevlar, plastic"
+robofac_kevlar_vambraces,,pair of Hub 01 ballistic vambraces,remove,"物品定义使用工业合成材料 kevlar, plastic"
+robofac_military_greaves,,pair of Hub 01 soldier greaves,remove,物品定义使用工业合成材料 kevlar_rigid
+robofac_military_helmet,,Hub 01 soldier helmet,remove,物品定义使用工业合成材料 kevlar_rigid
+robofac_military_mantle,,Hub 01 soldier mantle,remove,物品定义使用工业合成材料 kevlar_rigid
+robofac_military_skirt,,Hub 01 soldier skirt,remove,物品定义使用工业合成材料 kevlar_rigid
+robofac_military_vambraces,,pair of Hub 01 soldier vambraces,remove,物品定义使用工业合成材料 kevlar_rigid
+robofac_nomex_greaves,,pair of Hub 01 turnout greaves,remove,"物品定义使用工业合成材料 nomex, plastic"
+robofac_nomex_helmet,,Hub 01 turnout helmet,remove,"物品定义使用工业合成材料 nomex, plastic"
+robofac_nomex_mantle,,Hub 01 turnout mantle,remove,"物品定义使用工业合成材料 nomex, plastic"
+robofac_nomex_skirt,,Hub 01 turnout skirt,remove,"物品定义使用工业合成材料 nomex, plastic"
+robofac_nomex_vambraces,,pair of Hub 01 turnout vambraces,remove,"物品定义使用工业合成材料 nomex, plastic"
+robofac_rubber_greaves,,pair of Hub 01 kinetic greaves,remove,物品定义使用工业合成材料 plastic
+robofac_rubber_helmet,,Hub 01 kinetic helmet,remove,物品定义使用工业合成材料 plastic
+robofac_rubber_mantle,,Hub 01 kinetic mantle,remove,物品定义使用工业合成材料 plastic
+robofac_rubber_skirt,,Hub 01 kinetic skirt,remove,物品定义使用工业合成材料 plastic
+robofac_rubber_vambraces,,pair of Hub 01 kinetic vambraces,remove,物品定义使用工业合成材料 plastic
+robofac_yrax_deactivation_manual,,trifacet handling procedures,remove,物品定义使用工业合成材料 plastic
+robofacmultimag,,HWP 40/50-round 4.6/5.7 magazine,remove,物品定义使用工业合成材料 plastic
+rock,,rock,keep,自然资源、果实及基础材料
+rock_flaking,,flaking rock,keep,自然资源、果实及基础材料
+rock_large,,large rock,keep,自然资源、果实及基础材料
+roller_blades,,pair of rollerblades (poor fit),remove,物品定义使用工业合成材料 plastic
+rollmat,,rollmat,remove,物品定义使用工业合成材料 plastic
+rpk74mag,,AK-74M 45-round magazine,remove,物品定义使用工业合成材料 plastic
+rubber_armor_cow,,cow rain sheet,remove,"物品定义使用工业合成材料 neoprene, plastic"
+rubber_armor_horse,,horse rain sheet,remove,"物品定义使用工业合成材料 neoprene, plastic"
+rubber_band,,rubber band,remove,物品定义使用工业合成材料 plastic
+rubber_cement,,rubber cement,remove,物品定义使用工业合成材料 plastic
+rubber_harness_dog,,rubber dog rainsuit,remove,"物品定义使用工业合成材料 neoprene, plastic"
+rubber_slug,,rubber slug,remove,物品定义使用工业合成材料 plastic
+rucksack,,military rucksack,remove,"物品定义使用工业合成材料 nylon, plastic"
+ruger_57,,Ruger-57 handgun,remove,物品定义使用工业合成材料 plastic
+ruger_57,ruger_57,Ruger-57,remove,物品定义使用工业合成材料 plastic
+ruger_arr,,Ruger American Ranch Rifle,remove,物品定义使用工业合成材料 plastic
+ruger_arr_mag,,Ruger American Rifle 3-round magazine,remove,物品定义使用工业合成材料 plastic
+ruger_lcr_38,,Ruger LCR .38,remove,物品定义使用工业合成材料 plastic
+ruger_m77,,Ruger Guide rifle,remove,物品定义使用工业合成材料 plastic
+ruger_m77,ruger_m77,Ruger M77 Hawkeye,remove,物品定义使用工业合成材料 plastic
+ruger_pr,,Ruger Precision Rifle+3,remove,物品定义使用工业合成材料 plastic
+rugerlcp,,Ruger LCP,remove,物品定义使用工业合成材料 plastic
+ruler,,ruler,remove,物品定义使用工业合成材料 plastic
+runner_bag,,runner pack,remove,物品定义使用工业合成材料 plastic
+rx11_stimpack,,RX11 stimulant delivery system,remove,物品定义使用工业合成材料 kevlar_rigid
+saddle,,saddle,remove,物品定义使用工业合成材料 plastic
+saiga10mag,,10-round assault shotgun magazine,remove,物品定义使用工业合成材料 plastic
+saiga10mag,saiga10mag,Saiga-12 10-round magazine,remove,物品定义使用工业合成材料 plastic
+saiga30mag,,30-round assault shotgun magazine,remove,物品定义使用工业合成材料 plastic
+saiga30mag,saiga30mag,Saiga-12 30-round drum magazine,remove,物品定义使用工业合成材料 plastic
+saiga410mag_10rd,,Saiga-410 10-round magazine,remove,物品定义使用工业合成材料 plastic
+saiga410mag_30rd,,Saiga-410 30-round drum magazine,remove,物品定义使用工业合成材料 plastic
+saiga_12,,assault shotgun,remove,物品定义使用工业合成材料 plastic
+saiga_12,saiga_12,Saiga-12,remove,物品定义使用工业合成材料 plastic
+saiga_410,,Saiga-410,remove,物品定义使用工业合成材料 plastic
+sandbox_kit,,sandbox kit,remove,物品定义使用工业合成材料 plastic
+sausage_casings_artificial,,artificial sausage casing,remove,物品定义使用工业合成材料 plastic
+savage_111f,,Savage 111F,remove,物品定义使用工业合成材料 plastic
+scar_l,,FN SCAR-L+1,remove,物品定义使用工业合成材料 plastic
+scissors,,pair of office scissors,remove,物品定义使用工业合成材料 plastic
+scissors_child,,pair of kiddie scissors,remove,物品定义使用工业合成材料 plastic
+scissors_wavy,,pair of wavy scissors,remove,物品定义使用工业合成材料 plastic
+scout_bipod,,integral polymer bipod,remove,物品定义使用工业合成材料 plastic
+scout_stock,,hollow polymer stock,remove,物品定义使用工业合成材料 plastic
+scrambler,,scrambler grenade,remove,物品定义使用工业合成材料 plastic
+scrambler_act,,active scrambler grenade,remove,物品定义使用工业合成材料 plastic
+scrap_carpet,,scraps of carpet,remove,物品定义使用工业合成材料 plastic
+scrap_kevlar,,Kevlar scraps,remove,物品定义使用工业合成材料 kevlar
+scrap_lycra,,Lycra scraps,remove,物品定义使用工业合成材料 lycra
+scrap_neoprene,,neoprene scraps,remove,物品定义使用工业合成材料 neoprene
+scrap_nomex,,Nomex scraps,remove,物品定义使用工业合成材料 nomex
+scrap_nylon,,synthetic fabric scraps,remove,物品定义使用工业合成材料 nylon
+screen_mesh,,mesh screen,remove,物品定义使用工业合成材料 plastic
+screwdriver,,screwdriver,remove,物品定义使用工业合成材料 plastic
+screwdriver_set,,screwdriver set,remove,物品定义使用工业合成材料 plastic
+scuba_tank,,diving cylinder,remove,物品定义使用工业合成材料 plastic
+scuba_tank_on,,diving cylinder (on),remove,物品定义使用工业合成材料 plastic
+scythe_toy,,grim reaper's scythe,remove,物品定义使用工业合成材料 plastic
+seatbelt,,seat belt,remove,物品定义使用工业合成材料 nylon
+sewing_kit,,sewing kit,remove,物品定义使用工业合成材料 plastic
+sextant,,sextant,remove,物品定义使用工业合成材料 plastic
+sharp_rock,,sharp rock,keep,自然资源、果实及基础材料
+sharp_toothbrush,,plastic shank,remove,物品定义使用工业合成材料 plastic
+sharpener,,pencil sharpener,remove,物品定义使用工业合成材料 plastic
+shavingkit,,shaving kit,remove,物品定义使用工业合成材料 plastic
+shears,,shears,remove,物品定义使用工业合成材料 plastic
+sheet_kevlar,,Kevlar sheet,remove,物品定义使用工业合成材料 kevlar
+sheet_kevlar_layered,,ballistic Kevlar panel,remove,物品定义使用工业合成材料 kevlar_layered
+sheet_kevlar_patchwork,,patchwork Kevlar sheet,remove,物品定义使用工业合成材料 kevlar
+sheet_lycra,,Lycra sheet,remove,物品定义使用工业合成材料 lycra
+sheet_neoprene,,neoprene sheet,remove,物品定义使用工业合成材料 neoprene
+sheet_nomex,,Nomex sheet,remove,物品定义使用工业合成材料 nomex
+sheet_nylon,,synthetic fabric sheet,remove,物品定义使用工业合成材料 nylon
+shield_visor,,shield visor,remove,物品定义使用工业合成材料 plastic
+shocktonfa_off,,tactical tonfa (off),remove,物品定义使用工业合成材料 plastic
+shot_hull,,shotgun hull,remove,物品定义使用工业合成材料 plastic
+shot_speedloader6,,shotgun 6-round speedloader,remove,物品定义使用工业合成材料 plastic
+shot_speedloader8,,shotgun 8-round speedloader,remove,物品定义使用工业合成材料 plastic
+shoulder_strap,,adjustable sling,remove,物品定义使用工业合成材料 nylon
+shovel_snow_plastic,,plastic snow shovel,remove,物品定义使用工业合成材料 plastic
+shrink_wrap,,shrink wrapping,remove,物品定义使用工业合成材料 plastic
+shuttlecock,,badminton shuttlecock,remove,物品定义使用工业合成材料 plastic
+side_nylon_double_holster,,nylon side-by-side double holster,remove,物品定义使用工业合成材料 nylon
+sig40mag,,SIG Pro .40 12-round magazine,remove,物品定义使用工业合成材料 plastic
+sig_40,,SIG Pro .40,remove,物品定义使用工业合成材料 plastic
+sig_assault_rifle,,SIG assault rifle+1,remove,物品定义使用工业合成材料 plastic
+sig_assault_rifle,sig553,SIG 553,remove,物品定义使用工业合成材料 plastic
+sig_mosquito,,SIG training pistol,remove,物品定义使用工业合成材料 plastic
+sig_mosquito,sig_mosquito,SIG Mosquito,remove,物品定义使用工业合成材料 plastic
+sights_mount,,sights mount,remove,物品定义使用工业合成材料 plastic
+sights_mount_launcher,,launcher sights mount,remove,物品定义使用工业合成材料 plastic
+sights_mount_pistol,,pistol sights mount,remove,物品定义使用工业合成材料 plastic
+signal_flare,,signal flare,remove,物品定义使用工业合成材料 plastic
+single_sling,,single point sling,remove,物品定义使用工业合成材料 nylon
+sinister_cane,,sinister cane,remove,物品定义使用工业合成材料 plastic
+ski_jacket,,ski jacket (poor fit),remove,物品定义使用工业合成材料 plastic
+sleeping_bag_improvised,,improvised sleeping bag,remove,物品定义使用工业合成材料 plastic
+sleeveless_duster_survivor,,sleeveless survivor duster (poor fit),remove,物品定义使用工业合成材料 kevlar
+sleeveless_trenchcoat_survivor,,sleeveless survivor trenchcoat (poor fit),remove,物品定义使用工业合成材料 kevlar
+sling-ready_grenade,,sling-ready grenade,remove,物品定义使用工业合成材料 plastic
+slingpack,,sling pack,remove,"物品定义使用工业合成材料 nylon, plastic"
+sm_extinguisher,,small fire extinguisher,remove,物品定义使用工业合成材料 plastic
+small_lcd_screen,,small LCD screen,remove,物品定义使用工业合成材料 plastic
+small_lighter,,mini lighter,remove,物品定义使用工业合成材料 plastic
+small_propane_tank,,small propane tank,remove,物品定义使用工业合成材料 plastic
+small_repairkit,,firearm repair kit,remove,物品定义使用工业合成材料 plastic
+small_scuba_tank,,small diving cylinder,remove,物品定义使用工业合成材料 plastic
+small_scuba_tank_on,,small diving cylinder (on),remove,物品定义使用工业合成材料 plastic
+small_turbine_engine,,"27L 1,350 HP gas turbine engine",remove,工业内燃、蒸汽或燃气涡轮发动机
+smart_lamp,,smart lamp (off),remove,物品定义使用工业合成材料 plastic
+smart_phone,,smartphone (UPS),remove,电子设备及运转状态
+smart_phone_flashlight,,smartphone - Flashlight (UPS),remove,电子设备及运转状态
+smart_watch,,smart watch (UPS),remove,物品定义使用工业合成材料 plastic
+smartphone_music,,smartphone - music (UPS),remove,电子设备及运转状态
+smoxygen_tank,,small oxygen delivery kit,remove,物品定义使用工业合成材料 plastic
+sneakers_steel,,pair of steeltoed sneakers (poor fit),remove,物品定义使用工业合成材料 plastic
+socket_screwdriver_set,,socket screwdriver set,remove,物品定义使用工业合成材料 plastic
+socket_wrench_set,,socket wrench set,remove,物品定义使用工业合成材料 plastic
+socks_bag,,pair of bag socks,remove,物品定义使用工业合成材料 plastic
+soft_3a_vest,,soft armor vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+soft_3a_vest,press_armor_vest,press ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+soft_3a_vest,security_armor_vest,security ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+soldering_iron,,soldering iron,remove,物品定义使用工业合成材料 plastic
+sp2022,,SIG Pro SP2022 9mm,remove,物品定义使用工业合成材料 plastic
+speargun,,speargun,remove,物品定义使用工业合成材料 plastic
+spectrophotometer,,spectrophotometer,remove,物品定义使用工业合成材料 plastic
+speedo,,speedo (poor fit),remove,"物品定义使用工业合成材料 lycra, nylon"
+splinter,,splintered wood,keep,自然资源、果实及基础材料
+sponge,,sponge,remove,物品定义使用工业合成材料 plastic
+sports_bra,,sports bra (poor fit),remove,物品定义使用工业合成材料 lycra
+squeeze_tube,,10.1 ounce squeeze tube,remove,物品定义使用工业合成材料 plastic
+squeeze_tube_small,,2.8 ounce squeeze tube,remove,物品定义使用工业合成材料 plastic
+stab_plate,,soft stab panel,remove,"物品定义使用工业合成材料 kevlar, nylon"
+stab_vest,,stab vest,remove,"物品定义使用工业合成材料 kevlar, nylon"
+stab_vest,airsoft_stab_vest,airsoft vest,remove,"物品定义使用工业合成材料 kevlar, nylon"
+stab_vest,security_stab_vest,security stab vest,remove,"物品定义使用工业合成材料 kevlar, nylon"
+stabilizer,,gyroscopic stabilizer,remove,物品定义使用工业合成材料 plastic
+stanag100drum,,STANAG 100-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+stanag150,,STANAG 150-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+stanag40,,STANAG 40-round magazine,remove,物品定义使用工业合成材料 plastic
+stanag40ranger,,STANAG 40-round magazine with ranger plate,remove,物品定义使用工业合成材料 plastic
+stanag60drum,,STANAG 60-round drum magazine,remove,物品定义使用工业合成材料 plastic
+stanag90,,STANAG 90-round snail drum magazine,remove,物品定义使用工业合成材料 plastic
+stand_flyer,,flyer stand,remove,物品定义使用工业合成材料 plastic
+stand_ring_clamps,,set of ring stand clamps,remove,物品定义使用工业合成材料 plastic
+standard_template_construct,,nanofabricator template (UPS (off)),remove,物品定义使用工业合成材料 plastic
+standing_directed_floodlight,,disconnected standing directed floodlight,remove,物品定义使用工业合成材料 plastic
+standing_floodlight,,disconnected standing floodlight,remove,物品定义使用工业合成材料 plastic
+standing_lamp,,disconnected standing lamp,remove,物品定义使用工业合成材料 plastic
+stapler,,stapler,remove,物品定义使用工业合成材料 plastic
+steam_triple_medium,,medium steam engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+steam_triple_small,,small steam engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+steam_watts_small,,makeshift steam engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+steel_ballistic_plate,,steel ballistic plate,remove,物品定义使用工业合成材料 nylon
+stethoscope,,stethoscope,remove,物品定义使用工业合成材料 plastic
+steyr_aug,,AUG assault rifle+1,remove,物品定义使用工业合成材料 plastic
+steyr_aug,steyr_aug,Steyr AUG,remove,物品定义使用工业合成材料 plastic
+steyr_scout,,scouting rifle+3,remove,物品定义使用工业合成材料 plastic
+steyr_scout,steyr_scout,Steyr Scout rifle,remove,物品定义使用工业合成材料 plastic
+stick,,stick,keep,自然资源、果实及基础材料
+stillsuit,,WS-47G moisture retention suit (poor fit),remove,"物品定义使用工业合成材料 lycra, neoprene"
+stopcock,,plastic stopcock,remove,物品定义使用工业合成材料 plastic
+storage_battery,,large storage battery,remove,物品定义使用工业合成材料 plastic
+storage_line,,storage line,remove,物品定义使用工业合成材料 nylon
+straw_pile,,pile of straw,keep,自然资源、果实及基础材料
+string_floss,,dental floss,remove,物品定义使用工业合成材料 plastic
+styrofoam_cup,,styrofoam cup,remove,物品定义使用工业合成材料 plastic
+sub2000_folding_mechanism,,integral folding mechanism,remove,物品定义使用工业合成材料 plastic
+sub2000_folding_mechanism_folded,,integral folding mechanism (folded)),remove,物品定义使用工业合成材料 plastic
+subsuit_xl,,subject suit (poor fit),remove,物品定义使用工业合成材料 plastic
+suitcase_l,,suitcase,remove,物品定义使用工业合成材料 plastic
+sun_shield,,sun shield,remove,物品定义使用工业合成材料 plastic
+sunglasses,,pair of sunglasses,remove,物品定义使用工业合成材料 plastic
+sunglasses_bifocal,,pair of bifocal sunglasses,remove,物品定义使用工业合成材料 plastic
+sunglasses_eye,,pair of corrective sunglasses,remove,物品定义使用工业合成材料 plastic
+sunglasses_reading,,pair of reading sunglasses,remove,物品定义使用工业合成材料 plastic
+superglue,,superglue,remove,物品定义使用工业合成材料 plastic
+survivor_dry_bag,,survivor dry bag,remove,"物品定义使用工业合成材料 nylon, plastic"
+survivor_dry_duffelbag,,survivor dry duffel bag,remove,物品定义使用工业合成材料 plastic
+survivor_goggles,,survivor goggles (poor fit),remove,物品定义使用工业合成材料 kevlar
+survivor_jumpsuit,,Kevlar jumpsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra, nylon"
+survivor_rig,,survivor distributed rigging,remove,物品定义使用工业合成材料 nylon
+survivor_scope,,retractable telescope,remove,物品定义使用工业合成材料 plastic
+survivor_suit,,survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+sw629,,S&W 629,remove,物品定义使用工业合成材料 plastic
+sw_22,,S&W target pistol,remove,物品定义使用工业合成材料 plastic
+sw_22,sw_22,S&W 22A,remove,物品定义使用工业合成材料 plastic
+sw_500,,.500 Magnum revolver,remove,物品定义使用工业合成材料 plastic
+sw_500,sw_500,S&W 500,remove,物品定义使用工业合成材料 plastic
+sw_619,,S&W 619,remove,物品定义使用工业合成材料 plastic
+swim_briefs,,swim briefs (poor fit),remove,"物品定义使用工业合成材料 lycra, nylon"
+swim_cap,,swim cap (poor fit),remove,物品定义使用工业合成材料 lycra
+swimming_kickboard,,swimming kickboard,remove,物品定义使用工业合成材料 plastic
+switchblade,,switchblade,remove,物品定义使用工业合成材料 plastic
+switchblade,switchblade_balisong,balisong,remove,物品定义使用工业合成材料 plastic
+switchblade,switchblade_generic,switchblade,remove,物品定义使用工业合成材料 plastic
+syringe,,syringe,remove,物品定义使用工业合成材料 plastic
+tac338,,.338 bolt-action sniper rifle+5,remove,物品定义使用工业合成材料 plastic
+tac338,tac338,McMillan Tac-338,remove,物品定义使用工业合成材料 plastic
+tac_fullhelmet,,tactical full helmet (poor fit),remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+tac_helmet,,tactical helmet (poor fit),remove,"物品定义使用工业合成材料 kevlar_rigid, plastic"
+tacjacket,,tactical jacket (poor fit),remove,物品定义使用工业合成材料 nylon
+tacjacket,generic_tacjacket,tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_alpine,alpine-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_arctic,arctic-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_black_camo,black-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_coyote,coyote tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_desert,desert-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_grassland,grassland-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_green,olive-drab tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_grey,wolf tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_jungle,jungle-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_marshland,marshland-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_ocean,ocean-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_river,river-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_urban,urban-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tacjacket,tacjacket_woodland,woodland-camo tactical jacket,remove,物品定义使用工业合成材料 nylon
+tactical_grenade_pouch,,tactical grenade pouch,remove,物品定义使用工业合成材料 nylon
+tactical_holster,,tactical holster,remove,物品定义使用工业合成材料 nylon
+tactical_shotshell_pouch,,tactical shotshell pouch,remove,物品定义使用工业合成材料 nylon
+tacvest,,tac vest,remove,物品定义使用工业合成材料 nylon
+tailors_kit,,tailor's kit,remove,物品定义使用工业合成材料 plastic
+takedown_recurbow,,takedown recurve bow,remove,物品定义使用工业合成材料 fiberglass
+takedown_recurbow_folded,,takedown recurve bow (folded),remove,物品定义使用工业合成材料 fiberglass
+talking_doll,,talking doll,remove,物品定义使用工业合成材料 plastic
+tampon,,tampon,remove,物品定义使用工业合成材料 plastic
+tanbark,,tanbark,keep,自然资源、果实及基础材料
+tank_tread,,set of small tank treads,remove,物品定义使用工业合成材料 plastic
+tarp,,tarpaulin,remove,物品定义使用工业合成材料 plastic
+tarp_raincatcher,,tarp raincatcher,remove,物品定义使用工业合成材料 plastic
+tavor_12,,auto-loading bullpup shotgun+2,remove,物品定义使用工业合成材料 plastic
+tavor_12,tavor_12,Tavor TS12,remove,物品定义使用工业合成材料 plastic
+tazer,,stun gun,remove,物品定义使用工业合成材料 plastic
+tdi_10mm_mag,,Glock 10mm 30-round magazine,remove,物品定义使用工业合成材料 plastic
+tdi_10mm_mag,tdi_10mm_mag,Glock 10mm 30-round magazine,remove,物品定义使用工业合成材料 plastic
+tdi_mag,,Glock SMG 30-round magazine,remove,物品定义使用工业合成材料 plastic
+tdi_mag,tdi_mag,Vector SMG 30-round magazine,remove,物品定义使用工业合成材料 plastic
+teargas_sprayer,,tear gas sprayer,remove,物品定义使用工业合成材料 plastic
+tele_sight,,telescopic sight,remove,物品定义使用工业合成材料 plastic
+tele_sight_pistol,,telescopic pistol sight,remove,物品定义使用工业合成材料 plastic
+telepad,,teleport pad,remove,物品定义使用工业合成材料 plastic
+teleporter,,teleporter,remove,物品定义使用工业合成材料 plastic
+teleumbrella,,telescoping umbrella (collapsed),remove,物品定义使用工业合成材料 plastic
+teleumbrella-extended,,telescoping umbrella (extended),remove,物品定义使用工业合成材料 plastic
+television,,television,remove,物品定义使用工业合成材料 plastic
+tent_kit,,tent,remove,物品定义使用工业合成材料 plastic
+test_tube_micro,,microcentrifuge tube,remove,物品定义使用工业合成材料 plastic
+thermal_shirt,,thermal shirt (poor fit),remove,物品定义使用工业合成材料 lycra
+thermometer,,thermometer,remove,物品定义使用工业合成材料 plastic
+thick_h20survivor_jumpsuit,,thick Kevlar wetsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, neoprene, nylon"
+thread_kevlar,,Kevlar thread,remove,物品定义使用工业合成材料 kevlar
+thread_nomex,,Nomex thread,remove,物品定义使用工业合成材料 nomex
+tin_snips,,tin snips,remove,物品定义使用工业合成材料 plastic
+tinder,,tinder,keep,自然资源、果实及基础材料
+toaster,,toaster,remove,物品定义使用工业合成材料 plastic
+toecaps,,pair of toecaps,remove,物品定义使用工业合成材料 plastic
+tokarev,,Tokarev handgun,remove,物品定义使用工业合成材料 plastic
+tokarev,tokarev,Tokarev TT-33,remove,物品定义使用工业合成材料 plastic
+tonfa,,tonfa,remove,物品定义使用工业合成材料 plastic
+tool_pouch,,tactical tool pouch,remove,物品定义使用工业合成材料 nylon
+tool_rocket_candy,,rocket candy,remove,物品定义使用工业合成材料 plastic
+tool_rocket_candy_act,,burning rocket candy,remove,物品定义使用工业合成材料 plastic
+toothbrush_electric,,electric toothbrush,remove,物品定义使用工业合成材料 plastic
+touring_suit,,track touring suit (poor fit),remove,物品定义使用工业合成材料 plastic_pad
+toy_figurine,,figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_avocado,avocado figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_female,fashionable doll,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_krueger,nightmare figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_mermaid,mermaid figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_reaper,reaper figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_superhero,superhero figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_swampman,swamp monster figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_swordsman,swordsman figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine,toy_figure_unicorn,unicorn figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,,large figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_alien,alien figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_anime,anime figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_caiman,lizardman figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_heavyweapons,video game figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_knight,knight figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_mech,mech figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_t800,robot figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figure_trex,T-rex figurine,remove,物品定义使用工业合成材料 plastic
+toy_figurine_large,toy_figurine_smoker,zombie figurine,remove,物品定义使用工业合成材料 plastic
+transition_glasses_bifocal,,pair of transition bifocal glasses,remove,物品定义使用工业合成材料 plastic
+transition_glasses_eye,,pair of transition corrective glasses,remove,物品定义使用工业合成材料 plastic
+transition_glasses_reading,,pair of transition reading glasses,remove,物品定义使用工业合成材料 plastic
+transponder,,transponder circuit,remove,物品定义使用工业合成材料 plastic
+trashcan,,trash can,remove,物品定义使用工业合成材料 plastic
+trashcan_large,,industrial trash can,remove,物品定义使用工业合成材料 plastic
+travelpack,,travelpack,remove,物品定义使用工业合成材料 nylon
+trenchcoat_survivor,,survivor trenchcoat (poor fit),remove,物品定义使用工业合成材料 kevlar
+trimmer_off,,hedge trimmer (off),remove,物品定义使用工业合成材料 plastic
+triple_stacker_pouch,,triple stacker ammo pouch,remove,物品定义使用工业合成材料 nylon
+trousers_eod,,EOD trousers,remove,"物品定义使用工业合成材料 kevlar, nomex"
+trousers_eod_light,,tactical EOD trousers,remove,"物品定义使用工业合成材料 kevlar, nomex"
+tunic_rag,,rag tunic,keep,已在荒野开局或第一项基础制作使用
+turret_chassis,,turret interior chassis,remove,物品定义使用工业合成材料 plastic
+twig,,twig,keep,自然资源、果实及基础材料
+two_way_radio,,two-way radio,remove,物品定义使用工业合成材料 plastic
+ugl_buttstock,,grenade launcher buttstock,remove,物品定义使用工业合成材料 plastic
+umbrella,,umbrella,remove,物品定义使用工业合成材料 plastic
+ump45mag,,UMP45 25-round magazine,remove,物品定义使用工业合成材料 plastic
+under_armor,,compression top (poor fit),remove,物品定义使用工业合成材料 lycra
+under_armor_shorts,,compression shorts (poor fit),remove,物品定义使用工业合成材料 lycra
+underbarrel_mount,,bottom mount,remove,物品定义使用工业合成材料 plastic
+unitard,,unitard (poor fit),remove,物品定义使用工业合成材料 lycra
+usb_drive,,USB drive,remove,物品定义使用工业合成材料 plastic
+usb_drive_nano,,secured USB drive,remove,物品定义使用工业合成材料 plastic
+usp45mag,,USP .45 pistol 12-round magazine,remove,物品定义使用工业合成材料 plastic
+usp45mag,usp45mag,USP .45 12-round magazine,remove,物品定义使用工业合成材料 plastic
+usp_9mm,,USP 9x19mm,remove,物品定义使用工业合成材料 plastic
+utility_exoskeleton_off,,battery powered utility exoskeleton,remove,物品定义使用工业合成材料 plastic
+uzimag_100rd,,Uzi 100-round double drum magazine,remove,物品定义使用工业合成材料 plastic
+v12_combustion,,7L V12 engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v12_diesel,,7L V12 diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v29,,V29 laser pistol,remove,物品定义使用工业合成材料 plastic
+v2_combustion,,0.6L V2 engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v6_combustion,,2.8L V6 engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v6_diesel,,2.8L V6 diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v8_combustion,,4.5L V8 engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v8_diesel,,4.5L V8 diesel engine,remove,工业内燃、蒸汽或燃气涡轮发动机
+v_planter_item,,seed drill,remove,物品定义使用工业合成材料 plastic
+v_planter_item_advanced,,advanced seed drill,remove,物品定义使用工业合成材料 plastic
+v_plow_item,,plow,remove,物品定义使用工业合成材料 plastic
+v_reaper_item,,reaper,remove,物品定义使用工业合成材料 plastic
+v_reaper_item_advanced,,advanced reaper,remove,物品定义使用工业合成材料 plastic
+vac_mold,,vacuum molder,remove,物品定义使用工业合成材料 plastic
+vac_sealer,,vacuum sealer,remove,物品定义使用工业合成材料 plastic
+vacutainer,,blood draw kit,remove,物品定义使用工业合成材料 plastic
+vampire_fangs,,vampire fangs,remove,物品定义使用工业合成材料 plastic
+varmint_airgun,,varmint air rifle,remove,物品定义使用工业合成材料 plastic
+vehicle_controls,,vehicle controls,remove,物品定义使用工业合成材料 plastic
+vehicle_dashboard,,dashboard,remove,物品定义使用工业合成材料 plastic
+vibrator,,vibrator,remove,电子设备及运转状态
+voltmeter,,voltmeter,remove,物品定义使用工业合成材料 plastic
+vortex,,vortex device,remove,物品定义使用工业合成材料 plastic
+vz58_p,,vz. 58 combat rifle,remove,物品定义使用工业合成材料 plastic
+vz58_p,vz58_p,Samopal vz. 58 P,remove,物品定义使用工业合成材料 plastic
+vz58_p,vz58_v,Samopal VZ 58 V,remove,物品定义使用工业合成材料 plastic
+wall_light,,disconnected wall light,remove,物品定义使用工业合成材料 plastic
+wall_wiring,,wall wiring,remove,物品定义使用工业合成材料 plastic
+wallet,,wallet,remove,物品定义使用工业合成材料 plastic
+wallet_duct_tape,,duct tape wallet,remove,物品定义使用工业合成材料 plastic
+wallet_travel,,travel wallet,remove,物品定义使用工业合成材料 plastic
+walther_ccp,,Walther CCP,remove,物品定义使用工业合成材料 plastic
+walther_p22,,Walther training pistol,remove,物品定义使用工业合成材料 plastic
+walther_p22,walther_p22,Walther P22,remove,物品定义使用工业合成材料 plastic
+walther_p38,,Walther P38,remove,物品定义使用工业合成材料 plastic
+walther_ppq_40,,Walther PPQ .40 S&W,remove,物品定义使用工业合成材料 plastic
+walther_ppq_45,,PPQ pistol,remove,物品定义使用工业合成材料 plastic
+walther_ppq_45,walther_ppq_45,Walther PPQ 45,remove,物品定义使用工业合成材料 plastic
+walther_ppq_9mm,,Walther PPQ 9mm,remove,物品定义使用工业合成材料 plastic
+warehouse_rebooter,,exodii comm rebooter,remove,物品定义使用工业合成材料 plastic
+wash_kit,,washing kit,remove,物品定义使用工业合成材料 plastic
+water_purifier,,water purifier,remove,物品定义使用工业合成材料 plastic
+waterproof_camera_case,,waterproof camera case,remove,物品定义使用工业合成材料 plastic
+waterproof_gunmod,,firearm waterproofing,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,,waterproof smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,2012_case,2012 smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,ace_case,Ace of Spades smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,anaconda_case,Anaconda smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,art_case,Terrifier smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,ash_case,Evil Dead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,babadook_case,The Babadook smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,babyface_case,The Hills Runs Red smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bates_case,Bates Motel smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bejeweled_smart_phone_case,golden smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bejeweled_smart_phone_case1,silver smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bejeweled_smart_phone_case2,bronze smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bigaspider_case,Big Ass Spider smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bird_case,Bird Box smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,black_smart_phone_case,black smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,blob_case,The Blob smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,brown_smart_phone_case,brown smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,bspace_case,Black Universe smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,candyman_case,Candyman smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,chucky_case,Child's Play smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,cloverfield_case,Cloverfield Monster smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,coffinjoe_case,Coffin Joe smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,collector_case,The Collector smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,creeper_case,Jeepers Creepers smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,cyan_smart_phone_case,cyan smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,darkness_case,Darkness Falls smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dawn_case,Dawn of the Dead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,day_case,Day of the Dead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dayafter_case,The Day After Tomorrow smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dblue_smart_phone_case,dark blue smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,descent_case,The Descent smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dgreen_smart_phone_case,dark green smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dollar_case,One Hundred Dollars smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,dracula_case,Dracula smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,earth_case,The Day Earth Stood Still smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,feast_case,Feast smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,frank_case,Frankenstein smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,galaxy_case,Galaxy of Terror smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,ghostface_case,Scream smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,gray_smart_phone_case,gray smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,grudge_case,The Grudge smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,hatchet_case,Hatchet smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,hello_kitty_case,Hello Kitty smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,herbet_case,Re-Animator smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,hostel_case,Hostel smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,insta_case,Instagram Overlay smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,jason_case,Friday the 13th smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,jaws_case,Jaws smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,lagoon_case,The Creature from the Black Lagoon smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,lblue_smart_phone_case,light blue smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,leatherface_case,Texas Chainsaw Massacre smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,leprechaun_case,Leprechaun smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,lgreen_smart_phone_case,light green smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,mars_case,Mars Attacks smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,matt_case,Maniac Cop smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,mech_case,Mechanical Gear smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,michael_case,Halloween smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,miner_case,My Bloody Valentine smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,mist_case,The Mist smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,night_case,Night of the Living Dead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,nightmare_case,Nightmare on Elm Street smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,nosferatu_case,Nosferatu smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,orange_smart_phone_case,orange smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pa_case,Paranormal Activity smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pennywise_case,It the Clown smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pinhead_case,Hellraiser smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pink_smart_phone_case,pink smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,piranha_case,Piranha smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,planeterror_case,Planet Terror smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pumpkinhead_case,Pumpkinhead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,purple_smart_phone_case,purple smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,pyramidhead_case,Silent Hill smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,rec_case,[R E C] smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,red_smart_phone_case,red smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,samara_case,The Ring smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,saw_case,Saw smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,shaun_case,Shaun of the Dead smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,slender_case,Slenderman smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,smiley_case,Smiley Face Killers smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,spacespiders_case,Giant Spider Invasion smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,spiders_case,Eight-Legged Freaks smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,stenio_case,The Nightshifter smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,tallman_case,Phantasm smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,tardis_case,police call box smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,thing_case,The Thing smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,threefinger_case,Wrong Turn smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,triffids_case,Day of the Triffids smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,violet_smart_phone_case,violet smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,white_smart_phone_case,white smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,wspace_case,White Universe smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,xenomorph_case,Alien smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,yautja_case,The Predator smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,yellow_smart_phone_case,yellow smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,you'renext_case,You're Next smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case,zombie_case,zombie smartphone case,remove,物品定义使用工业合成材料 plastic
+waterproof_smart_phone_case_migration,,golden smartphone case,remove,物品定义使用工业合成材料 plastic
+waterskin,,small waterskin,keep,已在荒野开局或第一项基础制作使用
+wearable_atomic_light,,atomic headlamp (active),remove,物品定义使用工业合成材料 plastic
+wearable_camera,,wearable camera,remove,物品定义使用工业合成材料 plastic
+wearable_camera_pro,,wearable professional camera,remove,物品定义使用工业合成材料 plastic
+wearable_light,,headlamp,remove,物品定义使用工业合成材料 plastic
+weather_reader,,Doppler Radar Turbo 2000,remove,物品定义使用工业合成材料 plastic
+webbing_belt,,MOLLE webbing belt,remove,物品定义使用工业合成材料 nylon
+welding_mask,,welding mask,remove,物品定义使用工业合成材料 plastic
+welding_mask_raised,,welding mask (raised),remove,物品定义使用工业合成材料 plastic
+wetsuit,,wetsuit (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_booties,,pair of diving socks (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_gloves,,pair of diving gloves (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_hood,,wetsuit hood (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_jacket,,wetsuit jacket (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_pants,,wetsuit pants (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_shorts,,wetsuit shorts (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_shorts_technical,,wetsuit technical shorts (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon, nylon_2"
+wetsuit_spring,,spring suit (poor fit),remove,物品定义使用工业合成材料 neoprene
+wetsuit_spring_sleeveless,,sleeveless spring suit (poor fit),remove,物品定义使用工业合成材料 neoprene
+wetsuit_thick,,thick wetsuit (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_top,,wetsuit shirt (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wetsuit_top_sleeved,,wetsuit long-sleeved shirt (poor fit),remove,"物品定义使用工业合成材料 neoprene, nylon"
+wheel_caster,,"4"" set of casters",remove,物品定义使用工业合成材料 plastic
+wheel_skate,,"3"" skate wheel",remove,物品定义使用工业合成材料 plastic
+wheel_skateboard,,"2"" set of skateboard wheels",remove,物品定义使用工业合成材料 plastic
+wheel_small,,"10"" small wheel",remove,物品定义使用工业合成材料 plastic
+wheel_tricycle,,"7"" set of tricycle wheels",remove,物品定义使用工业合成材料 plastic
+whistle_multitool,,whistle multitool,remove,物品定义使用工业合成材料 plastic
+winter_jacket_army,,army winter jacket (poor fit),remove,物品定义使用工业合成材料 nylon
+winter_pants_army,,army winter pants (poor fit),remove,物品定义使用工业合成材料 nylon
+withered,,withered plant,keep,自然资源、果实及基础材料
+wizard_cane_cheap,,cheap wizard cane (off),remove,物品定义使用工业合成材料 plastic
+wrapped_rad_badge,,wrapped radiation badge,remove,物品定义使用工业合成材料 plastic
+wristrocket,,brace slingshot,remove,物品定义使用工业合成材料 plastic
+wristwatch,,wrist watch,remove,物品定义使用工业合成材料 plastic
+wsurvivor_jumpsuit,,fur Kevlar jumpsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra"
+wsurvivor_jumpsuit_nofur,,faux fur Kevlar jumpsuit (poor fit),remove,"物品定义使用工业合成材料 kevlar, lycra"
+wsurvivor_suit,,winter survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+wsurvivor_suit_nofur,,winter survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+xacto,,X-Acto knife,remove,物品定义使用工业合成材料 plastic
+xd_10,,XD-M pistol,remove,物品定义使用工业合成材料 plastic
+xd_10,xd_10,XD-M Competition 10mm,remove,物品定义使用工业合成材料 plastic
+xedra_gun,,prototype gun+5,remove,物品定义使用工业合成材料 plastic
+xl_ballistic_vest,,XL ballistic vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+xl_ballistic_vest_lc,,XL ballistic vest (mild steel plates),remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+xl_ballistic_vest_qt,,XL ballistic vest (tempered steel plates),remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+xl_boots_wsurvivor_nofur,,pair of XL faux fur winter survivor boots (poor fit),remove,物品定义使用工业合成材料 kevlar
+xl_gloves_survivor,,pair of XL survivor gloves,remove,物品定义使用工业合成材料 kevlar
+xl_gloves_wsurvivor_nofur,,pair of XL faux fur winter survivor gloves (poor fit),remove,物品定义使用工业合成材料 kevlar
+xl_hood_wsurvivor_nofur,,XL faux fur winter survivor hood (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+xl_propane_tank,,extra large propane tank,remove,物品定义使用工业合成材料 plastic
+xl_wsurvivor_suit_nofur,,XL winter survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+xlkevlar,,XL Kevlar vest,remove,"物品定义使用工业合成材料 kevlar_layered, nylon"
+xlsurvivor_suit,,XL survivor suit (poor fit),remove,物品定义使用工业合成材料 kevlar_layered
+yoyo,,yoyo,remove,物品定义使用工业合成材料 plastic
+zentai,,zentai (poor fit),remove,物品定义使用工业合成材料 lycra
+zipper_short_plastic,,short plastic zipper,remove,物品定义使用工业合成材料 plastic

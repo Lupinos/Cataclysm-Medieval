@@ -4,6 +4,7 @@
 import argparse
 from bisect import bisect_right
 from collections import Counter, defaultdict, deque
+import csv
 from dataclasses import dataclass, field
 from itertools import islice
 import json
@@ -195,6 +196,7 @@ class Declaration:
     def describe(self):
         return {
             "type": self.type,
+            "registry": self.registry,
             "ids": list(map(str, self.symbols)),
             "aliases": list(map(str, self.aliases)),
             "abstract": self.abstract,
@@ -552,6 +554,31 @@ def counts(index, records):
         "abstracts": sum(r.abstract for r in records),
         "by_type": dict(sorted(Counter(r.type for r in records).items())),
     }
+
+
+def print_review_csv(records):
+    columns = (
+        "location", "line", "type", "registry", "ids", "aliases", "abstract",
+        "copy_from", "name", "description", "decision", "reason",
+    )
+    output = csv.writer(sys.stdout, lineterminator="\n")
+    output.writerow(columns)
+
+    def translation(obj, field):
+        value = obj.get(field, "")
+        if isinstance(value, dict):
+            return value.get("str", value.get("str_sp", ""))
+        return value if isinstance(value, str) else ""
+
+    for record in records:
+        output.writerow((
+            record.location, record.line, record.type, record.registry,
+            json.dumps(list(map(str, record.symbols)), ensure_ascii=False),
+            json.dumps(list(map(str, record.aliases)), ensure_ascii=False),
+            "true" if record.abstract else "false",
+            record.data.get("copy-from", ""), translation(record.data, "name"),
+            translation(record.data, "description"), "", "",
+        ))
 
 
 def target_removals(index, selectors):
@@ -968,8 +995,12 @@ def parse_args(argv):
     inventory.add_argument(
         "--limit",
         type=nonnegative,
-        default=50,
-        help="Limit displayed definitions (0 for all).",
+        default=0,
+        help="Limit displayed definitions (default: all).",
+    )
+    inventory.add_argument(
+        "--csv", action="store_true",
+        help="Export declaration locations and review columns as CSV.",
     )
     query_parser = commands.add_parser(
         "query", parents=[shared], help="Show dependencies and uses."
@@ -1016,6 +1047,8 @@ def parse_args(argv):
         help="Apply despite references to review.",
     )
     args = parser.parse_args(argv)
+    if args.command == "list" and args.csv and args.json:
+        parser.error("--csv and --json are mutually exclusive")
     if args.command == "query" and args.depth < 1:
         parser.error("--depth must be at least 1")
     return args
@@ -1030,6 +1063,9 @@ def main(argv=None):
             records = filter_records(index, args.type)
             if args.command == "stats":
                 result = counts(index, records)
+            elif args.csv:
+                print_review_csv(islice(records, args.limit or None))
+                return 0
             else:
                 rows, truncated = limit_rows(
                     (r.describe() for r in records), args.limit

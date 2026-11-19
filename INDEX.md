@@ -24,7 +24,7 @@
 
 | 文档位置 | 简介 |
 | --- | --- |
-| [docs/process/code/design00-清理现代内容.md](docs/process/code/design00-清理现代内容.md) | 依赖工具的统计、双向查询、批量删除用法及测试结果。 |
+| [docs/process/code/design00-清理现代内容.md](docs/process/code/design00-清理现代内容.md) | 全量定义导出、依赖查询、批量删除及已导出 GM 清单的离线核对。 |
 
 ## 覆盖与维护
 
